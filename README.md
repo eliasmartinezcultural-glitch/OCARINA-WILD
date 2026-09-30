@@ -36,7 +36,7 @@ Las fichas concentran la profundidad: reconocimiento, nombre científico, ambien
 
 ## Arquitectura técnica
 
-Proyecto estático compatible con GitHub Pages: HTML + CSS + JavaScript, sin backend obligatorio. GitHub Pages publica directamente los archivos del repositorio y permite sitios de proyecto asociados a un repositorio. citeturn0search0turn0search2
+Proyecto estático compatible con GitHub Pages: HTML + CSS + JavaScript, sin backend obligatorio. GitHub Pages publica directamente los archivos del repositorio y permite sitios de proyecto asociados a un repositorio.
 
 Principios técnicos:
 
