@@ -39,3 +39,26 @@
 .school-tool strong{display:block;font:600 26px "Playfair Display";margin-top:9px}
 @media(max-width:900px){.record-visual{margin:-40px -40px 25px}.feature-image{min-height:500px}.school-strip{grid-template-columns:1fr}}
 @media(max-width:560px){.species-photo{height:220px}.record-visual{margin:-40px -24px 24px}.record-visual img{height:280px}.school-strip{padding:65px 6vw}.school-tools{grid-template-columns:1fr}}
+
+/* ================= V0.6 · IMMERSIVE NATURAL WORLD ================= */
+.hero{isolation:isolate;background:#08120f}
+.hero-media{background:#07130f url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Cisne_de_cuello_negro_-_A740080.jpg") center 48%/cover no-repeat;transform:scale(1.02)}
+.hero-media:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06100ed9 0%,#06100e80 42%,#06100e22 75%),linear-gradient(0deg,#06100ebf 0%,transparent 48%,#06100e55 100%);z-index:2}
+.hero-sky,.hero-river,.hero-scrub,.hero-sun{display:none}
+.hero-content{z-index:4;max-width:900px;padding-top:27vh}
+.hero h1{font-size:clamp(78px,12vw,178px);text-shadow:0 10px 40px #0008}
+.hero-copy{font-size:clamp(16px,1.6vw,21px);max-width:540px;text-shadow:0 3px 18px #000}
+.hero-species-peek{position:absolute;right:8vw;bottom:13vh;z-index:5;width:210px;height:210px;border:1px solid #fff4;border-radius:50%;display:grid;place-items:center;background:#07130f70;backdrop-filter:blur(8px);box-shadow:0 25px 80px #0006;transform:rotate(8deg)}
+.hero-species-peek span,.hero-species-peek b,.hero-species-peek i{position:absolute;font:800 9px Manrope;letter-spacing:.18em}.hero-species-peek span{top:35px;left:28px}.hero-species-peek b{bottom:40px;right:25px;color:#d8ca91}.hero-species-peek i{font-style:normal;opacity:.5}
+.intro{background:#f0eadc;min-height:650px;display:flex;flex-direction:column;justify-content:center}.intro h2{font-size:clamp(60px,8vw,112px)}.intro h2 em{font-family:"Playfair Display";color:#526b50;font-weight:600}
+.explore{padding-top:125px;background:#0b1714}
+.explore .section-head h2{font-size:clamp(60px,8vw,110px)}
+.entry-grid{grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2px}.entry-card{min-height:190px;background:#12221c;border:0;padding:24px;transition:.35s cubic-bezier(.2,.7,.2,1)}.entry-card:first-child{background:#254338}.entry-card:hover{transform:none;min-height:220px;background:#315345}.entry-card span{font-size:42px}.entry-card b{font-size:12px}.species-grid{grid-template-columns:repeat(3,1fr);gap:12px}.species-card-visual{background:#f2eee4;color:#0b1714}.species-card-body .open-record{color:#0b1714}.species-card-body .status-pill{position:static!important;border-color:#0b17142a;color:#0b1714;margin-bottom:8px}.species-photo{height:330px}.species-card-visual:hover{transform:translateY(-8px)}
+.discover-band{min-height:760px;background:#183b3b;position:relative;overflow:hidden}.discover-band:before{content:"WILD";position:absolute;right:-2vw;bottom:-5vw;font:800 30vw/.7 Manrope;color:#fff;opacity:.025}.discover-band>*{position:relative;z-index:1}.discover-band h2{font-size:clamp(65px,9vw,125px)}
+.habitats{background:#c9b98f;padding-top:130px;padding-bottom:130px}.habitat-grid{gap:3px}.habitat{min-height:420px;border:0;border-radius:0}.habitat:nth-child(1){grid-column:span 6}.habitat:nth-child(2){grid-column:span 6}.habitat:nth-child(3){grid-column:span 4}.habitat:nth-child(4){grid-column:span 4}.habitat:nth-child(5){grid-column:span 4}.habitat:before{background:linear-gradient(0deg,#091712d9,#09171222),radial-gradient(circle at 70% 20%,#d4c38b,transparent 25%),linear-gradient(145deg,#41604c,#10251e)}
+.feature{padding-top:0;padding-bottom:0}.feature-image{min-height:760px}.feature-copy{padding-right:6vw}.feature h2{font-size:clamp(52px,7vw,100px)}
+.school-strip{padding:120px 8vw;background:#f3eee2}.school-strip h2{font-size:clamp(58px,8vw,100px)}
+.museum-v04{padding-top:130px}.museum-top h2{font-size:clamp(60px,8vw,115px)}
+.participate{min-height:700px;align-items:center}.participate h2{font-size:clamp(65px,9vw,125px)}
+@media(max-width:900px){.hero-species-peek{width:150px;height:150px;right:6vw;bottom:9vh;opacity:.75}.species-grid{grid-template-columns:repeat(2,1fr)}.habitat:nth-child(n){grid-column:span 6}.feature-image{min-height:600px}}
+@media(max-width:560px){.hero-content{padding-top:24vh}.hero h1{font-size:70px}.hero-species-peek{width:105px;height:105px;right:7vw;bottom:17vh;font-size:7px}.hero-species-peek span{top:18px;left:13px}.hero-species-peek b{bottom:19px;right:12px}.hero-species-peek i{display:none}.species-grid{grid-template-columns:1fr}.species-photo{height:280px}.entry-grid{grid-template-columns:1fr}.entry-card,.entry-card:hover{min-height:145px}.habitat:nth-child(n){grid-column:span 12}.feature-image{min-height:500px}.hero-actions .btn{width:100%}}
