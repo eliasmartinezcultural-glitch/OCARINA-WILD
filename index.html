@@ -3,90 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1714">
-<meta name="description" content="OCARINA WILD — archivo natural vivo de San Patricio del Chañar.">
-<title>OCARINA WILD · San Patricio del Chañar</title>
+<meta name="theme-color" content="#07110f">
+<meta name="description" content="OCARINA WILD · Fauna y flora de San Patricio del Chañar.">
+<title>OCARINA WILD · Mundo natural</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 </head>
 <body>
-<div class="noise" aria-hidden="true"></div>
-<header class="site-header" id="siteHeader">
-<a class="brand" href="#inicio"><span class="brand-mark">OW</span><span><b>OCARINA</b><small>WILD</small></span></a>
-<nav id="mainNav">
-<a href="#explorar">Explorar</a><a href="#ambientes">Ambientes</a><a href="#mapa">Mapa</a><a href="#escuelas">Escuelas</a><a href="#archivo">Archivo</a>
-</nav>
-<button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button>
-</header>
-
+<header><a class="brand" href="#inicio"><span>OW</span><b>OCARINA WILD</b></a><a href="#vidas">VER LA VIDA ↓</a></header>
 <main id="inicio">
 <section class="hero">
-<div class="hero-media"><div class="hero-sky"></div><div class="hero-river"></div><div class="hero-scrub"></div><div class="hero-scrub scrub-b"></div><div class="hero-sun"></div></div>
-<div class="hero-content">
-<p class="eyebrow">SAN PATRICIO DEL CHAÑAR · MUNDO NATURAL</p>
-<h1>Entrá al<br><em>mundo vivo.</em></h1>
-<p class="hero-copy">Animales. Plantas. Agua. Viento. Chacras. Río. Primero mirá. Después descubrí qué estás viendo.</p>
-<div class="hero-actions"><a class="btn btn-light" href="#explorar">Entrar a la vida ↓</a><button class="btn btn-ghost" id="discoverBtn">Sorprendeme ↗</button></div>
-<div class="hero-species-peek" aria-hidden="true"><span>FAUNA</span><b>FLORA</b><i>CHAÑAR</i></div>
-</div>
-<div class="hero-meta"><span>CHAÑAR · NEUQUÉN</span><span>RÍO NEUQUÉN</span><span>ARCHIVO VIVO</span></div>
+<div class="hero-photo"></div><div class="hero-shade"></div>
+<div class="hero-content"><p class="eyebrow">SAN PATRICIO DEL CHAÑAR · MUNDO NATURAL</p><h1>Entrá al<br><em>mundo vivo.</em></h1><p>Fauna y flora de Chañar. Mirá primero. Tocá una vida. Después descubrí todo lo que sabemos de ella.</p><a class="hero-button" href="#vidas">ENTRAR A LA VIDA ↓</a></div>
+<div class="hero-bottom"><span>FAUNA</span><span>FLORA</span><span>RÍO · CHACRAS · DIQUE · MONTE</span></div>
 </section>
 
-<section class="intro section">
-<div class="section-kicker">01 / ENTRADA</div>
-<div class="intro-grid"><div><h2>Primero<br><em>mirá.</em></h2></div><div class="lead"><p>Acá no venís a estudiar una enciclopedia. Venís a encontrarte con la vida de Chañar.</p><p><strong>Una imagen te lleva a un animal. Un animal te lleva a un ambiente. Y de ahí empieza la historia.</strong></p></div></div>
-<div class="principles"><span>CHañar primero</span><span>Evidencia visible</span><span>Memoria separada</span><span>Investigación pendiente</span></div>
+<section class="manifesto"><span class="eyebrow">01 · MIRAR</span><h2>No te damos una enciclopedia.<br><em>Te abrimos una puerta.</em></h2><p>Una foto despierta curiosidad. Una ficha responde. Un registro demuestra. Una pregunta te hace seguir.</p></section>
+
+<section id="vidas" class="lives">
+<div class="section-top"><div><span class="eyebrow">02 · VIDAS DE CHAÑAR</span><h2>Elegí una vida.</h2></div><div class="switch"><button class="active" data-kind="all">TODO</button><button data-kind="fauna">FAUNA</button><button data-kind="flora">FLORA</button></div></div>
+<div id="speciesGrid" class="species-grid"></div>
 </section>
 
-<section id="explorar" class="explore section">
-<div class="section-head"><div><div class="section-kicker">02 / EXPLORADOR</div><h2>Encontrá una vida.</h2></div><div class="archive-counter"><b id="countVisible">0</b><small>piezas visibles</small></div></div>
-<div class="entry-grid">
-<button class="entry-card" data-filter-entry="fauna"><span>🐦</span><b>VER ANIMALES</b><small>aves · peces · fauna local</small></button>
-<button class="entry-card" data-filter-entry="flora"><span>🌿</span><b>VER PLANTAS</b><small>flora · vegetación · cultivos</small></button>
-<button class="entry-card" data-filter-entry="ambientes"><span>🌊</span><b>EXPLORAR AMBIENTES</b><small>río · dique · chacras · monte</small></button>
-<button class="entry-card" id="discoverCard"><span>✦</span><b>DESCUBRIR</b><small>una pieza elegida al azar</small></button>
-</div>
-<div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar especie, ambiente o palabra..." autocomplete="off"></label><div class="filters" id="filters"><button class="filter active" data-filter="all">Todo</button><button class="filter" data-filter="fauna">Fauna</button><button class="filter" data-filter="flora">Flora</button><button class="filter" data-filter="ave">Aves</button><button class="filter" data-filter="pez">Peces</button><button class="filter" data-filter="pendiente">Pendiente</button></div></div>
-<div class="species-grid" id="speciesGrid"></div>
-</section>
+<section class="between"><span>NO HACE FALTA SABER SU NOMBRE.</span><strong>Si algo te llama la atención,<br>abrilo.</strong><button id="surprise">SORPRENDEME ↗</button></section>
 
-<section class="discover-band"><div><div class="section-kicker">03 / DESCUBRIR</div><h2>Dejá que el archivo<br><em>te lleve.</em></h2><p>No hace falta saber qué buscar. OCARINA WILD puede conectar una especie con un ambiente, un registro, una fuente o una historia.</p><button class="btn btn-light" id="discoverBandBtn">Llevarme a una pieza →</button></div><div class="discover-path" id="discoverPath"><span>CHAÑAR</span><i>→</i><span>RÍO</span><i>→</i><span>VIDA</span><i>→</i><span>HISTORIA</span></div></section>
-
-<section id="ambientes" class="habitats section">
-<div class="section-kicker">04 / AMBIENTES</div><div class="habitat-intro"><h2>Un territorio.<br><em>Muchos mundos.</em></h2><p>Los ambientes son otra puerta de entrada. Al abrir uno, el archivo conecta especies, registros, fotografías futuras y preguntas de investigación.</p></div>
-<div class="habitat-grid" id="habitatGrid"></div>
-</section>
-
-<section class="feature section"><div class="feature-image"><div class="field-card"><span>REGISTRO LOCAL · 21.03.2023</span><strong>Cygnus<br>melancoryphus</strong><small>15 individuos · coordenadas publicadas</small></div></div><div class="feature-copy"><div class="section-kicker">05 / PIEZA DESTACADA</div><h2>Una coordenada puede abrir una historia.</h2><p>Un registro documentado no es una decoración. Es una pieza de archivo que puede relacionarse con ambiente, fecha, mapa, fuente y otros registros.</p><div class="data-lines"><div><b>21.03.2023</b><span>Fecha</span></div><div><b>15 individuos</b><span>Cantidad</span></div><div><b>−38.59764 / −68.390522</b><span>Coordenadas publicadas</span></div></div><button class="text-link" data-open="F-009">Abrir pieza completa →</button></div></section>
-
-<section class="school-strip" id="escuelas">
-<div><div class="section-kicker">PARA ESCUELAS · CAPA EDUCATIVA</div><h2>Mirar, reconocer, preguntar.</h2><p>OCARINA WILD se prepara para que una clase pueda entrar sin saber nada del sistema: elegir un animal, observar una imagen de referencia, leer una explicación breve, ubicar un ambiente y terminar con una pregunta para investigar en Chañar.</p></div>
-<div class="school-tools">
-<a class="school-tool" href="#explorar"><b>01 · IDENTIFICAR</b><strong>¿Qué animal es? →</strong></a>
-<a class="school-tool" href="#ambientes"><b>02 · RELACIONAR</b><strong>¿Dónde vive? →</strong></a>
-<a class="school-tool" href="#mapa"><b>03 · UBICAR</b><strong>¿Dónde apareció? →</strong></a>
-<a class="school-tool" href="#archivo"><b>04 · PREGUNTAR</b><strong>¿Qué falta saber? →</strong></a>
+<section class="local-world">
+<span class="eyebrow">03 · EL LUGAR</span><h2>Una especie nunca está sola.</h2>
+<div class="world-grid">
+<button data-env="Río Neuquén"><b>RÍO</b><small>agua · aves · peces · orilla</small></button>
+<button data-env="Chacras y canales"><b>CHACRAS</b><small>cultivos · árboles · canales · aves</small></button>
+<button data-env="Dique Compensador"><b>DIQUE</b><small>humedal · protección · vida</small></button>
+<button data-env="Monte y ambientes naturales"><b>MONTE</b><small>vegetación · suelo · fauna</small></button>
 </div>
 </section>
 
-<section id="museo-v04" class="museum-v04">
-<div class="museum-top"><div><div class="section-kicker">05 / MUSEO NATURAL</div><h2>Todo queda<br><em>conectado.</em></h2></div><p>Una especie no vive aislada. OCARINA WILD empieza a conectar registros, fotografías, sonidos, historias, fechas, ambientes y colecciones para construir una memoria natural navegable.</p></div>
-<div class="museum-nav" id="museumNav"><button class="museum-tab active" data-museum="registros">REGISTROS</button><button class="museum-tab" data-museum="fotos">FOTOTECA</button><button class="museum-tab" data-museum="audio">SONIDOS</button><button class="museum-tab" data-museum="cronologia">CRONOLOGÍA</button><button class="museum-tab" data-museum="historias">HISTORIAS</button><button class="museum-tab" data-museum="colecciones">COLECCIONES</button></div>
-<div class="museum-panel" id="museumPanel"></div>
-</section>
-<section id="mapa" class="map-section section"><div class="section-kicker">06 / CARTOGRAFÍA</div><div class="map-head"><div><h2>La vida también tiene lugar.</h2><p>El mapa crecerá con cada registro georreferenciado. No se publican coordenadas cuando la precisión pueda ser perjudicial para la fauna.</p></div><div class="legend"><span>● registros</span><span>○ centro de referencia</span></div></div><div id="map"></div></section>
-
-<section id="archivo" class="archive section"><div class="section-kicker">07 / ARCHIVO</div><div class="archive-grid"><div><h2>Un archivo serio dice qué sabe y qué todavía no sabe.</h2></div><div><div class="status"><b>DOCUMENTADO</b><p>Una fuente vincula el registro con San Patricio del Chañar.</p></div><div class="status"><b>OBSERVACIÓN LOCAL</b><p>Registro producido en territorio, pendiente de corroboración independiente.</p></div><div class="status"><b>MEMORIA</b><p>Relato o recuerdo local. Se conserva como memoria, no como evidencia científica.</p></div><div class="status"><b>INVESTIGACIÓN PENDIENTE</b><p>Pregunta abierta que todavía no debe convertirse en un hecho confirmado.</p></div></div></div></section>
-
-<section class="participate"><div><span class="section-kicker">08 / ARCHIVO VIVO</span><h2>¿Viste algo<br><em>en Chañar?</em></h2><p>Podés dejar preparado un registro desde el propio sitio. Primero preguntamos lo mínimo; después el archivo puede crecer.</p><button class="btn btn-light" id="observeBtn">Quiero sumar un registro ↗</button></div><div class="participate-list"><span>ANIMAL</span><span>PLANTA</span><span>HUELLA</span><span>SONIDO</span><span>FOTO</span><span>NO SÉ QUÉ ES</span></div></section>
+<section class="closing"><span class="eyebrow">04 · CHAÑAR VIVO</span><h2>Cuanto más miramos,<br><em>más aparece.</em></h2><p>OCARINA WILD crece con registros reales de San Patricio del Chañar. Lo documentado se distingue de la memoria y de lo que todavía falta investigar.</p><button id="observe">SUMAR UNA OBSERVACIÓN ↗</button></section>
 </main>
-
-<footer><div><b>OCARINA WILD</b><span>Archivo natural digital de San Patricio del Chañar</span></div><div>Una producción de <strong>Ocarina Producciones</strong><br><small>Motor 0.5.0 · 2026</small></div></footer>
-
-<dialog id="speciesDialog"><button class="dialog-close" id="closeDialog" aria-label="Cerrar">×</button><div id="dialogContent"></div></dialog>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<footer><b>OCARINA WILD</b><span>Fauna · flora · territorio · memoria natural</span><small>Ocarina Producciones · San Patricio del Chañar</small></footer>
+<dialog id="speciesDialog"><button id="closeDialog" class="close">×</button><div id="dialogContent"></div></dialog>
 <script src="app.js"></script>
 </body></html>
