@@ -43,3 +43,48 @@ document.querySelector("#menuBtn").onclick=()=>document.querySelector("#mainNav"
 document.querySelector("#habitatGrid").innerHTML=habitats.map(h=>`<article class="habitat habitat-${h.color}" data-habitat="${h.id}"><div><small>${esc(h.tag)}</small><h3>${esc(h.name)}</h3></div><p>${esc(h.desc)}</p></article>`).join("");document.querySelectorAll("[data-habitat]").forEach(el=>el.onclick=()=>{const h=habitats.find(x=>x.id===el.dataset.habitat);dialogContent.innerHTML=`<div class="dialog-body"><div class="eyebrow">AMBIENTE · ${esc(h.tag)}</div><h2>${esc(h.name)}</h2><p>${esc(h.desc)}</p><div class="record-facts"><div><b>${h.related.length}</b><span>Piezas relacionadas</span></div><div><b>LOCAL</b><span>Geografía</span></div><div><b>VIVO</b><span>Estado del archivo</span></div></div><div class="related"><span>PIEZAS RELACIONADAS</span><p>${h.related.length?h.related.map(id=>`<button class="text-link" data-related="${id}">${esc(records.find(r=>r.id===id)?.name||id)} →</button>`).join(" · "):"Todavía no hay registros cargados. Esta ausencia queda visible como investigación pendiente."}</p></div></div>`;dialog.showModal();document.body.classList.add("no-scroll");dialogContent.querySelectorAll("[data-related]").forEach(b=>b.onclick=()=>openRecord(b.dataset.related))});
 const map=L.map("map",{scrollWheelZoom:false}).setView([-38.620,-68.390],11);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap contributors"}).addTo(map);records.filter(r=>r.lat&&r.lng).forEach(r=>L.circleMarker([r.lat,r.lng],{radius:9,weight:2,fillOpacity:.8}).addTo(map).bindPopup(`<strong>${esc(r.name)}</strong><br><em>${esc(r.latin)}</em><br><button class="map-open" data-id="${r.id}">Abrir ficha</button>`));map.on("popupopen",e=>e.popup.getElement()?.querySelector(".map-open")?.addEventListener("click",x=>openRecord(x.target.dataset.id)));L.circleMarker([-38.619,-68.390],{radius:6,weight:1,fillOpacity:.2}).addTo(map).bindPopup("<strong>San Patricio del Chañar</strong><br>Referencia general del archivo.");
 render();
+/* ================= V0.4 MUSEUM ENGINE ================= */
+const v04Data={
+registros:[
+{id:"R-2023-001",title:"Cisnes en el agua",kicker:"REGISTRO · 21 MAR 2023",text:"15 individuos de Cygnus melancoryphus aparecen documentados en San Patricio del Chañar.",meta:["FAUNA","RÍO","DOCUMENTADO"]},
+{id:"R-2018-001",title:"53 aves recuperadas",kicker:"REGISTRO · 2018",text:"Un procedimiento en una chacra local dejó una constancia documental de aves en cautiverio. El contexto se conserva explícitamente.",meta:["DOCUMENTO","CHACRA","CONTEXTO"]},
+{id:"R-LOCAL-001",title:"Más de 25 especies",kicker:"REGISTRO MUNICIPAL",text:"El Municipio señala más de 25 especies de aves registradas localmente. El inventario nominal completo queda como línea de investigación.",meta:["AVES","LOCAL","PENDIENTE"]}
+],
+fotos:[
+{id:"P-001",title:"La fototeca todavía espera territorio",text:"Este espacio no inventa fotografías. Cada imagen futura tendrá autor, fecha, lugar, especie o ambiente y condiciones de uso.",meta:["FOTO","METADATA","PROCEDENCIA"]},
+{id:"P-002",title:"Una foto también es un documento",text:"La fotografía local podrá relacionarse con una especie, un ambiente, una historia y otros registros.",meta:["ARCHIVO","RELACIONES","CHAÑAR"]}
+],
+audio:[
+{id:"A-001",title:"Paisaje sonoro del río",text:"Colección preparada para recibir grabaciones reales del territorio. Todavía no se presenta ningún audio como existente.",meta:["AUDIO","RÍO","PENDIENTE"]},
+{id:"A-002",title:"Voces de la naturaleza",text:"Futuro archivo de cantos, sonidos de agua, viento y ambientes, siempre con fecha y procedencia.",meta:["SONIDO","AMBIENTE","ARCHIVO"]}
+],
+historias:[
+{id:"H-001",title:"El río como memoria",text:"Las historias locales pueden explicar cómo se percibió, recorrió y recordó el territorio. Serán conservadas como memoria y diferenciadas de la evidencia científica.",meta:["MEMORIA","RÍO","TESTIMONIO"]},
+{id:"H-002",title:"Chacras, agua y vida",text:"Una futura colección narrativa conectará producción, canales, árboles, aves, personas y cambios del paisaje.",meta:["HISTORIA","CHACRAS","PAISAJE"]}
+],
+colecciones:[
+{id:"C-001",title:"Río Neuquén",text:"Especies, registros, fotografías, sonidos e historias vinculadas al río.",count:"5 capas · creciendo"},
+{id:"C-002",title:"Chacras y canales",text:"Fauna, vegetación, agua, producción y memoria del paisaje agrícola.",count:"7 piezas relacionadas"},
+{id:"C-003",title:"Dique Compensador",text:"Área Natural Protegida Municipal y línea prioritaria de investigación natural.",count:"1 pieza · inventario pendiente"},
+{id:"C-004",title:"Aves de Chañar",text:"Una colección transversal para reunir registros, temporadas, fotos y sonidos.",count:"3 especies + registros"}
+]};
+const timeline=[
+{year:"2006",title:"Dique Compensador",text:"El Municipio reconoce el Dique Compensador como Área Natural Protegida Municipal."},
+{year:"2018",title:"53 aves documentadas",text:"Un procedimiento en una chacra local registra aves silvestres mantenidas en cautiverio."},
+{year:"2022",title:"Educación y río",text:"Una actividad educativa de siembra de alevinos en el Río Neuquén incorpora observaciones sobre agua, flora y fauna."},
+{year:"2023",title:"15 cisnes",text:"La Comisión Asesora de Fauna Silvestre registra 15 cisnes de cuello negro en Chañar."},
+{year:"AHORA",title:"OCARINA WILD",text:"Comienza la construcción de un archivo natural digital local, con evidencia, memoria e investigación pendiente separadas."}
+];
+function renderV04(tab="registros"){
+document.querySelectorAll(".museum-tab").forEach(x=>x.classList.toggle("active",x.dataset.museum===tab));
+const panel=document.querySelector("#museumPanel");
+if(tab==="registros"){panel.innerHTML=`<div class="record-stream"><div class="stream-main"><span class="v04-number">REGISTRO DESTACADO · R-2023-001</span><div class="big-species">Cisne de<br>cuello negro.</div><p>Una ficha puede crecer con cada nuevo dato. Fecha, lugar, cantidad, fuente y relaciones quedan unidos.</p><div class="v04-meta"><span>15 INDIVIDUOS</span><span>21.03.2023</span><span>CHAÑAR</span></div></div><div class="stream-side">${v04Data.registros.map((x,i)=>`<article class="mini"><b>0${i+1} · ${x.kicker}</b><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div></div>`}
+if(tab==="fotos"){panel.innerHTML=`<div class="photo-wall">${["Río Neuquén","Cisne · registro","Dique Compensador","Chacras","Vegetación ribereña","Paisaje de Chañar","Aves","Canales"].map((x,i)=>`<div class="photo-placeholder"><span>${esc(x)} · FOTOTECA POR CONSTRUIR</span></div>`).join("")}</div><div class="archive-map-note">No se utilizan imágenes genéricas para simular patrimonio local. La fototeca se activará cuando existan fotografías reales incorporadas al archivo.</div>`}
+if(tab==="audio"){panel.innerHTML=`<div class="audio-card">${v04Data.audio.map((x,i)=>`<div class="audio-row"><button class="audio-play" aria-label="Audio pendiente">▶</button><div><strong>${esc(x.title)}</strong><small>${esc(x.meta.join(" · "))}</small></div><div class="audio-wave"></div></div>`).join("")}</div><div class="archive-map-note">Los botones están preparados para recibir archivos de audio reales. No se reproduce contenido inexistente.</div>`}
+if(tab==="cronologia"){panel.innerHTML=`<div class="timeline">${timeline.map(x=>`<article class="timeline-item"><span class="timeline-year">${x.year}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></article>`).join("")}</div>`}
+if(tab==="historias"){panel.innerHTML=`<div class="v04-grid">${v04Data.historias.map(x=>`<article class="story-card v04-card wide"><div><span class="story-tag">${esc(x.meta.join(" · "))}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div><span class="v04-number">${x.id} · COLECCIÓN NARRATIVA</span></article>`).join("")}</div>`}
+if(tab==="colecciones"){panel.innerHTML=`<div class="v04-grid">${v04Data.colecciones.map(x=>`<article class="collection-card v04-card"><div><span class="collection-count">${esc(x.count)}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div><span class="v04-number">ABRIR COLECCIÓN →</span></article>`).join("")}</div>`}
+}
+document.querySelectorAll(".museum-tab").forEach(b=>b.onclick=()=>renderV04(b.dataset.museum));
+renderV04();
+document.querySelectorAll("[data-filter-entry='ambientes']").forEach(b=>b.onclick=()=>document.querySelector("#ambientes").scrollIntoView({behavior:"smooth"}));
