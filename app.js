@@ -41,7 +41,7 @@ function hydrateVisuals(){
     const src=await resolveSpeciesImage(x);if(!src)return;
     img.src=src;
     const labelEl=img.parentElement?.querySelector(".visual-label");
-    if(labelEl)labelEl.textContent=VISUALS[x.id]||x.image?"OCARINA WILD · REGISTRO VISUAL":"OCARINA WILD · REPRESENTACIÓN DE ESPECIE";
+    if(labelEl)labelEl.textContent="OCARINA WILD · REPRESENTACIÓN DE ESPECIE · NO PRUEBA PRESENCIA";
   });
 }
 
