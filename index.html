@@ -1,22 +1,73 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1712"><title>OCARINA WILD · San Patricio del Chañar</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="wild-v3.css"></head><body>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07110d">
+<meta name="description" content="OCARINA WILD · archivo natural vivo de San Patricio del Chañar.">
+<title>OCARINA WILD · Chañar Vivo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="wild-v3.css">
+</head>
+<body>
 <main class="home">
-  <div class="photo photo-a"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mimus_saturninus_(6223460929).jpg" alt="Calandria grande"></div>
-  <div class="photo photo-b"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Colaptes_melanochloros_melanolaimus,_CABA.jpg" alt="Carpintero real"></div>
-  <div class="photo photo-c"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tachycineta_leucopyga_1894.jpg" alt="Golondrina patagónica"></div>
+  <div class="home-photo home-photo-main">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/San_Patricio_del_Chañar.png" alt="Ingreso a San Patricio del Chañar">
+    <span class="photo-credit">San Patricio del Chañar · archivo visual</span>
+  </div>
+  <div class="home-photo home-photo-bird">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mimus_saturninus_(6223460929).jpg" alt="Calandria grande">
+    <span class="photo-caption">CALANDRIA GRANDE · Mimus saturninus</span>
+  </div>
+  <div class="home-photo home-photo-tree">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Geoffroea_decorticans.JPG" alt="Chañar, Geoffroea decorticans">
+    <span class="photo-caption">CHAÑAR · Geoffroea decorticans</span>
+  </div>
+  <div class="home-photo home-photo-flight">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tachycineta_leucopyga_1894.jpg" alt="Golondrina patagónica">
+    <span class="photo-caption">GOLONDRINA PATAGÓNICA</span>
+  </div>
+  <div class="grain"></div>
   <div class="veil"></div>
-  <header><a class="logo" href="/">OCARINA <i>WILD</i></a><span>01 · SAN PATRICIO DEL CHAÑAR</span></header>
-  <section class="center">
-    <p class="kicker">FAUNA · FLORA · TERRITORIO</p>
-    <h1>CHAÑAR<br><i>VIVO.</i></h1>
-    <p class="intro">Una forma simple de entrar a la naturaleza de San Patricio del Chañar.</p>
-    <div class="doors">
-      <button data-open="fauna"><b>01</b><strong>FAUNA</strong><small>aves · peces · animales</small></button>
-      <button data-open="flora"><b>02</b><strong>FLORA</strong><small>plantas · árboles · vegetación</small></button>
-      <button data-open="territorio"><b>03</b><strong>TERRITORIO</strong><small>río · chacras · monte · dique</small></button>
-      <button data-open="archivo"><b>04</b><strong>ARCHIVO</strong><small>fuentes · evidencia · método</small></button>
+
+  <header class="home-header">
+    <a class="logo" href="/">OCARINA <i>WILD</i></a>
+    <div class="header-meta"><span>ARCHIVO NATURAL VIVO</span><span>01 / 2026</span></div>
+  </header>
+
+  <section class="home-center">
+    <div class="home-kicker"><span></span> SAN PATRICIO DEL CHAÑAR · NEUQUÉN</div>
+    <h1>CHAÑAR<br><em>VIVO.</em></h1>
+    <p class="home-intro">Fauna, flora y territorio observados con una regla simple: <strong>mirar antes de nombrar.</strong></p>
+    <div class="door-grid">
+      <button data-open="fauna" class="door door-large"><span>01</span><strong>FAUNA</strong><small>aves · peces · mamíferos · rastros</small><i>explorar ↗</i></button>
+      <button data-open="flora" class="door"><span>02</span><strong>FLORA</strong><small>árboles · arbustos · ribera · monte</small><i>explorar ↗</i></button>
+      <button data-open="territorio" class="door"><span>03</span><strong>TERRITORIO</strong><small>río · dique · chacras · monte</small><i>entrar ↗</i></button>
+      <button data-open="archivo" class="door"><span>04</span><strong>ARCHIVO</strong><small>fuentes · evidencia · cuaderno</small><i>abrir ↗</i></button>
     </div>
   </section>
-  <footer><span>Ocarina Producciones</span><span>NEUQUÉN · ARGENTINA</span></footer>
+
+  <aside class="home-side-note">
+    <div class="side-number">98</div>
+    <div><b>LÍNEAS</b><span>de investigación cargadas</span></div>
+    <div class="side-rule"></div>
+    <div class="side-quote">Fuente ≠ fotografía<br>≠ presencia local.</div>
+  </aside>
+
+  <div class="home-bottom">
+    <span>OCARINA PRODUCCIONES</span>
+    <span>FAUNA · FLORA · TERRITORIO</span>
+    <span>DESLIZÁ / EXPLORÁ</span>
+  </div>
 </main>
-<dialog id="panel"><button class="x" id="close" aria-label="Cerrar">×</button><div id="content"></div></dialog>
-<script type="module" src="app.js"></script><script type="module" src="wild-v3.js"></script></body></html>
+
+<dialog id="panel">
+  <button class="x" id="close" aria-label="Cerrar">×</button>
+  <div id="content"></div>
+</dialog>
+<script type="module" src="app.js"></script>
+<script type="module" src="wild-v3.js"></script>
+</body>
+</html>
