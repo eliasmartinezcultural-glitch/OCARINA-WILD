@@ -211,6 +211,7 @@ function archive(){
 function surprise(){
   const pool=SPECIES.filter(x=>["documentada","local","prioridad"].includes(x.status));
   const x=pool[Math.floor(Math.random()*pool.length)];
+  state.door=x.type;
   detail(x.id);
 }
 function mission(name){
