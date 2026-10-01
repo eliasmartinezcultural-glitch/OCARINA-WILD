@@ -35,3 +35,6 @@ A partir de esta versión, las ampliaciones se incorporan como capas aditivas. N
 ## Próxima fase: PL2
 
 PL2 puede profundizar, sin alterar PL1, en: inventario fotográfico local, mapa de ambientes sin coordenadas sensibles, cronología de observaciones, temporadas, sonidos, fichas botánicas, fuentes institucionales, taxonomía, licencia de medios, exportación Darwin Core y panel de curaduría.
+
+
+<!-- PL1+DATA layer tracked separately; core remains frozen. -->
