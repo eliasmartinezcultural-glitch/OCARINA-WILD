@@ -13,3 +13,12 @@
 .w320-orbit-visual .orbit-node{cursor:pointer}.w320-orbit-visual .orbit-node.active{border-color:var(--accent);background:#18352b}
 .w320-source{display:block;width:100%;text-align:left;color:inherit;cursor:pointer}.w320-source em{display:block;margin-top:18px;font-style:normal;font-size:9px;letter-spacing:.14em;color:var(--accent)}
 @media(max-width:560px){.w320-northbar{margin:0 -14px}.w320-northbar b{display:none}.w320-modebar{top:39px;justify-content:flex-start;overflow-x:auto;white-space:nowrap}.w320-modebar button{flex:0 0 auto}}
+
+/* REPARADOR 3.20 · MODOS + DOSIS DE INFORMACIÓN */
+.wild320 [hidden]{display:none!important}
+.w320-modebar{position:sticky;top:43px;z-index:20;display:flex;gap:7px;justify-content:center;padding:12px 0;background:rgba(7,17,14,.96);border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.w320-modebar::-webkit-scrollbar{display:none}.w320-modebar button{flex:0 0 auto;border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--paper);padding:10px 14px;border-radius:999px;font:800 9px/1 Arial,sans-serif;letter-spacing:.13em;cursor:pointer}.w320-modebar button.active{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.w320-source{cursor:pointer}.w320-source:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.w320-source:hover{border-color:rgba(185,232,199,.5)}
+.w320-source-dialog{width:min(720px,calc(100vw - 28px));max-height:min(78vh,720px);border:1px solid rgba(185,232,199,.28);border-radius:28px;padding:0;background:#0b1713;color:var(--paper);box-shadow:0 40px 120px rgba(0,0,0,.55)}
+.w320-source-dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(7px)}.w320-dialog-body{padding:clamp(26px,5vw,56px)}.w320-dialog-body>span{font-size:9px;letter-spacing:.18em;color:var(--accent)}.w320-dialog-body h3{font-size:clamp(30px,5vw,54px);line-height:.95;letter-spacing:-.04em;margin:16px 0}.w320-dialog-body>p{font-size:17px;line-height:1.65;color:var(--muted)}.w320-dialog-credit{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;margin:22px 0;font-size:10px;letter-spacing:.1em}.w320-dialog-note{font-size:13px!important}.w320-dialog-close{position:absolute;right:15px;top:15px;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:#13241e;color:var(--paper);font-size:25px;cursor:pointer}
+@media(max-width:560px){.w320-modebar{top:39px;justify-content:flex-start}.w320-northbar{margin:0 -14px}.w320-source-dialog{border-radius:22px}.w320-dialog-body{padding:28px 22px}}
