@@ -1,4 +1,5 @@
 import { deepSources,recordSchema,evidenceLevels,deepRules,PL1_DEEP_VERSION } from "./data/pl1-deep.js";
+if(!document.querySelector('link[data-ow-deep]')){const link=document.createElement("link");link.rel="stylesheet";link.href="./pl1-deep.css";link.dataset.owDeep="";document.head.appendChild(link);}
 const DQ=(s,r=document)=>r.querySelector(s);
 const DE=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function buildDeep(){
