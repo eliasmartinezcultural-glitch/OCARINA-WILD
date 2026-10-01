@@ -1,0 +1,26 @@
+export const WILD_320_VERSION="3.20-ATLAS.1";
+export const wild320Sources=[
+{id:"local-municipal-quehacer",title:"Municipalidad de San Patricio del Chañar · ¿Qué hacer?",kind:"FUENTE LOCAL",scale:"CHAÑAR",date:"consulta 2026",credit:"Municipalidad de San Patricio del Chañar",summary:"La municipalidad informa más de 25 especies de aves registradas en la zona y menciona calandria grande, carpintero real y golondrina patagónica. También presenta al Río Neuquén como espacio de pesca de pejerreyes, percas y truchas.",status:"INTEGRADA"},
+{id:"local-municipal-nuestra",title:"Municipalidad de San Patricio del Chañar · Nuestra ciudad",kind:"FUENTE LOCAL",scale:"CHAÑAR",date:"consulta 2026",credit:"Municipalidad de San Patricio del Chañar",summary:"Documenta el Dique Compensador como Área Natural Protegida Municipal desde octubre de 2006 y destaca su flora y fauna autóctonas, principalmente aves.",status:"INTEGRADA"},
+{id:"ambiente-alevinos",title:"Secretaría de Ambiente y Recursos Naturales de Neuquén · Siembra educativa",kind:"FUENTE OFICIAL",scale:"CHAÑAR · RÍO",date:"24/10/2022",credit:"Secretaría de Ambiente y Recursos Naturales de Neuquén",summary:"Registra una liberación educativa de 1000 alevinos en el Río Neuquén. OCARINA WILD conserva el hecho como evento y no lo convierte automáticamente en evidencia de población residente.",status:"INTEGRADA"},
+{id:"ambiente-educacion-2026",title:"Secretaría de Ambiente y Recursos Naturales · Promesa ambiental",kind:"FUENTE OFICIAL",scale:"CHAÑAR",date:"18/06/2026",credit:"Secretaría de Ambiente y Recursos Naturales de Neuquén",summary:"Documenta una actividad de educación ambiental con niñas, niños, docentes y familias de San Patricio del Chañar centrada en agua, flora, fauna y hábitos sustentables.",status:"INTEGRADA"},
+{id:"gbif-quality",title:"GBIF · requisitos de calidad de datos",kind:"ESTÁNDAR INTERNACIONAL",scale:"GLOBAL",date:"referencia técnica",credit:"Global Biodiversity Information Facility (GBIF)",summary:"Orienta la estructura de registros de ocurrencia: identificador, nombre científico, fecha, ubicación, rango taxonómico y metadatos de calidad, licencia y procedencia.",status:"MARCO"},
+{id:"wcag-22",title:"W3C · WCAG 2.2",kind:"ESTÁNDAR DE ACCESIBILIDAD",scale:"GLOBAL",date:"referencia técnica",credit:"World Wide Web Consortium (W3C)",summary:"Marco para construir una experiencia accesible mediante percepción, operabilidad, comprensión y robustez. Se adopta como criterio de interfaz de OCARINA WILD.",status:"MARCO"}];
+export const wild320Principles=[
+{n:"01",title:"TODO EN EL MISMO LUGAR",text:"La persona conoce, explora, compara y entiende dentro de OCARINA WILD. Las fuentes aportan autoridad y crédito; no convierten la experiencia en una webgrafía."},
+{n:"02",title:"FUENTE ≠ SALIDA",text:"Una fuente externa puede respaldar un dato, pero la experiencia pública debe explicar el dato dentro del proyecto."},
+{n:"03",title:"EVIDENCIA ANTES QUE AFIRMACIÓN",text:"Documentado, referencia y pendiente permanecen diferenciados."},
+{n:"04",title:"PROFUNDIDAD PROGRESIVA",text:"Una mirada rápida abre una ficha; una ficha abre evidencia; la evidencia abre contexto; el contexto abre metodología."},
+{n:"05",title:"DISEÑO MULTIDISPOSITIVO REAL",text:"La composición cambia de forma, no de función: teléfono, tablet, notebook y pantalla grande reciben la misma historia."},
+{n:"06",title:"NO DAÑO",text:"La información sensible puede generalizarse u ocultarse. El atractivo visual nunca justifica exponer una ubicación delicada."},
+{n:"07",title:"CRÉDITO VISIBLE",text:"Autor, institución, procedencia, fecha y condición de uso deben acompañar cada recurso cuando corresponda."},
+{n:"08",title:"EL SISTEMA NO SE VE, SE SIENTE",text:"La complejidad técnica trabaja detrás: estados, relaciones, validaciones, fuentes, búsqueda y versionado. La interfaz conserva pocas decisiones."}];
+export const wild320Territories=[
+{id:"rio",name:"RÍO NEUQUÉN",subtitle:"agua · ribera · movimiento",asset:"./media/territorio-rio.svg",text:"El río conecta agua, ribera, aves, peces, personas y memoria. No es una lista: es un sistema de relaciones."},
+{id:"chacras",name:"CHACRAS",subtitle:"riego · arbolado · producción",asset:"./media/territorio-chacras.svg",text:"Las chacras mezclan producción, arbolado, canales, bordes y vida cotidiana. El archivo debe aprender a mirar esos bordes."},
+{id:"dique",name:"DIQUE COMPENSADOR",subtitle:"agua · protección · aves",asset:"./media/territorio-dique.svg",text:"Ambiente reconocido por la Municipalidad como Área Natural Protegida Municipal desde 2006."},
+{id:"monte",name:"MONTE",subtitle:"viento · suelo · adaptación",asset:"./media/territorio-monte.svg",text:"Las referencias regionales ayudan a investigar, pero nunca sustituyen una evidencia local independiente."}];
+export const wild320Evidence=[
+{id:"documentado",label:"DOCUMENTADO",short:"Hay una fuente local o evento concreto que permite afirmar algo acotado.",tone:"verified"},
+{id:"referencia",label:"REFERENCIA",short:"Sirve para comparar, orientar o identificar; no demuestra presencia local.",tone:"reference"},
+{id:"pendiente",label:"PENDIENTE",short:"Existe una pregunta abierta que todavía necesita revisión o evidencia.",tone:"pending"}];
