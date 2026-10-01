@@ -105,3 +105,11 @@
  .door i{font-size:8px}
  .home-bottom span:nth-child(2){display:none}
 }
+
+.image-fallback{background:
+ radial-gradient(circle at 62% 35%,#355242 0 2px,transparent 3px),
+ linear-gradient(145deg,#213a2b,#09130f 62%,#6b5a2e)}
+.image-fallback:before{content:"CHAÑAR · ARCHIVO VISUAL";position:absolute;z-index:4;left:18px;bottom:18px;font:800 8px Manrope;letter-spacing:.18em;color:#d8c47f}
+.home-photo-main.image-fallback:after{background:
+ linear-gradient(90deg,#06100df2,#06100d80),
+ repeating-linear-gradient(135deg,transparent 0 34px,#ffffff04 35px 36px)}
