@@ -20,3 +20,44 @@ body.ow-editorial{background:var(--ow-ink)}
 @media(max-width:850px){.ow-nav .nav-links{display:none}.ow-menu{display:block}.ow-manifesto,.ow-field{grid-template-columns:1fr}.manifesto-image{min-height:55vh}.ow-index{grid-template-columns:1fr 1fr}.ow-index article:nth-child(2n){border-right:0}.ow-chapters{grid-template-columns:1fr 1fr}.ow-chapter,.ow-chapter:first-child{grid-column:auto;min-height:340px}.ow-chapter:first-child{grid-column:1/-1;min-height:460px}.ow-principles{grid-template-columns:1fr}.ow-footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.ow-nav{height:56px}.wild-section{padding:68px 16px}.ow-manifesto{min-height:auto}.manifesto-image{min-height:380px}.ow-index article{padding:18px 12px}.ow-index b{font-size:30px}.ow-chapters{grid-template-columns:1fr}.ow-chapter,.ow-chapter:first-child{grid-column:auto;min-height:320px}.ow-chapter:first-child{min-height:410px}.ow-footer-grid{grid-template-columns:1fr}.ow-footer-bottom{display:block;line-height:2}}
 @media(prefers-reduced-motion:reduce){.ow-reveal,.ow-chapter img{transition:none}.ow-reveal{opacity:1;transform:none}}
+
+/* HERO 5.1 · portada con presencia */
+.home{min-height:100svh!important;height:100svh!important;position:relative;isolation:isolate;overflow:hidden}
+.home:after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(90deg,#06100dc9 0%,#06100d72 38%,#06100d1c 72%,#06100d5c),linear-gradient(0deg,#06100dbd 0%,transparent 42%,#06100d38 100%)}
+.home-photo-main img{transform:scale(1.04);filter:saturate(.72) contrast(1.06)}
+.home-center{z-index:8!important;width:min(1180px,calc(100% - 48px))!important;top:52%!important;transform:translateY(-50%)!important}
+.home-kicker{font-size:11px!important;letter-spacing:.26em!important;margin-bottom:24px!important}
+.home-kicker span{width:52px!important}
+.home-center h1{font-size:clamp(76px,13vw,205px)!important;line-height:.76!important;letter-spacing:-.075em!important;text-shadow:0 10px 50px #0008;margin:0 0 30px!important}
+.home-center h1 em{font-size:.9em!important}
+.home-intro{font-size:clamp(15px,1.5vw,21px)!important;line-height:1.5!important;max-width:620px!important;margin-bottom:32px!important;color:#e6ebe6!important}
+.door-grid{width:min(950px,100%)!important;grid-template-columns:1.35fr 1fr 1fr 1fr!important;gap:5px!important}
+.door{min-height:116px!important;padding:18px 20px!important;background:#07110d9e!important;border:1px solid #ffffff2e!important;backdrop-filter:blur(10px)!important;transition:.35s!important}
+.door-large{min-height:160px!important}
+.door strong{font-size:clamp(22px,2.7vw,38px)!important;letter-spacing:-.05em!important}
+.door small{font-size:9px!important;line-height:1.4!important;color:#c2cdc5!important}
+.door i{font-size:9px!important}
+.door:hover{background:#d6c27ce8!important;color:#07110d!important;transform:translateY(-6px)!important;box-shadow:0 18px 50px #0007!important}
+.door:hover small,.door:hover i{color:#07110d!important}
+.home-side-note{z-index:9!important;right:clamp(18px,3vw,50px)!important;bottom:105px!important}
+.side-number{font-size:clamp(60px,7vw,105px)!important}
+.home-header{z-index:10!important}
+.home-bottom{z-index:10!important}
+.home-photo-bird{z-index:5!important;opacity:.82!important}.home-photo-tree{z-index:5!important;opacity:.48!important}.home-photo-flight{z-index:5!important;opacity:.55!important}
+.photo-caption,.photo-credit{z-index:7!important}
+@media(max-width:850px){
+ .home-center{width:calc(100% - 30px)!important;top:50%!important}
+ .home-center h1{font-size:clamp(68px,19vw,130px)!important}
+ .door-grid{grid-template-columns:1fr 1fr!important}.door-large{grid-column:1/-1;min-height:135px!important}.door{min-height:100px!important}
+ .home-side-note{display:none}
+}
+@media(max-width:520px){
+ .home{min-height:100svh!important;height:100svh!important}
+ .home-center{top:49%!important}
+ .home-center h1{font-size:clamp(62px,21vw,100px)!important;margin-bottom:22px!important}
+ .home-intro{font-size:14px!important;max-width:330px!important;margin-bottom:18px!important}
+ .home-kicker{font-size:8px!important;letter-spacing:.18em!important;margin-bottom:16px!important}
+ .door-grid{gap:4px!important}.door{min-height:82px!important;padding:12px!important}.door-large{min-height:104px!important}
+ .door span{font-size:8px!important}.door strong{font-size:20px!important}.door small{display:none}.door i{font-size:7px!important}
+ .home-photo-bird{opacity:.5!important}.home-photo-tree{opacity:.3!important}.home-photo-flight{opacity:.35!important}
+}
