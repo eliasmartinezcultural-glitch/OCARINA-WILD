@@ -38,11 +38,32 @@ function init(){
           <b>100%<small>INTERACCIÓN</small></b>
         </div>
       </div>
-      <div class="w321-visual" role="img" aria-label="Ilustración original del territorio">
+      <div class="w321-visual" role="img" aria-label="Escena visual del territorio">
         <div class="w321-sun"></div><div class="w321-ridge"></div><div class="w321-water"></div>
         <span>RÍO · CHACRAS · DIQUE · MONTE</span>
       </div>
     </div>
+
+    <section class="w321-gallery" id="galeria">
+      <div class="w321-gallery-intro">
+        <span>OCARINA WILD · GALERÍA DE FAUNA</span>
+        <h3>Mirar primero.<br><i>Entender después.</i></h3>
+        <p>Retratos y escenas de fauna para entrar al archivo por los ojos. Las imágenes de referencia están identificadas: no se presentan como fotografías tomadas en Chañar.</p>
+      </div>
+      <div class="w321-photo-wall">
+        ${records.filter(r=>r.type==="fauna" && r.image).slice(0,8).map((r,i)=>`
+          <button class="w321-animal-photo photo-${i+1}" type="button" data-record-index="${records.indexOf(r)}">
+            <img src="${r.image}" alt="${esc(r.name)}" loading="${i<3?"eager":"lazy"}">
+            <span class="w321-photo-shade"></span>
+            <div class="w321-photo-caption"><small>FOTO DE REFERENCIA · WIKIMEDIA COMMONS</small><b>${esc(r.name)}</b><em>${esc(r.latin)}</em></div>
+          </button>`).join("")}
+      </div>
+      <div class="w321-gallery-note">
+        <b>UNA REGLA VISUAL</b>
+        <span>La fotografía atrae. El pie de foto contextualiza. La evidencia decide.</span>
+        <button type="button" data-open="sources">VER CRÉDITOS Y FUENTES ↗</button>
+      </div>
+    </section>
 
     <div class="w321-find" id="descubrir">
       <label>
@@ -235,6 +256,12 @@ function init(){
       <p>${esc(t.text)}</p>
       <div class="w321-deep-note"><b>${esc(t.subtitle)}</b><span>Este ambiente es una puerta de relación. Las especies y fuentes aparecen cuando existen registros conectados.</span></div>
     `);
+  }));
+
+  root.querySelectorAll("[data-record-index]").forEach(b => b.addEventListener("click", () => {
+    const index = Number(b.dataset.recordIndex);
+    const r = records[index];
+    if(r) openRecord(r);
   }));
 
   root.querySelectorAll("[data-evidence]").forEach(b => b.addEventListener("click", () => {
