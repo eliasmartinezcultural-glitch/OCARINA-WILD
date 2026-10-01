@@ -1,95 +1,177 @@
-# OCARINA WILD · CHAÑAR VIVO · V2
+# OCARINA WILD · V8
 
-OCARINA WILD es un archivo digital local sobre fauna, flora y ambientes de San Patricio del Chañar, Neuquén.
+**El Chañar que vive.**
 
-## Arquitectura
+OCARINA WILD es una experiencia visual de descubrimiento natural situada en **San Patricio del Chañar, Neuquén**. La portada es deliberadamente corta: cuatro puertas llevan a toda la profundidad.
 
-**CENTRAL → PUERTA → FILTRO → CATÁLOGO → EXPEDIENTE → EVIDENCIA → CUADERNO**
+## Concepto
 
-La portada sigue siendo breve. La profundidad vive detrás de las puertas.
+**CENTRAL → PUERTA → FICHA → EVIDENCIA → SIGUIENTE DESCUBRIMIENTO**
 
-## Qué cambió en V2
+La regla de diseño es:
 
-- Base de investigación separada en `research-data.js`.
-- Registro de fuentes institucionales y científicas.
-- Distinción editorial entre **mención local, documentada, marco regional y candidato**.
-- Fauna: aves, peces, mamíferos y reptiles.
-- Flora: árboles, arbustos y vegetación de ribera.
-- Territorio: Río Neuquén, Dique Compensador El Chañar, chacras/red de riego y Monte.
-- Expediente profundo por especie/ambiente.
-- Fuente enlazada dentro de cada expediente.
-- Búsqueda por nombre común, científico, ambiente y descripción.
-- Filtros por ambiente y grupo.
-- Favoritos locales.
-- Cuaderno de campo sin backend.
-- Observaciones almacenadas localmente en el dispositivo.
-- Protección editorial: no publicar ubicaciones sensibles sin contexto.
-- Diseño responsive.
+> **Mucho sistema detrás. Muy poco ruido delante.**
 
-## Matriz de biodiversidad · V3
+La persona no entra a leer una enciclopedia. Entra a mirar, elegir una puerta, abrir una ficha y seguir descubriendo.
 
-La matriz inicial supera las **90 líneas de investigación**. La fuente principal para aves es el informe PDTS CIN-CONICET/UNCo, cuyo anexo reúne 61 especies para el área de estudio y señala que la información combina distintos sitios y épocas; por eso esas fichas se etiquetan como **Área de estudio**, no como presencia local confirmada. citeturn3view0turn3view1
+## Las cuatro puertas
 
-Además se incorporaron registros puntuales de alto valor documental para el Dique Compensador El Chañar, como el águila pescadora y el atajacaminos tijera, y una capa regional de mamíferos y flora del Monte. citeturn2search0turn2search1turn4search0turn5search20
+### 01 · FAUNA
+Fichas visuales de aves, peces, mamíferos y reptiles.
 
-## Investigación incorporada
+### 02 · FLORA
+Fichas visuales de árboles, arbustos y vegetación ribereña/productiva.
 
-La primera capa utiliza, entre otras, estas fuentes:
+### 03 · TERRITORIO
+Cuatro ambientes principales:
+- Río Neuquén
+- Dique Compensador El Chañar
+- Chacras y red de riego
+- Monte
 
-1. Municipalidad de San Patricio del Chañar: avistaje de aves, pesca, Río Neuquén y actividades de naturaleza.
-2. Municipalidad: Dique Compensador El Chañar como Área Natural Protegida Municipal y descripción territorial.
-3. Sistema de Información de Biodiversidad de Parques Nacionales (SIB).
-4. Registro SIB del atajacaminos ñañarca, con una cita de 2017 en el sector final de la presa lateral del Dique El Chañar.
-5. SIB para flora nativa del Monte y especies como chañar, jarillas, zampa y piquillín.
-6. Investigación territorial vinculada a UNCo/CONICET que identifica al Dique Compensador El Chañar como sitio de especial interés para observación de aves por la diversidad de ambientes.
-7. Documentación ambiental de Neuquén sobre la provincia fitogeográfica del Monte.
-8. Reglamento de Pesca Deportiva Continental Patagónico para la capa de peces y normativa.
+Además incluye pequeñas misiones de observación:
+Río · Dique · Chacras · Monte · Cielo.
+
+### 04 · ARCHIVO
+La profundidad documental:
+- matriz de evidencia;
+- fuentes;
+- historia local;
+- conservación;
+- metodología;
+- alcance;
+- cuaderno de campo.
+
+## Motor de descubrimiento
+
+Cada ficha sigue el mismo recorrido:
+
+1. **MIRAR** — fotografía/representación visual.
+2. **NOMBRAR** — nombre común + científico.
+3. **UBICAR** — ambiente y zona.
+4. **ENTENDER** — resumen, hábitat y temporada.
+5. **CONTRASTAR** — certeza y fuente.
+6. **GUARDAR** — favorito o registro propio.
+7. **SEGUIR** — fichas relacionadas o sorpresa.
+
+No hay una página gigantesca con toda la información visible. La profundidad aparece sólo cuando la persona la pide.
 
 ## Regla científica/editorial
 
-**Fuente ≠ fotografía ≠ presencia local.**
+**FUENTE ≠ FOTOGRAFÍA ≠ PRESENCIA LOCAL**
 
-Una fotografía de Wikimedia, una guía regional o una mención general puede ayudar a reconocer una especie. No se convierte automáticamente en evidencia de presencia en San Patricio del Chañar.
+Una fotografía de Wikimedia puede servir para reconocer una especie. No demuestra que esa fotografía haya sido tomada en Chañar.
 
-### Estados
+Los estados se mantienen separados:
 
-- **Mención local:** existe una referencia institucional/local, pero Ocarina todavía no realizó su propio registro.
-- **Documentada:** existe una fuente con ubicación local suficientemente específica.
-- **Marco regional:** la especie pertenece al contexto biogeográfico regional, pero falta confirmar presencia puntual.
-- **Candidato:** línea de investigación propuesta; no debe presentarse como registro confirmado.
-- **Prioridad local:** especie/elemento especialmente relevante para el archivo de Chañar.
+- **Documentada:** fuente con vínculo local suficientemente específico.
+- **Mención local:** referencia institucional/local que todavía requiere registro propio o mayor precisión.
+- **Prioridad local:** elemento especialmente relevante para investigar/documentar.
+- **Área de estudio:** aparece en el estudio Añelo–Dique/área amplia; no equivale automáticamente a presencia puntual en Chañar.
+- **Regional:** pertenece al contexto biogeográfico regional; presencia local pendiente.
+- **Candidato:** línea de investigación, no registro confirmado.
 
-## Cuaderno de campo
+## Información natural incorporada
 
-Las observaciones se guardan con:
+La base conserva la investigación acumulada, incluyendo:
+
+- aves;
+- peces;
+- mamíferos;
+- reptiles;
+- árboles;
+- arbustos;
+- vegetación de ribera;
+- especies del Monte;
+- Río Neuquén;
+- Dique Compensador El Chañar;
+- chacras y red de riego;
+- Monte.
+
+Entre los registros locales/documentales incorporados se encuentran:
+- **Cisne cuello negro** — registro publicado en la orilla del Dique Compensador El Chañar, 14/02/2016.
+- **Sobrepuesto común** — registro publicado en el Dique, 14/02/2016.
+- **Golondrina barranquera** — registro publicado en el Dique, 14/02/2016.
+- **Atajacaminos ñañarca** — cita SIB de 2017 en el sector final de la presa lateral.
+- **Águila pescadora** — registro científico en Dique El Chañar.
+- **Atajacaminos tijera** — registros y reproducción documentados en Dique El Chañar.
+- **Chañar (Geoffroea decorticans)** — especie nativa y emblemática, prioritaria para el archivo.
+
+También se conserva la capa de especies del estudio **PDTS CIN-CONICET/UNCo**, cuya información reúne distintos sitios y épocas del área de estudio. Por eso esas líneas no se convierten automáticamente en presencia local.
+
+La **trucha arco iris** permanece correctamente como **regional** hasta contar con evidencia puntual suficiente.
+
+## Territorio
+
+El archivo reconoce el paisaje como parte de la investigación:
+
+- **Río Neuquén:** corredor de agua, ribera y vida.
+- **Dique Compensador El Chañar:** declarado Área Natural Protegida Municipal en octubre de 2006; el estudio UNCo/CONICET destaca su combinación de agua profunda y baja, juncales, vegetación de ribera, monte y área rural.
+- **Chacras + riego:** cultivos, canales, arbolado y bordes productivos.
+- **Monte:** arbustales xerófilos, suelo, refugios y estacionalidad.
+
+## Historia incorporada
+
+La cronología documental conserva:
+
+- **1881–1883:** referencias históricas al Fortín/Mangrullo Chañar y rastrilladas.
+- **1913:** mensura de la colonia Tratayen y reconstrucción de su desaparición tras una gran crecida.
+- **1968–1971:** transformación productiva y obras de riego.
+- **21 de mayo de 1973:** fecha reconocida oficialmente como fundación de San Patricio del Chañar.
+- **2006:** declaración del Dique Compensador como Área Natural Protegida Municipal.
+
+## Marco de conservación
+
+El archivo contextualiza:
+
+- Convenio sobre la Diversidad Biológica (CBD);
+- Marco Mundial de Biodiversidad Kunming–Montreal 2030;
+- Convención Ramsar;
+- Convención de Bonn/CMS;
+- CITES;
+- Lista Roja de la UICN;
+- Convención de Patrimonio Mundial de UNESCO;
+- Ley argentina 25.675 de Ambiente;
+- Ley 22.421 de Fauna;
+- Ley 26.331 de Bosques Nativos.
+
+Estos marcos son contexto documental y no convierten por sí solos una ficha en evidencia local.
+
+## Cuaderno
+
+Las observaciones se guardan localmente en el dispositivo:
 
 - qué viste;
 - dónde;
 - fecha;
-- notas;
-- carácter privado.
+- evidencia;
+- cantidad;
+- confianza;
+- notas.
 
-No existe backend ni publicación automática.
+No existe publicación automática ni backend.
 
-## Próxima fase
+## Principio de conservación
 
-La siguiente evolución debería concentrarse en **evidencia local real**, no en sumar cientos de nombres:
+No perseguir, capturar ni manipular fauna. No revelar ubicaciones sensibles sin contexto. Las observaciones propias se mantienen privadas por defecto.
 
-1. Fotografías propias de Chañar.
-2. Audio de aves y ambientes.
-3. Fechas y estaciones.
-4. Identificación taxonómica revisada.
-5. Registros de campo.
-6. Galerías por ambiente.
-7. Cartografía gradual.
-8. Historial de cambios y fuentes.
-9. Colaboración con escuelas, observadores y especialistas.
-10. Fichas de relaciones ecológicas: alimento, refugio, agua, polinización, dispersión y estacionalidad.
+## Arquitectura técnica V8
 
-## Principio
+La interfaz fue reducida a un único motor:
 
-**Mucho sistema detrás. Poco ruido delante.**
+- `index.html` — shell mínimo;
+- `app.js` — motor de estado, navegación, fichas, archivo, cuaderno y descubrimiento;
+- `styles.css` — único sistema visual;
+- `research-data.js` — fuente de datos, especies, ambientes y fuentes.
 
-OCARINA WILD no busca aparentar una enciclopedia terminada. Busca convertirse, con tiempo y evidencia, en una biblioteca natural viva de San Patricio del Chañar.
+Las capas visuales antiguas se mantienen en el repositorio como historial, pero **ya no participan en la interfaz V8**.
 
-Ocarina Producciones · San Patricio del Chañar · Neuquén · Argentina.
+## Evolución
+
+El siguiente crecimiento debe sumar **evidencia local real**, no simplemente nombres:
+
+fotografías propias · audio · fechas · estaciones · observaciones · identificación revisada · relaciones ecológicas · cartografía gradual · colaboración local.
+
+**OCARINA WILD no pretende aparentar una enciclopedia terminada. Construye, con tiempo y evidencia, una biblioteca natural viva de San Patricio del Chañar.**
+
+Ocarina Producciones · San Patricio del Chañar · Neuquén · Argentina
