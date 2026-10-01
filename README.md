@@ -26,6 +26,12 @@ La portada sigue siendo breve. La profundidad vive detrás de las puertas.
 - Protección editorial: no publicar ubicaciones sensibles sin contexto.
 - Diseño responsive.
 
+## Matriz de biodiversidad · V3
+
+La matriz inicial supera las **90 líneas de investigación**. La fuente principal para aves es el informe PDTS CIN-CONICET/UNCo, cuyo anexo reúne 61 especies para el área de estudio y señala que la información combina distintos sitios y épocas; por eso esas fichas se etiquetan como **Área de estudio**, no como presencia local confirmada. citeturn3view0turn3view1
+
+Además se incorporaron registros puntuales de alto valor documental para el Dique Compensador El Chañar, como el águila pescadora y el atajacaminos tijera, y una capa regional de mamíferos y flora del Monte. citeturn2search0turn2search1turn4search0turn5search20
+
 ## Investigación incorporada
 
 La primera capa utiliza, entre otras, estas fuentes:
