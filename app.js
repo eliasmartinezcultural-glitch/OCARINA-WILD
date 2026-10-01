@@ -1,3 +1,128 @@
+/*
+OCARINA WILD · ESTATUTO UNIVERSAL DE RESPETO A LA VIDA
+Versión 1.0 · Norma editorial y técnica inviolable del proyecto
+
+PREÁMBULO
+OCARINA WILD existe para celebrar, conocer, documentar y proteger la vida
+silvestre y vegetal de San Patricio del Chañar. La biodiversidad posee valor
+propio y el proyecto adopta como referencia los principios internacionales
+de conservación de biodiversidad, protección de ecosistemas, monitoreo,
+educación y prevención del daño.
+
+Este estatuto es una NORMA INTERNA SUPERIOR del proyecto. Ninguna futura
+función, diseño, patrocinio, publicación, fotografía, texto o contribución
+puede contradecirlo. Si una nueva idea entra en conflicto con este estatuto,
+la idea se rechaza, aunque sea visualmente atractiva, comercialmente útil o
+técnicamente conveniente.
+
+ARTÍCULO 1 · VIDA COMO VALOR CENTRAL
+Toda fauna, flora, hongo, organismo y ecosistema presentado por OCARINA WILD
+será tratado desde el respeto, la admiración, el conocimiento y la
+conservación.
+
+ARTÍCULO 2 · PROHIBICIÓN ABSOLUTA DE REPRESENTACIONES CONTRADICTORIAS
+Queda prohibido utilizar dentro de OCARINA WILD, sus fichas, portadas,
+banners, galerías, tarjetas, fondos, publicidad, redes vinculadas o material
+editorial:
+- animales silvestres muertos como comida o producto gastronómico;
+- platos, pescados cocinados, animales faenados o preparados para consumo;
+- imágenes que presenten la captura, muerte, sufrimiento o explotación de
+  fauna como entretenimiento, recomendación o atractivo;
+- imágenes que contradigan deliberadamente el mensaje de conservación;
+- fotografías cuya procedencia o contexto pueda inducir a una interpretación
+  falsa sobre la vida local.
+
+Una fotografía de un pez vivo es admisible. Una fotografía de ese mismo pez
+servido como comida NO lo es.
+
+ARTÍCULO 3 · PRIMACÍA DE LA VIDA
+Cuando exista conflicto entre estética, marketing, entretenimiento o
+conservación, prevalece la conservación.
+
+ARTÍCULO 4 · FOTOGRAFÍA Y VIDEO
+La prioridad visual será:
+1. animal o planta vivos;
+2. comportamiento natural;
+3. hábitat;
+4. interacción ecológica respetuosa;
+5. evidencia documental histórica, siempre contextualizada.
+
+No se utilizarán imágenes obtenidas mediante daño, persecución, manipulación
+innecesaria o alteración del comportamiento del organismo.
+
+ARTÍCULO 5 · FOTOGRAFÍA DE REFERENCIA
+Una imagen externa puede ayudar a reconocer una especie, pero nunca debe
+presentarse como evidencia de presencia local si no lo es. Debe conservar
+crédito y procedencia.
+
+ARTÍCULO 6 · NO INVENTAR NATURALEZA LOCAL
+Que una especie exista en Neuquén, Patagonia o Argentina no significa que
+esté documentada en San Patricio del Chañar. El proyecto distinguirá:
+DOCUMENTADO LOCAL · OBSERVADO · REFERENCIA REGIONAL · PENDIENTE.
+
+ARTÍCULO 7 · PROTECCIÓN DE INFORMACIÓN SENSIBLE
+Las ubicaciones precisas de nidos, madrigueras, especies amenazadas,
+reproductores o concentraciones vulnerables no se publicarán si hacerlo
+puede facilitar perturbación, captura, extracción o daño.
+
+ARTÍCULO 8 · OBSERVACIONES CIUDADANAS
+Una observación comunitaria será valiosa, pero no se convertirá
+automáticamente en confirmación científica. Deberá conservar su estado y
+trazabilidad.
+
+ARTÍCULO 9 · COMERCIO Y PUBLICIDAD
+Ningún patrocinador, anunciante, comercio o institución podrá exigir una
+imagen, texto o funcionalidad que contradiga este estatuto.
+La financiación nunca compra el criterio editorial de conservación.
+
+ARTÍCULO 10 · EDUCACIÓN
+El proyecto podrá mostrar amenazas ambientales, muerte natural, restos,
+huellas, enfermedades, contaminación o impactos humanos cuando sean
+necesarios para comprender un fenómeno de conservación. Nunca serán usados
+como espectáculo, morbo o glorificación del daño.
+
+ARTÍCULO 11 · PLANTAS Y FLORA
+La misma protección ética se aplica a la flora. OCARINA WILD no promoverá
+extracción, destrucción o comercialización irresponsable de especies
+silvestres ni presentará la degradación del hábitat como atractivo.
+
+ARTÍCULO 12 · VERACIDAD
+Toda afirmación sobre biodiversidad deberá conservar una relación clara entre
+afirmación, evidencia, fuente y territorio.
+
+ARTÍCULO 13 · CORRECCIÓN INMEDIATA
+Ante una contradicción con este estatuto, la publicación será retirada,
+ocultada o reemplazada antes de continuar agregando contenido.
+
+ARTÍCULO 14 · REVISIÓN DE CADA RECURSO
+Antes de publicar una imagen, video, ilustración, texto o patrocinio se
+deberán superar cinco preguntas:
+¿Respeta la vida?
+¿Es coherente con conservación?
+¿Es verdadero su contexto?
+¿Está correctamente atribuido?
+¿Podría incentivar daño?
+
+Una respuesta negativa bloquea la publicación.
+
+ARTÍCULO 15 · PRINCIPIO DE PRECAUCIÓN
+Cuando exista duda razonable sobre el impacto de una publicación sobre la
+fauna, flora o ecosistema, se elige la alternativa de menor riesgo.
+
+ARTÍCULO 16 · HORIZONTE
+OCARINA WILD no existe solamente para mostrar especies que existen hoy.
+Existe para ayudar a que la memoria, el conocimiento y el respeto por la
+vida permanezcan para las generaciones futuras.
+
+CLÁUSULA FINAL
+Este estatuto constituye la máxima norma editorial, visual y funcional
+interna de OCARINA WILD. Ninguna característica futura puede derogarlo por
+omisión, conveniencia, publicidad, tendencia, diseño o decisión técnica.
+
+OCARINA WILD · CHAÑAR VIVO
+Conocer para querer. Querer para cuidar.
+*/
+
 const records=[
 {id:"F-001",type:"fauna",group:"ave",name:"Calandria grande",latin:"Mimus saturninus",status:"documentado",statusLabel:"Registro local",environment:"Chacras y ambientes urbanos",note:"Mencionada expresamente por el Municipio entre las especies registradas en la zona.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Mimus_saturninus_(6223460929).jpg",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"municipalidad-quehacer"},
 {id:"F-002",type:"fauna",group:"ave",name:"Carpintero real",latin:"Colaptes melanochloros",status:"documentado",statusLabel:"Registro local",environment:"Arbolado y chacras",note:"Incluido por el Municipio entre las especies destacadas del avistaje local.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Colaptes_melanochloros_melanolaimus,_CABA.jpg",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"municipalidad-quehacer"},
@@ -8,7 +133,7 @@ const records=[
 {id:"F-007",type:"fauna",group:"ave",name:"Pica hueso",latin:"Saltator aurantiirostris",status:"documentado",statusLabel:"Registro local",environment:"Chacras",note:"Un individuo fue identificado en el procedimiento de fauna silvestre de 2018.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Saltator_aurantiirostris_-_Golden-billed_Saltator;_Capivara,_Santa_Fe,_Argentina.jpg",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"gendarmeria-aves-2018",count:"1 individuo",date:"2018"},
 {id:"F-008",type:"fauna",group:"ave",name:"Loica",latin:"Sturnella loyca",status:"documentado",statusLabel:"Registro local",environment:"Chacras y áreas abiertas",note:"Seis individuos fueron identificados en el procedimiento de fauna silvestre de 2018.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Loyca.jpg",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"gendarmeria-aves-2018",count:"6 individuos",date:"2018"},
 {id:"F-009",type:"fauna",group:"ave",name:"Cisne de cuello negro",latin:"Cygnus melancoryphus",status:"documentado",statusLabel:"Registro georreferenciado",environment:"Ambientes acuáticos",note:"La Comisión Asesora de Fauna Silvestre registró 15 individuos en San Patricio del Chañar el 21/03/2023.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Cisne_de_cuello_negro_-_A740080.jpg",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"fauna-comision-2023",lat:-38.59764,lng:-68.390522,date:"21/03/2023",count:"15 individuos"},
-{id:"F-010",type:"fauna",group:"pez",name:"Pejerrey",latin:"Odontesthes sp.",status:"documentado",statusLabel:"Mencionado localmente",environment:"Río Neuquén",note:"La página turística municipal menciona pejerreyes entre los peces del río Neuquén en contexto de pesca deportiva.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/FotografíaPejerreyVacas.jpg",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"municipalidad-quehacer"},
+{id:"F-010",type:"fauna",group:"pez",name:"Pejerrey",latin:"Odontesthes sp.",status:"documentado",statusLabel:"Mencionado localmente",environment:"Río Neuquén",note:"La página turística municipal menciona pejerreyes entre los peces del río Neuquén en contexto de pesca deportiva.",image:"",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"municipalidad-quehacer"},
 {id:"F-011",type:"fauna",group:"pez",name:"Perca",latin:"Percichthys sp.",status:"documentado",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Perca_trucha_(Percichthys_trucha).JPG",imageCredit:"Referencia visual · Wikimedia Commons",statusLabel:"Mencionada localmente",environment:"Río Neuquén",note:"La Municipalidad menciona percas entre los peces presentes en el río Neuquén.",sourceRef:"municipalidad-quehacer"},
 {id:"F-012",type:"fauna",group:"pez",name:"Trucha",latin:"Oncorhynchus / Salmo sp.",status:"documentado",statusLabel:"Mencionada localmente",environment:"Río Neuquén",note:"La Municipalidad menciona truchas. La identificación taxonómica precisa queda pendiente.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Oncorhynchus_mykiss.jpg",imageCredit:"Referencia visual · Wikimedia Commons",sourceRef:"municipalidad-quehacer"},
 {id:"FL-001",type:"flora",group:"flora",name:"Flora del Dique Compensador",latin:"Inventario específico pendiente",status:"pendiente",statusLabel:"Investigación pendiente",environment:"Dique Compensador",note:"El Municipio reconoce el Dique Compensador como Área Natural Protegida Municipal desde 2006 y señala el valor de su flora y fauna autóctonas. Falta construir el inventario botánico específico.",sourceRef:"municipalidad-nuestra"},
