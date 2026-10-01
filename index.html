@@ -24,6 +24,32 @@
 body.field-active .hero{min-height:55vh}body.field-active .intro,body.field-active .legal,.field-active .footer{display:none}body.field-active .wrap{padding-bottom:35px}.field-active .section:not(#rastros){display:none}.field-active #rastros{margin-top:20px}.field-active .rastro-launch{display:none}
 @media(max-width:800px){.traces{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.traces{grid-template-columns:1fr}.trace-art{height:125px}.trace-panel{grid-template-columns:1fr}.rastro-launch strong{font-size:23px}}
+
+/* v0.7 · CAMPO VISUAL */
+:root{--ink:#17251d;--paper:#f5f0e4;--muted:#687268;--line:#d6cdbb;--card:#fffdf8;--sage:#dbe8dc;--sky:#dbeaf0;--sun:#f2dfb6;--clay:#ead4c1;--rose:#ead8d2;--night:#202d3b}
+body{background:var(--paper)}
+.hero{min-height:76vh;background:linear-gradient(180deg,#13241d30 0%,#101a14d9 88%),url("https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg") center/cover}
+.hero-in{padding:clamp(22px,4vw,48px)}.hero h1{text-shadow:0 5px 28px #0008}.hero p{max-width:720px}
+.intro{padding:44px 0 28px}.intro p{font-size:16px}
+.doors{gap:14px}.door{position:relative;min-height:185px;padding:20px;transition:transform .18s,box-shadow .18s}.door:hover{transform:translateY(-4px);box-shadow:0 14px 35px #17251d16}.door strong{font-size:28px}.door:after{content:"↗";position:absolute;right:18px;bottom:16px;font-size:20px;opacity:.35}
+.door:nth-child(1){background:#dcebea}.door:nth-child(2){background:#e4ead9}.door:nth-child(3){background:#f0dfc5}.door:nth-child(4){background:#e8ddd2}
+.territory{gap:10px}.territory div{min-height:74px;display:flex;flex-direction:column;justify-content:center;transition:transform .15s}.territory div:hover{transform:translateY(-2px)}
+.rastro-launch{margin-top:18px;min-height:130px;padding:24px 26px;background:linear-gradient(105deg,#17251d,#365548);box-shadow:0 14px 30px #17251d18}.rastro-launch em{font-size:44px}
+.section{margin-top:72px}.section h2{font-size:clamp(32px,5vw,48px)}.sub{font-size:15px}
+.search{min-height:52px}.pill{padding:10px 14px}.cards{gap:14px}.card{transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #17251d12}.card img{height:220px}.body{padding:17px}
+.micro{gap:12px}.micro .box{min-height:155px}.micro .box:nth-child(1){background:#e5eee1}.micro .box:nth-child(2){background:#f1e1e7}.micro .box:nth-child(3){background:#e7dfd2}.micro .box:nth-child(4){background:#dce8ed}
+.missions{gap:12px}.mission{min-height:175px;transition:transform .18s}.mission:hover{transform:translateY(-3px)}
+.legal{gap:14px}.legal .box:nth-child(1){background:#e4ece3}.legal .box:nth-child(2){background:#e9e2d6}.legal .box:nth-child(3){background:#e0e9ef}.legal .box:nth-child(4){background:#eee0d7}
+.traces{gap:14px}.trace{cursor:pointer;transition:transform .18s,box-shadow .18s}.trace:hover{transform:translateY(-4px);box-shadow:0 13px 30px #17251d15}.trace-art{height:155px;font-size:64px}.trace-body{min-height:155px}.rastro-toolbar{margin:18px 0}
+.trace-panel{gap:12px}.trace-step{min-height:110px}
+.field-note{margin-top:16px;border:1px solid #cdd9d1}
+.modal{padding:18px;backdrop-filter:blur(5px)}.panel{max-height:calc(100vh - 36px);box-shadow:0 25px 80px #0005}.panel>img{height:min(38vh,300px);min-height:180px}.panel-in{padding:24px}
+.close{position:sticky;top:0;float:right;z-index:2;background:#fff;border:1px solid var(--line);box-shadow:0 3px 12px #0001}.facts{gap:10px}.fact{min-height:62px}
+.field-mode{right:18px;bottom:18px;box-shadow:0 10px 30px #0004}
+.discovery-bar{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.discovery-bar button{border:1px solid var(--line);border-radius:17px;padding:15px;text-align:left;background:#fffdf8}.discovery-bar b{display:block;font-size:10px;letter-spacing:.12em}.discovery-bar span{display:block;font-size:12px;color:var(--muted);margin-top:5px}
+.progress{margin-top:12px;height:8px;background:#d9d1c3;border-radius:99px;overflow:hidden}.progress i{display:block;width:0;height:100%;background:#a96537;transition:width .3s}
+@media(max-width:800px){.doors{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.missions{grid-template-columns:1fr 1fr}.discovery-bar{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.hero{min-height:69vh}.hero h1{font-size:clamp(48px,18vw,78px)}.doors,.cards,.legal,.discovery-bar{grid-template-columns:1fr}.door{min-height:150px}.door strong{margin-top:24px}.territory{grid-template-columns:1fr 1fr}.territory div{min-height:68px}.rastro-launch{min-height:118px}.rastro-launch strong{font-size:25px}.section{margin-top:55px}.cards .card img{height:210px}.traces{grid-template-columns:1fr}.trace-art{height:145px}.panel{border-radius:20px}.panel>img{height:220px}.panel-in{padding:18px}.field-mode{right:12px;bottom:12px}}
 </style>
 </head>
 <body>
@@ -36,7 +62,7 @@ body.field-active .hero{min-height:55vh}body.field-active .intro,body.field-acti
 <button class="door" onclick="go('misiones')"><b>03</b><strong>DESCUBRIR</strong><span>Preguntas y pequeñas misiones de campo.</span></button>
 <button class="door" onclick="go('marco')"><b>04</b><strong>MARCO</strong><span>Fuentes, conservación y leyes.</span></button>
 </nav>
-<div class="territory"><div>💧 AGUA<small>vida y humedales</small></div><div>🐦 CIELO<small>aves y movimiento</small></div><div>🌿 MONTE<small>adaptación y refugio</small></div><div>🍎 CHACRAS<small>riego y paisaje</small></div><div>👣 RASTRO<small>señales de vida</small></div><div>🔎 CAMBIO<small>qué observar</small></div></div><button class="rastro-launch" onclick="go('rastros')"><div><b>EXPERIENCIA DE CAMPO</b><strong>RASTROS</strong><span>Huellas · plumas · nidos · frutos · hojas · madrigueras · agua · sonidos</span></div><em>👣</em></button>
+<div class="territory"><div>💧 AGUA<small>vida y humedales</small></div><div>🐦 CIELO<small>aves y movimiento</small></div><div>🌿 MONTE<small>adaptación y refugio</small></div><div>🍎 CHACRAS<small>riego y paisaje</small></div><div>👣 RASTRO<small>señales de vida</small></div><div>🔎 CAMBIO<small>qué observar</small></div></div><button class="rastro-launch" onclick="go('rastros')"><div><b>EXPERIENCIA DE CAMPO</b><strong>RASTROS</strong><span>Huellas · plumas · nidos · frutos · hojas · madrigueras · agua · sonidos</span></div><em>👣</em></button><div class="discovery-bar"><button onclick="go('rastros')"><b>👣 SEGUIR UNA PISTA</b><span>Huellas, plumas y señales</span></button><button onclick="go('microvida')"><b>🐝 MIRAR LO PEQUEÑO</b><span>Insectos y conexiones</span></button><button onclick="go('flora')"><b>🌿 BUSCAR UNA PLANTA</b><span>Monte, chacras y agua</span></button><button onclick="go('fauna')"><b>🐦 ENCONTRAR UN ANIMAL</b><span>Fauna para reconocer</span></button></div><div class="progress"><i id="discoveryProgress"></i></div>
 <section class="section" id="fauna"><h2>Fauna</h2><div class="sub">Una primera colección para reconocer y seguir investigando.</div>
 <div class="tools"><input id="search" class="search" placeholder="Buscar especie, ambiente o nombre científico…"><button class="pill active" data-filter="todos">Todo</button><button class="pill" data-filter="aves">Aves</button><button class="pill" data-filter="mamiferos">Mamíferos</button><button class="pill" data-filter="peces">Peces</button><button class="pill" data-filter="anfibios">Anfibios</button></div>
 <div class="cards" id="faunaCards"></div></section>
@@ -163,6 +189,18 @@ function toggleFieldMode(){
  document.querySelector('.field-mode').textContent=on?'✕ SALIR DEL MODO CAMPO':'👣 MODO CAMPO';
  if(on) go('rastros');
 }
-renderTraces();</script>
+renderTraces();
+// interacción visual: progreso local de descubrimientos
+const discoverySeen=new Set(JSON.parse(localStorage.getItem('ocarinaWildSeen')||'[]'));
+function markSeen(id){discoverySeen.add(id);localStorage.setItem('ocarinaWildSeen',JSON.stringify([...discoverySeen]));updateProgress()}
+function updateProgress(){const el=document.getElementById('discoveryProgress');if(el)el.style.width=Math.min(100,discoverySeen.size/12*100)+'%'}
+const oldOpenCard=openCard;
+openCard=function(id,plant){markSeen((plant?'flora-':'fauna-')+id);oldOpenCard(id,plant)}
+const oldOpenTrace=openTrace;
+openTrace=function(id){markSeen('trace-'+id);oldOpenTrace(id)}
+const oldStartMission=startMission;
+startMission=function(i){markSeen('mission-'+i);oldStartMission(i)}
+updateProgress();
+</script>
 <button class="field-mode" onclick="toggleFieldMode()">👣 MODO CAMPO</button></body>
 </html>
