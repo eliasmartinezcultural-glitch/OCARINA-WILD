@@ -71,7 +71,7 @@ const img=(url,alt="")=>url?'<img src="'+esc(url)+'" alt="'+esc(alt)+'" loading=
 const saveFav=()=>localStorage.setItem("ow-favorites",JSON.stringify([...state.favorites]));
 
 function visibleCards(d){
- return d.cards.filter(c=>(state.filter==="Todos"||c.zone===state.filter)&&(state.query===""||[c.name,c.scientific,c.kind,c.zone,c.desc].join(" ").toLowerCase().includes(state.query.toLowerCase())));
+ return d.cards.filter(c=>(state.filter==="Todos"||state.filter==="★"||c.zone===state.filter)&&(state.filter!=="★"||state.favorites.has(c.id))&&(state.query===""||[c.name,c.scientific,c.kind,c.zone,c.desc].join(" ").toLowerCase().includes(state.query.toLowerCase())));
 }
 
 function card(c,index){
