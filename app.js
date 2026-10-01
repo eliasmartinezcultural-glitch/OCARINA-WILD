@@ -132,7 +132,7 @@ const records=[
 {id:"F-006",type:"fauna",group:"ave",name:"Zorzal · registro 2018",latin:"Turdus philomelos",status:"pendiente",statusLabel:"Pendiente · identificación/presencia",environment:"Chacras",note:"En 2018 se documentaron 5 individuos en una chacra local dentro de un procedimiento de aves en cautiverio. La identificación y la presencia silvestre local requieren revisión.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Turdus_philomelos.jpg",imageCredit:"Foto de referencia · Wikimedia Commons",sourceRef:"gendarmeria-aves-2018",count:"5 individuos",date:"2018"},
 {id:"F-007",type:"fauna",group:"ave",name:"Pica hueso",latin:"Saltator aurantiirostris",status:"pendiente",statusLabel:"Pendiente · presencia silvestre",environment:"Chacras",note:"En 2018 se documentó 1 individuo en una chacra local dentro de un procedimiento de aves en cautiverio. El antecedente no demuestra presencia silvestre local.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Saltator_aurantiirostris_-_Golden-billed_Saltator;_Capivara,_Santa_Fe,_Argentina.jpg",imageCredit:"Foto de referencia · Wikimedia Commons",sourceRef:"gendarmeria-aves-2018",count:"1 individuo",date:"2018"},
 {id:"F-008",type:"fauna",group:"ave",name:"Loica",latin:"Sturnella loyca",status:"pendiente",statusLabel:"Pendiente · presencia silvestre",environment:"Chacras y áreas abiertas",note:"En 2018 se documentaron 6 individuos en una chacra local dentro de un procedimiento de aves en cautiverio. El antecedente no demuestra presencia silvestre local.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Loyca.jpg",imageCredit:"Foto de referencia · Wikimedia Commons",sourceRef:"gendarmeria-aves-2018",count:"6 individuos",date:"2018"},
-{id:"F-009",type:"fauna",group:"ave",name:"Cisne de cuello negro",latin:"Cygnus melancoryphus",status:"documentado",statusLabel:"Registro sanitario · mortalidad",environment:"Ambientes acuáticos",note:"La documentación oficial registra 15 cisnes de cuello negro muertos en San Patricio del Chañar el 21/03/2023 dentro de la vigilancia de influenza aviar. No es un censo de ejemplares vivos.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Cisne_de_cuello_negro_-_A740080.jpg",imageCredit:"Foto de referencia · Wikimedia Commons",sourceRef:"fauna-comision-2023",lat:-38.59764,lng:-68.390522,date:"21/03/2023",count:"15 aves muertas",hideLocation:true},
+{id:"F-009",type:"fauna",group:"ave",name:"Cisne de cuello negro",latin:"Cygnus melancoryphus",status:"documentado",statusLabel:"Registro sanitario · mortalidad",environment:"Ambientes acuáticos",note:"La documentación oficial registra 15 cisnes de cuello negro muertos en San Patricio del Chañar el 21/03/2023 dentro de la vigilancia de influenza aviar. No es un censo de ejemplares vivos.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Cisne_de_cuello_negro_-_A740080.jpg",imageCredit:"Foto de referencia · Wikimedia Commons",sourceRef:"fauna-comision-2023",lat:-38.59764,lng:-68.390522,date:"21/03/2023",count:"15 aves muertas",hideLocation:true,randomEligible:false},
 {id:"F-010",type:"fauna",group:"pez",name:"Pejerrey",latin:"Odontesthes sp.",status:"pendiente",statusLabel:"Pendiente · identificación",environment:"Río Neuquén",note:"La Municipalidad menciona pejerreyes entre los peces del Río Neuquén. La especie local concreta y su estado poblacional requieren documentación específica.",image:"",imageCredit:"Foto de referencia · Wikimedia Commons",sourceRef:"municipalidad-quehacer"},
 {id:"F-011",type:"fauna",group:"pez",name:"Perca",latin:"Percichthys sp.",status:"pendiente",statusLabel:"Pendiente · identificación",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Perca_trucha_(Percichthys_trucha).JPG",imageCredit:"Foto de referencia · Wikimedia Commons",environment:"Río Neuquén",note:"La Municipalidad menciona percas entre los peces del Río Neuquén. La identificación local concreta y su estado poblacional requieren documentación específica.",sourceRef:"municipalidad-quehacer"},
 {id:"F-012",type:"fauna",group:"pez",name:"Trucha",latin:"Oncorhynchus / Salmo sp.",status:"pendiente",statusLabel:"Pendiente · identificación",environment:"Río Neuquén",note:"La Municipalidad menciona truchas en el Río Neuquén, pero la identificación taxonómica precisa queda pendiente.",image:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Oncorhynchus_mykiss.jpg",imageCredit:"Foto de referencia · Wikimedia Commons",sourceRef:"municipalidad-quehacer"},
@@ -221,11 +221,21 @@ function cardMarkup(record){
     (record.image?'<div class="species-photo"><img src="'+escapeHTML(record.image)+'" alt="" loading="lazy" decoding="async"><span>'+escapeHTML(record.statusLabel||"REGISTRO")+' · FOTO DE REFERENCIA</span></div>':'<div class="species-photo species-photo-empty"><span>IMAGEN LOCAL PENDIENTE</span></div>')+
     '<div class="species-card-body"><span class="type">'+escapeHTML(typeLabel(record))+' · '+escapeHTML(record.id)+'</span><h3>'+escapeHTML(record.name)+'</h3><em>'+escapeHTML(record.latin)+'</em><p class="teaser">'+escapeHTML(k.local||record.note)+'</p></div></button>';
 }
+function bindImageFallbacks(root=document){
+  root.querySelectorAll("img").forEach(img=>img.addEventListener("error",()=>{
+    img.style.display="none";
+    const parent=img.parentElement;
+    if(!parent)return;
+    parent.classList.add("species-photo-empty");
+    if(!parent.querySelector(".image-fallback-label")){const label=document.createElement("span");label.className="image-fallback-label";label.textContent="IMAGEN DE REFERENCIA NO DISPONIBLE";parent.appendChild(label);}
+  },{once:true}));
+}
 function renderGrid(){
   const visible=visibleRecords();
   $("#speciesGrid").innerHTML=visible.length?visible.map(cardMarkup).join(""):'<div class="empty-state"><strong>No encontramos esa vida.</strong><p>Probá con otro nombre, ambiente o categoría. Si realmente la viste en Chañar, podés dejar el registro.</p></div>';
   $("#speciesStatus").textContent=visible.length+" fichas visibles · "+records.length+" registros en el catálogo";
-  $$("#speciesGrid [data-open]").forEach(b=>b.addEventListener("click",()=>openRecord(b.dataset.open)));
+  $("#speciesGrid [data-open]").forEach(b=>b.addEventListener("click",()=>openRecord(b.dataset.open)));
+  bindImageFallbacks($("#speciesGrid"));
 }
 function updateFilters(){
   $$(".filter-chip").forEach(b=>{const active=b.dataset.kind===state.filter;b.classList.toggle("active",active);b.setAttribute("aria-pressed",active?"true":"false");});
@@ -262,6 +272,7 @@ function openRecord(id){
     panelMarkup("chañar","Qué sabemos aquí",'<p>'+escapeHTML(k.local||record.note)+'</p>'+location+'<div class="source-note"><b>FUENTE DEL REGISTRO</b><br>'+sourceHtml+'</div>')+
     panelMarkup("archivo","Archivo y trazabilidad",'<div class="fact-grid">'+fact("CÓDIGO",record.id)+fact("FECHA",record.date||"No consignada")+fact("CANTIDAD",record.count||"No consignada")+fact("PROCEDENCIA",source?source.label:"Pendiente")+'</div><div class="source-note">Las fotografías funcionan como referencia visual y no prueban por sí mismas la presencia local. El nivel de evidencia pertenece al registro escrito indicado arriba.</div>')+
     '</div></div>';
+  bindImageFallbacks($("#dialogContent"));
   const dialog=$("#speciesDialog"); dialog.showModal(); document.body.classList.add("no-scroll");
   $$("#dialogContent [data-tab]").forEach(tab=>tab.addEventListener("click",()=>{
     $$("#dialogContent [data-tab]").forEach(t=>{const a=t===tab;t.classList.toggle("active",a);t.setAttribute("aria-selected",a?"true":"false");});
@@ -274,15 +285,15 @@ function closeDialog(){
   if(state.lastFocus&&typeof state.lastFocus.focus==="function")state.lastFocus.focus();
 }
 function randomRecord(){
-  const arr=visibleRecords(); if(!arr.length)return;
+  const arr=visibleRecords().filter(r=>r.randomEligible!==false); if(!arr.length)return;
   const r=arr[Math.floor(Math.random()*arr.length)]; openRecord(r.id);
 }
 function openObservation(){
   state.lastFocus=document.activeElement;
   $("#dialogContent").innerHTML='<div class="dialog-copy observation-copy"><span class="eyebrow">CHAÑAR VIVO · REGISTRO COMUNITARIO</span><h2 id="dialogTitle">Viste algo.<br><em>Dejalo acá.</em></h2><p class="intro-note">Este formulario guarda una observación en este dispositivo. No convierte automáticamente una observación en una especie confirmada.</p><form class="observation-form" id="obsForm"><label for="obsName">¿QUÉ VISTE?</label><input id="obsName" name="name" required placeholder="Ej.: un ave negra junto al río"><label for="obsPlace">¿DÓNDE?</label><input id="obsPlace" name="place" placeholder="Ej.: orilla del Neuquén, chacra, dique"><label for="obsDate">¿CUÁNDO?</label><input id="obsDate" name="date" type="date"><label for="obsNote">¿QUÉ OBSERVASTE?</label><textarea id="obsNote" name="note" rows="5" placeholder="Color, tamaño, cantidad, comportamiento, foto disponible..."></textarea><div class="obs-buttons"><button type="submit">GUARDAR EN ESTE DISPOSITIVO</button><button type="button" id="obsExport">EXPORTAR REGISTROS</button></div><p class="observation-help">Privacidad: no se envía nada a un servidor. Para compartir un registro, exportalo y decidí vos dónde entregarlo.</p></form><div id="obsSaved" class="saved-note" aria-live="polite"></div></div>';
   const d=$("#speciesDialog"); d.showModal(); document.body.classList.add("no-scroll");
-  $("#obsForm").addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(e.currentTarget), arr=JSON.parse(localStorage.getItem("ow-observations")||"[]");arr.push({id:"OBS-"+Date.now(),name:fd.get("name"),place:fd.get("place"),date:fd.get("date"),note:fd.get("note"),created:new Date().toISOString()});localStorage.setItem("ow-observations",JSON.stringify(arr));$("#obsSaved").textContent="Registro guardado localmente. Ya forma parte de tu archivo de observaciones, no del catálogo confirmado.";e.currentTarget.reset();});
-  $("#obsExport").addEventListener("click",()=>{const data=localStorage.getItem("ow-observations")||"[]";const blob=new Blob([data],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="ocarina-wild-observaciones.json";a.click();URL.revokeObjectURL(url);});
+  $("#obsForm").addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(e.currentTarget);let arr=[];try{arr=JSON.parse(localStorage.getItem("ow-observations")||"[]");if(!Array.isArray(arr))arr=[];}catch(_){arr=[];}arr.push({id:"OBS-"+Date.now(),name:fd.get("name"),place:fd.get("place"),date:fd.get("date"),note:fd.get("note"),created:new Date().toISOString()});try{localStorage.setItem("ow-observations",JSON.stringify(arr));$("#obsSaved").textContent="Registro guardado localmente. Ya forma parte de tu archivo de observaciones, no del catálogo confirmado.";}catch(_){$("#obsSaved").textContent="No se pudo guardar en este dispositivo. El registro no fue enviado a ningún servidor.";}$("#obsSaved").textContent="Registro guardado localmente. Ya forma parte de tu archivo de observaciones, no del catálogo confirmado.";e.currentTarget.reset();});
+  $("#obsExport").addEventListener("click",()=>{let data="[]";try{data=localStorage.getItem("ow-observations")||"[]";}catch(_){};const blob=new Blob([data],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="ocarina-wild-observaciones.json";a.click();URL.revokeObjectURL(url);});
 }
 function init(){
   renderGrid(); renderStats(); updateFilters();
