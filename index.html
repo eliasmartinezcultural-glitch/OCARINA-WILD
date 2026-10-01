@@ -50,6 +50,11 @@ body{background:var(--paper)}
 .progress{margin-top:12px;height:8px;background:#d9d1c3;border-radius:99px;overflow:hidden}.progress i{display:block;width:0;height:100%;background:#a96537;transition:width .3s}
 @media(max-width:800px){.doors{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.missions{grid-template-columns:1fr 1fr}.discovery-bar{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.hero{min-height:69vh}.hero h1{font-size:clamp(48px,18vw,78px)}.doors,.cards,.legal,.discovery-bar{grid-template-columns:1fr}.door{min-height:150px}.door strong{margin-top:24px}.territory{grid-template-columns:1fr 1fr}.territory div{min-height:68px}.rastro-launch{min-height:118px}.rastro-launch strong{font-size:25px}.section{margin-top:55px}.cards .card img{height:210px}.traces{grid-template-columns:1fr}.trace-art{height:145px}.panel{border-radius:20px}.panel>img{height:220px}.panel-in{padding:18px}.field-mode{right:12px;bottom:12px}}
+
+/* interaction safety v0.8 */
+button{touch-action:manipulation}
+.modal.show{overflow:hidden}
+.panel{overscroll-behavior:contain}
 </style>
 </head>
 <body>
@@ -144,7 +149,8 @@ document.getElementById('panel').innerHTML='<button class="close" onclick="close
 document.getElementById('modal').classList.add('show');
 if(d) showDossier('mirar');
 }
-function listenHint(){alert("El sonido se incorporará por especie cuando exista una fuente confiable. Por ahora: escuchá primero el ambiente y después intentá identificar.");}\nfunction showDossier(tab){
+function listenHint(){alert("El sonido se incorporará por especie cuando exista una fuente confiable. Por ahora: escuchá primero el ambiente y después intentá identificar.");}
+function showDossier(tab){
 let d=window.currentDossier;if(!d)return;
 let m={mirar:['QUÉ VEO',d.food],habitat:['DÓNDE ESTÁ',d.habitat],rastros:['RASTRO',d.signs],relacion:['CON QUÉ SE CONECTA',d.relation],evidencia:['QUÉ SABEMOS',d.evidence]}[tab];
 document.getElementById('dossierContent').innerHTML='<div class="dossier-block"><b>'+m[0]+'</b>'+m[1]+'</div><div class="dossier-block"><b>CUÁNDO</b>'+d.season+'</div>';
@@ -201,6 +207,12 @@ openTrace=function(id){markSeen('trace-'+id);oldOpenTrace(id)}
 const oldStartMission=startMission;
 startMission=function(i){markSeen('mission-'+i);oldStartMission(i)}
 updateProgress();
+
+// REPARACIÓN DE INTERACCIÓN v0.8
+window.addEventListener('error',function(e){console.warn('OCARINA WILD:',e.message)});
+function safeGo(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}
+document.querySelectorAll('.door').forEach(b=>b.addEventListener('click',()=>{const m=b.getAttribute('onclick')||'';const hit=m.match(/go\('([^']+)'\)/);if(hit)safeGo(hit[1])}));
+document.querySelectorAll('.territory div').forEach((el,i)=>el.addEventListener('click',()=>safeGo(['fauna','fauna','flora','flora','rastros','misiones'][i])));
 </script>
 <button class="field-mode" onclick="toggleFieldMode()">👣 MODO CAMPO</button></body>
 </html>
