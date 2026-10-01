@@ -126,3 +126,97 @@
 .journal-body{padding:35px clamp(22px,6vw,70px) 60px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:900px}.form-grid label{display:flex;flex-direction:column;gap:7px;font:800 7px Manrope;letter-spacing:.14em;color:#7e8e85}.form-grid input,.form-grid textarea{border:1px solid #ffffff15;background:#101e17;color:#fff;padding:13px;font:400 12px "DM Sans";outline:0}.form-grid textarea{min-height:110px;resize:vertical}.form-grid label:last-child{grid-column:1/-1}.check{display:flex;gap:8px;align-items:center;margin:17px 0;font-size:11px;color:#8f9d95}.observation-list{margin-top:45px;max-width:900px}.observation-list>span{display:block;margin-bottom:14px}.observation-list article{display:flex;justify-content:space-between;gap:15px;padding:17px;background:#101e17;border-bottom:1px solid #ffffff10}.observation-list article b{display:block;font:700 15px Manrope}.observation-list article span{display:block;color:#cbb77d;font-size:10px;margin-top:4px}.observation-list article p{color:#8f9d95;font-size:11px;line-height:1.5}.observation-list article button{border:0;background:transparent;color:#7e8e85;font-size:20px;cursor:pointer}
 .archive-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:0 clamp(22px,6vw,70px);border-bottom:1px solid #ffffff14}.archive-grid div{padding:28px 15px 28px 0;border-right:1px solid #ffffff10}.archive-grid b{display:block;font:800 30px Manrope;color:#d8c47f}.archive-grid span{font:800 7px Manrope;letter-spacing:.12em;color:#75867c}.source-library,.method-large{padding:45px clamp(22px,6vw,70px);max-width:1050px}.source-library h3{font:600 38px "Playfair Display",serif;margin:9px 0 20px}.source-library a{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid #ffffff10;color:#cdd6d1;text-decoration:none;font-size:12px}.source-library a span{font:800 7px Manrope;color:#cbb77d}.method-large{border-top:1px solid #ffffff14}.method-large ol{padding-left:22px;max-width:750px}.method-large li{padding:9px 0;color:#9ba8a1;font-size:13px;line-height:1.55}.method-large b{color:#fff}
 @media(max-width:700px){.research-hero{height:470px}.research-hero .hero-copy h2{font-size:51px}.control-line{display:grid;grid-template-columns:1fr auto}.wild-card{min-height:385px}.field-grid,.form-grid{grid-template-columns:1fr}.form-grid label:last-child{grid-column:auto}.archive-grid{grid-template-columns:1fr 1fr}.archive-grid div{border-bottom:1px solid #ffffff10}.source-library a{display:block}.source-library a span{display:block;margin-top:6px}.detail-head,.journal-head,.archive-head{padding:35px 18px}.exp-content,.journal-body,.source-library,.method-large{padding-left:18px;padding-right:18px}.detail-head h2,.archive-head h2,.journal-head h2{font-size:55px}.exp-intro h3{font-size:34px}.filter-scroll{margin-left:-2px;margin-right:-2px}}
+
+
+/* ═══════════════════════════════════════════════════════
+   OCARINA WILD · VISUAL SYSTEM 4.0
+   Imagen editorial + composición responsive
+   ═══════════════════════════════════════════════════════ */
+:root{
+  --ink:#07110d;--paper:#eef0e9;--muted:#aab5ad;--line:#ffffff1c;
+  --gold:#d6c27c;--green:#173426;--deep:#0b1712;
+}
+body{background:var(--ink);overflow-x:hidden}
+.home{height:100svh;min-height:680px;position:relative;isolation:isolate;background:#07110d}
+.home-photo{position:absolute;overflow:hidden;z-index:-4;background:#122119}
+.home-photo img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(.72) contrast(1.04);transition:transform 1.2s ease}
+.home:hover .home-photo img{transform:scale(1.025)}
+.home-photo-main{inset:0 42% 0 0}
+.home-photo-main img{object-position:center}
+.home-photo-bird{top:0;right:0;width:29%;height:52%}
+.home-photo-tree{right:0;bottom:0;width:29%;height:48%}
+.home-photo-flight{right:29%;bottom:0;width:13%;height:34%}
+.photo-credit,.photo-caption{position:absolute;left:14px;bottom:12px;font:700 7px/1.2 Manrope,sans-serif;letter-spacing:.12em;color:#fff;text-shadow:0 2px 8px #000;opacity:.72}
+.photo-caption{letter-spacing:.1em}
+.grain{position:absolute;inset:-50%;z-index:-1;opacity:.07;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");transform:rotate(7deg)}
+.veil{position:absolute;inset:0;z-index:-2;background:
+linear-gradient(90deg,#06100def 0%,#06100dbb 37%,#06100d35 62%,#06100d66 100%),
+linear-gradient(0deg,#06100df2 0%,transparent 42%,#06100d2b 100%)}
+.home-header{position:absolute;top:0;left:0;right:0;padding:22px clamp(18px,4vw,58px);display:flex;justify-content:space-between;align-items:center;z-index:5}
+.home-header .logo{font:800 13px Manrope,sans-serif;letter-spacing:.08em;color:#fff;text-decoration:none}
+.home-header .logo i{font-style:normal;color:var(--gold)}
+.header-meta{display:flex;gap:26px;font:800 7px Manrope,sans-serif;letter-spacing:.18em;color:#fff;opacity:.58}
+.home-center{position:absolute;z-index:3;left:clamp(22px,7vw,108px);top:50%;transform:translateY(-47%);width:min(780px,68vw)}
+.home-kicker{display:flex;align-items:center;gap:10px;font:800 8px Manrope,sans-serif;letter-spacing:.22em;color:#d9e0db;opacity:.75}
+.home-kicker span{width:34px;height:1px;background:var(--gold)}
+.home-center h1{font:600 clamp(70px,9.7vw,146px)/.76 "Playfair Display",serif;letter-spacing:-.075em;margin:19px 0 24px;color:#f4f2e9}
+.home-center h1 em{font-style:italic;color:var(--gold)}
+.home-intro{max-width:475px;margin:0 0 30px;color:#d3dad5;font-size:clamp(14px,1.3vw,18px);line-height:1.5}
+.home-intro strong{color:#fff;font-weight:700}
+.door-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:5px;max-width:780px}
+.door{height:118px;position:relative;text-align:left;padding:14px;border:1px solid #ffffff20;background:#07110dcc;color:#fff;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:transform .25s,border-color .25s,background .25s}
+.door:before{content:"";position:absolute;inset:auto 0 0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:.25s}
+.door:hover{transform:translateY(-5px);background:#13251ce8;border-color:#ffffff55}
+.door:hover:before{transform:scaleX(1)}
+.door span{font:800 8px Manrope;color:#d5c17c}
+.door strong{font:800 clamp(11px,1.1vw,14px) Manrope;letter-spacing:.12em}
+.door small{font-size:9px;line-height:1.35;color:#9daaa3}
+.door i{position:absolute;right:13px;bottom:13px;font:800 8px Manrope;font-style:normal;color:#d5c17c}
+.home-side-note{position:absolute;right:clamp(18px,3.7vw,55px);top:50%;transform:translateY(-50%);z-index:4;width:105px;color:#fff}
+.side-number{font:800 43px/1 Manrope;color:var(--gold);letter-spacing:-.06em}
+.home-side-note b{display:block;font:800 7px Manrope;letter-spacing:.16em}
+.home-side-note span{display:block;color:#aab4ae;font-size:9px;line-height:1.35;margin-top:4px}
+.side-rule{height:1px;background:#ffffff28;margin:20px 0}
+.side-quote{font:italic 12px/1.45 "Playfair Display",serif;color:#d8dfda}
+.home-bottom{position:absolute;left:clamp(18px,4vw,58px);right:clamp(18px,4vw,58px);bottom:18px;z-index:4;display:flex;justify-content:space-between;font:800 7px Manrope;letter-spacing:.16em;color:#fff;opacity:.52}
+
+/* deep panels: imagen primero, datos después */
+.deep-panel{background:#09130f}
+.research-hero{min-height:430px;position:relative;overflow:hidden;background:
+linear-gradient(135deg,#1a3225,#08120d 60%),
+url("https://commons.wikimedia.org/wiki/Special:Redirect/file/San_Patricio_del_Chañar.png") center/cover}
+.research-hero:after{content:"";position:absolute;inset:0;background:
+linear-gradient(90deg,#06100ef5 0%,#06100ec8 42%,#06100e38 72%,#06100e66),
+linear-gradient(0deg,#06100ee8 0%,transparent 65%)}
+.research-hero .hero-copy{position:relative;z-index:2;padding:92px clamp(22px,6vw,70px) 55px;max-width:800px}
+.research-hero .hero-copy h2{font-size:clamp(50px,7vw,94px)}
+.fact-row{position:relative;z-index:3}
+.wild-card{position:relative;overflow:hidden;background:#0e1b15;border:1px solid #ffffff12;transition:transform .25s,border-color .25s}
+.wild-card:hover{transform:translateY(-4px);border-color:#d6c27c44}
+.card-visual{height:210px;position:relative;background:#17291f;overflow:hidden}
+.card-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#07110de0,transparent 65%)}
+.card-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.72)}
+.card-visual .visual-label{position:absolute;left:14px;bottom:12px;z-index:2;font:800 7px Manrope;letter-spacing:.15em;color:#fff;opacity:.78}
+.card-body{position:relative}
+@media(max-width:1050px){
+ .home-photo-main{inset:0 36% 0 0}.home-photo-bird{width:36%}.home-photo-tree{width:36%}.home-photo-flight{display:none}
+ .home-center{width:min(720px,80vw)}.home-side-note{display:none}.door-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:680px){
+ .home{min-height:760px;height:100svh}
+ .home-photo-main{inset:0}.home-photo-bird,.home-photo-tree{display:none}
+ .veil{background:linear-gradient(90deg,#06100ef5,#06100eb8),linear-gradient(0deg,#06100df5,transparent 65%)}
+ .home-header{padding:18px}.header-meta span:first-child{display:none}
+ .home-center{left:18px;right:18px;width:auto;top:49%;transform:translateY(-50%)}
+ .home-center h1{font-size:clamp(67px,20vw,104px);margin:15px 0 20px}
+ .home-intro{font-size:14px;margin-bottom:24px}
+ .door-grid{grid-template-columns:1fr 1fr;gap:4px}
+ .door{height:108px;padding:12px}.door small{font-size:8px}.door i{right:10px;bottom:10px}
+ .home-bottom span:nth-child(2){display:none}.home-bottom{font-size:6px}
+ .photo-credit{bottom:42px}
+}
+@media(max-width:390px){
+ .home-center h1{font-size:64px}.door{height:100px}.door strong{font-size:10px}.door small{max-width:105px}
+ .home-bottom span:last-child{display:none}
+}
+@media(prefers-reduced-motion:reduce){.home-photo img,.door{transition:none}.home:hover .home-photo img{transform:none}}
