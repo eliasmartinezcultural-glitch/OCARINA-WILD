@@ -1,18 +1,99 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#101812">
-<meta name="description" content="OCARINA WILD · archivo natural vivo de San Patricio del Chañar.">
-<title>OCARINA WILD · El Chañar que vive</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17251d">
+<meta name="description" content="OCARINA WILD · guía visual e interactiva de naturaleza de San Patricio del Chañar y su zona.">
+<title>OCARINA WILD · Naturaleza de El Chañar</title>
+<style>
+:root{--ink:#17251d;--paper:#f4f0e5;--muted:#667267;--line:#d8d2c3;--accent:#a96537;--water:#2c6570;--card:#fffdf7;--shadow:0 18px 55px #17251d18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif}button{font:inherit}a{color:inherit}
+.hero{min-height:82vh;display:grid;place-items:end;padding:28px;background:linear-gradient(0deg,#102018e8 0%,#10201842 45%,#10201812),url('https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg') center/cover;color:white}
+.hero-in{max-width:1100px;width:100%;padding:clamp(20px,5vw,70px)}.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:800;opacity:.8}.hero h1{font-size:clamp(52px,10vw,112px);line-height:.82;margin:12px 0 18px;letter-spacing:-.07em}.hero p{font-size:clamp(18px,2.5vw,27px);max-width:720px;margin:0}.hero .mini{margin-top:22px;font-size:13px;opacity:.8}
+.wrap{max-width:1100px;margin:auto;padding:28px 20px 80px}.intro{display:flex;justify-content:space-between;gap:20px;align-items:end;padding:36px 0 22px}.intro h2{font-size:clamp(30px,5vw,52px);margin:0;letter-spacing:-.04em}.intro p{max-width:510px;color:var(--muted);margin:0}
+.doors{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.door{border:1px solid var(--line);background:var(--card);border-radius:24px;padding:24px;min-height:170px;text-align:left;cursor:pointer;transition:.2s;box-shadow:0 1px 0 #fff}.door:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.door b{display:block;font-size:13px;letter-spacing:.12em}.door strong{display:block;font-size:26px;margin:30px 0 7px}.door span{color:var(--muted);font-size:14px}.door.water{background:#e9f1ef}.door.warm{background:#f4e8db}
+.section{margin-top:64px}.section-head{display:flex;justify-content:space-between;gap:15px;align-items:end;margin-bottom:18px}.section h2{font-size:34px;letter-spacing:-.04em;margin:0}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;cursor:pointer;box-shadow:0 5px 20px #17251d0b}.pic{height:210px;background:#dfe5db center/cover}.card-body{padding:17px}.tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--accent)}.card h3{margin:7px 0 4px;font-size:22px}.latin{color:var(--muted);font-style:italic;font-size:14px}.card p{color:var(--muted);font-size:14px;line-height:1.45}.evidence{margin-top:13px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.ok{color:#39705c}.regional{color:#8b6d36}
+.missions{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.mission{background:var(--ink);color:white;border-radius:20px;padding:20px;min-height:170px;cursor:pointer}.mission small{opacity:.6}.mission h3{font-size:20px;margin:30px 0 8px}.mission p{font-size:13px;opacity:.75;margin:0}
+.values{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.value{padding:20px;border-top:3px solid var(--accent);background:#ebe5d8}.value strong{display:block;font-size:18px}.value span{display:block;color:var(--muted);font-size:13px;margin-top:7px}
+.legal{display:grid;grid-template-columns:1fr 1fr;gap:14px}.legal article{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}.legal h3{margin:0 0 8px}.legal p{color:var(--muted);line-height:1.5;font-size:14px}.legal a{font-size:12px;font-weight:800}
+.tools{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0}.search{width:100%;padding:15px 17px;border:1px solid var(--line);border-radius:16px;background:white;font-size:16px}.filter{border:1px solid var(--line);background:var(--card);padding:10px 14px;border-radius:999px;cursor:pointer}.filter.active{background:var(--ink);color:white}
+footer{padding:45px 20px;background:#15221b;color:#dbe1d9}.foot{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px}.foot small{opacity:.65}
+.modal{position:fixed;inset:0;background:#101811b8;display:none;place-items:center;padding:18px;z-index:5}.modal.show{display:grid}.panel{max-width:720px;width:100%;max-height:90vh;overflow:auto;background:var(--paper);border-radius:26px;box-shadow:var(--shadow)}.panel img{width:100%;height:300px;object-fit:cover}.panel-in{padding:24px}.close{float:right;border:0;background:#e4ded0;border-radius:50%;width:40px;height:40px;cursor:pointer}.panel h2{font-size:36px;margin:10px 0 4px}.panel p{line-height:1.6;color:#4f5a52}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:20px 0}.fact{background:#e9e3d6;border-radius:13px;padding:12px;font-size:13px}.fact b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:13px 17px;border-radius:999px;display:none;z-index:8}.toast.show{display:block}
+@media(max-width:850px){.doors{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.missions,.values{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hero{min-height:70vh;padding:10px}.hero-in{padding:20px}.doors,.cards,.legal{grid-template-columns:1fr}.missions,.values{grid-template-columns:repeat(2,1fr)}.intro{display:block}.intro p{margin-top:12px}.pic{height:230px}.panel img{height:220px}.facts{grid-template-columns:1fr}.foot{display:block}}
+</style>
 </head>
 <body>
-<main id="app"></main>
-<script type="module" src="app.js"></script>
-</body>
-</html>
+<header class="hero"><div class="hero-in"><div class="eyebrow">OCARINA WILD · San Patricio del Chañar</div><h1>EL CHÁÑAR<br>VIVO.</h1><p>Una guía para mirar, reconocer y entender la naturaleza que nos rodea. Pensada para escuelas, familias, curiosos y gente de acá.</p><div class="mini">Agua · monte · chacras · cielo · vida silvestre</div></div></header>
+
+<main class="wrap">
+<section class="intro"><div><div class="eyebrow" style="color:var(--accent)">Entrá por una puerta</div><h2>No es una enciclopedia.<br>Es para descubrir.</h2></div><p>La portada queda corta. La profundidad aparece al tocar una especie, completar una misión o abrir una fuente. La información local y la regional nunca se mezclan.</p></section>
+
+<nav class="doors">
+<button class="door" onclick="go('fauna')"><b>01</b><strong>FAUNA</strong><span>Animales que podemos encontrar.</span></button>
+<button class="door warm" onclick="go('flora')"><b>02</b><strong>FLORA</strong><span>Plantas, árboles y adaptaciones.</span></button>
+<button class="door water" onclick="go('territorio')"><b>03</b><strong>TERRITORIO</strong><span>Agua, monte, chacras y cielo.</span></button>
+<button class="door" onclick="go('marco')"><b>04</b><strong>MARCO</strong><span>Fuentes, conservación y leyes.</span></button>
+</nav>
+
+<section class="section" id="fauna"><div class="section-head"><div><h2>Fauna para reconocer</h2><p>Fichas breves. Tocá una para entrar.</p></div></div>
+<div class="tools"><input id="search" class="search" placeholder="Buscar animal o planta…"><button class="filter active" data-f="todos">Todo</button><button class="filter" data-f="local">Local / documentado</button><button class="filter" data-f="regional">Zona / regional</button></div>
+<div class="cards" id="cards"></div></section>
+
+<section class="section" id="flora"><div class="section-head"><div><h2>Flora y adaptaciones</h2><p>La vida también cuenta cómo es este paisaje.</p></div></div><div class="cards" id="floraCards"></div></section>
+
+<section class="section" id="territorio"><div class="section-head"><div><h2>Misiones de campo</h2><p>Aprender haciendo, sin convertirlo en tarea pesada.</p></div></div><div class="missions" id="missions"></div></section>
+
+<section class="section"><div class="section-head"><div><h2>Valores de WILD</h2><p>Lo que guía cada ficha y cada misión.</p></div></div><div class="values">
+<div class="value"><strong>Mirar</strong><span>Antes de afirmar, observar.</span></div><div class="value"><strong>Cuidar</strong><span>La vida silvestre no se molesta.</span></div><div class="value"><strong>Preguntar</strong><span>La duda también es conocimiento.</span></div><div class="value"><strong>Probar</strong><span>Una observación puede abrir una investigación.</span></div><div class="value"><strong>Compartir</strong><span>El conocimiento local también es patrimonio.</span></div>
+</div></section>
+
+<section class="section" id="marco"><div class="section-head"><div><h2>Marco real</h2><p>Una capa documental sencilla para saber de dónde sale cada cosa.</p></div></div><div class="legal">
+<article><h3>Ley 25.675 · Ambiente</h3><p>Fija presupuestos mínimos para la gestión ambiental, conservación de la diversidad biológica, educación, información y participación.</p><a href="https://www.argentina.gob.ar/normativa/nacional/79980/texto" target="_blank">Ver norma oficial →</a></article>
+<article><h3>Ley 22.421 · Fauna</h3><p>Declara de interés público la fauna silvestre y establece el marco nacional para su protección, conservación y aprovechamiento racional.</p><a href="https://www.argentina.gob.ar/normativa/nacional/38116/actualizacion" target="_blank">Ver norma oficial →</a></article>
+<article><h3>Ley 26.331 · Bosques nativos</h3><p>Establece presupuestos mínimos para conservación, restauración y manejo sostenible de los bosques nativos y sus servicios ambientales.</p><a href="https://www.argentina.gob.ar/normativa/nacional/ley-26331-136125/texto" target="_blank">Ver norma oficial →</a></article>
+<article><h3>Ley 27.621 · Educación Ambiental Integral</h3><p>Convierte la educación ambiental integral en una política pública y promueve conocimientos, valores, participación y vínculo con los territorios.</p><a href="https://www.argentina.gob.ar/normativa/nacional/ley-27621-350594/texto" target="_blank">Ver norma oficial →</a></article>
+<article><h3>Neuquén · Ley 2594</h3><p>Marco provincial del Sistema de Áreas Naturales Protegidas. Se suma a la normativa ambiental provincial, incluida la Ley 1875.</p><a href="https://ambiente.neuquen.gov.ar/subsecretaria-de-cambio-climatico/repositorios/normativa-provincial/" target="_blank">Repositorio provincial →</a></article>
+<article><h3>Dique Compensador El Chañar</h3><p>La Municipalidad informa que fue declarado Área Natural Protegida Municipal en octubre de 2006 para conservar y preservar su ecosistema.</p><a href="https://sanpatricio.gob.ar/nuestra" target="_blank">Fuente municipal →</a></article>
+</div></section>
+
+<section class="section"><div class="section-head"><div><h2>Regla de evidencia</h2><p>WILD separa tres cosas que suelen confundirse.</p></div></div><div class="legal">
+<article><h3>Registro local</h3><p>Hay una fuente que permite vincular la especie con Chañar o un sitio puntual de la localidad.</p></article>
+<article><h3>Imagen</h3><p>Una foto sirve para reconocer. No prueba por sí sola que ese ejemplar haya sido fotografiado en Chañar.</p></article>
+<article><h3>Contexto regional</h3><p>Una especie puede ser propia de la estepa o de Neuquén y aun así necesitar una comprobación local antes de presentarla como “de Chañar”.</p></article>
+<article><h3>Fuente abierta</h3><p>Las fichas enlazan a SIB, Municipalidad, normativa oficial y repositorios públicos para que una escuela pueda seguir investigando.</p></article>
+</div></section>
+</main>
+<footer><div class="foot"><div><b>OCARINA WILD</b><br><small>Una biblioteca natural viva de San Patricio del Chañar.</small></div><small>Investigación y desarrollo: Ocarina Producciones · Elías Martínez</small></div></footer>
+
+<div class="modal" id="modal"><div class="panel" id="panel"></div></div><div class="toast" id="toast"></div>
+<script>
+const IMG=n=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(n);
+const items=[
+{id:'chanar',type:'flora',name:'Chañar',latin:'Geoffroea decorticans',tag:'árbol nativo',status:'local',img:IMG('Geoffroea decorticans.JPG'),desc:'Árbol autóctono que puede formar bosquecillos. Florece en primavera y fructifica hacia fines de primavera y comienzos del verano. Es una de las especies que mejor representa el nombre y la identidad del lugar.',facts:['4–8 m de altura','Fruto dulce y comestible','Floración: octubre–noviembre','Origen: autóctono'],src:'https://sib.gob.ar/especies/geoffroea-decorticans'},
+{id:'cisne',type:'fauna',name:'Cisne cuello negro',latin:'Cygnus melancoryphus',tag:'ave acuática',status:'local',img:IMG('Cygnus melancoryphus 537050772.jpg'),desc:'Ave acuática de blanco y negro asociada a lagunas y cuerpos de agua. La especie está documentada para Patagonia y existe registro local publicado para el Dique Compensador El Chañar.',facts:['Acuático','Se alimenta de vegetación sumergida','Puede formar concentraciones','Estado nacional: no amenazada'],src:'https://sib.gob.ar/especies/cygnus-melancoryphus'},
+{id:'calandria',type:'fauna',name:'Calandria grande',latin:'Mimus saturninus',tag:'ave',status:'regional',img:IMG('Mimus saturninus (calandria).jpg'),desc:'Una de las aves más reconocibles de los ambientes abiertos y productivos. En WILD se usa como ficha de reconocimiento regional hasta incorporar una cita local específica.',facts:['Autóctona','Ambientes abiertos','Imita cantos y sonidos','Estado nacional: no amenazada'],src:'https://sib.gob.ar/especies/mimus-saturninus'},
+{id:'aguilucho',type:'fauna',name:'Aguilucho ñanco',latin:'Geranoaetus polyosoma',tag:'ave rapaz',status:'regional',img:IMG('Geranoaetus polyosoma 201699947.jpg'),desc:'Rapaz ampliamente distribuida en Argentina. Es una excelente especie para aprender a mirar el cielo y diferenciar siluetas, vuelo y plumaje.',facts:['Rapaz','Cola blanca con banda negra','Autóctona','Estado nacional: no amenazada'],src:'https://sib.gob.ar/especies/geranoaetus-polyosoma'},
+{id:'mara',type:'fauna',name:'Mara',latin:'Dolichotis patagonum',tag:'mamífero',status:'regional',img:IMG('Patagonian Mara (Dolichotis patagonum) (CWPG).jpg'),desc:'Gran roedor patagónico de ambientes abiertos. Es una especie argentina emblemática, pero WILD no la presenta como registro de Chañar sin evidencia puntual.',facts:['Endémica de Argentina','Estepas y monte','Diurna','SAREM 2025: vulnerable'],src:'https://sib.gob.ar/especies/dolichotis-patagonum'},
+{id:'zorro',type:'fauna',name:'Zorro pampa',latin:'Lycalopex gymnocercus',tag:'mamífero',status:'regional',img:IMG('Lycalopex gymnocerca 616951812.jpg'),desc:'Carnívoro adaptable de ambientes abiertos, rurales y suburbanos. Su presencia regional está bien documentada; la ficha invita a buscar huellas, madrigueras y señales sin perseguir animales.',facts:['Ambientes abiertos','Muy adaptable','3–8,2 kg aprox.','SAREM 2025: preocupación menor'],src:'https://sib.gob.ar/especies/lycalopex-gymnocercus'},
+{id:'ataj',type:'fauna',name:'Atajacaminos ñañarca',latin:'Systellura longirostris',tag:'ave nocturna',status:'local',img:IMG('Systellura longirostris.jpg'),desc:'Ave crepuscular/nocturna de vuelo errático que captura insectos en el aire. Existe una cita SIB para el sector del Dique Compensador El Chañar.',facts:['Nocturna','Caza insectos en vuelo','Anida en el suelo','Cita local: 2017'],src:'https://sib.gob.ar/especies/systellura-longirostris'},
+{id:'osprey',type:'fauna',name:'Águila pescadora',latin:'Pandion haliaetus',tag:'visitante del agua',status:'local',img:IMG('Pandion haliaetus.jpg'),desc:'Rapaz especializada en peces y asociada a grandes cuerpos de agua. WILD la incorpora como línea de observación vinculada al Dique y su ambiente acuático.',facts:['Se alimenta de peces','Grandes cuerpos de agua','Migratoria en Argentina','Registro documentado para El Chañar'],src:'https://sib.gob.ar/especies/pandion-haliaetus'}
+];
+const flora=[items[0]];
+const missions=[
+['01','EL DETECTIVE DEL AGUA','Encontrá 3 formas de vida asociadas al agua.'],['02','5 ESPECIES','Reconocé 5 fichas y anotá qué evidencia las respalda.'],['03','PLANTA SOBREVIVIENTE','Buscá una planta y explicá qué rasgo la ayuda con el agua o el viento.'],['04','EL CIELO','Observá 10 minutos sin perseguir aves. Anotá silueta, vuelo y sonido.'],['05','CUIDAR SIN TOCAR','Armá cinco reglas de visita responsable para tu curso o familia.']
+];
+function card(x){return '<article class="card" data-name="'+(x.name+' '+x.latin).toLowerCase()+'" data-status="'+x.status+'" onclick="openItem(\''+x.id+'\')"><div class="pic" style="background-image:url(\''+x.img+'\')"></div><div class="card-body"><span class="tag">'+x.tag+'</span><h3>'+x.name+'</h3><div class="latin">'+x.latin+'</div><div class="evidence '+(x.status==='local'?'ok':'regional')+'">'+(x.status==='local'?'● vínculo local':'○ contexto regional')+'</div></div></article>'}
+function render(){document.getElementById('cards').innerHTML=items.filter(x=>x.type==='fauna').map(card).join('');document.getElementById('floraCards').innerHTML=flora.map(card).join('');document.getElementById('missions').innerHTML=missions.map(m=>'<article class="mission" onclick="mission(\''+m[0]+'\',\''+m[1]+'\')"><small>'+m[0]+'</small><h3>'+m[1]+'</h3><p>'+m[2]+'</p></article>').join('')}
+function openItem(id){let x=items.find(i=>i.id===id);document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><img src="'+x.img+'"><div class="panel-in"><span class="tag">'+x.tag+'</span><h2>'+x.name+'</h2><div class="latin">'+x.latin+'</div><div class="facts">'+x.facts.map((f,i)=>'<div class="fact"><b>Dato '+(i+1)+'</b>'+f+'</div>').join('')+'</div><p>'+x.desc+'</p><p><b>Fuente:</b> <a href="'+x.src+'" target="_blank">consultar ficha pública →</a></p></div>';document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function mission(n,t){document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><div class="panel-in"><span class="tag">Misión '+n+'</span><h2>'+t+'</h2><p>'+missions.find(m=>m[0]===n)[2]+'</p><div class="facts"><div class="fact"><b>Regla</b>No capturar, alimentar ni perseguir animales.</div><div class="fact"><b>Resultado</b>Una observación breve, clara y respetuosa.</div></div><button class="filter" onclick="closeModal();toast(\'Misión iniciada. Mirá primero.\')">EMPEZAR</button></div>';document.getElementById('modal').classList.add('show')}
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function toast(t){let e=document.getElementById('toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2200)}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+document.getElementById('search').addEventListener('input',e=>{let q=e.target.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.style.display=c.dataset.name.includes(q)?'block':'none')});
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{if(!b.dataset.f)return;document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');let f=b.dataset.f;document.querySelectorAll('.card').forEach(c=>c.style.display=(f==='todos'||c.dataset.status===f)?'block':'none')}));
+render();
+</script>
+</body></html>
