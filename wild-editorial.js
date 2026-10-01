@@ -23,6 +23,19 @@ const editorial=document.createElement("div");editorial.className="wild-editoria
 <section class="wild-section" id="metodo"><span class="section-label">04 · ARQUITECTURA DEL ARCHIVO</span><h2>Profundidad sin <em>ruido.</em></h2><p class="lead">La experiencia pública es simple; debajo existe una estructura que permite crecer a fotografías propias, sonidos, mapas, temporadas, fuentes y expedientes.</p><div class="ow-principles ow-reveal" style="background:#101812"><article><b>FUENTE</b><h3>De dónde sale.</h3><p>Cada afirmación importante debe poder rastrearse a una fuente identificable.</p></article><article><b>FOTOGRAFÍA</b><h3>Qué estamos viendo.</h3><p>La imagen tiene procedencia y no se usa como prueba local si no lo es.</p></article><article><b>PRESENCIA</b><h3>Qué sabemos aquí.</h3><p>Local, área de estudio, regional o candidato permanecen separados.</p></article></div></section>
 <footer class="ow-footer"><div class="ow-footer-grid"><div><h3>OCARINA WILD.</h3><p>Archivo natural vivo de San Patricio del Chañar.<br>Una producción de Ocarina Producciones.</p></div><div><p><b>EXPLORAR</b></p><a href="#explorar">Guía</a><a href="#territorio">Territorio</a><a href="#campo">Cuaderno</a></div><div><p><b>ARCHIVO</b></p><a href="#metodo">Método</a><a href="#" id="ow-footer-archive">Matriz</a></div><div><p><b>IDENTIDAD</b></p><p>Historias · personas · territorio</p></div></div><div class="ow-footer-bottom"><span>OCARINA PRODUCCIONES</span><span>CHAÑAR · NEUQUÉN · ARGENTINA</span><span>FUENTE ≠ FOTOGRAFÍA ≠ PRESENCIA LOCAL</span></div></footer>\`;
 document.querySelector("main.home").insertAdjacentElement("afterend",editorial);
+document.querySelectorAll(".home-photo img,.ow-chapter img,.manifesto-image img").forEach(img=>{
+  img.addEventListener("error",()=>{
+    img.parentElement?.classList.add("image-fallback");
+    img.style.display="none";
+  },{once:true});
+});
+document.querySelector(".home")?.addEventListener("pointermove",e=>{
+  const r=e.currentTarget.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  document.querySelectorAll(".home-photo").forEach((el,i)=>{const d=(i+1)*3;el.style.transform=`translate(${x*d}px,${y*d}px)`});
+});
+document.querySelector(".home")?.addEventListener("pointerleave",()=>{
+  document.querySelectorAll(".home-photo").forEach(el=>el.style.transform="translate(0,0)");
+});
 const openArchive=()=>window.OWV3?.matrix();
 q("#ow-open-archive")?.addEventListener("click",openArchive);q("#ow-mobile-archive")?.addEventListener("click",openArchive);q("#ow-footer-archive")?.addEventListener("click",e=>{e.preventDefault();openArchive()});q("#ow-journal")?.addEventListener("click",()=>window.OWV3?.journal());
 document.querySelectorAll(".ow-chapter[data-open]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();document.querySelector('[data-open="'+el.dataset.open+'"]')?.click()}));
