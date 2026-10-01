@@ -8,6 +8,8 @@ OCARINA WILD no es una enciclopedia general ni una base de datos fría. Es una *
 
 Hacer visible, comprensible y disfrutable la naturaleza de San Patricio del Chañar, construyendo un archivo local que pueda ser usado por vecinos, familias, escuelas y personas que quieran conocer el territorio.
 
+La misión está subordinada al **Estatuto Universal de Respeto a la Vida**, que es la norma interna superior del proyecto. El estatuto impide que una decisión visual, comercial, técnica o editorial contradiga la conservación.
+
 ## Valores
 
 1. **Chañar primero.** Un dato regional no se convierte automáticamente en evidencia local.
@@ -63,7 +65,15 @@ Principios técnicos:
 
 ## Política de imágenes
 
-Una imagen externa de referencia **no es una fotografía local**. La interfaz la etiqueta como tal. La evolución recomendada es incorporar progresivamente fotografías propias/locales con autoría, fecha, lugar y licencia documentados.
+Una imagen externa de referencia **no es una fotografía local**. La interfaz debe marcarla explícitamente como **FOTO DE REFERENCIA**, conservar procedencia y ofrecer acceso al archivo original cuando corresponda. La evolución recomendada es incorporar progresivamente fotografías propias/locales con autoría, fecha, lugar y licencia documentados.
+
+Quedan prohibidas imágenes que presenten fauna como comida, trofeo, espectáculo de captura o recurso de consumo. El criterio se extiende a portadas, tarjetas, fondos, publicidad y futuras integraciones.
+
+## Gobernanza conservacionista
+
+- ESTATUTO-CONSERVACION.md — norma interna superior.
+- AUDITORIA-CONSERVACIONISTA-2026-09-30.md — auditoría de contenido, fuentes, imágenes y funciones.
+- Toda ampliación del catálogo debe pasar primero por el control del estatuto y mantener el nivel de evidencia visible.
 
 ## Próxima evolución
 
