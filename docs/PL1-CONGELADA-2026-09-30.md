@@ -38,3 +38,18 @@ PL2 puede profundizar, sin alterar PL1, en: inventario fotográfico local, mapa 
 
 
 <!-- PL1+DATA layer tracked separately; core remains frozen. -->
+
+
+## Curaduría 3.17 · 2026-09-30
+
+Esta versión establece **3.17** como versión curada, reparada y actualizada de trabajo. La congelación PL1 continúa siendo la referencia estructural; 3.17 agrega transversalmente fuentes, esquema de investigación y capa profunda sin reemplazar el núcleo.
+
+### Reparaciones realizadas
+- Se activó correctamente la capa pl1-deep.js desde index.html.
+- La hoja pl1-deep.css se carga de forma aislada desde su propio módulo.
+- Se alineó el identificador visible de versión con **3.17**.
+- Se mantuvo separado el motor existente del sistema de investigación.
+- Se amplió el registro de fuentes nacionales, regionales e internacionales.
+
+### Regla 3.17
+**Toda mejora futura debe poder demostrar qué agrega, qué fuente utiliza y qué parte de la base congelada no modifica.**
