@@ -22,13 +22,26 @@ footer{padding:45px 20px;background:#15221b;color:#dbe1d9}.foot{max-width:1100px
 .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:13px 17px;border-radius:999px;display:none;z-index:8}.toast.show{display:block}
 @media(max-width:850px){.doors{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.missions,.values{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.hero{min-height:70vh;padding:10px}.hero-in{padding:20px}.doors,.cards,.legal{grid-template-columns:1fr}.missions,.values{grid-template-columns:repeat(2,1fr)}.intro{display:block}.intro p{margin-top:12px}.pic{height:230px}.panel img{height:220px}.facts{grid-template-columns:1fr}.foot{display:block}}
-</style>
+
+.explore{margin-top:34px;display:grid;grid-template-columns:1.3fr .7fr;gap:14px}.scene{min-height:380px;border-radius:28px;overflow:hidden;position:relative;background:#23483e center/cover url('https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg')}.scene:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#102018dd,#10201818 65%)}.scene-copy{position:absolute;z-index:1;bottom:0;padding:28px;color:#fff}.scene-copy h3{font-size:36px;margin:7px 0}.hotspots{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hotspot{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:18px;text-align:left;cursor:pointer;min-height:110px}.hotspot strong{display:block;font-size:18px;margin:12px 0 4px}.hotspot span{font-size:13px;color:var(--muted)}.trail{display:flex;gap:7px;overflow:auto;padding:5px 0 12px}.trail button{white-space:nowrap;border:0;border-radius:999px;background:#e7e1d5;padding:9px 13px;cursor:pointer}.trail button.active{background:var(--ink);color:#fff}.deep{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}.deep button{border:1px solid var(--line);background:#faf7ee;border-radius:15px;padding:13px;text-align:left;cursor:pointer}.deep b{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:4px}.sourcebox{border-left:3px solid var(--accent);padding:12px 15px;background:#ebe5d8;border-radius:0 12px 12px 0;margin-top:15px;font-size:13px}.question{background:var(--ink);color:white;border-radius:22px;padding:23px;margin-top:14px}.question b{font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.65}.question strong{display:block;font-size:23px;margin:9px 0}.question button{border:1px solid #ffffff44;background:#ffffff10;color:white;border-radius:999px;padding:9px 13px;cursor:pointer}
+@media(max-width:700px){.explore{grid-template-columns:1fr}.scene{min-height:310px}.hotspots{grid-template-columns:1fr 1fr}.deep{grid-template-columns:1fr 1fr}}
+
 </head>
 <body>
 <header class="hero"><div class="hero-in"><div class="eyebrow">OCARINA WILD · San Patricio del Chañar</div><h1>EL CHÁÑAR<br>VIVO.</h1><p>Una guía para mirar, reconocer y entender la naturaleza que nos rodea. Pensada para escuelas, familias, curiosos y gente de acá.</p><div class="mini">Agua · monte · chacras · cielo · vida silvestre</div></div></header>
 
 <main class="wrap">
 <section class="intro"><div><div class="eyebrow" style="color:var(--accent)">Entrá por una puerta</div><h2>No es una enciclopedia.<br>Es para descubrir.</h2></div><p>La portada queda corta. La profundidad aparece al tocar una especie, completar una misión o abrir una fuente. La información local y la regional nunca se mezclan.</p></section>
+
+
+<section class="explore" id="explorer">
+<div class="scene"><div class="scene-copy"><div class="eyebrow">UNA MISMA TIERRA · MUCHAS CAPAS</div><h3 id="sceneTitle">El agua abre el paisaje.</h3><p id="sceneText">Entrá por un ambiente y descubrí qué vida, rastros, sonidos y preguntas aparecen alrededor.</p></div></div>
+<div>
+<div class="eyebrow" style="color:var(--accent);margin:5px 0 10px">Elegí qué mirar</div>
+<div class="hotspots" id="hotspots"></div>
+<div class="question"><b>Pregunta de campo</b><strong id="fieldQuestion">¿Qué cambia cuando aparece el agua?</strong><button onclick="nextQuestion()">Otra pregunta ↗</button></div>
+</div>
+</section>
 
 <nav class="doors">
 <button class="door" onclick="go('fauna')"><b>01</b><strong>FAUNA</strong><span>Animales que podemos encontrar.</span></button>
@@ -43,9 +56,14 @@ footer{padding:45px 20px;background:#15221b;color:#dbe1d9}.foot{max-width:1100px
 
 <section class="section" id="flora"><div class="section-head"><div><h2>Flora y adaptaciones</h2><p>La vida también cuenta cómo es este paisaje.</p></div></div><div class="cards" id="floraCards"></div></section>
 
-<section class="section" id="territorio"><div class="section-head"><div><h2>Misiones de campo</h2><p>Aprender haciendo, sin convertirlo en tarea pesada.</p></div></div><div class="missions" id="missions"></div></section>
 
-<section class="section"><div class="section-head"><div><h2>Valores de WILD</h2><p>Lo que guía cada ficha y cada misión.</p></div></div><div class="values">
+<section class="section" id="territorio">
+<div class="section-head"><div><h2>Recorridos</h2><p>No son lugares para leer: son formas de mirar.</p></div></div>
+<div class="trail" id="trail"></div>
+<div class="section-head"><div><h2>Misiones de campo</h2><p>Aprender haciendo, sin convertirlo en tarea pesada.</p></div></div><div class="missions" id="missions"></div></section>
+
+<section class="section"><div class="section-head"><div><h2>Profundizar sin perderse</h2><p>La información pesada aparece solamente cuando hace falta.</p></div></div>
+<div class="legal"><article><h3>🟢 Evidencia</h3><p>Local, regional, candidata o pendiente. WILD muestra qué sabemos y qué todavía necesitamos comprobar.</p></article><article><h3>👁 Reconocer</h3><p>Forma, color, comportamiento, ambiente y pistas sencillas para aprender a identificar.</p></article><article><h3>🎧 Escuchar</h3><p>La próxima capa incorporará sonidos y cantos como otra puerta de entrada.</p></article><article><h3>🧭 Relacionar</h3><p>Una especie nunca aparece sola: agua, plantas, alimento, refugio y otras especies forman una red.</p></article></div></section><section class="section"><div class="section-head"><div><h2>Valores de WILD</h2><p>Lo que guía cada ficha y cada misión.</p></div></div><div class="values">
 <div class="value"><strong>Mirar</strong><span>Antes de afirmar, observar.</span></div><div class="value"><strong>Cuidar</strong><span>La vida silvestre no se molesta.</span></div><div class="value"><strong>Preguntar</strong><span>La duda también es conocimiento.</span></div><div class="value"><strong>Probar</strong><span>Una observación puede abrir una investigación.</span></div><div class="value"><strong>Compartir</strong><span>El conocimiento local también es patrimonio.</span></div>
 </div></section>
 
@@ -95,5 +113,28 @@ document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='
 document.getElementById('search').addEventListener('input',e=>{let q=e.target.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.style.display=c.dataset.name.includes(q)?'block':'none')});
 document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{if(!b.dataset.f)return;document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');let f=b.dataset.f;document.querySelectorAll('.card').forEach(c=>c.style.display=(f==='todos'||c.dataset.status===f)?'block':'none')}));
 render();
+
+const habitats=[
+{n:'AGUA',t:'El agua abre el paisaje.',d:'Dique, río, juncales y bordes húmedos concentran señales de vida.',q:'¿Qué formas de vida aparecen donde hay agua?',img:'https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg'},
+{n:'CHACRAS',t:'El riego también construye hábitat.',d:'Canales, cultivos, árboles y bordes productivos crean un mosaico distinto.',q:'¿Qué especies podrían usar los bordes de una chacra?',img:'https://commons.wikimedia.org/wiki/Special:FilePath/Chacras%20San%20Patricio%20del%20Cha%C3%B1ar.jpg'},
+{n:'MONTE',t:'La vida aprende a vivir con poco.',d:'Arbustos, suelo desnudo, viento y sequedad forman otro mundo.',q:'¿Qué adaptación ayuda a una planta a perder menos agua?',img:'https://commons.wikimedia.org/wiki/Special:FilePath/Monte%20Patag%C3%B3nico.jpg'},
+{n:'CIELO',t:'Arriba también hay territorio.',d:'El vuelo, la silueta y el sonido permiten reconocer aves sin capturarlas.',q:'¿Qué diferencia una rapaz de un ave pequeña en vuelo?',img:'https://commons.wikimedia.org/wiki/Special:FilePath/Geranoaetus%20polyosoma%20201699947.jpg'}
+];
+const detail={
+chanar:{mirar:'Copa abierta, ramas espinosas y pequeñas hojas.',habitat:'Monte, bordes y ambientes secos; también aparece en áreas intervenidas.',rastro:'Frutos y presencia de brotes o pequeños bosquecillos.',relacion:'Ofrece alimento y refugio; forma parte del paisaje que da nombre al lugar.',evidence:'Especie autóctona documentada para la región. La presencia puntual en cada sitio debe observarse y registrarse.'},
+cisne:{mirar:'Cuerpo blanco, cabeza y cuello negros con carúncula roja.',habitat:'Cuerpos de agua, lagunas y ambientes acuáticos.',rastro:'Presencia sobre el agua y alimentación de vegetación acuática.',relacion:'Conecta la calidad del ambiente acuático con la observación de aves.',evidence:'Existe registro publicado vinculado al Dique Compensador El Chañar.'},
+ataj:{mirar:'Ave discreta, actividad crepuscular y nocturna.',habitat:'Estepas, matorrales, claros y sectores abiertos.',rastro:'Se detecta mejor por actividad al anochecer que por búsqueda directa.',relacion:'Controla insectos al capturarlos en vuelo.',evidence:'Existe cita SIB de 2017 vinculada al sector del Dique.'},
+osprey:{mirar:'Rapaz grande asociada al agua y especializada en peces.',habitat:'Grandes cuerpos de agua.',rastro:'Vuelo sobre el agua y posibles zambullidas de pesca.',relacion:'Es un indicador visual de la conexión entre agua y fauna.',evidence:'La investigación acumulada incluye registro científico para Dique El Chañar.'}
+};
+const questions=habitats.map(x=>x.q);let qi=0;
+function setupExplorer(){
+document.getElementById('hotspots').innerHTML=habitats.map((x,i)=>'<button class="hotspot" onclick="showHabitat('+i+')"><span>0'+(i+1)+'</span><strong>'+x.n+'</strong><span>'+x.d+'</span></button>').join('');
+document.getElementById('trail').innerHTML=habitats.map((x,i)=>'<button onclick="showHabitat('+i+')">'+x.n+'</button>').join('');
+}
+function showHabitat(i){let x=habitats[i];document.querySelector('.scene').style.backgroundImage="linear-gradient(0deg,#102018dd,#10201818 65%),url('"+x.img+"')";document.getElementById('sceneTitle').textContent=x.t;document.getElementById('sceneText').textContent=x.d;document.getElementById('fieldQuestion').textContent=x.q;document.querySelectorAll('#trail button').forEach((b,j)=>b.classList.toggle('active',j===i));}
+function nextQuestion(){qi=(qi+1)%questions.length;document.getElementById('fieldQuestion').textContent=questions[qi];}
+const oldOpenItem=openItem;
+openItem=function(id){let x=items.find(i=>i.id===id),d=detail[id]||{};document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><img src="'+x.img+'"><div class="panel-in"><span class="tag">'+x.tag+'</span><h2>'+x.name+'</h2><div class="latin">'+x.latin+'</div><div class="trail"><button class="active">MIRAR</button><button>HÁBITAT</button><button>RASTRO</button><button>RELACIÓN</button><button>EVIDENCIA</button></div><div class="deep"><button><b>Mirar</b>'+ (d.mirar||'Observar rasgos que ayuden a reconocer.') +'</button><button><b>Hábitat</b>'+ (d.habitat||'Ambiente todavía en investigación local.') +'</button><button><b>Rastro</b>'+ (d.rastro||'Buscar señales sin alterar el ambiente.') +'</button><button><b>Relación</b>'+ (d.relacion||'Pensar qué otras especies y recursos se relacionan.') +'</button></div><div class="facts">'+x.facts.map((f,i)=>'<div class="fact"><b>Dato '+(i+1)+'</b>'+f+'</div>').join('')+'</div><p>'+x.desc+'</p><div class="sourcebox"><b>Qué sabemos:</b> '+(d.evidence||'Esta ficha requiere seguir incorporando evidencia local.')+'</div><p><b>Fuente:</b> <a href="'+x.src+'" target="_blank">consultar ficha pública →</a></p></div>';document.getElementById('modal').classList.add('show')};
+setupExplorer();showHabitat(0);
 </script>
 </body></html>
