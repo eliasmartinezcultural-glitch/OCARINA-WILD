@@ -5,7 +5,7 @@ const state={door:"fauna",type:"fauna",zone:"Todos",group:"Todos",query:"",favor
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
 function read(k,f){try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(f))}catch{return f}}
 function save(){localStorage.setItem("ow-favorites",JSON.stringify([...state.favorites]));localStorage.setItem("ow-observations",JSON.stringify(state.observations))}
-const label=s=>({local:"Mención local",documentada:"Documentada",prioridad:"Prioridad local",regional:"Marco regional",candidato:"Candidato",territorio:"Ambiente",protegido:"Área protegida",ecorregion:"Ecorregión"}[s]||s);
+const label=s=>({local:"Mención local",documentada:"Documentada",prioridad:"Prioridad local",regional:"Marco regional", "area-estudio":"Área de estudio",candidato:"Candidato",territorio:"Ambiente",protegido:"Área protegida",ecorregion:"Ecorregión"}[s]||s);
 const links=ids=>(ids||[]).map(id=>SOURCES[id]?'<a target="_blank" rel="noopener" href="'+esc(SOURCES[id].url)+'">'+esc(SOURCES[id].label)+' ↗</a>':"").join(" · ");
 function openDoor(d){if(d==="archivo"){archive();return}state.door=d;state.type=d==="territorio"?"territorio":d==="flora"?"flora":"fauna";state.zone="Todos";state.group="Todos";state.query="";history.replaceState(null,"","#"+d);panel.showModal();render()}
 function home(){panel.close();history.replaceState(null,"",location.pathname+location.search)}
