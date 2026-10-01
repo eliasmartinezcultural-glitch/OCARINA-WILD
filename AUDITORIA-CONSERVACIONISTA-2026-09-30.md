@@ -88,3 +88,20 @@ Primero se corrigen:
 7. documentación del Estatuto.
 
 Después de estas correcciones, el proyecto queda preparado para una segunda fase: **relevamiento local real de fauna y flora**, priorizando fotografías propias, observaciones trazables y fuentes científicas/institucionales.
+
+
+## Correcciones aplicadas después de la auditoría
+
+- F-004 a F-008: pasaron de “Registro local” a **PENDIENTE · presencia silvestre**, conservando el antecedente histórico de cautiverio.
+- F-005: se explicitó que `Carduelis carduelis` es el cardelino/jilguero europeo; el SIB de Parques Nacionales lo clasifica como introducido en Argentina. citeturn5search0
+- F-009: pasó a **Registro sanitario · mortalidad**; la cantidad quedó como “15 aves muertas”; su ubicación exacta dejó de exponerse públicamente y quedó excluida de “Sorpréndeme”.
+- F-010 a F-012: se corrigió el nivel a identificación/mención pendiente y se eliminó el lenguaje promocional de pesca.
+- Todas las imágenes externas visibles quedaron rotuladas como **FOTO DE REFERENCIA**; las fichas ofrecen acceso al archivo de Wikimedia cuando corresponde.
+- La portada incorpora procedencia visual explícita.
+- Se agregó fallback para imágenes externas que fallen.
+- El almacenamiento local de observaciones ahora maneja fallos de `localStorage` sin convertir una observación en confirmación.
+- Se verificó sintácticamente `app.js` después de las modificaciones: **OK**.
+
+## Criterio de cierre
+
+La auditoría conservacionista de esta versión queda **cerrada para la etapa actual**. No se incorporará una nueva especie, fotografía o función de catálogo hasta pasar el mismo control de evidencia, procedencia, contexto, impacto y coherencia con el Estatuto. El CDB también subraya la importancia de la educación pública sobre biodiversidad y de minimizar impactos adversos; OCARINA WILD adopta esos principios como referencia de diseño y gobernanza interna. citeturn7search11turn7search0
