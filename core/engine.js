@@ -142,7 +142,7 @@ function init(){
   $("#closeDialog").addEventListener("click",closeDialog);
   $("#speciesDialog").addEventListener("click",e=>{if(e.target.id==="speciesDialog")closeDialog();});
   document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("#speciesDialog").open)closeDialog();});
-  $(".jump-env,.territory-door").forEach(b=>b.addEventListener("click",()=>{state.env=b.dataset.env;updateFilters();renderGrid();document.querySelector("#vidas").scrollIntoView({behavior:"smooth"});}));
+  $$(".jump-env,.territory-door").forEach(b=>b.addEventListener("click",()=>{state.env=b.dataset.env;updateFilters();renderGrid();document.querySelector("#vidas").scrollIntoView({behavior:"smooth"});}));
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 
