@@ -137,7 +137,7 @@ function init(){
   $$(".env-chip").forEach(b=>b.addEventListener("click",()=>{state.env=b.dataset.env;updateFilters();renderGrid();}));
   $("#speciesSearch").addEventListener("input",e=>{state.query=e.target.value.trim();renderGrid();});
   $("#sortSpecies").addEventListener("change",e=>{state.sort=e.target.value;renderGrid();});
-  $("#surprise").addEventListener("click",randomRecord);
+  $("#surprise")?.addEventListener("click",randomRecord);
   $("#observe").addEventListener("click",openObservation);
   $("#closeDialog").addEventListener("click",closeDialog);
   $("#speciesDialog").addEventListener("click",e=>{if(e.target.id==="speciesDialog")closeDialog();});
