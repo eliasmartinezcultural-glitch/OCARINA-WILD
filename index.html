@@ -1,29 +1,22 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#07110f">
-<meta name="description" content="OCARINA WILD · archivo vivo de fauna, flora, ambientes y observaciones de San Patricio del Chañar.">
-<meta name="robots" content="index,follow">
-<title>OCARINA WILD · Chañar vivo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<a class="skip-link" href="#vidas">Saltar al atlas</a>
-<header class="site-header"><a class="brand" href="#inicio" aria-label="OCARINA WILD, inicio"><span>OW</span><b>OCARINA WILD</b></a><nav aria-label="Navegación principal"><a href="#vidas">VIDAS</a><a href="#territorio">AMBIENTES</a><button id="openAtlas" type="button">ARCHIVO</button></nav></header>
-<main id="inicio">
-<section class="hub" aria-labelledby="hub-title"><div class="hub-media" id="hubMedia" aria-label="Fauna y territorio de referencia"></div><div class="hub-shade"></div><div class="hub-copy"><span class="eyebrow">SAN PATRICIO DEL CHAÑAR · NEUQUÉN</span><h1 id="hub-title">CHAÑAR<br><em>VIVO.</em></h1><p>Un atlas visual para mirar la fauna, la flora y los ambientes del lugar. Entrá por curiosidad. Profundizá cuando quieras.</p><div class="hub-doors" aria-label="Puertas principales"><button class="door" data-door="fauna"><strong>01</strong><span>FAUNA</span><small>animales · aves · peces</small></button><button class="door" data-door="flora"><strong>02</strong><span>FLORA</span><small>plantas · monte · ribera</small></button><button class="door" data-door="territorio"><strong>03</strong><span>AMBIENTES</span><small>río · chacras · dique · monte</small></button><button class="door" data-door="archivo"><strong>04</strong><span>ARCHIVO</span><small>fuentes · evidencia · método</small></button></div></div><div class="hub-meta"><span>OCARINA WILD · 3.21</span><span>FUENTE ≠ FOTO ≠ PRESENCIA</span></div></section>
-<section class="quick-index" aria-label="Estado del atlas"><div><span>CATÁLOGO</span><strong id="statTotal">0</strong></div><div><span>FAUNA</span><strong id="statFauna">0</strong></div><div><span>FLORA</span><strong id="statFlora">0</strong></div><div><span>DOCUMENTADAS</span><strong id="statDocumented">0</strong></div><div><span>PENDIENTES</span><strong id="statPending">0</strong></div></section>
-<section id="vidas" class="atlas" aria-labelledby="lives-title"><div class="atlas-head"><div><span class="eyebrow">01 · VIDAS</span><h2 id="lives-title">Elegí una vida.</h2></div><p>No hace falta saber el nombre. Buscá, filtrá o simplemente dejate llevar por una imagen.</p></div><div class="tools" aria-label="Herramientas del catálogo"><label class="search-box"><span>BUSCAR</span><input id="speciesSearch" type="search" placeholder="Nombre, científico, ambiente..." autocomplete="off"></label><div class="filter-row"><button class="filter-chip active" data-kind="all" aria-pressed="true">TODO</button><button class="filter-chip" data-kind="fauna" aria-pressed="false">FAUNA</button><button class="filter-chip" data-kind="flora" aria-pressed="false">FLORA</button></div><div class="filter-row environments"><span>AMBIENTE</span><button class="env-chip active" data-env="all" aria-pressed="true">TODOS</button><button class="env-chip" data-env="rio" aria-pressed="false">RÍO</button><button class="env-chip" data-env="chacras" aria-pressed="false">CHACRAS</button><button class="env-chip" data-env="dique" aria-pressed="false">DIQUE</button><button class="env-chip" data-env="monte" aria-pressed="false">MONTE</button></div><label class="sort-box"><span>ORDENAR</span><select id="sortSpecies"><option value="relevance">RELEVANCIA</option><option value="name">NOMBRE</option><option value="evidence">EVIDENCIA</option></select></label></div><div id="speciesStatus" class="live-status" aria-live="polite"></div><div id="speciesGrid" class="species-grid"></div></section>
-<section id="territorio" class="territory"><div class="territory-head"><span class="eyebrow">02 · AMBIENTES</span><h2>El territorio es parte de la especie.</h2><p>Cuatro puertas para entender cómo cambian el agua, el suelo, la vegetación y la vida.</p></div><div class="territory-grid"><button class="territory-door" data-env="rio"><span>RÍO</span><small>agua · ribera · movimiento</small></button><button class="territory-door" data-env="chacras"><span>CHACRAS</span><small>riego · arbolado · producción</small></button><button class="territory-door" data-env="dique"><span>DIQUE</span><small>agua · protección · aves</small></button><button class="territory-door" data-env="monte"><span>MONTE</span><small>viento · suelo · adaptación</small></button></div></section>
-<section class="field-note"><span class="eyebrow">03 · REGLA DEL ATLAS</span><h2>Una foto puede mostrar.<br><em>Una fuente tiene que sostener.</em></h2><p>Las imágenes externas son referencias visuales y están marcadas como tales. Un registro local, una observación y una referencia regional nunca ocupan el mismo lugar de evidencia.</p><button id="observe" type="button">SUMAR UNA OBSERVACIÓN ↗</button></section>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1712"><title>OCARINA WILD · San Patricio del Chañar</title><link rel="stylesheet" href="styles.css"></head><body>
+<main class="home">
+  <div class="photo photo-a"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mimus_saturninus_(6223460929).jpg" alt="Calandria grande"></div>
+  <div class="photo photo-b"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Colaptes_melanochloros_melanolaimus,_CABA.jpg" alt="Carpintero real"></div>
+  <div class="photo photo-c"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tachycineta_leucopyga_1894.jpg" alt="Golondrina patagónica"></div>
+  <div class="veil"></div>
+  <header><a class="logo" href="/">OCARINA <i>WILD</i></a><span>01 · SAN PATRICIO DEL CHAÑAR</span></header>
+  <section class="center">
+    <p class="kicker">FAUNA · FLORA · TERRITORIO</p>
+    <h1>CHAÑAR<br><i>VIVO.</i></h1>
+    <p class="intro">Una forma simple de entrar a la naturaleza de San Patricio del Chañar.</p>
+    <div class="doors">
+      <button data-open="fauna"><b>01</b><strong>FAUNA</strong><small>aves · peces · animales</small></button>
+      <button data-open="flora"><b>02</b><strong>FLORA</strong><small>plantas · árboles · vegetación</small></button>
+      <button data-open="territorio"><b>03</b><strong>TERRITORIO</strong><small>río · chacras · monte · dique</small></button>
+      <button data-open="archivo"><b>04</b><strong>ARCHIVO</strong><small>fuentes · evidencia · método</small></button>
+    </div>
+  </section>
+  <footer><span>Ocarina Producciones</span><span>NEUQUÉN · ARGENTINA</span></footer>
 </main>
-<footer><div><b>OCARINA WILD</b><span>Fauna · flora · territorio · memoria natural</span></div><div><small>Un proyecto de Ocarina Producciones</small><small>San Patricio del Chañar · Neuquén · Argentina</small></div></footer>
-<dialog id="speciesDialog" aria-labelledby="dialogTitle"><button id="closeDialog" class="close" type="button" aria-label="Cerrar">×</button><div id="dialogContent"></div></dialog>
-<dialog id="atlasDialog" aria-labelledby="atlasDialogTitle"><button id="closeAtlas" class="close" type="button" aria-label="Cerrar">×</button><div id="atlasContent"></div></dialog>
-<noscript><div class="noscript">OCARINA WILD necesita JavaScript para abrir las fichas interactivas.</div></noscript>
-<script src="app.js" type="module"></script><script src="wild-3-21.js" type="module"></script></body></html>
+<dialog id="panel"><button class="x" id="close" aria-label="Cerrar">×</button><div id="content"></div></dialog>
+<script type="module" src="app.js"></script></body></html>
