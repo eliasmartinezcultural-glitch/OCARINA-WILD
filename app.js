@@ -12,7 +12,7 @@ function img(url,alt=""){return url?'<img src="'+url+'" alt="'+alt+'" loading="l
 function open(type){
  const d=data[type];if(!d)return;
  const facts=d.facts.map(x=>'<div class="fact"><b>'+x[0]+'</b><span>'+x[1]+'</span></div>').join("");
- const zones=d.zones.map((z,i)=>'<button class="zone" type="button"><span>0'+(i+1)+'</span><strong>'+z+'</strong><i>explorar</i></button>').join("");
+ const zones=d.zones.map((z,i)=>'<div class="zone"><span>0'+(i+1)+'</span><strong>'+z+'</strong><i>explorar</i></div>').join("");
  const cards=d.cards.map((x,i)=>'<article class="wild-card '+(x[3]?'has-image':'')+'">'+(x[3]?img(x[3],x[0]):'<div class="card-art"><span>OCARINA WILD</span></div>')+'<div class="card-body"><small>0'+(i+1)+' · '+d.kicker.split(" · ")[1]+'</small><h3>'+x[0]+'</h3><p>'+x[1]+'</p><em>'+x[2]+'</em></div></article>').join("");
  content.innerHTML='<section class="deep-panel"><div class="deep-hero">'+img(d.hero,d.title.replace(/<[^>]+>/g," "))+'<div class="hero-shade"></div><div class="hero-copy"><span>'+d.kicker+'</span><h2>'+d.title+'</h2><p>'+d.lead+'</p></div></div><div class="deep-body"><div class="fact-row">'+facts+'</div><div class="explore-head"><div><span class="eyebrow">ELEGÍ UN PAISAJE</span><h3>Entrá por donde quieras.</h3></div><span class="micro">La profundidad aparece después del primer clic.</span></div><div class="zone-grid">'+zones+'</div><div class="explore-head library-head"><div><span class="eyebrow">BIBLIOTECA VISUAL</span><h3>Mirar antes de leer.</h3></div><span class="micro">Cada ficha puede crecer sin romper la portada.</span></div><div class="wild-grid">'+cards+'</div><div class="method"><span class="eyebrow">MÉTODO OCARINA WILD</span><p>'+d.note+'</p></div></div></section>';
  panel.showModal();
