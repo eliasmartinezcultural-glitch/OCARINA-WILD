@@ -112,7 +112,7 @@ function bindPanel(){
  content.querySelectorAll("[data-home]").forEach(b=>b.onclick=close);
  content.querySelectorAll("[data-back]").forEach(b=>b.onclick=render);
  const search=document.querySelector("#search");if(search){search.oninput=()=>{state.query=search.value;render();requestAnimationFrame(()=>{const s=document.querySelector("#search");s?.focus();s?.setSelectionRange(state.query.length,state.query.length)})}}
- const fav=document.querySelector("[data-favorites");if(fav)fav.onclick=()=>{state.filter=state.filter==="★"?"Todos":"★";render()};
+ const fav=document.querySelector("[data-favorites]");if(fav)fav.onclick=()=>{state.filter=state.filter==="★"?"Todos":"★";render()};
 }
 
 function close(){panel.close();history.replaceState(null,"",location.pathname+location.search)}
