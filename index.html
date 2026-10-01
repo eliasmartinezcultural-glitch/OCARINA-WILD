@@ -13,6 +13,17 @@
 .section{margin-top:58px}.section h2{font-size:34px;letter-spacing:-.04em;margin:0}.sub{color:var(--muted);margin:6px 0 18px}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.search{width:100%;padding:14px;border:1px solid var(--line);border-radius:15px;background:white}.pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 13px}.pill.active{background:var(--ink);color:white}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}.card img{display:block;width:100%;height:205px;object-fit:cover;background:#dfe4dc}.body{padding:16px}.tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#a96537}.card h3{font-size:21px;margin:6px 0 2px}.latin{font-size:13px;color:var(--muted);font-style:italic}.status{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;margin-top:12px}.local{color:#39705c}.regional{color:#8b6d36}.missions{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.mission{background:var(--ink);color:#fff;border:0;border-radius:18px;padding:18px;min-height:155px;text-align:left}.mission small{opacity:.6}.mission strong{display:block;margin:28px 0 8px;font-size:18px}.mission span{font-size:12px;opacity:.7}.legal{display:grid;grid-template-columns:1fr 1fr;gap:12px}.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:19px}.box h3{margin:0 0 7px}.box p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}.modal{display:none;position:fixed;inset:0;background:#101811b8;z-index:9;padding:16px;place-items:center}.modal.show{display:grid}.panel{width:min(700px,100%);max-height:90vh;overflow:auto;background:var(--paper);border-radius:24px}.panel img{width:100%;height:280px;object-fit:cover}.panel-in{padding:22px}.close{float:right;border:0;border-radius:50%;width:40px;height:40px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:18px 0}.fact{background:#e8e2d5;border-radius:12px;padding:12px;font-size:13px}.fact b{display:block;font-size:10px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}.footer{background:#15221b;color:#dbe1d9;padding:40px 20px}.footer-in{width:min(1050px,100%);margin:auto;display:flex;justify-content:space-between;gap:20px}
 @media(max-width:800px){.doors{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.missions{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.hero{min-height:68vh;padding:8px}.hero-in{padding:16px}.doors,.cards,.legal{grid-template-columns:1fr}.missions{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr}.footer-in{display:block}}
+
+.rastro-launch{margin-top:14px;background:#17251d;color:#fff;border:0;border-radius:20px;padding:22px;text-align:left;width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.rastro-launch b{font-size:11px;letter-spacing:.16em}.rastro-launch strong{display:block;font-size:28px;margin:5px 0}.rastro-launch span{font-size:13px;opacity:.72}.rastro-launch em{font-style:normal;font-size:34px}
+.rastro-toolbar{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0}.rastro-toolbar button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;font-size:11px;font-weight:800}.rastro-toolbar button.active{background:var(--ink);color:#fff}
+.traces{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.trace{border:1px solid var(--line);background:var(--card);border-radius:19px;overflow:hidden;text-align:left;padding:0}.trace-art{height:145px;display:grid;place-items:center;background:linear-gradient(135deg,#e6dfd1,#d5e2db);font-size:58px}.trace-body{padding:15px}.trace-type{font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:#a96537}.trace h3{margin:5px 0;font-size:19px}.trace p{font-size:12px;line-height:1.45;color:var(--muted);margin:0}.trace-rel{margin-top:10px;font-size:10px;font-weight:800}.trace-local{color:#39705c}.trace-reg{color:#8b6d36}
+.trace-panel{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:14px 0}.trace-step{background:#e8e2d5;border-radius:13px;padding:13px;font-size:12px;line-height:1.4}.trace-step b{display:block;font-size:9px;letter-spacing:.1em;color:var(--muted);margin-bottom:5px}
+.mini-links{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.mini-links button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 10px;font-size:10px;font-weight:800}
+.field-mode{position:fixed;right:15px;bottom:15px;z-index:8;border:0;background:#17251d;color:#fff;border-radius:999px;padding:12px 15px;font-weight:900;box-shadow:0 8px 30px #0003}.field-mode.on{background:#a96537}
+body.field-active .hero{min-height:55vh}body.field-active .intro,body.field-active .legal,.field-active .footer{display:none}body.field-active .wrap{padding-bottom:35px}.field-active .section:not(#rastros){display:none}.field-active #rastros{margin-top:20px}.field-active .rastro-launch{display:none}
+@media(max-width:800px){.traces{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.traces{grid-template-columns:1fr}.trace-art{height:125px}.trace-panel{grid-template-columns:1fr}.rastro-launch strong{font-size:23px}}
 </style>
 </head>
 <body>
@@ -25,13 +36,13 @@
 <button class="door" onclick="go('misiones')"><b>03</b><strong>DESCUBRIR</strong><span>Preguntas y pequeñas misiones de campo.</span></button>
 <button class="door" onclick="go('marco')"><b>04</b><strong>MARCO</strong><span>Fuentes, conservación y leyes.</span></button>
 </nav>
-<div class="territory"><div>💧 AGUA<small>vida y humedales</small></div><div>🐦 CIELO<small>aves y movimiento</small></div><div>🌿 MONTE<small>adaptación y refugio</small></div><div>🍎 CHACRAS<small>riego y paisaje</small></div><div>👣 RASTRO<small>señales de vida</small></div><div>🔎 CAMBIO<small>qué observar</small></div></div>
+<div class="territory"><div>💧 AGUA<small>vida y humedales</small></div><div>🐦 CIELO<small>aves y movimiento</small></div><div>🌿 MONTE<small>adaptación y refugio</small></div><div>🍎 CHACRAS<small>riego y paisaje</small></div><div>👣 RASTRO<small>señales de vida</small></div><div>🔎 CAMBIO<small>qué observar</small></div></div><button class="rastro-launch" onclick="go('rastros')"><div><b>EXPERIENCIA DE CAMPO</b><strong>RASTROS</strong><span>Huellas · plumas · nidos · frutos · hojas · madrigueras · agua · sonidos</span></div><em>👣</em></button>
 <section class="section" id="fauna"><h2>Fauna</h2><div class="sub">Una primera colección para reconocer y seguir investigando.</div>
 <div class="tools"><input id="search" class="search" placeholder="Buscar especie, ambiente o nombre científico…"><button class="pill active" data-filter="todos">Todo</button><button class="pill" data-filter="aves">Aves</button><button class="pill" data-filter="mamiferos">Mamíferos</button><button class="pill" data-filter="peces">Peces</button><button class="pill" data-filter="anfibios">Anfibios</button></div>
 <div class="cards" id="faunaCards"></div></section>
 <section class="section" id="flora"><h2>Flora</h2><div class="sub">Plantas para entender el monte, el agua y las adaptaciones.</div><div class="cards" id="floraCards"></div></section>
 <section class="section" id="microvida"><h2>Microvida</h2><div class="sub">Lo pequeño también cuenta: insectos, polinizadores y descomponedores son parte del paisaje.</div><div class="micro"><div class="box"><h3>🐝 Polinizadores</h3><p>Buscá visitas sobre flores: abejas, abejorros, moscas y otros insectos.</p></div><div class="box"><h3>🦋 Mariposas</h3><p>Las plantas del monte y las chacras también son lugares de alimentación y refugio.</p></div><div class="box"><h3>🪲 Descomponedores</h3><p>Escarabajos y otros organismos ayudan a transformar materia orgánica.</p></div><div class="box"><h3>🕷️ Cazadores</h3><p>Arañas y otros depredadores conectan insectos con la trama alimentaria.</p></div></div><div class="field-note">La microfauna merece una futura colección propia. Por ahora se presenta como <b>campo de observación</b>, no como inventario local confirmado.</div></section>
-<section class="section" id="misiones"><h2>Misiones</h2><div class="sub">Aprender mirando, sin molestar la vida silvestre.</div><div class="missions" id="missionCards"></div></section>
+<section class="section" id="rastros"><h2>Rastros</h2><div class="sub">No necesitás ver al animal para descubrir que estuvo ahí.</div><div class="rastro-toolbar" id="traceFilters"></div><div class="traces" id="traceCards"></div><div class="field-note"><b>REGLA DE CAMPO</b><br>Una señal puede orientar, pero no siempre permite identificar una especie. La experiencia separa <b>foto de evidencia</b>, <b>guía visual</b> y <b>suposición</b>.</div></section><section class="section" id="misiones"><h2>Misiones</h2><div class="sub">Aprender mirando, sin molestar la vida silvestre.</div><div class="missions" id="missionCards"></div></section>
 <section class="section" id="marco"><h2>Marco y fuentes</h2><div class="sub">La información local y la regional se mantienen separadas.</div><div class="legal">
 <div class="box"><h3>Ley 25.675</h3><p>Ley General del Ambiente. Presupuestos mínimos, preservación y educación ambiental.</p></div>
 <div class="box"><h3>Ley 22.421</h3><p>Conservación de la fauna silvestre y protección de sus poblaciones.</p></div>
@@ -118,6 +129,40 @@ function closeModal(){document.getElementById('modal').classList.remove('show')}
 document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeModal()};
 let active='todos';function filter(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('#faunaCards .card').forEach(c=>c.style.display=(active==='todos'||c.dataset.group===active)&&c.dataset.name.includes(q)?'block':'none')}
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{active=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter()});document.getElementById('search').oninput=filter;render();
-</script>
-</body>
+
+// RASTROS · experiencia visual independiente
+const traces=[
+['huella','👣','HUELLA','Huellas en suelo húmedo o blando','Buscá forma, tamaño, dedos y dirección. No sigas al animal.','Puede orientar hacia mamíferos o aves; requiere contexto.','zorro','regional'],
+['pluma','🪶','PLUMA','Una pluma encontrada en el paisaje','Mirá patrón, tamaño y dónde apareció. No arranques plumas de animales.','Puede relacionarse con aves; una pluma aislada no siempre identifica especie.','cisne','local'],
+['nido','🪹','NIDO','Construcción sobre árbol, arbusto o suelo','Observá desde lejos: material, altura y ubicación. Nunca lo toques.','Conecta aves con plantas, ramas, barro y refugio.','calandria','regional'],
+['mordida','🍃','HOJA COMIDA','Marcas, bordes y perforaciones','Mirá qué parte falta y si hay otros rastros alrededor.','Puede indicar herbivoría o insectos; no concluyas especie sin más evidencia.','chanar','local'],
+['fruto','🫐','FRUTO / SEMILLA','Frutos abiertos, mordidos o semillas dispersas','Registrá planta, estado del fruto y ubicación.','Puede revelar alimentación y dispersión de semillas.','chanar','local'],
+['madriguera','🕳️','MADRIGUERA','Entrada, suelo removido y refugio','No introduzcas manos ni objetos. Observá desde lejos.','Puede pertenecer a distintos animales según tamaño y contexto.','mara','regional'],
+['heces','●','EXCREMENTO','Una señal difícil pero útil','No tocar. Registrá forma, tamaño y lugar; lavate las manos si hubo contacto accidental.','Ayuda a detectar presencia, pero la identificación requiere experiencia.','zorro','regional'],
+['agua','💧','SEÑAL DEL AGUA','Ondas, saltos, restos o vegetación alterada','Mirá superficie, orilla y vegetación sin entrar al agua.','Puede revelar peces, anfibios, aves u otros organismos.','perca','regional'],
+['voz','🔊','VOCALIZACIÓN','Un sonido antes que una imagen','Quedate quieto, ubicá dirección y momento. No reproduzcas llamados para atraer fauna.','Puede ser clave para aves y anfibios, pero necesita comparación confiable.','ataj','local']
+];
+const traceFilters=[['todos','Todo'],['huella','Huellas'],['pluma','Plumas'],['nido','Nidos'],['mordida','Hojas'],['fruto','Frutos'],['madriguera','Madrigueras'],['heces','Excrementos'],['agua','Agua'],['voz','Sonidos']];
+let traceActive='todos';
+function renderTraces(){
+ document.getElementById('traceFilters').innerHTML=traceFilters.map(f=>'<button class="'+(traceActive===f[0]?'active':'')+'" onclick="traceFilter(\''+f[0]+'\')">'+f[1]+'</button>').join('');
+ document.getElementById('traceCards').innerHTML=traces.filter(t=>traceActive==='todos'||t[0]===traceActive).map(t=>'<button class="trace" onclick="openTrace(\''+t[0]+'\')"><div class="trace-art">'+t[1]+'</div><div class="trace-body"><span class="trace-type">'+t[2]+'</span><h3>'+t[2]+'</h3><p>'+t[3]+'</p><div class="trace-rel '+(t[7]==='local'?'trace-local':'trace-reg')+'">'+(t[7]==='local'?'● vínculo local relacionado':'○ contexto regional')+'</div></div></button>').join('');
+}
+function traceFilter(v){traceActive=v;renderTraces()}
+function openTrace(id){
+ const t=traces.find(x=>x[0]===id);
+ const related=(data.find(x=>x[0]===t[6])||plants.find(x=>x[0]===t[6]));
+ const name=related?(related[2]||related[1]):'seguir investigando';
+ document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><div class="panel-in"><span class="tag">RASTRO DE CAMPO</span><div class="trace-art" style="border-radius:18px;margin-top:12px">'+t[1]+'</div><h2>'+t[2]+'</h2><p>'+t[3]+'</p><div class="trace-panel"><div class="trace-step"><b>CÓMO MIRAR</b>'+t[4]+'</div><div class="trace-step"><b>QUÉ NO CONCLUIR</b>'+t[5]+'</div></div><div class="dossier-block"><b>CONEXIÓN</b>Seguí la pista hacia <strong>'+name+'</strong>.</div><div class="mini-links"><button onclick="closeModal();openCard(\''+t[6]+'\', '+(plants.some(x=>x[0]===t[6]))+')">ABRIR ESPECIE RELACIONADA</button><button onclick="closeModal();go(\'rastros\')">VER OTROS RASTROS</button></div><div class="field-note"><b>EVIDENCIA</b><br>'+(t[7]==='local'?'Existe un vínculo local documentado para la especie relacionada; este rastro puntual no se presenta como fotografía de evidencia.':'La especie relacionada es contexto regional; no se afirma que este rastro corresponda a ella en El Chañar.')+'</div></div>';
+ document.getElementById('modal').classList.add('show');
+}
+function toggleFieldMode(){
+ document.body.classList.toggle('field-active');
+ const on=document.body.classList.contains('field-active');
+ document.querySelector('.field-mode').classList.toggle('on',on);
+ document.querySelector('.field-mode').textContent=on?'✕ SALIR DEL MODO CAMPO':'👣 MODO CAMPO';
+ if(on) go('rastros');
+}
+renderTraces();</script>
+<button class="field-mode" onclick="toggleFieldMode()">👣 MODO CAMPO</button></body>
 </html>
