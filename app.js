@@ -130,11 +130,13 @@ function card(x,i){
   return '<article class="life-card" data-species="'+esc(x.id)+'"><div class="life-photo"><img loading="lazy" src="'+esc(src)+'" alt="'+esc(x.name)+'" data-species="'+esc(x.id)+'"><span>REPRESENTACIÓN · NO PRUEBA PRESENCIA</span><button class="star '+(state.favorites.has(x.id)?"on":"")+'" data-fav="'+esc(x.id)+'">'+(state.favorites.has(x.id)?"★":"☆")+'</button></div><div class="life-copy"><small>'+esc(x.zone||"Territorio")+'</small><h3>'+esc(x.name)+'</h3><em>'+esc(x.scientific||"")+'</em><p>'+esc(x.summary)+'</p><div><label class="status '+statusClass(x.status)+'">'+statusLabel(x.status)+'</label><b>ABRIR →</b></div></div></article>';
 }
 function catalog(type){
+  state.view="catalog"; state.selected=null;
   const c=counts(), title=type==="fauna"?"FAUNA":"FLORA", lead=type==="fauna"?"Aves, peces, mamíferos y reptiles del archivo. La etiqueta te dice qué tan cerca está cada dato de Chañar.":"Árboles, arbustos y vegetación del paisaje productivo, ribereño y del Monte.";
-  doorShell(title,"PUERTA "+(type==="fauna"?"01":"02"),lead,controls(type)+cards(type)+"<div class="after-note"><b>¿Querés ir más profundo?</b><button data-archive>ABRIR ARCHIVO</button></div>");
+  doorShell(title,"PUERTA "+(type==="fauna"?"01":"02"),lead,controls(type)+cards(type)+'<div class="after-note"><b>¿Querés ir más profundo?</b><button data-archive>ABRIR ARCHIVO</button></div>');
   bind(); hydrate();
 }
 function territory(){
+  state.view="territory"; state.selected=null;
   const places=[
     ["Río Neuquén","agua · ribera · corredor",VISUALS["rio-neuquen"],"Corredor de agua, ribera y vida. El municipio lo presenta como espacio de pesca y actividades de naturaleza."],
     ["Dique Compensador El Chañar","agua · juncales · aves",VISUALS["dique-compensador"],"Área Natural Protegida Municipal desde octubre de 2006. El estudio UNCo/CONICET destaca su mosaico de ambientes."],
@@ -158,6 +160,7 @@ function placeDetail(index){
   bind();
 }
 function detail(id){
+  state.view="detail";
   const x=SPECIES.find(s=>s.id===id); if(!x)return;
   state.selected=id;
   const related=SPECIES.filter(s=>s.id!==id&&s.type===x.type&&(s.zone||"").split(" / ").some(z=>(x.zone||"").toLowerCase().includes(z.toLowerCase()))).slice(0,4);
@@ -165,10 +168,12 @@ function detail(id){
   bind(); hydrate();
 }
 function journal(){
+  state.view="journal";
   app.innerHTML='<section class="journal"><div class="journal-head">'+nav()+'<button class="back" data-back-door>← VOLVER</button><span class="micro">CUADERNO DE CAMPO</span><h2>Lo que viste.</h2><p>Primero queda en tu dispositivo. Nada se publica automáticamente.</p></div><div class="journal-content"><form id="obs"><label>QUÉ VISTE<input name="what" required placeholder="Ave, planta, huella, paisaje..."></label><label>DÓNDE<input name="where" required placeholder="Río, dique, chacra, monte..."></label><label>FECHA<input name="date" type="date" required></label><label>EVIDENCIA<select name="evidence"><option>observación visual</option><option>fotografía</option><option>video</option><option>huella / rastro</option><option>sonido</option></select></label><label>CANTIDAD<input name="quantity" type="number" min="1" value="1"></label><label>CONFIANZA<select name="confidence"><option>media</option><option>alta</option><option>baja</option></select></label><label class="wide">NOTAS<textarea name="notes" placeholder="Color, comportamiento, cantidad, contexto..."></textarea></label><label class="check"><input name="private" type="checkbox" checked> Mantener privada esta observación</label><button class="primary">GUARDAR</button></form><div class="records"><span class="micro">REGISTROS · '+state.observations.length+'</span>'+(state.observations.length?state.observations.slice().reverse().map(o=>'<article><b>'+esc(o.what)+'</b><span>'+esc(o.where)+' · '+esc(o.date)+'</span><p>'+esc(o.notes||"Sin notas")+'</p></article>').join(""):'<div class="empty"><b>Aún no hay registros.</b><span>Una mirada puede ser el comienzo.</span></div>')+'</div></div></section>';
   bind();
 }
 function archive(){
+  state.view="archive"; state.door="archivo"; state.selected=null;
   const c=counts();
   const laws=[
     ["CDB","Convenio sobre la Diversidad Biológica","https://www.cbd.int/convention/articles/default.shtml?a=cbd-01&lg=0"],
@@ -209,6 +214,7 @@ function surprise(){
   detail(x.id);
 }
 function mission(name){
+  state.view="mission";
   const data={
     "RÍO":["RÍO","agua · ribera · barrancas","Durante 5 minutos mirá primero el movimiento del agua y después buscá vida en los bordes."],
     "DIQUE":["DIQUE","juncales · aves · rapaces","Quedate quieto 5 minutos. Contá movimientos, siluetas y sonidos sin acercarte a los animales."],
@@ -241,7 +247,7 @@ function bind(){
   app.querySelectorAll("[data-back-door]").forEach(b=>b.onclick=backFromDetail);
   app.querySelectorAll("[data-place]").forEach(b=>b.onclick=()=>placeDetail(Number(b.dataset.place)));
   app.querySelectorAll("[data-mission]").forEach(b=>b.onclick=()=>mission(b.dataset.mission));
-  app.querySelectorAll("[data-species]").forEach(b=>b.onclick=e=>{
+  app.querySelectorAll(".life-card[data-species], .related button[data-species], .archive-table button[data-species]").forEach(b=>b.onclick=e=>{
     if(e.target.closest("[data-fav]"))return;
     detail(e.currentTarget.dataset.species);
   });
