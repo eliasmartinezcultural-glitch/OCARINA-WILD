@@ -1,4 +1,4 @@
-export const PL1_VERSION="PL1.0.0";
+export const PL1_VERSION="3.17";
 
 export const resources=[
 {id:"sib",group:"ARGENTINA",title:"SIB · Sistema de Información de Biodiversidad",desc:"Especies, áreas protegidas, mapas, avistajes, imágenes y educación ambiental de Argentina.",url:"https://www.argentina.gob.ar/parquesnacionales/sib",label:"Argentina · SIB"},
