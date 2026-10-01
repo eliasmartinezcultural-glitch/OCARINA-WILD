@@ -6,213 +6,156 @@
 <meta name="theme-color" content="#17251d">
 <title>OCARINA WILD · El Chañar vivo</title>
 <style>
-:root{--ink:#17251d;--paper:#f3efe4;--muted:#687268;--line:#d8d1c1;--card:#fffdf8;--water:#dcebea;--warm:#f0e3d3}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{cursor:pointer}a{color:inherit}
-.hero{min-height:78vh;padding:24px;display:grid;align-items:end;color:#fff;background:linear-gradient(0deg,#101c16ee,#101c1650),url("https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg") center/cover}
-.hero-in{width:min(1050px,100%);margin:auto;padding:25px}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;opacity:.8}.hero h1{font-size:clamp(55px,10vw,110px);line-height:.82;letter-spacing:-.07em;margin:12px 0}.hero p{max-width:650px;font-size:clamp(18px,2.4vw,25px);margin:0}.wrap{width:min(1050px,100%);margin:auto;padding:30px 20px 80px}.intro{padding:25px 0}.intro h2{font-size:clamp(30px,5vw,50px);letter-spacing:-.05em;margin:8px 0}.intro p{max-width:600px;color:var(--muted);line-height:1.55}.doors{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.door{border:1px solid var(--line);border-radius:24px;background:var(--card);padding:22px;text-align:left;min-height:155px}.door:nth-child(2){background:var(--warm)}.door:nth-child(3){background:var(--water)}.door b{font-size:11px;letter-spacing:.15em}.door strong{display:block;font-size:25px;margin-top:35px}.door span{font-size:13px;color:var(--muted)}.territory{margin-top:14px;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.territory div{border-radius:16px;padding:14px 12px;background:#e7e0d2;border:1px solid var(--line);font-size:12px;font-weight:800}.territory small{display:block;color:var(--muted);font-weight:500;margin-top:4px}.dossier-nav{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0}.dossier-nav button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 11px;font-size:11px;font-weight:800}.dossier-block{background:#ebe5d9;border-radius:16px;padding:15px;margin-top:10px}.dossier-block b{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}.source{font-size:11px;color:var(--muted);line-height:1.5}.field-visual{display:grid;grid-template-columns:1.5fr 1fr;gap:8px;margin:12px 0}.field-visual img{width:100%;height:170px;object-fit:cover;border-radius:15px}.field-side{display:grid;gap:8px}.field-chip{background:#fff;border:1px solid var(--line);border-radius:15px;padding:12px;font-size:12px}.field-chip b{display:block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}.listen{width:100%;border:0;background:var(--ink);color:#fff;border-radius:14px;padding:12px;font-weight:800}.micro{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.micro .box{min-height:135px}.field-note{margin-top:12px;padding:14px;border-radius:15px;background:#dfe9e4;font-size:12px;line-height:1.45}@media(max-width:650px){.field-visual{grid-template-columns:1fr}.micro{grid-template-columns:1fr 1fr}}@media(max-width:800px){.territory{grid-template-columns:repeat(3,1fr)}}
-.section{margin-top:58px}.section h2{font-size:34px;letter-spacing:-.04em;margin:0}.sub{color:var(--muted);margin:6px 0 18px}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.search{width:100%;padding:14px;border:1px solid var(--line);border-radius:15px;background:white}.pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 13px}.pill.active{background:var(--ink);color:white}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}.card img{display:block;width:100%;height:205px;object-fit:cover;background:#dfe4dc}.body{padding:16px}.tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#a96537}.card h3{font-size:21px;margin:6px 0 2px}.latin{font-size:13px;color:var(--muted);font-style:italic}.status{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;margin-top:12px}.local{color:#39705c}.regional{color:#8b6d36}.missions{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.mission{background:var(--ink);color:#fff;border:0;border-radius:18px;padding:18px;min-height:155px;text-align:left}.mission small{opacity:.6}.mission strong{display:block;margin:28px 0 8px;font-size:18px}.mission span{font-size:12px;opacity:.7}.legal{display:grid;grid-template-columns:1fr 1fr;gap:12px}.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:19px}.box h3{margin:0 0 7px}.box p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}.modal{display:none;position:fixed;inset:0;background:#101811b8;z-index:9;padding:16px;place-items:center}.modal.show{display:grid}.panel{width:min(700px,100%);max-height:90vh;overflow:auto;background:var(--paper);border-radius:24px}.panel img{width:100%;height:280px;object-fit:cover}.panel-in{padding:22px}.close{float:right;border:0;border-radius:50%;width:40px;height:40px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:18px 0}.fact{background:#e8e2d5;border-radius:12px;padding:12px;font-size:13px}.fact b{display:block;font-size:10px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}.footer{background:#15221b;color:#dbe1d9;padding:40px 20px}.footer-in{width:min(1050px,100%);margin:auto;display:flex;justify-content:space-between;gap:20px}
-@media(max-width:800px){.doors{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.missions{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.hero{min-height:68vh;padding:8px}.hero-in{padding:16px}.doors,.cards,.legal{grid-template-columns:1fr}.missions{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr}.footer-in{display:block}}
-
-.rastro-launch{margin-top:14px;background:#17251d;color:#fff;border:0;border-radius:20px;padding:22px;text-align:left;width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.rastro-launch b{font-size:11px;letter-spacing:.16em}.rastro-launch strong{display:block;font-size:28px;margin:5px 0}.rastro-launch span{font-size:13px;opacity:.72}.rastro-launch em{font-style:normal;font-size:34px}
-.rastro-toolbar{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0}.rastro-toolbar button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;font-size:11px;font-weight:800}.rastro-toolbar button.active{background:var(--ink);color:#fff}
-.traces{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.trace{border:1px solid var(--line);background:var(--card);border-radius:19px;overflow:hidden;text-align:left;padding:0}.trace-art{height:145px;display:grid;place-items:center;background:linear-gradient(135deg,#e6dfd1,#d5e2db);font-size:58px}.trace-body{padding:15px}.trace-type{font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:#a96537}.trace h3{margin:5px 0;font-size:19px}.trace p{font-size:12px;line-height:1.45;color:var(--muted);margin:0}.trace-rel{margin-top:10px;font-size:10px;font-weight:800}.trace-local{color:#39705c}.trace-reg{color:#8b6d36}
-.trace-panel{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:14px 0}.trace-step{background:#e8e2d5;border-radius:13px;padding:13px;font-size:12px;line-height:1.4}.trace-step b{display:block;font-size:9px;letter-spacing:.1em;color:var(--muted);margin-bottom:5px}
-.mini-links{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.mini-links button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 10px;font-size:10px;font-weight:800}
-.field-mode{position:fixed;right:15px;bottom:15px;z-index:8;border:0;background:#17251d;color:#fff;border-radius:999px;padding:12px 15px;font-weight:900;box-shadow:0 8px 30px #0003}.field-mode.on{background:#a96537}
-body.field-active .hero{min-height:55vh}body.field-active .intro,body.field-active .legal,.field-active .footer{display:none}body.field-active .wrap{padding-bottom:35px}.field-active .section:not(#rastros){display:none}.field-active #rastros{margin-top:20px}.field-active .rastro-launch{display:none}
-@media(max-width:800px){.traces{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.traces{grid-template-columns:1fr}.trace-art{height:125px}.trace-panel{grid-template-columns:1fr}.rastro-launch strong{font-size:23px}}
-
-/* v0.7 · CAMPO VISUAL */
-:root{--ink:#17251d;--paper:#f5f0e4;--muted:#687268;--line:#d6cdbb;--card:#fffdf8;--sage:#dbe8dc;--sky:#dbeaf0;--sun:#f2dfb6;--clay:#ead4c1;--rose:#ead8d2;--night:#202d3b}
-body{background:var(--paper)}
-.hero{min-height:76vh;background:linear-gradient(180deg,#13241d30 0%,#101a14d9 88%),url("https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg") center/cover}
-.hero-in{padding:clamp(22px,4vw,48px)}.hero h1{text-shadow:0 5px 28px #0008}.hero p{max-width:720px}
-.intro{padding:44px 0 28px}.intro p{font-size:16px}
-.doors{gap:14px}.door{position:relative;min-height:185px;padding:20px;transition:transform .18s,box-shadow .18s}.door:hover{transform:translateY(-4px);box-shadow:0 14px 35px #17251d16}.door strong{font-size:28px}.door:after{content:"↗";position:absolute;right:18px;bottom:16px;font-size:20px;opacity:.35}
-.door:nth-child(1){background:#dcebea}.door:nth-child(2){background:#e4ead9}.door:nth-child(3){background:#f0dfc5}.door:nth-child(4){background:#e8ddd2}
-.territory{gap:10px}.territory div{min-height:74px;display:flex;flex-direction:column;justify-content:center;transition:transform .15s}.territory div:hover{transform:translateY(-2px)}
-.rastro-launch{margin-top:18px;min-height:130px;padding:24px 26px;background:linear-gradient(105deg,#17251d,#365548);box-shadow:0 14px 30px #17251d18}.rastro-launch em{font-size:44px}
-.section{margin-top:72px}.section h2{font-size:clamp(32px,5vw,48px)}.sub{font-size:15px}
-.search{min-height:52px}.pill{padding:10px 14px}.cards{gap:14px}.card{transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #17251d12}.card img{height:220px}.body{padding:17px}
-.micro{gap:12px}.micro .box{min-height:155px}.micro .box:nth-child(1){background:#e5eee1}.micro .box:nth-child(2){background:#f1e1e7}.micro .box:nth-child(3){background:#e7dfd2}.micro .box:nth-child(4){background:#dce8ed}
-.missions{gap:12px}.mission{min-height:175px;transition:transform .18s}.mission:hover{transform:translateY(-3px)}
-.legal{gap:14px}.legal .box:nth-child(1){background:#e4ece3}.legal .box:nth-child(2){background:#e9e2d6}.legal .box:nth-child(3){background:#e0e9ef}.legal .box:nth-child(4){background:#eee0d7}
-.traces{gap:14px}.trace{cursor:pointer;transition:transform .18s,box-shadow .18s}.trace:hover{transform:translateY(-4px);box-shadow:0 13px 30px #17251d15}.trace-art{height:155px;font-size:64px}.trace-body{min-height:155px}.rastro-toolbar{margin:18px 0}
-.trace-panel{gap:12px}.trace-step{min-height:110px}
-.field-note{margin-top:16px;border:1px solid #cdd9d1}
-.modal{padding:18px;backdrop-filter:blur(5px)}.panel{max-height:calc(100vh - 36px);box-shadow:0 25px 80px #0005}.panel>img{height:min(38vh,300px);min-height:180px}.panel-in{padding:24px}
-.close{position:sticky;top:0;float:right;z-index:2;background:#fff;border:1px solid var(--line);box-shadow:0 3px 12px #0001}.facts{gap:10px}.fact{min-height:62px}
-.field-mode{right:18px;bottom:18px;box-shadow:0 10px 30px #0004}
-.discovery-bar{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.discovery-bar button{border:1px solid var(--line);border-radius:17px;padding:15px;text-align:left;background:#fffdf8}.discovery-bar b{display:block;font-size:10px;letter-spacing:.12em}.discovery-bar span{display:block;font-size:12px;color:var(--muted);margin-top:5px}
-.progress{margin-top:12px;height:8px;background:#d9d1c3;border-radius:99px;overflow:hidden}.progress i{display:block;width:0;height:100%;background:#a96537;transition:width .3s}
-@media(max-width:800px){.doors{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.missions{grid-template-columns:1fr 1fr}.discovery-bar{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.hero{min-height:69vh}.hero h1{font-size:clamp(48px,18vw,78px)}.doors,.cards,.legal,.discovery-bar{grid-template-columns:1fr}.door{min-height:150px}.door strong{margin-top:24px}.territory{grid-template-columns:1fr 1fr}.territory div{min-height:68px}.rastro-launch{min-height:118px}.rastro-launch strong{font-size:25px}.section{margin-top:55px}.cards .card img{height:210px}.traces{grid-template-columns:1fr}.trace-art{height:145px}.panel{border-radius:20px}.panel>img{height:220px}.panel-in{padding:18px}.field-mode{right:12px;bottom:12px}}
-
-/* interaction safety v0.8 */
-button{touch-action:manipulation}
-.modal.show{overflow:hidden}
-.panel{overscroll-behavior:contain}
+:root{--ink:#17251d;--paper:#f5f0e4;--muted:#687268;--line:#d7cfbf;--card:#fffdf8;--water:#dcebea;--green:#e3eadb;--warm:#f0dfc5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation}
+.hero{min-height:72vh;display:grid;align-items:end;padding:20px;color:#fff;background:linear-gradient(0deg,#101c16e8,#101c1640),url("https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg") center/cover}
+.hero-in,.wrap,.footer-in{width:min(1000px,100%);margin:auto}.hero-in{padding:28px}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(54px,10vw,105px);line-height:.84;letter-spacing:-.07em;margin:12px 0}.hero p{font-size:clamp(18px,2.4vw,25px);max-width:680px;margin:0}
+.wrap{padding:34px 20px 70px}.intro{padding:10px 0 28px}.intro h2{font-size:clamp(32px,5vw,52px);line-height:.95;letter-spacing:-.05em;margin:10px 0}.intro p{max-width:620px;color:var(--muted);line-height:1.55}
+.doors{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.door{border:1px solid var(--line);border-radius:22px;padding:20px;text-align:left;min-height:155px;background:var(--card);color:var(--ink);transition:.18s}.door:nth-child(1){background:var(--water)}.door:nth-child(2){background:var(--green)}.door:nth-child(3){background:var(--warm)}.door:nth-child(4){background:#e8ddd2}.door:hover{transform:translateY(-3px);box-shadow:0 12px 28px #17251d18}.door b{font-size:10px;letter-spacing:.14em}.door strong{display:block;font-size:25px;margin-top:32px}.door span{font-size:12px;color:var(--muted)}
+.section{margin-top:65px}.section h2{font-size:clamp(32px,5vw,46px);margin:0}.sub{color:var(--muted);margin:6px 0 18px}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.search{width:100%;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 13px}.pill.active{background:var(--ink);color:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{border:1px solid var(--line);border-radius:19px;background:var(--card);overflow:hidden;text-align:left;transition:.18s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #17251d12}.card img{width:100%;height:205px;object-fit:cover;display:block;background:#dfe4dc}.body{padding:15px}.tag{font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#a96537}.card h3{margin:5px 0 2px;font-size:20px}.latin{font-size:12px;color:var(--muted);font-style:italic}.status{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:800;margin-top:10px}.local{color:#39705c}.regional{color:#8b6d36}
+.trace-box{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.trace{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:0;overflow:hidden;text-align:left}.trace-art{height:120px;display:grid;place-items:center;background:linear-gradient(135deg,#e5ded0,#d9e5de);font-size:52px}.trace-body{padding:13px}.trace-body b{font-size:9px;letter-spacing:.12em;color:#a96537}.trace-body h3{margin:5px 0;font-size:18px}.trace-body p{font-size:12px;color:var(--muted);line-height:1.4;margin:0}
+.source-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.box{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:18px}.box h3{margin:0 0 6px}.box p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+.modal{display:none;position:fixed;inset:0;background:#101811bb;z-index:10;padding:15px;place-items:center}.modal.show{display:grid}.panel{width:min(650px,100%);max-height:92vh;overflow:auto;background:var(--paper);border-radius:22px;box-shadow:0 20px 70px #0005}.panel img{width:100%;height:260px;object-fit:cover}.panel-in{padding:20px}.close{float:right;border:1px solid var(--line);background:#fff;border-radius:50%;width:40px;height:40px;font-size:22px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0}.fact{background:#e8e2d5;border-radius:12px;padding:12px;font-size:13px}.fact b{display:block;font-size:9px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
+.footer{background:var(--ink);color:#dbe1d9;padding:34px 20px}.footer-in{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){.doors{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.trace-box{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.hero{min-height:65vh}.hero-in{padding:16px}.doors,.cards,.source-grid{grid-template-columns:1fr}.door{min-height:135px}.door strong{margin-top:22px}.trace-box{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr}.footer-in{display:block}.footer-in small{display:block;margin-top:14px}}
 </style>
 </head>
 <body>
-<header class="hero"><div class="hero-in"><div class="eyebrow">OCARINA WILD · San Patricio del Chañar</div><h1>EL CHÁÑAR<br>VIVO.</h1><p>Una guía visual para descubrir la flora, fauna, agua y paisaje que nos rodean.</p></div></header>
+<header class="hero"><div class="hero-in"><div class="eyebrow">OCARINA WILD · San Patricio del Chañar</div><h1>EL CHÁÑAR<br>VIVO.</h1><p>Una guía visual para descubrir la naturaleza que nos rodea.</p></div></header>
+
 <main class="wrap">
-<section class="intro"><div class="eyebrow" style="color:#a96537">Entrá por donde quieras</div><h2>No es una enciclopedia.<br>Es para descubrir.</h2><p>La portada es corta. La profundidad aparece cuando elegís una especie, una misión o una fuente.</p></section>
+<section class="intro"><div class="eyebrow" style="color:#a96537">Entrá por donde quieras</div><h2>Pocas puertas.<br>Mucha profundidad.</h2><p>La idea es simple: elegir algo, mirarlo y descubrir un poco más. Sin misiones, niveles ni sistemas complicados.</p></section>
+
 <nav class="doors">
-<button class="door" onclick="go('fauna')"><b>01</b><strong>FAUNA</strong><span>Aves, mamíferos, peces, anfibios y más.</span></button>
-<button class="door" onclick="go('flora')"><b>02</b><strong>FLORA</strong><span>Árboles, arbustos y plantas del paisaje.</span></button>
-<button class="door" onclick="go('misiones')"><b>03</b><strong>DESCUBRIR</strong><span>Preguntas y pequeñas misiones de campo.</span></button>
-<button class="door" onclick="go('marco')"><b>04</b><strong>MARCO</strong><span>Fuentes, conservación y leyes.</span></button>
+<button class="door" data-go="fauna"><b>01</b><strong>FAUNA</strong><span>Aves, mamíferos, peces y anfibios.</span></button>
+<button class="door" data-go="flora"><b>02</b><strong>FLORA</strong><span>Árboles, arbustos y plantas del paisaje.</span></button>
+<button class="door" data-go="rastros"><b>03</b><strong>RASTROS</strong><span>Huellas, plumas, nidos, frutos y señales.</span></button>
+<button class="door" data-go="marco"><b>04</b><strong>MARCO</strong><span>Fuentes, territorio y conservación.</span></button>
 </nav>
-<div class="territory"><div>💧 AGUA<small>vida y humedales</small></div><div>🐦 CIELO<small>aves y movimiento</small></div><div>🌿 MONTE<small>adaptación y refugio</small></div><div>🍎 CHACRAS<small>riego y paisaje</small></div><div>👣 RASTRO<small>señales de vida</small></div><div>🔎 CAMBIO<small>qué observar</small></div></div><button class="rastro-launch" onclick="go('rastros')"><div><b>EXPERIENCIA DE CAMPO</b><strong>RASTROS</strong><span>Huellas · plumas · nidos · frutos · hojas · madrigueras · agua · sonidos</span></div><em>👣</em></button><div class="discovery-bar"><button onclick="go('rastros')"><b>👣 SEGUIR UNA PISTA</b><span>Huellas, plumas y señales</span></button><button onclick="go('microvida')"><b>🐝 MIRAR LO PEQUEÑO</b><span>Insectos y conexiones</span></button><button onclick="go('flora')"><b>🌿 BUSCAR UNA PLANTA</b><span>Monte, chacras y agua</span></button><button onclick="go('fauna')"><b>🐦 ENCONTRAR UN ANIMAL</b><span>Fauna para reconocer</span></button></div><div class="progress"><i id="discoveryProgress"></i></div>
-<section class="section" id="fauna"><h2>Fauna</h2><div class="sub">Una primera colección para reconocer y seguir investigando.</div>
-<div class="tools"><input id="search" class="search" placeholder="Buscar especie, ambiente o nombre científico…"><button class="pill active" data-filter="todos">Todo</button><button class="pill" data-filter="aves">Aves</button><button class="pill" data-filter="mamiferos">Mamíferos</button><button class="pill" data-filter="peces">Peces</button><button class="pill" data-filter="anfibios">Anfibios</button></div>
-<div class="cards" id="faunaCards"></div></section>
-<section class="section" id="flora"><h2>Flora</h2><div class="sub">Plantas para entender el monte, el agua y las adaptaciones.</div><div class="cards" id="floraCards"></div></section>
-<section class="section" id="microvida"><h2>Microvida</h2><div class="sub">Lo pequeño también cuenta: insectos, polinizadores y descomponedores son parte del paisaje.</div><div class="micro"><div class="box"><h3>🐝 Polinizadores</h3><p>Buscá visitas sobre flores: abejas, abejorros, moscas y otros insectos.</p></div><div class="box"><h3>🦋 Mariposas</h3><p>Las plantas del monte y las chacras también son lugares de alimentación y refugio.</p></div><div class="box"><h3>🪲 Descomponedores</h3><p>Escarabajos y otros organismos ayudan a transformar materia orgánica.</p></div><div class="box"><h3>🕷️ Cazadores</h3><p>Arañas y otros depredadores conectan insectos con la trama alimentaria.</p></div></div><div class="field-note">La microfauna merece una futura colección propia. Por ahora se presenta como <b>campo de observación</b>, no como inventario local confirmado.</div></section>
-<section class="section" id="rastros"><h2>Rastros</h2><div class="sub">No necesitás ver al animal para descubrir que estuvo ahí.</div><div class="rastro-toolbar" id="traceFilters"></div><div class="traces" id="traceCards"></div><div class="field-note"><b>REGLA DE CAMPO</b><br>Una señal puede orientar, pero no siempre permite identificar una especie. La experiencia separa <b>foto de evidencia</b>, <b>guía visual</b> y <b>suposición</b>.</div></section><section class="section" id="misiones"><h2>Misiones</h2><div class="sub">Aprender mirando, sin molestar la vida silvestre.</div><div class="missions" id="missionCards"></div></section>
-<section class="section" id="marco"><h2>Marco y fuentes</h2><div class="sub">La información local y la regional se mantienen separadas.</div><div class="legal">
-<div class="box"><h3>Ley 25.675</h3><p>Ley General del Ambiente. Presupuestos mínimos, preservación y educación ambiental.</p></div>
-<div class="box"><h3>Ley 22.421</h3><p>Conservación de la fauna silvestre y protección de sus poblaciones.</p></div>
-<div class="box"><h3>Ley 27.621</h3><p>Educación Ambiental Integral y vínculo educativo con los territorios.</p></div>
-<div class="box"><h3>Área Natural Protegida</h3><p>El Municipio informa la declaración del Dique Compensador El Chañar como área natural protegida municipal en 2006.</p></div>
+
+<section class="section" id="fauna">
+<h2>Fauna</h2><div class="sub">Elegí una especie para abrir su ficha.</div>
+<div class="tools"><input id="search" class="search" placeholder="Buscar especie..."><button class="pill active" data-filter="todos">Todo</button><button class="pill" data-filter="aves">Aves</button><button class="pill" data-filter="mamiferos">Mamíferos</button><button class="pill" data-filter="peces">Peces</button><button class="pill" data-filter="anfibios">Anfibios</button></div>
+<div class="cards" id="faunaCards"></div>
+</section>
+
+<section class="section" id="flora"><h2>Flora</h2><div class="sub">Plantas para entender el monte, las chacras y el agua.</div><div class="cards" id="floraCards"></div></section>
+
+<section class="section" id="rastros"><h2>Rastros</h2><div class="sub">No necesitás ver al animal para descubrir que estuvo ahí.</div><div class="trace-box" id="traceCards"></div><div class="box" style="margin-top:12px"><b>REGLA DE CAMPO</b><p>Un rastro orienta, pero no siempre identifica una especie. Mirá sin tocar, perseguir ni alterar.</p></div></section>
+
+<section class="section" id="marco"><h2>Marco y fuentes</h2><div class="sub">La información local y la regional se mantienen separadas.</div><div class="source-grid">
+<div class="box"><h3>Información</h3><p>Las especies marcadas como vínculo local cuentan con una referencia local. Las demás se presentan como contexto regional y no como presencia confirmada en El Chañar.</p></div>
+<div class="box"><h3>Conservación</h3><p>Ley 25.675 · Ley 22.421 · Ley 27.621. El Municipio informa al Dique Compensador El Chañar como área natural protegida municipal desde 2006.</p></div>
 </div></section>
 </main>
+
 <footer class="footer"><div class="footer-in"><div><b>OCARINA WILD</b><br><small>Biblioteca natural viva de San Patricio del Chañar.</small></div><small>Ocarina Producciones · Elías Martínez</small></div></footer>
+
 <div class="modal" id="modal"><div class="panel" id="panel"></div></div>
+
 <script>
-const I=n=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(n);
-const data=[
-['cisne','aves','Cisne cuello negro','Cygnus melancoryphus','ave acuática','local','Cygnus melancoryphus 537050772.jpg',['Cuerpos de agua','Vegetación acuática','Registro local publicado']],
-['calandria','aves','Calandria grande','Mimus saturninus','ave','regional','Mimus saturninus (calandria).jpg',['Ambientes abiertos','Imita sonidos','Autóctona']],
-['aguilucho','aves','Aguilucho ñanco','Geranoaetus polyosoma','ave rapaz','regional','Geranoa polyosoma 201699947.jpg',['Rapaz','Ambientes abiertos','Vuelo y viento']],
-['ataj','aves','Atajacaminos ñañarca','Systellura longirostris','ave nocturna','local','Systellura longirostris.jpg',['Nocturna','Caza insectos','Cita local SIB']],
-['osprey','aves','Águila pescadora','Pandion haliaetus','visitante del agua','local','Pandion haliaetus.jpg',['Come peces','Grandes aguas','Registro local']],
-['mara','mamiferos','Mara','Dolichotis patagonum','mamífero','regional','Patagonian Mara (Dolichotis patagonum) (CWPG).jpg',['Estepa','Diurna','Argentina']],
-['zorro','mamiferos','Zorro pampa','Lycalopex gymnocercus','mamífero','regional','Lycalopex gymnocerca 616951812.jpg',['Ambientes abiertos','Adaptable','Carnívoro']],
-['perca','peces','Perca criolla','Percichthys trucha','pez nativo','regional','Percichthys trucha.jpg',['Agua dulce','Nativa patagónica','Neuquén']],
+const file=n=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(n);
+const fauna=[
+['cisne','aves','Cisne cuello negro','Cygnus melancoryphus','ave acuática','local','Cygnus melancoryphus 537050772.jpg',['Agua','Vegetación acuática','Registro local publicado']],
+['calandria','aves','Calandria grande','Mimus saturninus','ave','regional','Mimus saturninus (calandria).jpg',['Ambientes abiertos','Canto','Autóctona']],
+['aguilucho','aves','Aguilucho ñanco','Geranoaetus polyosoma','ave rapaz','regional','Geranoa polyosoma 201699947.jpg',['Rapaz','Ambientes abiertos','Vuelo']],
+['ataj','aves','Atajacaminos ñañarca','Systellura longirostris','ave nocturna','local','Systellura longirostris.jpg',['Nocturna','Insectos','Cita local SIB']],
+['osprey','aves','Águila pescadora','Pandion haliaetus','visitante del agua','local','Pandion haliaetus.jpg',['Peces','Agua','Registro local']],
+['mara','mamiferos','Mara','Dolichotis patagonum','mamífero','regional','Patagonian Mara (Dolichotis patagonum) (CWPG).jpg',['Estepa','Diurna','Herbívora']],
+['zorro','mamiferos','Zorro pampa','Lycalopex gymnocercus','mamífero','regional','Lycalopex gymnocerca 616951812.jpg',['Monte','Adaptable','Carnívoro']],
+['perca','peces','Perca criolla','Percichthys trucha','pez nativo','regional','Percichthys trucha.jpg',['Agua dulce','Nativa','Neuquén']],
 ['pejerrey','peces','Pejerrey patagónico','Odontesthes hatcheri','pez nativo','regional','Odontesthes hatcheri.jpg',['Agua dulce','Nativo','Patagonia']],
 ['puyen','peces','Puyen','Galaxias maculatus','pez pequeño','regional','Galaxias maculatus.jpg',['Ríos y lagos','Nativo','Pequeño']],
 ['bagre','peces','Bagre de los torrentes','Hatcheria macraei','pez de fondo','regional','Hatcheria macraei.jpg',['Ríos','Nativo','Fondo']],
 ['trucha','peces','Trucha arcoíris','Oncorhynchus mykiss','pez introducido','regional','Oncorhynchus mykiss.jpg',['Introducida','Agua dulce','No nativa']],
-['sapo','anfibios','Sapo común','Rhinella arenarum','anfibio','regional','Rhinella arenarum.jpg',['Anfibio','Ambientes húmedos','Nativo']],
-['rana','anfibios','Rana esteparia','Pleurodema bufoninum','anfibio patagónico','regional','Pleurodema bufoninum.jpg',['Estepa','Ríos y lagunas','Nativa']],
+['sapo','anfibios','Sapo común','Rhinella arenarum','anfibio','regional','Rhinella arenarum.jpg',['Humedad','Invertebrados','Nativo']],
+['rana','anfibios','Rana esteparia','Pleurodema bufoninum','anfibio patagónico','regional','Pleurodema bufoninum.jpg',['Estepa','Lagunas','Nativa']],
 ['escuerzo','anfibios','Escuercito fantasma','Pleurodema nebulosum','anfibio','regional','Pleurodema nebulosum.jpg',['Ambientes áridos','Neuquén','Anfibio']]
 ];
-const plants=[
-['chanar','Chañar','Geoffroea decorticans','árbol nativo','local','Geoffroea decorticans.JPG',['Fruto comestible','Floración primaveral','Identidad del lugar']],
-['jarilla','Jarilla hembra','Larrea divaricata','arbusto del monte','regional','Larrea divaricata.jpg',['Monte','Adaptada a sequedad','Arbusto']],
-['zampa','Zampa','Atriplex lampa','arbusto salino','regional','Atriplex lampa.jpg',['Suelos salinos','Monte','Adaptación']],
-['alpataco','Alpataco','Neltuma alpataco','leñosa del monte','regional','Neltuma alpataco.jpg',['Espinas','Monte','Autóctona']],
+const flora=[
+['chanar','Chañar','Geoffroea decorticans','árbol nativo','local','Geoffroea decorticans.JPG',['Fruto','Primavera','Identidad local']],
+['jarilla','Jarilla hembra','Larrea divaricata','arbusto del monte','regional','Larrea divaricata.jpg',['Monte','Sequedad','Arbusto']],
+['zampa','Zampa','Atriplex lampa','arbusto salino','regional','Atriplex lampa.jpg',['Salinidad','Monte','Adaptación']],
+['alpataco','Alpataco','Neltuma alpataco','leñosa del monte','regional','Neltuma alpataco.jpg',['Espinas','Monte','Nativa']],
 ['algarrobo','Algarrobo dulce','Neltuma flexuosa','árbol del monte','regional','Neltuma flexuosa.jpg',['Vainas','Monte','Caducifolio']],
-['molle','Molle blanco','Schinus johnstonii','arbusto patagónico','regional','Schinus johnstonii.jpg',['Espinoso','Monte','Frutos']],
-['matasebo','Mata sebo','Monttea aphylla','arbusto del monte','regional','Monttea aphylla.jpg',['Casi sin hojas','Flores violáceas','Sequedad']],
-['sauce','Sauce criollo','Salix humboldtiana','vegetación ribereña','regional','Salix humboldtiana.jpg',['Ribera','Agua','Árbol autóctono']]
+['molle','Molle blanco','Schinus johnstonii','arbusto patagónico','regional','Schinus johnstonii.jpg',['Frutos','Monte','Arbusto']],
+['matasebo','Mata sebo','Monttea aphylla','arbusto del monte','regional','Monttea aphylla.jpg',['Sequedad','Flores','Monte']],
+['sauce','Sauce criollo','Salix humboldtiana','vegetación ribereña','regional','Salix humboldtiana.jpg',['Ribera','Agua','Árbol']]
 ];
-const deep={
-cisne:{habitat:'Dique, lagunas y ambientes acuáticos',season:'La observación depende del sitio y la época.',food:'Vegetación acuática y pequeños organismos.',signs:'Presencia sobre el agua, grupos y vocalizaciones.',relation:'El agua conecta aves, peces, anfibios y vegetación.',evidence:'Vínculo local documentado; el Dique concentra aves.',source:'SIB y registros locales.'},
-calandria:{habitat:'Chacras, arbolado y ambientes abiertos',season:'Puede observarse durante distintas épocas.',food:'Invertebrados y frutos.',signs:'Canto y presencia en arbustos o árboles.',relation:'Conecta vegetación, insectos y espacios productivos.',evidence:'Contexto regional.',source:'SIB / inventarios de vertebrados.'},
-aguilucho:{habitat:'Estepa, bordes de chacras y espacios abiertos',season:'Depende del uso del paisaje.',food:'Pequeños vertebrados y otras presas.',signs:'Planeo y posaderos elevados.',relation:'Predador del paisaje abierto.',evidence:'Contexto regional.',source:'SIB / inventarios de vertebrados.'},
-ataj:{habitat:'Ambientes abiertos y sectores secos',season:'Actividad principalmente nocturna.',food:'Insectos capturados durante el vuelo.',signs:'Actividad al anochecer y canto.',relation:'Vincula cielo nocturno e insectos.',evidence:'Vínculo local documentado mediante cita SIB.',source:'SIB.'},
-osprey:{habitat:'Grandes cuerpos de agua con peces',season:'Su presencia depende de movimientos y alimento.',food:'Principalmente peces.',signs:'Vuelo sobre el agua y ataques de pesca.',relation:'Conecta agua y fauna.',evidence:'Vínculo local documentado para el Dique.',source:'Registros locales y SIB.'},
-mara:{habitat:'Ambientes abiertos y estepa',season:'Actividad principalmente diurna.',food:'Vegetación terrestre.',signs:'Huellas, excrementos y observación a distancia.',relation:'Herbívoro del paisaje abierto.',evidence:'Contexto regional.',source:'SIB / inventarios.'},
-zorro:{habitat:'Monte, estepa, bordes y ambientes transformados',season:'Amplio rango de actividad.',food:'Dieta variada según disponibilidad.',signs:'Huellas, heces y observación indirecta.',relation:'Conecta ambientes y recursos.',evidence:'Contexto regional.',source:'SIB / inventarios.'},
-perca:{habitat:'Ambientes de agua dulce',season:'Depende del cuerpo de agua.',food:'Organismos acuáticos.',signs:'Su presencia requiere evidencia o muestreo.',relation:'Parte de la red alimentaria acuática.',evidence:'Contexto regional.',source:'SIB.'},
-pejerrey:{habitat:'Agua dulce patagónica',season:'Asociado a ambientes acuáticos.',food:'Pequeños organismos acuáticos.',signs:'Difícil de observar sin muestreo.',relation:'Parte de la trama alimentaria acuática.',evidence:'Contexto regional.',source:'SIB.'},
-puyen:{habitat:'Ríos, arroyos y lagos',season:'Asociado a ambientes acuáticos.',food:'Pequeños invertebrados y recursos acuáticos.',signs:'Especie pequeña; requiere observación cuidadosa.',relation:'Conecta pequeños organismos con peces mayores y aves.',evidence:'Contexto regional.',source:'SIB.'},
-bagre:{habitat:'Cursos de agua y fondos pedregosos',season:'Asociado al agua dulce.',food:'Organismos del fondo.',signs:'Difícil de ver; el hábitat es la pista.',relation:'Parte de la vida escondida bajo el agua.',evidence:'Contexto regional.',source:'SIB.'},
-trucha:{habitat:'Ambientes de agua dulce donde fue introducida',season:'Depende del cuerpo de agua.',food:'Recursos acuáticos variados.',signs:'Identificar origen es tan importante como identificar especie.',relation:'Permite hablar de especies nativas y exóticas.',evidence:'Contexto regional e introducido; no se afirma presencia local.',source:'SIB.'},
-sapo:{habitat:'Sectores húmedos y ambientes temporariamente acuáticos',season:'Más detectable con humedad.',food:'Invertebrados.',signs:'Vocalizaciones y observación nocturna responsable.',relation:'Conecta suelo, agua e insectos.',evidence:'Contexto regional.',source:'SIB.'},
-rana:{habitat:'Estepa y ambientes húmedos temporarios',season:'Más activa con humedad favorable.',food:'Pequeños invertebrados.',signs:'Vocalizaciones y presencia cerca del agua.',relation:'Muestra vida anfibia en ambientes secos.',evidence:'Contexto regional.',source:'SIB.'},
-escuerzo:{habitat:'Ambientes áridos con pulsos de humedad',season:'Puede aparecer después de lluvias favorables.',food:'Invertebrados.',signs:'Vocalización y aparición asociada a humedad.',relation:'Muestra cómo el agua ocasional activa ecosistemas secos.',evidence:'Contexto regional.',source:'SIB.'}
+const details={
+cisne:['Agua y vegetación acuática','Presencia sobre el agua y grupos','Vegetación acuática y pequeños organismos'],
+calandria:['Chacras, arbolado y ambientes abiertos','Canto y presencia en arbustos','Invertebrados y frutos'],
+aguilucho:['Estepa y espacios abiertos','Planeo y posaderos elevados','Pequeños vertebrados y otras presas'],
+ataj:['Ambientes abiertos y sectores secos','Actividad nocturna y vocalización','Insectos en vuelo'],
+osprey:['Grandes cuerpos de agua','Vuelo sobre el agua y pesca','Principalmente peces'],
+mara:['Ambientes abiertos y estepa','Huellas y observación a distancia','Vegetación terrestre'],
+zorro:['Monte, estepa y bordes','Huellas y heces','Dieta variada'],
+perca:['Agua dulce','Requiere evidencia o muestreo','Organismos acuáticos'],
+pejerrey:['Agua dulce patagónica','Difícil de observar sin muestreo','Pequeños organismos acuáticos'],
+puyen:['Ríos, arroyos y lagos','Especie pequeña','Pequeños recursos acuáticos'],
+bagre:['Cursos de agua y fondos','Difícil de ver','Organismos del fondo'],
+trucha:['Agua dulce donde fue introducida','Identificar origen es importante','Recursos acuáticos variados'],
+sapo:['Sectores húmedos','Más detectable con humedad','Invertebrados'],
+rana:['Estepa y ambientes húmedos temporarios','Vocalización y humedad','Pequeños invertebrados'],
+escuerzo:['Ambientes áridos con pulsos de humedad','Puede aparecer después de lluvias','Invertebrados']
 };
-const missions=[
-['AGUA','Encontrá tres formas de vida relacionadas con el agua.'],
-['5 ESPECIES','Reconocé cinco especies y anotá qué evidencia tienen.'],
-['PLANTA','Elegí una planta y descubrí cómo enfrenta la sequedad.'],
-['ESCUCHAR','Observá aves durante diez minutos sin perseguirlas.'],
-['CUIDAR','Escribí cinco reglas para visitar un ambiente natural.']
-];
-function card(x,plant=false){let id=x[0],group=plant?'flora':x[1],name=plant?x[1]:x[2],latin=plant?x[2]:x[3],tag=plant?x[3]:x[4],status=plant?x[4]:x[5],img=plant?x[5]:x[6],facts=plant?x[6]:x[7];return '<article class="card" data-group="'+group+'" data-status="'+status+'" data-name="'+(name+' '+latin).toLowerCase()+'" onclick="openCard(\''+id+'\', '+plant+')"><img src="'+I(img)+'" alt="'+name+'" loading="lazy"><div class="body"><span class="tag">'+tag+'</span><h3>'+name+'</h3><div class="latin">'+latin+'</div><div class="status '+(status==='local'?'local':'regional')+'">'+(status==='local'?'● vínculo local':'○ contexto regional')+'</div></div></article>'}
-function render(){document.getElementById('faunaCards').innerHTML=data.map(x=>card(x)).join('');document.getElementById('floraCards').innerHTML=plants.map(x=>card(x,true)).join('');document.getElementById('missionCards').innerHTML=missions.map((m,i)=>'<button class="mission" onclick="startMission('+i+')"><small>0'+(i+1)+'</small><strong>'+m[0]+'</strong><span>'+m[1]+'</span></button>').join('')}
-function openCard(id,plant){
-let x=(plant?plants:data).find(v=>v[0]===id);
-let name=plant?x[1]:x[2], latin=plant?x[2]:x[3], tag=plant?x[3]:x[4], status=plant?x[4]:x[5], img=plant?x[5]:x[6], facts=plant?x[6]:x[7], d=plant?null:deep[id];
-window.currentDossier=d;
-let extra=plant
- ? '<div class="field-note"><b>EXPERIENCIA DE CAMPO</b><br>Acercate con la mirada: hojas, corteza, frutos, suelo, sombra y relación con el agua. No arranques ni manipules.</div><div class="dossier-block"><b>Claves</b>'+facts.join(' · ')+'</div>'
- : '<div class="field-visual"><img src="'+I(img)+'" alt="'+name+'"><div class="field-side"><div class="field-chip"><b>OBSERVAR</b>Forma · movimiento · tamaño · conducta</div><div class="field-chip"><b>BUSCAR</b>Hábitat · rastro · alimento</div><button class="listen" onclick="listenHint()">🔊 ESCUCHAR / IDENTIFICAR</button></div></div><div class="dossier-nav"><button onclick="showDossier(\'mirar\')">MIRAR</button><button onclick="showDossier(\'habitat\')">HÁBITAT</button><button onclick="showDossier(\'rastros\')">RASTRO</button><button onclick="showDossier(\'relacion\')">RELACIÓN</button><button onclick="showDossier(\'evidencia\')">EVIDENCIA</button></div><div id="dossierContent"></div>';
-document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><img src="'+I(img)+'" alt="'+name+'" onerror="this.style.display=\'none\'"><div class="panel-in"><span class="tag">'+tag+'</span><h2>'+name+'</h2><div class="latin">'+latin+'</div>'+extra+'<div class="facts">'+facts.map(f=>'<div class="fact"><b>Clave</b>'+f+'</div>').join('')+'</div><p><b>'+(status==='local'?'● Vínculo local':'○ Contexto regional')+'</b></p><p>Observá sin tocar, perseguir ni alterar el ambiente.</p>'+(d?'<div class="dossier-block"><b>Fuente</b><div class="source">'+d.source+'</div></div>':'')+'</div>';
-document.getElementById('modal').classList.add('show');
-if(d) showDossier('mirar');
-}
-function listenHint(){alert("El sonido se incorporará por especie cuando exista una fuente confiable. Por ahora: escuchá primero el ambiente y después intentá identificar.");}
-function showDossier(tab){
-let d=window.currentDossier;if(!d)return;
-let m={mirar:['QUÉ VEO',d.food],habitat:['DÓNDE ESTÁ',d.habitat],rastros:['RASTRO',d.signs],relacion:['CON QUÉ SE CONECTA',d.relation],evidencia:['QUÉ SABEMOS',d.evidence]}[tab];
-document.getElementById('dossierContent').innerHTML='<div class="dossier-block"><b>'+m[0]+'</b>'+m[1]+'</div><div class="dossier-block"><b>CUÁNDO</b>'+d.season+'</div>';
-}
-
-function startMission(i){let m=missions[i];document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><div class="panel-in"><span class="tag">Misión 0'+(i+1)+'</span><h2>'+m[0]+'</h2><p>'+m[1]+'</p><div class="facts"><div class="fact"><b>Regla</b>No capturar ni alimentar animales.</div><div class="fact"><b>Objetivo</b>Mirar, registrar y preguntar.</div></div><button class="pill active" onclick="closeModal()">EMPEZAR</button></div>';document.getElementById('modal').classList.add('show')}
-function closeModal(){document.getElementById('modal').classList.remove('show')}function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
-document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeModal()};
-let active='todos';function filter(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('#faunaCards .card').forEach(c=>c.style.display=(active==='todos'||c.dataset.group===active)&&c.dataset.name.includes(q)?'block':'none')}
-document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{active=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter()});document.getElementById('search').oninput=filter;render();
-
-// RASTROS · experiencia visual independiente
 const traces=[
-['huella','👣','HUELLA','Huellas en suelo húmedo o blando','Buscá forma, tamaño, dedos y dirección. No sigas al animal.','Puede orientar hacia mamíferos o aves; requiere contexto.','zorro','regional'],
-['pluma','🪶','PLUMA','Una pluma encontrada en el paisaje','Mirá patrón, tamaño y dónde apareció. No arranques plumas de animales.','Puede relacionarse con aves; una pluma aislada no siempre identifica especie.','cisne','local'],
-['nido','🪹','NIDO','Construcción sobre árbol, arbusto o suelo','Observá desde lejos: material, altura y ubicación. Nunca lo toques.','Conecta aves con plantas, ramas, barro y refugio.','calandria','regional'],
-['mordida','🍃','HOJA COMIDA','Marcas, bordes y perforaciones','Mirá qué parte falta y si hay otros rastros alrededor.','Puede indicar herbivoría o insectos; no concluyas especie sin más evidencia.','chanar','local'],
-['fruto','🫐','FRUTO / SEMILLA','Frutos abiertos, mordidos o semillas dispersas','Registrá planta, estado del fruto y ubicación.','Puede revelar alimentación y dispersión de semillas.','chanar','local'],
-['madriguera','🕳️','MADRIGUERA','Entrada, suelo removido y refugio','No introduzcas manos ni objetos. Observá desde lejos.','Puede pertenecer a distintos animales según tamaño y contexto.','mara','regional'],
-['heces','●','EXCREMENTO','Una señal difícil pero útil','No tocar. Registrá forma, tamaño y lugar; lavate las manos si hubo contacto accidental.','Ayuda a detectar presencia, pero la identificación requiere experiencia.','zorro','regional'],
-['agua','💧','SEÑAL DEL AGUA','Ondas, saltos, restos o vegetación alterada','Mirá superficie, orilla y vegetación sin entrar al agua.','Puede revelar peces, anfibios, aves u otros organismos.','perca','regional'],
-['voz','🔊','VOCALIZACIÓN','Un sonido antes que una imagen','Quedate quieto, ubicá dirección y momento. No reproduzcas llamados para atraer fauna.','Puede ser clave para aves y anfibios, pero necesita comparación confiable.','ataj','local']
+['👣','HUELLA','Suelo húmedo o blando','Forma, tamaño y dirección.'],
+['🪶','PLUMA','Una señal dejada por un ave','Patrón, tamaño y lugar.'],
+['🪹','NIDO','Construcción en árbol, arbusto o suelo','Material, altura y ubicación.'],
+['🍃','HOJA COMIDA','Bordes, perforaciones o marcas','Qué parte falta y qué hay alrededor.'],
+['🫐','FRUTO / SEMILLA','Frutos abiertos o semillas dispersas','Planta, estado y ubicación.'],
+['🕳️','MADRIGUERA','Entrada y suelo removido','Tamaño y contexto, sin tocar.'],
+['●','EXCREMENTO','Una señal de presencia','Forma, tamaño y lugar; nunca tocar.'],
+['💧','SEÑAL DEL AGUA','Ondas, saltos o vegetación alterada','Superficie, orilla y entorno.']
 ];
-const traceFilters=[['todos','Todo'],['huella','Huellas'],['pluma','Plumas'],['nido','Nidos'],['mordida','Hojas'],['fruto','Frutos'],['madriguera','Madrigueras'],['heces','Excrementos'],['agua','Agua'],['voz','Sonidos']];
-let traceActive='todos';
-function renderTraces(){
- document.getElementById('traceFilters').innerHTML=traceFilters.map(f=>'<button class="'+(traceActive===f[0]?'active':'')+'" onclick="traceFilter(\''+f[0]+'\')">'+f[1]+'</button>').join('');
- document.getElementById('traceCards').innerHTML=traces.filter(t=>traceActive==='todos'||t[0]===traceActive).map(t=>'<button class="trace" onclick="openTrace(\''+t[0]+'\')"><div class="trace-art">'+t[1]+'</div><div class="trace-body"><span class="trace-type">'+t[2]+'</span><h3>'+t[2]+'</h3><p>'+t[3]+'</p><div class="trace-rel '+(t[7]==='local'?'trace-local':'trace-reg')+'">'+(t[7]==='local'?'● vínculo local relacionado':'○ contexto regional')+'</div></div></button>').join('');
-}
-function traceFilter(v){traceActive=v;renderTraces()}
-function openTrace(id){
- const t=traces.find(x=>x[0]===id);
- const related=(data.find(x=>x[0]===t[6])||plants.find(x=>x[0]===t[6]));
- const name=related?(related[2]||related[1]):'seguir investigando';
- document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><div class="panel-in"><span class="tag">RASTRO DE CAMPO</span><div class="trace-art" style="border-radius:18px;margin-top:12px">'+t[1]+'</div><h2>'+t[2]+'</h2><p>'+t[3]+'</p><div class="trace-panel"><div class="trace-step"><b>CÓMO MIRAR</b>'+t[4]+'</div><div class="trace-step"><b>QUÉ NO CONCLUIR</b>'+t[5]+'</div></div><div class="dossier-block"><b>CONEXIÓN</b>Seguí la pista hacia <strong>'+name+'</strong>.</div><div class="mini-links"><button onclick="closeModal();openCard(\''+t[6]+'\', '+(plants.some(x=>x[0]===t[6]))+')">ABRIR ESPECIE RELACIONADA</button><button onclick="closeModal();go(\'rastros\')">VER OTROS RASTROS</button></div><div class="field-note"><b>EVIDENCIA</b><br>'+(t[7]==='local'?'Existe un vínculo local documentado para la especie relacionada; este rastro puntual no se presenta como fotografía de evidencia.':'La especie relacionada es contexto regional; no se afirma que este rastro corresponda a ella en El Chañar.')+'</div></div>';
- document.getElementById('modal').classList.add('show');
-}
-function toggleFieldMode(){
- document.body.classList.toggle('field-active');
- const on=document.body.classList.contains('field-active');
- document.querySelector('.field-mode').classList.toggle('on',on);
- document.querySelector('.field-mode').textContent=on?'✕ SALIR DEL MODO CAMPO':'👣 MODO CAMPO';
- if(on) go('rastros');
-}
-renderTraces();
-// interacción visual: progreso local de descubrimientos
-const discoverySeen=new Set(JSON.parse(localStorage.getItem('ocarinaWildSeen')||'[]'));
-function markSeen(id){discoverySeen.add(id);localStorage.setItem('ocarinaWildSeen',JSON.stringify([...discoverySeen]));updateProgress()}
-function updateProgress(){const el=document.getElementById('discoveryProgress');if(el)el.style.width=Math.min(100,discoverySeen.size/12*100)+'%'}
-const oldOpenCard=openCard;
-openCard=function(id,plant){markSeen((plant?'flora-':'fauna-')+id);oldOpenCard(id,plant)}
-const oldOpenTrace=openTrace;
-openTrace=function(id){markSeen('trace-'+id);oldOpenTrace(id)}
-const oldStartMission=startMission;
-startMission=function(i){markSeen('mission-'+i);oldStartMission(i)}
-updateProgress();
 
-// REPARACIÓN DE INTERACCIÓN v0.8
-window.addEventListener('error',function(e){console.warn('OCARINA WILD:',e.message)});
-function safeGo(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}
-document.querySelectorAll('.door').forEach(b=>b.addEventListener('click',()=>{const m=b.getAttribute('onclick')||'';const hit=m.match(/go\('([^']+)'\)/);if(hit)safeGo(hit[1])}));
-document.querySelectorAll('.territory div').forEach((el,i)=>el.addEventListener('click',()=>safeGo(['fauna','fauna','flora','flora','rastros','misiones'][i])));
+function card(x,plant=false){
+const id=x[0],name=plant?x[1]:x[2],latin=plant?x[2]:x[3],tag=plant?x[3]:x[4],status=plant?x[4]:x[5],img=plant?x[5]:x[6],facts=plant?x[6]:x[7];
+return '<button class="card" data-group="'+(plant?'flora':x[1])+'" data-name="'+(name+' '+latin).toLowerCase()+'" data-id="'+id+'" data-plant="'+plant+'"><img src="'+file(img)+'" alt="'+name+'" loading="lazy"><div class="body"><span class="tag">'+tag+'</span><h3>'+name+'</h3><div class="latin">'+latin+'</div><div class="status '+(status==='local'?'local':'regional')+'">'+(status==='local'?'● vínculo local':'○ contexto regional')+'</div></div></button>';
+}
+function render(){
+document.getElementById('faunaCards').innerHTML=fauna.map(x=>card(x)).join('');
+document.getElementById('floraCards').innerHTML=flora.map(x=>card(x,true)).join('');
+document.getElementById('traceCards').innerHTML=traces.map((t,i)=>'<button class="trace" data-trace="'+i+'"><div class="trace-art">'+t[0]+'</div><div class="trace-body"><b>RASTRO</b><h3>'+t[1]+'</h3><p>'+t[2]+'</p></div></button>').join('');
+}
+function openSpecies(id,plant){
+const list=plant?flora:fauna,x=list.find(v=>v[0]===id),name=plant?x[1]:x[2],latin=plant?x[2]:x[3],status=plant?x[4]:x[5],img=plant?x[5]:x[6],facts=plant?x[6]:x[7],d=plant?null:details[id];
+document.getElementById('panel').innerHTML='<button class="close" id="close">×</button><img src="'+file(img)+'" alt="'+name+'"><div class="panel-in"><span class="tag">'+(plant?x[3]:x[4])+'</span><h2>'+name+'</h2><div class="latin">'+latin+'</div><div class="facts">'+facts.map(f=>'<div class="fact"><b>CLAVE</b>'+f+'</div>').join('')+'</div>'+(d?'<div class="facts"><div class="fact"><b>DÓNDE</b>'+d[0]+'</div><div class="fact"><b>QUÉ BUSCAR</b>'+d[1]+'</div><div class="fact"><b>ALIMENTO / RELACIÓN</b>'+d[2]+'</div></div>':'<div class="box"><b>OBSERVÁ</b><p>Hojas, corteza, frutos, suelo, sombra y relación con el agua. No arranques ni manipules.</p></div>')+'<p><b>'+(status==='local'?'● Vínculo local':'○ Contexto regional')+'</b></p></div>';
+document.getElementById('modal').classList.add('show');
+}
+function openTrace(i){
+const t=traces[i];
+document.getElementById('panel').innerHTML='<button class="close" id="close">×</button><div class="panel-in"><span class="tag">RASTRO DE CAMPO</span><div class="trace-art" style="border-radius:16px;margin-top:12px">'+t[0]+'</div><h2>'+t[1]+'</h2><p>'+t[2]+'</p><div class="box"><b>CÓMO MIRAR</b><p>'+t[3]+'</p></div><div class="box" style="margin-top:8px"><b>IMPORTANTE</b><p>Un rastro puede orientar, pero no permite identificar una especie por sí solo.</p></div></div>';
+document.getElementById('modal').classList.add('show');
+}
+function close(){document.getElementById('modal').classList.remove('show')}
+function go(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'})}
+render();
+
+document.addEventListener('click',e=>{
+const door=e.target.closest('[data-go]');if(door){go(door.dataset.go);return}
+const c=e.target.closest('.card');if(c){openSpecies(c.dataset.id,c.dataset.plant==='true');return}
+const t=e.target.closest('[data-trace]');if(t){openTrace(Number(t.dataset.trace));return}
+if(e.target.id==='close'||e.target.id==='modal')close();
+});
+let filter='todos';
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{
+filter=b.dataset.filter;
+document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));
+b.classList.add('active');applyFilter();
+}));
+document.getElementById('search').addEventListener('input',applyFilter);
+function applyFilter(){
+const q=document.getElementById('search').value.toLowerCase();
+document.querySelectorAll('#faunaCards .card').forEach(c=>{
+const ok=(filter==='todos'||c.dataset.group===filter)&&c.dataset.name.includes(q);
+c.style.display=ok?'block':'none';
+});
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
 </script>
-<button class="field-mode" onclick="toggleFieldMode()">👣 MODO CAMPO</button></body>
+</body>
 </html>
