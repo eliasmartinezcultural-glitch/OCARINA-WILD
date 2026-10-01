@@ -69,6 +69,23 @@ const plants=[
 ['matasebo','Mata sebo','Monttea aphylla','arbusto del monte','regional','Monttea aphylla.jpg',['Casi sin hojas','Flores violáceas','Sequedad']],
 ['sauce','Sauce criollo','Salix humboldtiana','vegetación ribereña','regional','Salix humboldtiana.jpg',['Ribera','Agua','Árbol autóctono']]
 ];
+const deep={
+cisne:{habitat:'Dique, lagunas y ambientes acuáticos',season:'La observación depende del sitio y la época.',food:'Vegetación acuática y pequeños organismos.',signs:'Presencia sobre el agua, grupos y vocalizaciones.',relation:'El agua conecta aves, peces, anfibios y vegetación.',evidence:'Vínculo local documentado; el Dique concentra aves.',source:'SIB y registros locales.'},
+calandria:{habitat:'Chacras, arbolado y ambientes abiertos',season:'Puede observarse durante distintas épocas.',food:'Invertebrados y frutos.',signs:'Canto y presencia en arbustos o árboles.',relation:'Conecta vegetación, insectos y espacios productivos.',evidence:'Contexto regional.',source:'SIB / inventarios de vertebrados.'},
+aguilucho:{habitat:'Estepa, bordes de chacras y espacios abiertos',season:'Depende del uso del paisaje.',food:'Pequeños vertebrados y otras presas.',signs:'Planeo y posaderos elevados.',relation:'Predador del paisaje abierto.',evidence:'Contexto regional.',source:'SIB / inventarios de vertebrados.'},
+ataj:{habitat:'Ambientes abiertos y sectores secos',season:'Actividad principalmente nocturna.',food:'Insectos capturados durante el vuelo.',signs:'Actividad al anochecer y canto.',relation:'Vincula cielo nocturno e insectos.',evidence:'Vínculo local documentado mediante cita SIB.',source:'SIB.'},
+osprey:{habitat:'Grandes cuerpos de agua con peces',season:'Su presencia depende de movimientos y alimento.',food:'Principalmente peces.',signs:'Vuelo sobre el agua y ataques de pesca.',relation:'Conecta agua y fauna.',evidence:'Vínculo local documentado para el Dique.',source:'Registros locales y SIB.'},
+mara:{habitat:'Ambientes abiertos y estepa',season:'Actividad principalmente diurna.',food:'Vegetación terrestre.',signs:'Huellas, excrementos y observación a distancia.',relation:'Herbívoro del paisaje abierto.',evidence:'Contexto regional.',source:'SIB / inventarios.'},
+zorro:{habitat:'Monte, estepa, bordes y ambientes transformados',season:'Amplio rango de actividad.',food:'Dieta variada según disponibilidad.',signs:'Huellas, heces y observación indirecta.',relation:'Conecta ambientes y recursos.',evidence:'Contexto regional.',source:'SIB / inventarios.'},
+perca:{habitat:'Ambientes de agua dulce',season:'Depende del cuerpo de agua.',food:'Organismos acuáticos.',signs:'Su presencia requiere evidencia o muestreo.',relation:'Parte de la red alimentaria acuática.',evidence:'Contexto regional.',source:'SIB.'},
+pejerrey:{habitat:'Agua dulce patagónica',season:'Asociado a ambientes acuáticos.',food:'Pequeños organismos acuáticos.',signs:'Difícil de observar sin muestreo.',relation:'Parte de la trama alimentaria acuática.',evidence:'Contexto regional.',source:'SIB.'},
+puyen:{habitat:'Ríos, arroyos y lagos',season:'Asociado a ambientes acuáticos.',food:'Pequeños invertebrados y recursos acuáticos.',signs:'Especie pequeña; requiere observación cuidadosa.',relation:'Conecta pequeños organismos con peces mayores y aves.',evidence:'Contexto regional.',source:'SIB.'},
+bagre:{habitat:'Cursos de agua y fondos pedregosos',season:'Asociado al agua dulce.',food:'Organismos del fondo.',signs:'Difícil de ver; el hábitat es la pista.',relation:'Parte de la vida escondida bajo el agua.',evidence:'Contexto regional.',source:'SIB.'},
+trucha:{habitat:'Ambientes de agua dulce donde fue introducida',season:'Depende del cuerpo de agua.',food:'Recursos acuáticos variados.',signs:'Identificar origen es tan importante como identificar especie.',relation:'Permite hablar de especies nativas y exóticas.',evidence:'Contexto regional e introducido; no se afirma presencia local.',source:'SIB.'},
+sapo:{habitat:'Sectores húmedos y ambientes temporariamente acuáticos',season:'Más detectable con humedad.',food:'Invertebrados.',signs:'Vocalizaciones y observación nocturna responsable.',relation:'Conecta suelo, agua e insectos.',evidence:'Contexto regional.',source:'SIB.'},
+rana:{habitat:'Estepa y ambientes húmedos temporarios',season:'Más activa con humedad favorable.',food:'Pequeños invertebrados.',signs:'Vocalizaciones y presencia cerca del agua.',relation:'Muestra vida anfibia en ambientes secos.',evidence:'Contexto regional.',source:'SIB.'},
+escuerzo:{habitat:'Ambientes áridos con pulsos de humedad',season:'Puede aparecer después de lluvias favorables.',food:'Invertebrados.',signs:'Vocalización y aparición asociada a humedad.',relation:'Muestra cómo el agua ocasional activa ecosistemas secos.',evidence:'Contexto regional.',source:'SIB.'}
+};
 const missions=[
 ['AGUA','Encontrá tres formas de vida relacionadas con el agua.'],
 ['5 ESPECIES','Reconocé cinco especies y anotá qué evidencia tienen.'],
@@ -78,7 +95,23 @@ const missions=[
 ];
 function card(x,plant=false){let id=x[0],group=plant?'flora':x[1],name=plant?x[1]:x[2],latin=plant?x[2]:x[3],tag=plant?x[3]:x[4],status=plant?x[4]:x[5],img=plant?x[5]:x[6],facts=plant?x[6]:x[7];return '<article class="card" data-group="'+group+'" data-status="'+status+'" data-name="'+(name+' '+latin).toLowerCase()+'" onclick="openCard(\''+id+'\', '+plant+')"><img src="'+I(img)+'" alt="'+name+'" loading="lazy"><div class="body"><span class="tag">'+tag+'</span><h3>'+name+'</h3><div class="latin">'+latin+'</div><div class="status '+(status==='local'?'local':'regional')+'">'+(status==='local'?'● vínculo local':'○ contexto regional')+'</div></div></article>'}
 function render(){document.getElementById('faunaCards').innerHTML=data.map(x=>card(x)).join('');document.getElementById('floraCards').innerHTML=plants.map(x=>card(x,true)).join('');document.getElementById('missionCards').innerHTML=missions.map((m,i)=>'<button class="mission" onclick="startMission('+i+')"><small>0'+(i+1)+'</small><strong>'+m[0]+'</strong><span>'+m[1]+'</span></button>').join('')}
-function openCard(id,plant){let x=(plant?plants:data).find(v=>v[0]===id),name=plant?x[1]:x[2],latin=plant?x[2]:x[3],tag=plant?x[3]:x[4],status=plant?x[4]:x[5],img=plant?x[5]:x[6],facts=plant?x[6]:x[7];document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><img src="'+I(img)+'" alt="'+name+'"><div class="panel-in"><span class="tag">'+tag+'</span><h2>'+name+'</h2><div class="latin">'+latin+'</div><div class="facts">'+facts.map((f,i)=>'<div class="fact"><b>Descubrir</b>'+f+'</div>').join('')+'</div><p><b>'+ (status==='local'?'Hay vínculo documental local.':'Contexto regional: no se presenta automáticamente como registro de Chañar.')+'</b></p><p>Observá sin tocar, perseguir ni alterar el ambiente.</p></div>';document.getElementById('modal').classList.add('show')}
+function openCard(id,plant){
+let x=(plant?plants:data).find(v=>v[0]===id);
+let name=plant?x[1]:x[2], latin=plant?x[2]:x[3], tag=plant?x[3]:x[4], status=plant?x[4]:x[5], img=plant?x[5]:x[6], facts=plant?x[6]:x[7], d=plant?null:deep[id];
+window.currentDossier=d;
+let extra=plant
+ ? '<div class="dossier-block"><b>Cómo leerla</b>Observá forma, hojas, frutos, suelo y relación con el agua. Esta ficha orienta; no confirma por sí sola una presencia local.</div>'
+ : '<div class="dossier-nav"><button onclick="showDossier(\'mirar\')">MIRAR</button><button onclick="showDossier(\'habitat\')">HÁBITAT</button><button onclick="showDossier(\'rastros\')">RASTRO</button><button onclick="showDossier(\'relacion\')">RELACIÓN</button><button onclick="showDossier(\'evidencia\')">EVIDENCIA</button></div><div id="dossierContent"></div>';
+document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><img src="'+I(img)+'" alt="'+name+'" onerror="this.style.display=\'none\'"><div class="panel-in"><span class="tag">'+tag+'</span><h2>'+name+'</h2><div class="latin">'+latin+'</div>'+extra+'<div class="facts">'+facts.map(f=>'<div class="fact"><b>Clave</b>'+f+'</div>').join('')+'</div><p><b>'+(status==='local'?'● Vínculo local':'○ Contexto regional')+'</b></p><p>Observá sin tocar, perseguir ni alterar el ambiente.</p>'+(d?'<div class="dossier-block"><b>Fuente</b><div class="source">'+d.source+'</div></div>':'')+'</div>';
+document.getElementById('modal').classList.add('show');
+if(d) showDossier('mirar');
+}
+function showDossier(tab){
+let d=window.currentDossier;if(!d)return;
+let m={mirar:['QUÉ VEO',d.food],habitat:['DÓNDE ESTÁ',d.habitat],rastros:['RASTRO',d.signs],relacion:['CON QUÉ SE CONECTA',d.relation],evidencia:['QUÉ SABEMOS',d.evidence]}[tab];
+document.getElementById('dossierContent').innerHTML='<div class="dossier-block"><b>'+m[0]+'</b>'+m[1]+'</div><div class="dossier-block"><b>CUÁNDO</b>'+d.season+'</div>';
+}
+
 function startMission(i){let m=missions[i];document.getElementById('panel').innerHTML='<button class="close" onclick="closeModal()">×</button><div class="panel-in"><span class="tag">Misión 0'+(i+1)+'</span><h2>'+m[0]+'</h2><p>'+m[1]+'</p><div class="facts"><div class="fact"><b>Regla</b>No capturar ni alimentar animales.</div><div class="fact"><b>Objetivo</b>Mirar, registrar y preguntar.</div></div><button class="pill active" onclick="closeModal()">EMPEZAR</button></div>';document.getElementById('modal').classList.add('show')}
 function closeModal(){document.getElementById('modal').classList.remove('show')}function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
 document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeModal()};
