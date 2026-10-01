@@ -89,3 +89,19 @@ Quedan prohibidas imágenes que presenten fauna como comida, trofeo, espectácul
 > **Complejidad para el sistema. Simplicidad para la persona.**
 
 OCARINA WILD debe sentirse como entrar a un paisaje, no como abrir una planilla.
+
+## Versión 3.21 · Atlas visual
+
+La interfaz pública fue reorganizada alrededor de una **central compacta**: FAUNA · FLORA · AMBIENTES · ARCHIVO. La profundidad deja de acumularse en la portada y pasa a abrirse bajo demanda mediante fichas y un archivo profundo.
+
+### Decisiones 3.21
+
+- portada breve y visual, con collage de referencias fotográficas rotuladas;
+- navegación por puertas, no por bloques explicativos;
+- catálogo como núcleo exploratorio;
+- ambientes conectados realmente con los filtros del catálogo;
+- archivo profundo en diálogo para fuentes, evidencia, escala, media y reglas;
+- tolerancia del motor a controles opcionales para evitar regresiones al rediseñar la interfaz;
+- diseño responsive con foco móvil, objetivos táctiles claros y soporte para movimiento reducido.
+
+La dirección visual busca **curiosidad editorial + fotografía + exploración progresiva**, tomando como referencia patrones de navegación de publicaciones de naturaleza y exploración, pero manteniendo identidad propia y trazabilidad local. La accesibilidad sigue el criterio de WCAG 2.2 y su orientación para experiencias móviles.
