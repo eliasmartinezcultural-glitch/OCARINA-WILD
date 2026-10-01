@@ -13,7 +13,6 @@ const ENV_KEYS={
 };
 const $=s=>document.querySelector(s);
 const $$=s=>Array.from(document.querySelectorAll(s));
-const state={filter:"all",env:"all",query:"",sort:"relevance",lastFocus:null};
 
 function escapeHTML(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function getRecord(id){return records.find(r=>r.id===id)||null;}
