@@ -16,3 +16,20 @@ body:has(#wild320) footer{display:none!important}
 body:has(#wild320) #wild320{margin-top:0}
 body:has(#wild320) .header-link{cursor:pointer}
 @media(max-width:700px){body:has(#wild320) .site-header nav{display:none}}
+
+/* 3.21 MATRIZ REPARADA · SUPERFICIE ÚNICA
+   El motor anterior no se elimina: deja de competir visualmente con la experiencia 3.21. */
+body:has(#wild321) > main > .hero,
+body:has(#wild321) > main > .manifesto,
+body:has(#wild321) > main > .stats-band,
+body:has(#wild321) > main > .lives,
+body:has(#wild321) > main > .between,
+body:has(#wild321) > main > .local-world,
+body:has(#wild321) > main > .method,
+body:has(#wild321) > main > .closing,
+body:has(#wild321) footer{display:none!important}
+body:has(#wild321){background:#07110e}
+body:has(#wild321) .site-header{position:sticky;top:0;z-index:120;background:rgba(7,17,14,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+body:has(#wild321) .site-header nav{display:none}
+body:has(#wild321) main{min-height:0}
+body:has(#wild321) .skip-link{z-index:200}
