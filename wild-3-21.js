@@ -159,7 +159,7 @@ function init(){
     }));
   };
 
-  const openImmersion = () => open("Sala de inmersión","PROFUNDIZAR SIN CAMBIAR DE SITIO",`
+  const openImmersion = () => {\n    open("Sala de inmersión","PROFUNDIZAR SIN CAMBIAR DE SITIO",`
     <p>Acá empieza la lectura larga. Desde una ficha se puede seguir hacia territorio, evidencia, fuentes y metodología sin abandonar la experiencia.</p>
     <div class="w321-immersion-grid">
       <button type="button" data-open="sources">FUENTES</button>
