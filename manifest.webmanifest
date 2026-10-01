@@ -1,0 +1,13 @@
+{
+  "name":"OCARINA WILD · Chañar Vivo",
+  "short_name":"OCARINA WILD",
+  "description":"Archivo vivo de fauna, flora y territorio de San Patricio del Chañar.",
+  "lang":"es-AR",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait-primary",
+  "theme_color":"#111111",
+  "background_color":"#f4f0e8",
+  "icons":[]
+}
