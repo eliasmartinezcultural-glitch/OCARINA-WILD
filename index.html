@@ -13,89 +13,17 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#vidas">Saltar al catálogo</a>
-<header class="site-header">
-<a class="brand" href="#inicio" aria-label="OCARINA WILD, inicio"><span>OW</span><b>OCARINA WILD</b></a>
-<nav aria-label="Navegación principal"><a href="#vidas">VIDAS</a><a href="#territorio">TERRITORIO</a><a href="#estatuto">ESTATUTO</a></nav>
-<button class="header-link" type="button" onclick="document.querySelector('#vidas').scrollIntoView({behavior:'smooth'})">EXPLORAR ↓</button>
-</header>
-
+<a class="skip-link" href="#vidas">Saltar al atlas</a>
+<header class="site-header"><a class="brand" href="#inicio" aria-label="OCARINA WILD, inicio"><span>OW</span><b>OCARINA WILD</b></a><nav aria-label="Navegación principal"><a href="#vidas">VIDAS</a><a href="#territorio">AMBIENTES</a><button id="openAtlas" type="button">ARCHIVO</button></nav></header>
 <main id="inicio">
-<section class="hero" aria-labelledby="hero-title">
-<div class="hero-photo" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div><div class="hero-credit">FOTO DE REFERENCIA · Wikimedia Commons · no corresponde a una toma local</div>
-<div class="hero-content">
-<p class="eyebrow">SAN PATRICIO DEL CHAÑAR · PATRIMONIO NATURAL</p>
-<h1 id="hero-title">Entrá al<br><em>mundo vivo.</em></h1>
-<p>Un archivo digital local para celebrar, conocer, respetar y documentar la fauna, la flora y los ambientes de Chañar. Acá la vida nunca es un recurso visual descartable: es el centro del proyecto.</p>
-<a class="hero-button" href="#vidas">ENTRAR A LA VIDA <span>↓</span></a>
-</div>
-<div class="hero-bottom"><span>FAUNA</span><span>FLORA</span><span>RÍO · CHACRAS · DIQUE · MONTE</span><span>OCARINA · 2026</span></div>
-</section>
-
-<section class="manifesto">
-<span class="eyebrow">01 · MIRAR ANTES DE NOMBRAR</span>
-<h2>No es una enciclopedia.<br><em>Es un archivo que aprende.</em></h2>
-<p>Una imagen despierta curiosidad. Una ficha explica. Una fuente sostiene. Una observación abre una pregunta. Y cuando todavía no sabemos algo, lo decimos.</p>
-<div class="principles"><div><b>DOCUMENTADO</b><span>Hay una fuente que respalda el registro.</span></div><div><b>REFERENCIA</b><span>Ayuda a reconocer, pero no prueba presencia local.</span></div><div><b>PENDIENTE</b><span>La investigación todavía no alcanzó.</span></div></div>
-</section>
-
-<section class="stats-band" aria-label="Estado actual del catálogo">
-<div><strong id="statTotal">0</strong><span>FICHAS</span></div><div><strong id="statFauna">0</strong><span>FAUNA</span></div><div><strong id="statFlora">0</strong><span>FLORA</span></div><div><strong id="statDocumented">0</strong><span>DOCUMENTADAS</span></div><div><strong id="statPending">0</strong><span>EN INVESTIGACIÓN</span></div>
-</section>
-
-<section id="vidas" class="lives" aria-labelledby="lives-title">
-<div class="section-top"><div><span class="eyebrow">02 · CATÁLOGO VIVO</span><h2 id="lives-title">Buscá una vida.</h2></div><p>El catálogo prioriza trazabilidad: cada ficha indica qué sabemos, de dónde sale y qué falta comprobar.</p></div>
-<div class="tools" aria-label="Herramientas del catálogo">
-<label class="search-box"><span>BUSCAR</span><input id="speciesSearch" type="search" placeholder="Nombre, científico, ambiente..." autocomplete="off"></label>
-<div class="filter-row"><button class="filter-chip active" data-kind="all" aria-pressed="true">TODO</button><button class="filter-chip" data-kind="fauna" aria-pressed="false">FAUNA</button><button class="filter-chip" data-kind="flora" aria-pressed="false">FLORA</button></div>
-<div class="filter-row environments"><span>AMBIENTE</span><button class="env-chip active" data-env="all" aria-pressed="true">TODOS</button><button class="env-chip" data-env="rio" aria-pressed="false">RÍO</button><button class="env-chip" data-env="chacras" aria-pressed="false">CHACRAS</button><button class="env-chip" data-env="dique" aria-pressed="false">DIQUE</button><button class="env-chip" data-env="monte" aria-pressed="false">MONTE</button></div>
-<label class="sort-box"><span>ORDENAR</span><select id="sortSpecies"><option value="relevance">RELEVANCIA</option><option value="name">NOMBRE</option><option value="evidence">EVIDENCIA</option></select></label>
-</div>
-<div id="speciesStatus" class="live-status" aria-live="polite"></div>
-<div id="speciesGrid" class="species-grid"></div>
-</section>
-
-<section class="between">
-<div><span>NO HACE FALTA SABER EL NOMBRE.</span></div>
-<div><strong>Si algo te llama la atención,<br>abrilo.</strong><p>La exploración también puede empezar por una forma, un vuelo, una hoja o una huella. Toda observación conserva su carácter de observación hasta ser revisada.</p></div>
-<button id="surprise" type="button">SORPRENDEME ↗</button>
-</section>
-
-<section id="territorio" class="local-world">
-<span class="eyebrow">03 · EL TERRITORIO</span>
-<h2>Una especie nunca está sola.</h2>
-<p class="lead">Chañar no es un único paisaje. Río, chacras, dique y monte construyen oportunidades distintas para la vida.</p>
-<div class="world-grid">
-<button class="jump-env" data-env="rio"><b>RÍO</b><small>agua · aves · peces · orilla</small><span>EXPLORAR ↗</span></button>
-<button class="jump-env" data-env="chacras"><b>CHACRAS</b><small>cultivos · árboles · canales · aves</small><span>EXPLORAR ↗</span></button>
-<button class="jump-env" data-env="dique"><b>DIQUE</b><small>humedal · protección · vida</small><span>EXPLORAR ↗</span></button>
-<button class="jump-env" data-env="monte"><b>MONTE</b><small>vegetación · suelo · fauna</small><span>EXPLORAR ↗</span></button>
-</div>
-<div class="territory-note"><b>EL DIQUE COMPENSADOR</b><p>El Municipio informa que fue declarado Área Natural Protegida Municipal en 2006. Ese dato merece convertirse en una línea propia de documentación, no solamente en una tarjeta de paisaje.</p></div>
-</section>
-
-<section id="estatuto" class="method">
-<div class="method-intro"><span class="eyebrow">04 · ESTATUTO UNIVERSAL OCARINA WILD</span><h2>La vida no es decoración.</h2><p>Este proyecto tiene una norma superior: toda imagen, texto, registro, patrocinio y función debe respetar la vida y servir a su conocimiento y conservación. La biodiversidad tiene valor propio y el criterio editorial no se negocia.</p></div>
-<div class="method-grid">
-<article><span>01</span><h3>RESPETO ABSOLUTO</h3><p>Animales vivos, plantas vivas y ecosistemas son el centro. Quedan fuera las imágenes de fauna como comida, trofeo o espectáculo.</p></article>
-<article><span>02</span><h3>VERDAD</h3><p>Una imagen de referencia no se convierte en evidencia local. Cada afirmación conserva su fuente y su nivel de certeza.</p></article>
-<article><span>03</span><h3>NO DAÑO</h3><p>No se promueve captura, persecución, extracción, perturbación ni publicación de información que facilite daño.</p></article>
-<article><span>04</span><h3>PRECAUCIÓN</h3><p>Ante la duda, se elige la opción que proteja mejor la vida. Ningún patrocinio puede modificar esta regla.</p></article>
-</div>
-</section>
-
-<section class="closing">
-<span class="eyebrow">05 · CHAÑAR VIVO · PARA SIEMPRE</span>
-<h2>Vos también podés<br><em>mirar mejor.</em></h2>
-<p>¿Viste un animal, una planta, un nido, una huella o una situación que merece ser registrada? Sumala como observación. Se guarda primero en tu dispositivo y nunca se convierte automáticamente en un registro confirmado.</p>
-<button id="observe" type="button">SUMAR UNA OBSERVACIÓN ↗</button>
-</section>
+<section class="hub" aria-labelledby="hub-title"><div class="hub-media" id="hubMedia" aria-label="Fauna y territorio de referencia"></div><div class="hub-shade"></div><div class="hub-copy"><span class="eyebrow">SAN PATRICIO DEL CHAÑAR · NEUQUÉN</span><h1 id="hub-title">CHAÑAR<br><em>VIVO.</em></h1><p>Un atlas visual para mirar la fauna, la flora y los ambientes del lugar. Entrá por curiosidad. Profundizá cuando quieras.</p><div class="hub-doors" aria-label="Puertas principales"><button class="door" data-door="fauna"><strong>01</strong><span>FAUNA</span><small>animales · aves · peces</small></button><button class="door" data-door="flora"><strong>02</strong><span>FLORA</span><small>plantas · monte · ribera</small></button><button class="door" data-door="territorio"><strong>03</strong><span>AMBIENTES</span><small>río · chacras · dique · monte</small></button><button class="door" data-door="archivo"><strong>04</strong><span>ARCHIVO</span><small>fuentes · evidencia · método</small></button></div></div><div class="hub-meta"><span>OCARINA WILD · 3.21</span><span>FUENTE ≠ FOTO ≠ PRESENCIA</span></div></section>
+<section class="quick-index" aria-label="Estado del atlas"><div><span>CATÁLOGO</span><strong id="statTotal">0</strong></div><div><span>FAUNA</span><strong id="statFauna">0</strong></div><div><span>FLORA</span><strong id="statFlora">0</strong></div><div><span>DOCUMENTADAS</span><strong id="statDocumented">0</strong></div><div><span>PENDIENTES</span><strong id="statPending">0</strong></div></section>
+<section id="vidas" class="atlas" aria-labelledby="lives-title"><div class="atlas-head"><div><span class="eyebrow">01 · VIDAS</span><h2 id="lives-title">Elegí una vida.</h2></div><p>No hace falta saber el nombre. Buscá, filtrá o simplemente dejate llevar por una imagen.</p></div><div class="tools" aria-label="Herramientas del catálogo"><label class="search-box"><span>BUSCAR</span><input id="speciesSearch" type="search" placeholder="Nombre, científico, ambiente..." autocomplete="off"></label><div class="filter-row"><button class="filter-chip active" data-kind="all" aria-pressed="true">TODO</button><button class="filter-chip" data-kind="fauna" aria-pressed="false">FAUNA</button><button class="filter-chip" data-kind="flora" aria-pressed="false">FLORA</button></div><div class="filter-row environments"><span>AMBIENTE</span><button class="env-chip active" data-env="all" aria-pressed="true">TODOS</button><button class="env-chip" data-env="rio" aria-pressed="false">RÍO</button><button class="env-chip" data-env="chacras" aria-pressed="false">CHACRAS</button><button class="env-chip" data-env="dique" aria-pressed="false">DIQUE</button><button class="env-chip" data-env="monte" aria-pressed="false">MONTE</button></div><label class="sort-box"><span>ORDENAR</span><select id="sortSpecies"><option value="relevance">RELEVANCIA</option><option value="name">NOMBRE</option><option value="evidence">EVIDENCIA</option></select></label></div><div id="speciesStatus" class="live-status" aria-live="polite"></div><div id="speciesGrid" class="species-grid"></div></section>
+<section id="territorio" class="territory"><div class="territory-head"><span class="eyebrow">02 · AMBIENTES</span><h2>El territorio es parte de la especie.</h2><p>Cuatro puertas para entender cómo cambian el agua, el suelo, la vegetación y la vida.</p></div><div class="territory-grid"><button class="territory-door" data-env="rio"><span>RÍO</span><small>agua · ribera · movimiento</small></button><button class="territory-door" data-env="chacras"><span>CHACRAS</span><small>riego · arbolado · producción</small></button><button class="territory-door" data-env="dique"><span>DIQUE</span><small>agua · protección · aves</small></button><button class="territory-door" data-env="monte"><span>MONTE</span><small>viento · suelo · adaptación</small></button></div></section>
+<section class="field-note"><span class="eyebrow">03 · REGLA DEL ATLAS</span><h2>Una foto puede mostrar.<br><em>Una fuente tiene que sostener.</em></h2><p>Las imágenes externas son referencias visuales y están marcadas como tales. Un registro local, una observación y una referencia regional nunca ocupan el mismo lugar de evidencia.</p><button id="observe" type="button">SUMAR UNA OBSERVACIÓN ↗</button></section>
 </main>
-
 <footer><div><b>OCARINA WILD</b><span>Fauna · flora · territorio · memoria natural</span></div><div><small>Un proyecto de Ocarina Producciones</small><small>San Patricio del Chañar · Neuquén · Argentina</small></div></footer>
 <dialog id="speciesDialog" aria-labelledby="dialogTitle"><button id="closeDialog" class="close" type="button" aria-label="Cerrar">×</button><div id="dialogContent"></div></dialog>
+<dialog id="atlasDialog" aria-labelledby="atlasDialogTitle"><button id="closeAtlas" class="close" type="button" aria-label="Cerrar">×</button><div id="atlasContent"></div></dialog>
 <noscript><div class="noscript">OCARINA WILD necesita JavaScript para abrir las fichas interactivas.</div></noscript>
-<script src="app.js" defer></script>
-<script type="module" src="wild-3-20.js"></script>
-</body>
-</html>
+<script src="app.js" type="module"></script><script src="wild-3-21.js" type="module"></script></body></html>
