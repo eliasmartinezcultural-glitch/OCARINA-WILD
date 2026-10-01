@@ -1,5 +1,4 @@
 import { records } from "./data/catalog.js";
-import { initWild } from "./core/engine.js";
 import { validateCatalog } from "./core/policy.js";
 import { resources, pl1Rules, PL1_VERSION } from "./data/pl1-resources.js";
 
@@ -21,5 +20,4 @@ function build(){
   q("#owExport")?.addEventListener("click",()=>{const blob=new Blob([JSON.stringify({version:PL1_VERSION,exportedAt:new Date().toISOString(),records},null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="ocarina-wild-catalogo-"+PL1_VERSION+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),500);});
   q("#owCopy")?.addEventListener("click",async()=>{const text="OCARINA WILD "+PL1_VERSION+" · "+counts.total+" fichas · "+counts.documented+" documentadas · "+counts.pending+" en investigación. Catálogo trazable, con observaciones separadas de evidencia confirmada.";try{await navigator.clipboard.writeText(text);q("#owAudit").textContent="Resumen copiado al portapapeles.";}catch(_){q("#owAudit").textContent=text;}});
 }
-try{initWild();}catch(error){console.error("[OCARINA WILD PL1] motor base",error);}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",build);else build();
