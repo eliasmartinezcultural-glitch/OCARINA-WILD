@@ -14,7 +14,7 @@ const STATUS={
 const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 const badge=s=>{const x=STATUS[s.localStatus]||STATUS.unconfirmed;return '<span class="status '+x[2]+'">'+x[0]+" "+x[1]+"</span>"};
 const img=s=>s.image?'<img loading="lazy" src="'+esc(s.image)+'" alt="'+esc(s.commonName)+'">':'<span>'+esc(s.commonName)+'</span>';
-const records=()=>{try{return JSON.parse(localStorage.getItem(RECORDS_KEY)||"[]")}catch{return[]}};
+const records=()=>{try{const current=localStorage.getItem(RECORDS_KEY);if(current)return JSON.parse(current);const legacy=localStorage.getItem("ocarina_wild_records_v1");if(legacy){const data=JSON.parse(legacy);localStorage.setItem(RECORDS_KEY,JSON.stringify(data));return data}return []}catch{return[]}};
 const saveRecords=r=>localStorage.setItem(RECORDS_KEY,JSON.stringify(r));
 const REVIEW={pending:["⏳","Pendiente","pending"],review:["🔎","En revisión","review"],verified:["🟢","Confirmado","verified"],rejected:["⚠️","No confirmado","rejected"]};
 const reviewBadge=s=>{const x=REVIEW[s]||REVIEW.pending;return "<span class=\"review-badge "+x[2]+"\">"+x[0]+" "+x[1]+"</span>"};
