@@ -817,6 +817,357 @@ window.WILD_DATA = {
           "url": "https://commons.wikimedia.org/wiki/wiki/Ephedra_ochreata"
         }
       ]
+    },
+    {
+      "id": "chañar",
+      "commonName": "Chañar",
+      "scientificName": "Geoffroea decorticans",
+      "kind": "flora",
+      "group": "arboles",
+      "localStatus": "region",
+      "environments": [
+        "monte",
+        "rural",
+        "arboledas"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoffroea_decorticans.jpg",
+      "imageCredit": "Wikimedia Commons · Geoffroea decorticans",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Geoffroea_decorticans.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Árbol característico que da nombre histórico al lugar y forma parte de la identidad natural de El Chañar.",
+      "identification": "Árbol de corteza característica y ramas espinosas; puede reconocerse por su porte y su adaptación a ambientes secos.",
+      "habitat": "Ambientes áridos, semiáridos y rurales regionales.",
+      "behavior": "Forma parte de comunidades vegetales adaptadas a las condiciones ambientales.",
+      "diet": "Produce su propio alimento mediante fotosíntesis.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Geoffroea_decorticans"
+        }
+      ]
+    },
+    {
+      "id": "jarilla",
+      "commonName": "Jarilla",
+      "scientificName": "Larrea divaricata",
+      "kind": "flora",
+      "group": "arbustos",
+      "localStatus": "region",
+      "environments": [
+        "monte",
+        "rural"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea_divaricata.jpg",
+      "imageCredit": "Wikimedia Commons · Larrea divaricata",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Larrea_divaricata.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Arbusto característico del Monte y uno de los componentes vegetales más representativos de los ambientes áridos regionales.",
+      "identification": "Arbusto ramificado, de hojas pequeñas y resinosas, generalmente verde aun en condiciones secas.",
+      "habitat": "Ambientes áridos, semiáridos y rurales regionales.",
+      "behavior": "Forma parte de comunidades vegetales adaptadas a las condiciones ambientales.",
+      "diet": "Produce su propio alimento mediante fotosíntesis.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Larrea_divaricata"
+        }
+      ]
+    },
+    {
+      "id": "tomillo",
+      "commonName": "Tomillo",
+      "scientificName": "Acantholippia seriphioides",
+      "kind": "flora",
+      "group": "arbustos",
+      "localStatus": "region",
+      "environments": [
+        "monte",
+        "rural"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Acantholippia_seriphioides.jpg",
+      "imageCredit": "Wikimedia Commons · Acantholippia seriphioides",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Acantholippia_seriphioides.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Pequeño arbusto aromático incluido en documentación ambiental de la vegetación regional del Monte.",
+      "identification": "Planta baja y ramificada, con hojas pequeñas y aspecto compacto.",
+      "habitat": "Ambientes áridos, semiáridos y rurales regionales.",
+      "behavior": "Forma parte de comunidades vegetales adaptadas a las condiciones ambientales.",
+      "diet": "Produce su propio alimento mediante fotosíntesis.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Acantholippia_seriphioides"
+        }
+      ]
+    },
+    {
+      "id": "coiron",
+      "commonName": "Coirón",
+      "scientificName": "Pappostipa speciosa",
+      "kind": "flora",
+      "group": "gramineas",
+      "localStatus": "region",
+      "environments": [
+        "monte",
+        "rural"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pappostipa_speciosa.jpg",
+      "imageCredit": "Wikimedia Commons · Pappostipa speciosa",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Pappostipa_speciosa.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Gramínea de ambientes secos y abiertos, incluida en relevamientos ambientales regionales.",
+      "identification": "Pasto en matas, con hojas estrechas y aspecto resistente a la aridez.",
+      "habitat": "Ambientes áridos, semiáridos y rurales regionales.",
+      "behavior": "Forma parte de comunidades vegetales adaptadas a las condiciones ambientales.",
+      "diet": "Produce su propio alimento mediante fotosíntesis.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Pappostipa_speciosa"
+        }
+      ]
+    },
+    {
+      "id": "pejerrey",
+      "commonName": "Pejerrey",
+      "scientificName": "Odontesthes bonariensis",
+      "kind": "fauna",
+      "group": "peces",
+      "localStatus": "region",
+      "environments": [
+        "rio",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Odontesthes_bonariensis.jpg",
+      "imageCredit": "Wikimedia Commons · Odontesthes bonariensis",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Odontesthes_bonariensis.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Pez de agua dulce mencionado por la Municipalidad entre los recursos pesqueros del Río Neuquén.",
+      "identification": "Cuerpo alargado y plateado, adaptado a ambientes de agua dulce.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Odontesthes_bonariensis"
+        }
+      ]
+    },
+    {
+      "id": "perca",
+      "commonName": "Perca",
+      "scientificName": "Percichthys trucha",
+      "kind": "fauna",
+      "group": "peces",
+      "localStatus": "region",
+      "environments": [
+        "rio",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Percichthys_trucha.jpg",
+      "imageCredit": "Wikimedia Commons · Percichthys trucha",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Percichthys_trucha.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Pez nativo de Patagonia mencionado por la Municipalidad entre las especies de pesca del Río Neuquén.",
+      "identification": "Pez robusto, de cuerpo alargado y coloración variable según ambiente.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Percichthys_trucha"
+        }
+      ]
+    },
+    {
+      "id": "trucha-arcoiris",
+      "commonName": "Trucha arcoíris",
+      "scientificName": "Oncorhynchus mykiss",
+      "kind": "fauna",
+      "group": "peces",
+      "localStatus": "region",
+      "environments": [
+        "rio",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Oncorhynchus_mykiss.jpg",
+      "imageCredit": "Wikimedia Commons · Oncorhynchus mykiss",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Oncorhynchus_mykiss.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Trucha introducida ampliamente en ambientes acuáticos patagónicos y mencionada por la Municipalidad entre los peces del Río Neuquén.",
+      "identification": "Cuerpo fusiforme con banda lateral característica y pequeñas manchas oscuras.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Oncorhynchus_mykiss"
+        }
+      ]
+    },
+    {
+      "id": "coipo",
+      "commonName": "Coipo",
+      "scientificName": "Myocastor coypus",
+      "kind": "fauna",
+      "group": "mamiferos",
+      "localStatus": "region",
+      "environments": [
+        "rio",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Myocastor_coypus.jpg",
+      "imageCredit": "Wikimedia Commons · Myocastor coypus",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Myocastor_coypus.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Mamífero semiacuático de ambientes con vegetación próxima al agua.",
+      "identification": "Animal grande, de cuerpo robusto, cola larga y dientes incisivos anaranjados.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Myocastor_coypus"
+        }
+      ]
+    },
+    {
+      "id": "liebre-europea",
+      "commonName": "Liebre europea",
+      "scientificName": "Lepus europaeus",
+      "kind": "fauna",
+      "group": "mamiferos",
+      "localStatus": "region",
+      "environments": [
+        "rural",
+        "monte"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lepus_europaeus.jpg",
+      "imageCredit": "Wikimedia Commons · Lepus europaeus",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Lepus_europaeus.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Mamífero introducido presente en distintos ambientes abiertos de Argentina.",
+      "identification": "Orejas largas, patas traseras desarrolladas y cuerpo adaptado a desplazamientos rápidos.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Lepus_europaeus"
+        }
+      ]
+    },
+    {
+      "id": "zorro-colorado",
+      "commonName": "Zorro colorado",
+      "scientificName": "Lycalopex culpaeus",
+      "kind": "fauna",
+      "group": "mamiferos",
+      "localStatus": "region",
+      "environments": [
+        "monte",
+        "rural"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lycalopex_culpaeus.jpg",
+      "imageCredit": "Wikimedia Commons · Lycalopex culpaeus",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Lycalopex_culpaeus.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Mamífero carnívoro nativo de Patagonia y de ambientes abiertos y áridos.",
+      "identification": "Cánido de tamaño mediano, hocico alargado, orejas grandes y cola muy poblada.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+          "url": "https://sanpatricio.gob.ar/quehacer"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/Lycalopex_culpaeus"
+        }
+      ]
     }
   ],
   "concepts": [
