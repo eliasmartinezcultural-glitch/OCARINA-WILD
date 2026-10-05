@@ -130,8 +130,8 @@ window.WILD_DATA = {
         "rural",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mimus_saturninus.png",
-      "imageCredit": "Eurico Zimbres · Wikimedia Commons",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CALANDRIA_Mimus_saturninus.jpg",
+      "imageCredit": "Dario Niz · Wikimedia Commons · CC BY 3.0",
       "description": "Ave reconocible por su ceja clara y su capacidad para imitar distintos sonidos. Está entre las aves destacadas por la Municipalidad en la zona.",
       "identification": "Ave de tamaño mediano, tonos pardos y grises, ceja clara y cola relativamente larga.",
       "habitat": "Ambientes abiertos, arboledas, jardines y zonas rurales.",
@@ -150,7 +150,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Mimus_saturninus"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:CALANDRIA_Mimus_saturninus.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
     },
     {
       "id": "carpintero-real",
@@ -164,8 +166,8 @@ window.WILD_DATA = {
         "rural",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A1jaro%20Carpintero%20Real.jpg",
-      "imageCredit": "Wikimedia Commons",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Colaptes_melanochloros_-_Carpintero_real.jpg",
+      "imageCredit": "G.olivero · Wikimedia Commons · CC BY-SA 4.0",
       "description": "Ave carpintera asociada a ambientes con árboles. Es una de las especies de aves mencionadas por la Municipalidad para la zona.",
       "identification": "Se reconoce por su pico fuerte, postura trepadora y plumaje contrastado.",
       "habitat": "Arboledas, zonas rurales y ambientes con árboles.",
@@ -184,7 +186,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Colaptes_melanochloros"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Colaptes_melanochloros_-_Carpintero_real.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
     },
     {
       "id": "golondrina-patagonica",
@@ -199,8 +203,8 @@ window.WILD_DATA = {
         "dique",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pygochelidon%20cyanoleuca%20%28Golodrina%20azul%20y%20blanca%29%20-%20Flickr%20-%20Alejandro%20Bayer.jpg",
-      "imageCredit": "Alejandro Bayer · Wikimedia Commons",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pygochelidon_cyanoleuca_176376357.jpg",
+      "imageCredit": "Manuel Ortiz · Wikimedia Commons · CC BY-SA",
       "description": "Golondrina de vuelo ágil asociada a espacios abiertos. La Municipalidad la menciona entre las aves registradas en la zona.",
       "identification": "Pequeña golondrina de tonos azulados y blancos, con alas adaptadas al vuelo rápido.",
       "habitat": "Espacios abiertos y ambientes próximos al agua.",
@@ -219,7 +223,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Category:Pygochelidon_cyanoleuca"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pygochelidon_cyanoleuca_176376357.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
     },
     {
       "id": "jarilla-hembra",
@@ -232,8 +238,8 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea%20divaricata%20%288687035402%29.jpg",
-      "imageCredit": "Dick Culbert · Wikimedia Commons",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea_divaricata_o_jarilla_hembra.JPG",
+      "imageCredit": "SoleFabrizio · Wikimedia Commons · CC BY-SA 3.0",
       "description": "Arbusto característico de ambientes áridos y semiáridos. La documentación ambiental provincial la registra entre las especies del Monte.",
       "identification": "Arbusto de hojas pequeñas y brillantes, adaptado a condiciones secas.",
       "habitat": "Ambientes áridos y semiáridos del Monte.",
@@ -252,7 +258,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Category:Larrea_divaricata"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Larrea_divaricata_o_jarilla_hembra.JPG",
+      "imageNote": "Imagen referencial, fotografiada en Neuquén; no constituye un registro de Chañar."
     },
     {
       "id": "zampa",
@@ -265,7 +273,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": null,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Atriplex_lampa.jpg",
       "description": "Arbusto propio de ambientes áridos de la región. Aparece en documentación ambiental provincial sobre la vegetación del Monte.",
       "identification": "Arbusto adaptado a ambientes secos y a disponibilidad limitada de agua.",
       "habitat": "Monte y ambientes áridos.",
@@ -280,7 +288,10 @@ window.WILD_DATA = {
           "label": "Ambiente Neuquén · estudio ambiental",
           "url": "https://ambiente.neuquen.gov.ar/wp-content/uploads/2023/03/EIA-Integral-PPar.pdf"
         }
-      ]
+      ],
+      "imageCredit": "Fabricaster · Wikimedia Commons · CC BY-SA 4.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Atriplex_lampa.jpg",
+      "imageNote": "Imagen referencial, fotografiada en Mendoza; no constituye un registro de Chañar."
     },
     {
       "id": "alpataco",
@@ -293,7 +304,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": null,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Prosopis_alpataco_01.jpg",
       "description": "Planta característica de ambientes áridos y de la vegetación del Monte.",
       "identification": "Arbusto espinoso adaptado a ambientes secos.",
       "habitat": "Monte y zonas áridas.",
@@ -308,7 +319,10 @@ window.WILD_DATA = {
           "label": "Ambiente Neuquén · estudio ambiental",
           "url": "https://ambiente.neuquen.gov.ar/wp-content/uploads/2023/03/EIA-Integral-PPar.pdf"
         }
-      ]
+      ],
+      "imageCredit": "Wikimedia Commons · Prosopis alpataco",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Prosopis_alpataco_01.jpg",
+      "imageNote": "Imagen referencial de Patagonia argentina; no demuestra presencia local en Chañar."
     },
     {
       "id": "molle",
@@ -321,7 +335,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": null,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Schinus_johnstonii_%288685027624%29.jpg",
       "description": "Arbusto mencionado en documentación ambiental provincial dentro de la vegetación representativa del Monte.",
       "identification": "Planta leñosa adaptada a condiciones secas.",
       "habitat": "Ambientes del Monte.",
@@ -336,7 +350,10 @@ window.WILD_DATA = {
           "label": "Ambiente Neuquén · estudio ambiental",
           "url": "https://ambiente.neuquen.gov.ar/wp-content/uploads/2023/03/EIA-Integral-PPar.pdf"
         }
-      ]
+      ],
+      "imageCredit": "Dick Culbert · Wikimedia Commons · CC BY 2.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Schinus_johnstonii_(8685027624).jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
     }
   ],
   "concepts": [
