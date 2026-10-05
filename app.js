@@ -2,7 +2,7 @@
 const D=window.WILD_DATA;
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
-const RECORDS_KEY="ocarina_wild_records_v1";
+const RECORDS_KEY="ocarina_wild_records_v2";
 const state={view:"home",kind:"fauna",group:"all",query:"",env:null,id:null,identifyStep:0,answers:{}};
 
 const STATUS={
@@ -16,6 +16,8 @@ const badge=s=>{const x=STATUS[s.localStatus]||STATUS.unconfirmed;return '<span 
 const img=s=>s.image?'<img loading="lazy" src="'+esc(s.image)+'" alt="'+esc(s.commonName)+'">':'<span>'+esc(s.commonName)+'</span>';
 const records=()=>{try{return JSON.parse(localStorage.getItem(RECORDS_KEY)||"[]")}catch{return[]}};
 const saveRecords=r=>localStorage.setItem(RECORDS_KEY,JSON.stringify(r));
+const REVIEW={pending:["⏳","Pendiente","pending"],review:["🔎","En revisión","review"],verified:["🟢","Confirmado","verified"],rejected:["⚠️","No confirmado","rejected"]};
+const reviewBadge=s=>{const x=REVIEW[s]||REVIEW.pending;return "<span class=\"review-badge "+x[2]+"\">"+x[0]+" "+x[1]+"</span>"};
 const recordId=()=>{const n=records().reduce((m,r)=>Math.max(m,Number(String(r.id||"").replace("WILD-",""))||0),0)+1;return "WILD-"+String(n).padStart(4,"0")};
 const formatDate=d=>{if(!d)return "Sin fecha";const x=new Date(d+"T12:00:00");return isNaN(x)?"Sin fecha":x.toLocaleDateString("es-AR",{day:"2-digit",month:"2-digit",year:"numeric"})};
 
@@ -78,9 +80,12 @@ function recordForm(prefill){
  return head("REGISTROS WILD","REGISTRÁ LO QUE ENCONTRASTE","Una observación ordenada puede convertirse mañana en evidencia local. Por ahora, el registro queda guardado solamente en este dispositivo.","home")+'<section class="record-page wrap"><form id="record-form" class="record-form"><div class="record-step"><span>01 · EVIDENCIA</span><h2>¿Qué viste?</h2><label class="upload-box"><input id="record-photo" type="file" accept="image/*"><strong>📷 Agregar fotografía</strong><small>La foto es opcional para guardar la observación, pero es la evidencia más útil para una futura revisión.</small><span id="photo-name">Todavía no elegiste una foto.</span></label><div id="photo-preview" class="photo-preview"></div></div><div class="record-step"><span>02 · IDENTIFICACIÓN</span><h2>¿Qué creés que era?</h2><select id="record-species"><option value="">No lo sé / dejar sin identificar</option>'+speciesOptions+'</select><p class="form-hint">Elegir una especie es una hipótesis del observador. No convierte el registro en confirmación.</p></div><div class="record-two"><div class="record-step"><span>03 · CUÁNDO</span><h2>Fecha</h2><input id="record-date" type="date" value="'+new Date().toISOString().slice(0,10)+'"></div><div class="record-step"><span>04 · DÓNDE</span><h2>Ambiente</h2><select id="record-env"><option value="">Elegir ambiente</option>'+D.environments.map(e=>'<option value="'+e.id+'">'+e.icon+" "+esc(e.label)+"</option>").join("")+'</select></div></div><div class="record-step"><span>05 · CONTEXTO</span><h2>Zona general y observador</h2><div class="record-two"><input id="record-zone" placeholder="Ej.: zona de chacras, cerca del río, barrio..."><input id="record-observer" placeholder="Tu nombre o iniciales"></div><textarea id="record-notes" rows="5" placeholder="¿Qué viste? Tamaño, colores, comportamiento, cantidad, qué estaba haciendo..."></textarea><p class="form-hint">No cargues coordenadas exactas de especies sensibles.</p></div><div class="record-submit"><div><strong>Estado inicial: ⏳ PENDIENTE</strong><small>El sistema conserva la observación como pendiente hasta una futura revisión.</small></div><button class="primary" type="submit">Guardar registro WILD</button></div></form></section>';
 }
 
+function reviewScore(r){return Object.values(r.review||{}).filter(Boolean).length;}
+function reviewView(id){const r=records().find(x=>x.id===id);if(!r)return recordsView();const s=D.species.find(x=>x.id===r.speciesId);return head("CONTROL DE CALIDAD",r.id,"Una revisión ordenada permite separar observaciones completas de registros que todavía necesitan información.","records")+"<section class=\"review-page wrap\"><div class=\"review-header\"><div><span class=\"eyebrow dark\">ESTADO</span><h2>"+reviewBadge(r.status)+"</h2><p>"+esc(r.reviewNote||"Sin nota de revisión.")+"</p></div><div class=\"review-score\"><b>"+reviewScore(r)+" / 6</b><span>campos útiles presentes</span></div></div><div class=\"review-grid\"><article><h2>Ficha del registro</h2><p><strong>Especie propuesta:</strong> "+esc(s?s.commonName:(r.speciesName||"Sin identificar"))+"</p><p><strong>Fecha:</strong> "+esc(formatDate(r.date))+"</p><p><strong>Ambiente:</strong> "+esc(r.environmentLabel||"Sin indicar")+"</p><p><strong>Zona general:</strong> "+esc(r.zone||"Sin indicar")+"</p><p><strong>Observador:</strong> "+esc(r.observer||"Anónimo")+"</p><p><strong>Notas:</strong> "+esc(r.notes||"Sin notas")+"</p></article><article><h2>Checklist</h2><ul class=\"review-checks\"><li>"+(r.review&&r.review.photo?"✓":"○")+" Fotografía disponible</li><li>"+(r.review&&r.review.date?"✓":"○")+" Fecha indicada</li><li>"+(r.review&&r.review.environment?"✓":"○")+" Ambiente indicado</li><li>"+(r.review&&r.review.locationGeneral?"✓":"○")+" Zona general indicada</li><li>"+(r.review&&r.review.observer?"✓":"○")+" Observador identificado</li><li>"+(r.review&&r.review.description?"✓":"○")+" Descripción contextual</li></ul></article></div><div class=\"review-actions\"><button class=\"primary\" data-action=\"mark-review\" data-record=\""+esc(r.id)+"\" data-status=\"review\">🔎 Pasar a revisión</button><button class=\"filter\" data-action=\"mark-review\" data-record=\""+esc(r.id)+"\" data-status=\"verified\">🟢 Marcar confirmado</button><button class=\"filter\" data-action=\"mark-review\" data-record=\""+esc(r.id)+"\" data-status=\"rejected\">⚠️ No confirmado</button><button class=\"text-button\" data-action=\"records\">← Volver al archivo</button></div></section>";}
+
 function recordsView(){
  const r=records().sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));
- return head("ARCHIVO LOCAL","MIS REGISTROS WILD",r.length?"Tus observaciones guardadas en este dispositivo.":"Todavía no tenés registros guardados en este dispositivo.","home")+'<section class="records-page wrap"><div class="record-toolbar"><button class="primary" data-action="start-record">📷 Nuevo registro</button><button class="filter" data-action="export-records">Exportar JSON</button></div>'+(r.length?'<div class="record-list">'+r.map(recordCard).join("")+'</div>':'<div class="empty-records"><span>🌱</span><h2>El atlas necesita observadores.</h2><p>La próxima vez que encuentres algo, fotografialo, anotá el ambiente y dejá tu registro.</p><button class="primary" data-action="start-record">Crear mi primer registro</button></div>')+'</section>';
+ return head("ARCHIVO LOCAL","MIS REGISTROS WILD",r.length?"Tus observaciones guardadas en este dispositivo.":"Todavía no tenés registros guardados en este dispositivo.","home")+'<section class="records-page wrap"><div class="record-toolbar"><button class="primary" data-action="start-record">📷 Nuevo registro</button><button class="filter" data-action="export-records">Exportar JSON</button><button class="filter" data-action="review-latest">🔎 Revisar último</button></div>'+(r.length?'<div class="record-list">'+r.map(recordCard).join("")+'</div>':'<div class="empty-records"><span>🌱</span><h2>El atlas necesita observadores.</h2><p>La próxima vez que encuentres algo, fotografialo, anotá el ambiente y dejá tu registro.</p><button class="primary" data-action="start-record">Crear mi primer registro</button></div>')+'</section>';
 }
 
 function recordCard(r){
@@ -91,7 +96,7 @@ function recordCard(r){
 function learn(){return head("EDUCACIÓN","APRENDER","Conceptos cortos para entender mejor la naturaleza de nuestro lugar.","home")+'<section class="concepts wrap"><div class="concept-grid">'+D.concepts.map(c=>'<article><h2>'+esc(c[0])+'</h2><p>'+esc(c[1])+'</p></article>').join("")+'</div><div class="student-block"><span class="eyebrow dark">PARA ESTUDIANTES</span><h2>Pequeñas investigaciones</h2><ol>'+D.activities.map(a=>"<li>"+esc(a)+"</li>").join("")+"</ol></div></section>";}
 
 function render(){
- let h=state.view==="home"?home():state.view==="catalog"?catalog():state.view==="environments"?environments():state.view==="environment"?environment():state.view==="species"?species():state.view==="identify"?identify():state.view==="evidence"?evidence():state.view==="record"?recordForm(state.prefill):state.view==="records"?recordsView():learn();
+ let h=state.view==="home"?home():state.view==="catalog"?catalog():state.view==="environments"?environments():state.view==="environment"?environment():state.view==="species"?species():state.view==="identify"?identify():state.view==="evidence"?evidence():state.view==="record"?recordForm(state.prefill):state.view==="records"?recordsView():state.view==="review"?reviewView(state.recordId):learn();
  $("#app").innerHTML=h;window.scrollTo(0,0);bind();
  if(state.view==="record")bindRecord();
 }
@@ -103,7 +108,7 @@ function bindRecord(){
  if(form)form.onsubmit=async e=>{
   e.preventDefault();
   const speciesId=$("#record-species").value,s=D.species.find(x=>x.id===speciesId),envId=$("#record-env").value,eid=D.environments.find(x=>x.id===envId);
-  const r={id:recordId(),createdAt:new Date().toISOString(),date:$("#record-date").value,speciesId:speciesId||null,speciesName:s?s.commonName:"",environment:envId||null,environmentLabel:eid?eid.label:"Ambiente sin indicar",zone:$("#record-zone").value.trim(),observer:$("#record-observer").value.trim(),notes:$("#record-notes").value.trim(),image:preview?.dataset.image||"",status:"pending"};
+  const r={id:recordId(),createdAt:new Date().toISOString(),date:$("#record-date").value,speciesId:speciesId||null,speciesName:s?s.commonName:"",environment:envId||null,environmentLabel:eid?eid.label:"Ambiente sin indicar",zone:$("#record-zone").value.trim(),observer:$("#record-observer").value.trim(),notes:$("#record-notes").value.trim(),image:preview?.dataset.image||"",status:"pending",review:{photo:!!(preview&&preview.dataset.image),date:!!$("#record-date").value,environment:!!envId,locationGeneral:!!$("#record-zone").value.trim(),observer:!!$("#record-observer").value.trim(),description:!!$("#record-notes").value.trim()},reviewNote:"Registro recibido. Falta revisión."};
   const arr=records();arr.push(r);saveRecords(arr);state.view="records";state.prefill=null;render();
  };
 }
@@ -128,6 +133,8 @@ function bind(){
   if(a==="records"){state.view="records";render()}
   if(a==="export-records"){exportRecords()}
   if(a==="delete-record"){if(confirm("¿Eliminar este registro local?"))deleteRecord(b.dataset.record)}
+  if(a==="review-latest"){const rr=records().sort((x,y)=>String(y.createdAt).localeCompare(String(x.createdAt)));if(rr[0]){state.view="review";state.recordId=rr[0].id;render()}}
+  if(a==="mark-review"){const rr=records(),x=rr.find(r=>r.id===b.dataset.record);if(x){x.status=b.dataset.status;x.reviewNote=b.dataset.status==="verified"?"Marcado como confirmado en este dispositivo.":b.dataset.status==="rejected"?"Registro no confirmado; requiere nueva evidencia.":"Registro separado para revisión.";saveRecords(rr);state.view="review";state.recordId=x.id;render()}}
   if(a==="clear"){state.query="";render()}
  });
  $$("[data-group]").forEach(b=>b.onclick=()=>{state.group=b.dataset.group;render()});
