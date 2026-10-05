@@ -31,7 +31,10 @@ function card(s){
 function stats(){
  const all=D.species, confirmed=all.filter(s=>s.localStatus==="confirmed").length;
  const region=all.filter(s=>s.localStatus==="region").length;
+ const possible=all.filter(s=>s.localStatus==="possible").length;
  const fauna=all.filter(s=>s.kind==="fauna").length, flora=all.filter(s=>s.kind==="flora").length;
+ const withPhoto=all.filter(s=>s.image).length;
+ const groups=[...new Set(all.map(s=>s.group))].length;
  return '<section class="wild-pulse wrap"><div class="section-heading"><div><span class="eyebrow dark">PULSO DEL ATLAS</span><h2>Lo que ya sabemos.</h2></div></div>'+
  '<div class="pulse-grid">'+
  '<article class="pulse-card"><b>'+all.length+'</b><span>especies cargadas</span></article>'+
