@@ -2,167 +2,142 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#17251d">
-<title>OCARINA WILD · El Chañar vivo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10231b">
+<meta name="description" content="OCARINA WILD · puerta de ingreso a la naturaleza y la vida de San Patricio del Chañar, Neuquén.">
+<title>OCARINA WILD · Naturaleza de San Patricio del Chañar</title>
 <style>
-:root{--ink:#15231b;--paper:#f4efe3;--muted:#667168;--line:#d8d0c0;--card:#fffdf8;--water:#dcebea;--green:#e3eadb;--warm:#eee0c9;--clay:#eadbd0;--accent:#a86235;--ok:#39705c;--warn:#8a6c35}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation}
-.hero{min-height:76vh;display:grid;align-items:end;padding:18px;color:#fff;background:linear-gradient(0deg,#101a14f2,#101a1440),url("https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg") center/cover}
-.hero-in,.wrap,.footer-in{width:min(1080px,100%);margin:auto}.hero-in{padding:30px}.eyebrow{font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:850}.hero h1{font-size:clamp(56px,11vw,118px);line-height:.82;letter-spacing:-.075em;margin:14px 0}.hero p{font-size:clamp(18px,2.5vw,26px);max-width:700px;margin:0;line-height:1.25}.hero-note{margin-top:22px;font-size:12px;opacity:.82}
-.wrap{padding:40px 20px 80px}.intro{padding:0 0 30px}.intro h2{font-size:clamp(34px,5vw,55px);line-height:.94;letter-spacing:-.055em;margin:10px 0}.intro p{max-width:680px;color:var(--muted);line-height:1.6}.rule{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.rule span{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:8px 11px;background:#fffaf0}
-.doors{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.door{border:1px solid var(--line);border-radius:22px;padding:20px;text-align:left;min-height:165px;background:var(--card);color:var(--ink);transition:.18s}.door:nth-child(1){background:var(--water)}.door:nth-child(2){background:var(--green)}.door:nth-child(3){background:var(--warm)}.door:nth-child(4){background:var(--clay)}.door:hover,.card:hover,.trace:hover{transform:translateY(-3px);box-shadow:0 14px 30px #17251d16}.door b{font-size:10px;letter-spacing:.14em}.door strong{display:block;font-size:26px;margin-top:36px}.door span{font-size:12px;color:var(--muted);line-height:1.35}
-.section{margin-top:72px;scroll-margin-top:18px}.section h2{font-size:clamp(34px,5vw,48px);line-height:1;margin:0}.sub{color:var(--muted);margin:7px 0 18px;line-height:1.45}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.search{width:100%;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 13px}.pill.active{background:var(--ink);color:#fff}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{border:1px solid var(--line);border-radius:19px;background:var(--card);overflow:hidden;text-align:left;transition:.18s;padding:0;color:var(--ink)}.card img{width:100%;height:210px;object-fit:cover;display:block;background:#dfe4dc}.card img.bad{object-fit:contain;padding:28px}.body{padding:15px}.tag{font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:850;color:var(--accent)}.card h3{margin:5px 0 2px;font-size:20px}.latin{font-size:12px;color:var(--muted);font-style:italic}.status{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:850;margin-top:10px}.local{color:var(--ok)}.regional{color:var(--warn)}.introduced{color:#8a4c45}.evidence{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.evidence span{font-size:9px;padding:5px 7px;border-radius:999px;background:#eee9de;color:#566158}
-.banner{border:1px solid var(--line);border-radius:20px;background:var(--ink);color:#edf1eb;padding:20px;margin-top:14px}.banner b{font-size:10px;letter-spacing:.14em}.banner p{margin:7px 0 0;color:#cdd6ce;line-height:1.5;font-size:13px}
-.trace-box{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.trace{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:0;overflow:hidden;text-align:left;transition:.18s;color:var(--ink)}.trace-art{height:120px;display:grid;place-items:center;background:linear-gradient(135deg,#e5ded0,#d9e5de);font-size:15px;letter-spacing:.12em;font-weight:850;color:#536259}.trace-body{padding:13px}.trace-body b{font-size:9px;letter-spacing:.12em;color:var(--accent)}.trace-body h3{margin:5px 0;font-size:18px}.trace-body p{font-size:12px;color:var(--muted);line-height:1.4;margin:0}
-.source-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.box{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:18px}.box h3{margin:0 0 6px}.box p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.box a{font-size:12px;font-weight:750;text-decoration:none}.box a:hover{text-decoration:underline}
-.modal{display:none;position:fixed;inset:0;background:#101811c7;z-index:10;padding:15px;place-items:center}.modal.show{display:grid}.panel{width:min(680px,100%);max-height:92vh;overflow:auto;background:var(--paper);border-radius:22px;box-shadow:0 20px 70px #0005}.panel img{width:100%;height:280px;object-fit:cover;background:#dfe4dc}.panel-in{padding:20px}.close{float:right;border:1px solid var(--line);background:#fff;border-radius:50%;width:40px;height:40px;font-size:22px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0}.fact{background:#e8e2d5;border-radius:12px;padding:12px;font-size:13px;line-height:1.35}.fact b{display:block;font-size:9px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}.modal-source{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:16px}
-.footer{background:var(--ink);color:#dbe1d9;padding:34px 20px}.footer-in{display:flex;justify-content:space-between;gap:20px}.footer small{line-height:1.5}
-@media(max-width:850px){.doors{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.trace-box{grid-template-columns:1fr 1fr}.source-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.hero{min-height:68vh}.hero-in{padding:15px}.doors,.cards,.source-grid{grid-template-columns:1fr}.door{min-height:140px}.door strong{margin-top:24px}.trace-box{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr}.footer-in{display:block}.footer-in small{display:block;margin-top:14px}.card img{height:220px}}
+:root{--ink:#10231b;--ink2:#20372b;--paper:#f2eee4;--card:#fffdf8;--muted:#66736a;--line:#d8d1c3;--water:#dcebea;--leaf:#e3eadb;--sand:#eee0c9;--accent:#a85e32;--good:#34705b;--warn:#8b6c34}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button{font:inherit;cursor:pointer}
+.hero{min-height:82vh;display:grid;align-items:end;color:#fff;padding:18px;background:linear-gradient(0deg,#0b1711f5,#0b171133),url("https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg") center/cover}
+.hero-in,.wrap,.foot-in{width:min(1120px,100%);margin:auto}.hero-in{padding:28px 20px 34px}.eyebrow{font-size:10px;font-weight:850;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(58px,11vw,124px);line-height:.79;letter-spacing:-.075em;margin:15px 0 20px}.hero p{font-size:clamp(19px,2.5vw,28px);line-height:1.2;max-width:760px;margin:0}.hero-note{margin-top:22px;font-size:12px;opacity:.86}
+.wrap{padding:48px 20px 90px}.lead{max-width:760px}.lead h2{font-size:clamp(36px,5.4vw,62px);line-height:.9;letter-spacing:-.06em;margin:10px 0 16px}.lead p{font-size:16px;line-height:1.65;color:var(--muted)}.principles{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.principles span{background:#fffaf0;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-size:11px}
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}.door{min-height:190px;border:1px solid var(--line);border-radius:23px;padding:21px;text-align:left;color:var(--ink);transition:.18s}.door:nth-child(1){background:var(--water)}.door:nth-child(2){background:var(--leaf)}.door:nth-child(3){background:var(--sand)}.door:nth-child(4){background:#e9ddd1}.door:nth-child(5){background:#dce6df}.door:nth-child(6){background:#e8e1cf}.door:hover{transform:translateY(-3px);box-shadow:0 16px 35px #10231b18}.door b{font-size:10px;letter-spacing:.15em}.door strong{display:block;font-size:26px;margin-top:52px}.door small{display:block;color:var(--muted);font-size:12px;line-height:1.4;margin-top:4px}
+.section{margin-top:82px;scroll-margin-top:18px}.section-head{margin-bottom:20px}.section h2{font-size:clamp(35px,5vw,52px);line-height:.95;letter-spacing:-.045em;margin:0}.sub{color:var(--muted);line-height:1.5;max-width:720px;margin:8px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:0;overflow:hidden;text-align:left;color:var(--ink);transition:.18s}.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #10231b14}.card-img{height:205px;background:#dfe5df;display:block;width:100%;object-fit:cover}.body{padding:17px}.tag{font-size:9px;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}.body h3{font-size:22px;margin:5px 0}.body p{font-size:13px;color:var(--muted);line-height:1.5;margin:0}.meta{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-top:12px}.local{color:var(--good)}.regional{color:var(--warn)}
+.feature{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--card)}.feature-photo{min-height:380px;background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Dique%20Compensador%20Cha%C3%B1ar%2C%20Neuquen%20-%20panoramio%20%282%29.jpg") center/cover}.feature-copy{padding:28px}.feature-copy h3{font-size:34px;line-height:1;margin:8px 0 13px}.feature-copy p{color:var(--muted);line-height:1.6}.list{margin:18px 0 0;padding:0;list-style:none}.list li{border-top:1px solid var(--line);padding:11px 0;font-size:13px;line-height:1.4}.list b{display:block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px}
+.info{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}.box h3{font-size:20px;margin:0 0 8px}.box p{font-size:13px;color:var(--muted);line-height:1.55;margin:0}.box .action{display:inline-block;margin-top:14px;padding:10px 13px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-size:11px;font-weight:800}
+.alert{background:var(--ink);color:#eef3ed;border-radius:20px;padding:21px;margin-top:14px}.alert b{font-size:10px;letter-spacing:.14em}.alert p{margin:7px 0 0;color:#ccd6ce;font-size:13px;line-height:1.55}.alert a{color:#fff}
+.quote{border-left:4px solid var(--accent);padding:8px 0 8px 18px;margin:18px 0;color:var(--ink);font-size:17px;line-height:1.45}
+.footer{background:var(--ink);color:#dce5dd;padding:35px 20px}.foot-in{display:flex;justify-content:space-between;gap:30px}.footer small{line-height:1.55}
+@media(max-width:850px){.doors,.grid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}.feature-photo{min-height:300px}.info{grid-template-columns:1fr}}
+@media(max-width:560px){.hero{min-height:72vh}.hero-in{padding:20px 5px}.doors,.grid{grid-template-columns:1fr}.door{min-height:155px}.door strong{margin-top:32px}.feature-photo{min-height:245px}.feature-copy{padding:21px}.feature-copy h3{font-size:29px}.foot-in{display:block}.foot-in small{display:block;margin-top:15px}}
 </style>
 </head>
 <body>
-<header class="hero"><div class="hero-in"><div class="eyebrow">OCARINA WILD · San Patricio del Chañar</div><h1>EL CHÁÑAR<br>VIVO.</h1><p>Una guía visual para descubrir la naturaleza que nos rodea.</p></div></header>
+<header class="hero">
+<div class="hero-in">
+<div class="eyebrow">OCARINA WILD · San Patricio del Chañar · Neuquén</div>
+<h1>EL CHÁÑAR<br>VIVO.</h1>
+<p>La puerta de ingreso a la naturaleza, el agua, la fauna, la flora y la vida silvestre de nuestro territorio.</p>
+<div class="hero-note">Conocer · disfrutar · respetar · conservar</div>
+</div>
+</header>
 
 <main class="wrap">
-<section class="intro"><div class="eyebrow" style="color:#a96537">Edición de campo</div><h2>Pocas puertas.<br>Mucha profundidad.</h2><p>Elegí algo, observá y descubrí. OCARINA WILD no intenta llenar una pantalla de datos: intenta ayudarte a reconocer el lugar donde vivís.</p><div class="rule"><span>✓ Chañar primero</span><span>✓ Evidencia antes que afirmaciones</span><span>✓ No tocar ni alterar</span><span>✓ Contexto regional separado</span></div></section>
-
-<nav class="doors">
-<button class="door" data-go="fauna"><b>01</b><strong>FAUNA</strong><span>Aves, mamíferos, peces y anfibios.</span></button>
-<button class="door" data-go="flora"><b>02</b><strong>FLORA</strong><span>Árboles, arbustos y plantas del paisaje.</span></button>
-<button class="door" data-go="rastros"><b>03</b><strong>RASTROS</strong><span>Huellas, plumas, nidos, frutos y señales.</span></button>
-<button class="door" data-go="marco"><b>04</b><strong>MARCO</strong><span>Fuentes, territorio y conservación.</span></button>
-</nav>
-
-<section class="section" id="fauna">
-<h2>Fauna</h2><div class="sub">Elegí una especie para abrir su ficha.</div>
-<div class="tools"><input id="search" class="search" placeholder="Buscar especie..."><button class="pill active" data-filter="todos">Todo</button><button class="pill" data-filter="local">Chañar</button><button class="pill" data-filter="aves">Aves</button><button class="pill" data-filter="mamiferos">Mamíferos</button><button class="pill" data-filter="peces">Peces</button><button class="pill" data-filter="anfibios">Anfibios</button></div>
-<div class="cards" id="faunaCards"></div><div class="banner"><b>CRITERIO OCARINA WILD</b><p>“Local” significa que existe una referencia específica vinculada a San Patricio del Chañar. “Regional” significa que forma parte del contexto natural de Neuquén/Patagonia, pero no la presentamos como confirmada dentro de la localidad.</p></div>
+<section class="lead">
+<div class="eyebrow" style="color:var(--accent)">No es un juego. Es nuestro territorio.</div>
+<h2>Entrá a la naturaleza de Chañar.</h2>
+<p>OCARINA WILD reúne información para descubrir el paisaje natural de San Patricio del Chañar: el Río Neuquén, el Dique Compensador, ambientes de monte y ribera, aves, peces, plantas y las actividades que podemos realizar sin dejar de cuidar aquello que vinimos a conocer.</p>
+<div class="principles"><span>✓ Chañar primero</span><span>✓ Información verificable</span><span>✓ Disfrute responsable</span><span>✓ Conservación activa</span></div>
 </section>
 
-<section class="section" id="flora"><h2>Flora</h2><div class="sub">Plantas para entender el monte, las chacras y el agua.</div><div class="cards" id="floraCards"></div></section>
+<nav class="doors" aria-label="Secciones principales">
+<button class="door" data-go="territorio"><b>01</b><strong>TERRITORIO</strong><small>Río, dique, monte, ribera y paisajes donde vive nuestra biodiversidad.</small></button>
+<button class="door" data-go="reserva"><b>02</b><strong>RESERVA & DIQUE</strong><small>Qué protege este ambiente y por qué importa conservarlo.</small></button>
+<button class="door" data-go="vida"><b>03</b><strong>VIDA SILVESTRE</strong><small>Fauna, flora y especies que ayudan a leer el territorio.</small></button>
+<button class="door" data-go="pesca"><b>04</b><strong>PESCA RESPONSABLE</strong><small>Pescar también puede ser una forma de cuidar.</small></button>
+<button class="door" data-go="observar"><b>05</b><strong>OBSERVAR</strong><small>Aves, rastros, fotografía y naturaleza sin intervenir.</small></button>
+<button class="door" data-go="cuidar"><b>06</b><strong>CUIDAR</strong><small>Acciones concretas para conservar agua, fauna, flora y paisaje.</small></button>
+</nav>
 
-<section class="section" id="rastros"><h2>Rastros</h2><div class="sub">No necesitás ver al animal para descubrir que estuvo ahí.</div><div class="trace-box" id="traceCards"></div><div class="box" style="margin-top:12px"><b>REGLA DE CAMPO</b><p>Un rastro orienta, pero no siempre identifica una especie. Mirá sin tocar, perseguir ni alterar.</p></div></section>
-
-<section class="section" id="marco"><h2>Marco y fuentes</h2><div class="sub">La información local y la regional se mantienen separadas.</div><div class="source-grid">
-<div class="box"><h3>01 · Chañar</h3><p>La Municipalidad informa avistaje de aves en la zona y destaca calandria grande, carpintero real y golondrina patagónica. También identifica el Dique Compensador como Área Natural Protegida Municipal.</p><br><a href="https://sanpatricio.gob.ar/quehacer" target="_blank" rel="noopener">Fuente municipal →</a></div>
-<div class="box"><h3>02 · Neuquén</h3><p>La provincia reconoce la biodiversidad de cordillera, valles y estepa y advierte sobre especies exóticas y amenazas a la fauna silvestre.</p><br><a href="https://ambiente.neuquen.gov.ar/03-de-marzo-dia-mundial-de-la-vida-silvestre/" target="_blank" rel="noopener">Secretaría de Ambiente →</a></div>
-<div class="box"><h3>03 · Criterio científico</h3><p>Taxonomía, distribución y conservación deben revisarse con bibliografía especializada y registros verificables. Una especie regional no se convierte automáticamente en “fauna de Chañar”.</p><br><a href="https://www.argentina.gob.ar/ambiente/contenidos/areas-protegidas" target="_blank" rel="noopener">Argentina.gob.ar →</a></div>
+<section class="section" id="territorio">
+<div class="section-head"><h2>El territorio</h2><div class="sub">La naturaleza de Chañar no es un fondo: es un sistema vivo.</div></div>
+<div class="feature">
+<div class="feature-photo"></div>
+<div class="feature-copy">
+<div class="eyebrow" style="color:var(--accent)">Río Neuquén · Dique Compensador</div>
+<h3>Agua + monte + ribera + producción</h3>
+<p>El Dique Compensador El Chañar está asociado al Río Neuquén y forma parte del paisaje que rodea a la localidad. La ficha oficial de la presa identifica como usos predominantes el compensador de Planicie Banderita y el riego.</p>
+<ul class="list">
+<li><b>Ambiente</b>Agua profunda y baja, vegetación de ribera, juncales, monte y áreas rurales.</li>
+<li><b>Vida</b>La combinación de ambientes favorece la presencia y observación de aves y otra fauna.</li>
+<li><b>Regla</b>Cuanto más sensible es un ambiente, menos debemos modificarlo para disfrutarlo.</li>
+</ul>
 </div>
-<div class="banner" style="margin-top:12px"><b>MESA EDITORIAL PROPUESTA</b><p>Fauna argentina · flora del Monte · ecología de ambientes ribereños · observación de aves · conservación · documentación audiovisual local. Para sumar nombres propios como especialistas residentes de San Patricio del Chañar, Ocarina debe contar primero con su identidad, especialidad y validación real; no se inventan credenciales.</p></div>
+</div>
+</section>
+
+<section class="section" id="reserva">
+<div class="section-head"><h2>Reserva & Dique</h2><div class="sub">Un lugar para conocer primero y usar con responsabilidad después.</div></div>
+<div class="info">
+<div class="box"><div class="tag">ÁREA PROTEGIDA</div><h3>Dique Compensador El Chañar</h3><p>El sitio es reconocido localmente por su valor natural y por concentrar flora, fauna y especialmente aves. Fuentes municipales y antecedentes de investigación lo identifican como un espacio de interés para la observación de biodiversidad.</p><a class="action" href="https://sanpatricio.gob.ar/quehacer" target="_blank" rel="noopener">Ver información municipal →</a></div>
+<div class="box"><div class="tag">POR QUÉ IMPORTA</div><h3>Proteger un ambiente no significa cerrarlo</h3><p>La conservación busca que podamos seguir disfrutando del lugar sin degradar el agua, la vegetación, los refugios de fauna ni los procesos naturales. OCARINA WILD promueve ese equilibrio.</p><a class="action" href="https://www.argentina.gob.ar/ambiente/contenidos/areas-protegidas" target="_blank" rel="noopener">Conocer áreas protegidas →</a></div>
+</div>
+<div class="alert"><b>ANTES DE VISITAR</b><p>Verificá accesos, normas locales, condiciones del lugar y restricciones vigentes. No ingreses a sectores cerrados ni alteres nidos, madrigueras, vegetación o cursos de agua.</p></div>
+</section>
+
+<section class="section" id="vida">
+<div class="section-head"><h2>Vida silvestre</h2><div class="sub">Una selección para empezar a reconocer el territorio. “Local” se usa sólo cuando existe una referencia específica.</div></div>
+<div class="grid">
+<article class="card"><img class="card-img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mimus%20saturninus%20%28calandria%29.jpg" alt="Calandria grande" loading="lazy"><div class="body"><div class="tag">Ave · vínculo local</div><h3>Calandria grande</h3><p><i>Mimus saturninus</i>. Una de las aves destacadas por la Municipalidad en actividades de avistaje de la zona.</p><div class="meta local">● Referencia local</div></div></article>
+<article class="card"><img class="card-img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Colaptes%20melanochloros%20melanolaimus%2C%20CABA.jpg" alt="Carpintero real" loading="lazy"><div class="body"><div class="tag">Ave · vínculo local</div><h3>Carpintero real</h3><p><i>Colaptes melanochloros</i>. Ave asociada a ambientes arbolados y mencionada en los registros de avistaje municipales.</p><div class="meta local">● Referencia local</div></div></article>
+<article class="card"><img class="card-img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tachycineta%20leucopyga%201894.jpg" alt="Golondrina patagónica" loading="lazy"><div class="body"><div class="tag">Ave · vínculo local</div><h3>Golondrina patagónica</h3><p><i>Tachycineta leucopyga</i>. Ave aérea destacada entre las especies observadas en la zona.</p><div class="meta local">● Referencia local</div></div></article>
+<article class="card"><div style="height:205px;background:linear-gradient(135deg,#dfe8dd,#eee1cc);display:grid;place-items:center;font-size:52px">🌿</div><div class="body"><div class="tag">Flora · Monte</div><h3>El monte</h3><p>Jarillas, zampa, alpataco y otras plantas ayudan a entender cómo la vida se adapta a un ambiente árido.</p><div class="meta regional">○ Contexto regional</div></div></article>
+<article class="card"><div style="height:205px;background:linear-gradient(135deg,#d9e8e4,#e9dfca);display:grid;place-items:center;font-size:52px">🐟</div><div class="body"><div class="tag">Fauna · agua</div><h3>Peces del río</h3><p>La Municipalidad menciona pejerreyes, percas y truchas entre las especies vinculadas a la pesca deportiva local.</p><div class="meta local">● Actividad local</div></div></article>
+<article class="card"><div style="height:205px;background:linear-gradient(135deg,#e4e7d9,#d9e3dc);display:grid;place-items:center;font-size:52px">🪶</div><div class="body"><div class="tag">Observación</div><h3>Más que especies</h3><p>Huellas, plumas, nidos, cantos y plantas también cuentan la historia del ambiente.</p><div class="meta">● Aprender mirando</div></div></article>
+</div>
+</section>
+
+<section class="section" id="pesca">
+<div class="section-head"><h2>Pesca responsable</h2><div class="sub">La pesca deportiva forma parte de la relación de Chañar con el Río Neuquén. Disfrutarla implica conocer y respetar las reglas.</div></div>
+<div class="info">
+<div class="box"><div class="tag">EN CHÁÑAR</div><h3>Pescar también es conservar</h3><p>La Municipalidad presenta al Río Neuquén como espacio para la pesca deportiva de pejerreyes, percas y truchas y lo define como un recurso natural que debemos proteger.</p><a class="action" href="https://sanpatricio.gob.ar/quehacer" target="_blank" rel="noopener">Fuente municipal →</a></div>
+<div class="box"><div class="tag">REGLAMENTO</div><h3>Consultá antes de tirar la línea</h3><p>Las especies permitidas, cupos, modalidades, ambientes habilitados, temporadas y medidas pueden cambiar. No uses una regla vieja como si fuera vigente.</p><a class="action" href="https://cazaypesca.neuquen.gob.ar/" target="_blank" rel="noopener">Caza y Pesca Neuquén →</a></div>
+</div>
+<div class="alert"><b>REGLA OCARINA WILD</b><p>Permiso vigente + ambiente habilitado + modalidad permitida + cupo/medida vigente + respeto por las especies. Si una norma cambia, la fuente oficial manda.</p></div>
+<div class="quote">“El recurso natural no termina cuando termina la jornada de pesca.”</div>
+<div class="box"><h3>Aprender a pescar cuidando</h3><p>Manipulá los peces lo mínimo posible cuando corresponda devolución, evitá dañarlos innecesariamente, no dejes líneas, anzuelos, nylon ni residuos, y no enciendas fuego fuera de lugares permitidos. La pesca responsable es parte de la conservación de la fauna ictícola.</p></div>
+</section>
+
+<section class="section" id="observar">
+<div class="section-head"><h2>Observar</h2><div class="sub">La forma más simple de acercarse a la naturaleza es aprender a mirar sin intervenir.</div></div>
+<div class="grid">
+<div class="box"><div class="tag">AVES</div><h3>Avistaje</h3><p>Usá binoculares o zoom, escuchá antes de acercarte y anotá fecha, ambiente y comportamiento. El Dique Compensador ha sido señalado como sitio de interés para observación de aves.</p></div>
+<div class="box"><div class="tag">FOTOGRAFÍA</div><h3>Una foto, sin perseguir</h3><p>La mejor fotografía no es la que obliga al animal a escapar. Mantené distancia y evitá intervenir en nidos, refugios o sitios de descanso.</p></div>
+<div class="box"><div class="tag">RASTROS</div><h3>Huellas y señales</h3><p>Buscá huellas, plumas, frutos, mordidas, nidos y otros indicios. Fotografialos sin llevártelos: el rastro también pertenece al ecosistema.</p></div>
+</div>
+</section>
+
+<section class="section" id="cuidar">
+<div class="section-head"><h2>Cuidar</h2><div class="sub">Conservación no es una palabra grande. Son decisiones pequeñas repetidas muchas veces.</div></div>
+<div class="grid">
+<div class="box"><div class="tag">AGUA</div><h3>No contaminar</h3><p>No arrojes residuos, aceites, combustibles ni sustancias al río, canales, lagunas o suelo.</p></div>
+<div class="box"><div class="tag">FAUNA</div><h3>No molestar</h3><p>No captures animales silvestres ni retires huevos, nidos, plumas o refugios.</p></div>
+<div class="box"><div class="tag">FLORA</div><h3>No arrancar</h3><p>Las plantas del monte y de la ribera forman parte del hábitat. Observá, fotografiá y dejá crecer.</p></div>
+<div class="box"><div class="tag">RESIDUOS</div><h3>Lo que llevás, vuelve</h3><p>Tu basura no es parte del paisaje. Volvé con todo lo que llevaste.</p></div>
+<div class="box"><div class="tag">FUEGO</div><h3>Fuego sólo donde corresponda</h3><p>Respetá las restricciones y asegurate de apagar completamente cualquier fuego permitido.</p></div>
+<div class="box"><div class="tag">DENUNCIA / ALERTA</div><h3>Si ves algo preocupante</h3><p>Ante fauna herida, contaminación, captura ilegal o daño ambiental, recurrí a los organismos y autoridades correspondientes.</p></div>
+</div>
+<div class="alert"><b>UN PROYECTO QUE TAMBIÉN QUIERE APRENDER</b><p>OCARINA WILD puede crecer con registros fotográficos, observaciones y testimonios de vecinos. La regla es simple: documentar primero, verificar después y nunca publicar una afirmación local sin evidencia suficiente.</p></div>
+</section>
+
+<section class="section" id="fuentes">
+<div class="section-head"><h2>Fuentes & criterio</h2><div class="sub">OCARINA WILD separa información oficial, antecedentes científicos y observaciones propias.</div></div>
+<div class="info">
+<div class="box"><h3>Municipalidad</h3><p>Información local sobre avistaje de aves, pesca deportiva, kayak y ambientes de San Patricio del Chañar.</p><a class="action" href="https://sanpatricio.gob.ar/quehacer" target="_blank" rel="noopener">Abrir fuente →</a></div>
+<div class="box"><h3>Pesca Neuquén</h3><p>Permisos, reglamentos y condiciones para practicar pesca deportiva de forma responsable.</p><a class="action" href="https://cazaypesca.neuquen.gob.ar/" target="_blank" rel="noopener">Abrir fuente →</a></div>
+<div class="box"><h3>Ambiente Neuquén</h3><p>Antecedentes de conservación, biodiversidad y educación ambiental. En 2022 se realizó en Chañar una siembra educativa de 1.000 alevinos con alumnos y docentes.</p><a class="action" href="https://ambiente.neuquen.gov.ar/siembra-educativa-de-alevinos-en-san-patricio-del-chanar-2/" target="_blank" rel="noopener">Ver antecedente →</a></div>
+<div class="box"><h3>Antecedentes científicos</h3><p>Existen trabajos de investigación que identificaron al Dique El Chañar como sitio de interés para observación de aves por la diversidad de ambientes que concentra.</p></div>
+</div>
 </section>
 </main>
 
-<footer class="footer"><div class="footer-in"><div><b>OCARINA WILD</b><br><small>Biblioteca natural viva de San Patricio del Chañar.</small></div><small>Ocarina Producciones · Elías Martínez<br>Investigación y producción independiente · 2026</small></div></footer>
-
-<div class="modal" id="modal"><div class="panel" id="panel"></div></div>
+<footer class="footer"><div class="foot-in"><div><b>OCARINA WILD</b><br><small>La naturaleza de San Patricio del Chañar, contada desde el territorio.</small></div><small>Ocarina Producciones · Elías Martínez<br>Investigación y producción independiente · 2026</small></div></footer>
 
 <script>
-const file=n=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(n);
-const fauna=[
-['calandria','aves','Calandria grande','Mimus saturninus','ave','local','Mimus saturninus (calandria).jpg',['Ambientes abiertos','Canto','Referencia municipal local']],
-['carpintero','aves','Carpintero real','Colaptes melanochloros','ave','local','Colaptes melanochloros melanolaimus, CABA.jpg',['Ave trepadora','Troncos','Referencia municipal local']],
-['golondrina','aves','Golondrina patagónica','Tachycineta leucopyga','ave','local','Tachycineta leucopyga 1894.jpg',['Ave aérea','Vuelo rápido','Referencia municipal local']],
-['cisne','aves','Cisne cuello negro','Cygnus melancoryphus','ave acuática','regional','Cygnus melancoryphus 537050772.jpg',['Agua','Vegetación acuática','Registro local publicado']],
-
-['aguilucho','aves','Aguilucho ñanco','Geranoaetus polyosoma','ave rapaz','regional','Geranoa polyosoma 201699947.jpg',['Rapaz','Ambientes abiertos','Vuelo']],
-['ataj','aves','Atajacaminos ñañarca','Systellura longirostris','ave nocturna','regional','Systellura longirostris.jpg',['Nocturna','Insectos','Cita local SIB']],
-['osprey','aves','Águila pescadora','Pandion haliaetus','visitante del agua','regional','Pandion haliaetus.jpg',['Peces','Agua','Registro local']],
-['mara','mamiferos','Mara','Dolichotis patagonum','mamífero','regional','Patagonian Mara (Dolichotis patagonum) (CWPG).jpg',['Estepa','Diurna','Herbívora']],
-['zorro','mamiferos','Zorro pampa','Lycalopex gymnocercus','mamífero','regional','Lycalopex gymnocerca 616951812.jpg',['Monte','Adaptable','Carnívoro']],
-['perca','peces','Perca criolla','Percichthys trucha','pez nativo','regional','Percichthys trucha.jpg',['Agua dulce','Nativa','Neuquén']],
-['pejerrey','peces','Pejerrey patagónico','Odontesthes hatcheri','pez nativo','regional','Odontesthes hatcheri.jpg',['Agua dulce','Nativo','Patagonia']],
-['puyen','peces','Puyen','Galaxias maculatus','pez pequeño','regional','Galaxias maculatus.jpg',['Ríos y lagos','Nativo','Pequeño']],
-['bagre','peces','Bagre de los torrentes','Hatcheria macraei','pez de fondo','regional','Hatcheria macraei.jpg',['Ríos','Nativo','Fondo']],
-['trucha','peces','Trucha arcoíris','Oncorhynchus mykiss','pez introducido','introduced','Oncorhynchus mykiss.jpg',['Introducida','Agua dulce','No nativa']],
-['sapo','anfibios','Sapo común','Rhinella arenarum','anfibio','regional','Rhinella arenarum.jpg',['Humedad','Invertebrados','Nativo']],
-['rana','anfibios','Rana esteparia','Pleurodema bufoninum','anfibio patagónico','regional','Pleurodema bufoninum.jpg',['Estepa','Lagunas','Nativa']],
-['escuerzo','anfibios','Escuercito fantasma','Pleurodema nebulosum','anfibio','regional','Pleurodema nebulosum.jpg',['Ambientes áridos','Neuquén','Anfibio']]
-];
-const flora=[
-['chanar','Chañar','Geoffroea decorticans','árbol nativo','local','Geoffroea decorticans.JPG',['Fruto','Primavera','Identidad local']],
-['jarilla','Jarilla hembra','Larrea divaricata','arbusto del monte','regional','Larrea divaricata.jpg',['Monte','Sequedad','Arbusto']],
-['zampa','Zampa','Atriplex lampa','arbusto salino','regional','Atriplex lampa.jpg',['Salinidad','Monte','Adaptación']],
-['alpataco','Alpataco','Neltuma alpataco','leñosa del monte','regional','Neltuma alpataco.jpg',['Espinas','Monte','Nativa']],
-['algarrobo','Algarrobo dulce','Neltuma flexuosa','árbol del monte','regional','Neltuma flexuosa.jpg',['Vainas','Monte','Caducifolio']],
-['molle','Molle blanco','Schinus johnstonii','arbusto patagónico','regional','Schinus johnstonii.jpg',['Frutos','Monte','Arbusto']],
-['matasebo','Mata sebo','Monttea aphylla','arbusto del monte','regional','Monttea aphylla.jpg',['Sequedad','Flores','Monte']],
-['sauce','Sauce criollo','Salix humboldtiana','vegetación ribereña','regional','Salix humboldtiana.jpg',['Ribera','Agua','Árbol']]
-];
-const details={
-cisne:['Agua y vegetación acuática','Presencia sobre el agua y grupos','Vegetación acuática y pequeños organismos'],
-calandria:['Chacras, arbolado y ambientes abiertos','Canto y presencia en arbustos','Invertebrados y frutos'],
-aguilucho:['Estepa y espacios abiertos','Planeo y posaderos elevados','Pequeños vertebrados y otras presas'],
-ataj:['Ambientes abiertos y sectores secos','Actividad nocturna y vocalización','Insectos en vuelo'],
-osprey:['Grandes cuerpos de agua','Vuelo sobre el agua y pesca','Principalmente peces'],
-mara:['Ambientes abiertos y estepa','Huellas y observación a distancia','Vegetación terrestre'],
-zorro:['Monte, estepa y bordes','Huellas y heces','Dieta variada'],
-perca:['Agua dulce','Requiere evidencia o muestreo','Organismos acuáticos'],
-pejerrey:['Agua dulce patagónica','Difícil de observar sin muestreo','Pequeños organismos acuáticos'],
-puyen:['Ríos, arroyos y lagos','Especie pequeña','Pequeños recursos acuáticos'],
-bagre:['Cursos de agua y fondos','Difícil de ver','Organismos del fondo'],
-trucha:['Agua dulce donde fue introducida','Identificar origen es importante','Recursos acuáticos variados'],
-sapo:['Sectores húmedos','Más detectable con humedad','Invertebrados'],
-rana:['Estepa y ambientes húmedos temporarios','Vocalización y humedad','Pequeños invertebrados'],
-escuerzo:['Ambientes áridos con pulsos de humedad','Puede aparecer después de lluvias','Invertebrados']
-};
-const traces=[
-['👣','HUELLA','Suelo húmedo o blando','Forma, tamaño y dirección.'],
-['🪶','PLUMA','Una señal dejada por un ave','Patrón, tamaño y lugar.'],
-['🪹','NIDO','Construcción en árbol, arbusto o suelo','Material, altura y ubicación.'],
-['🍃','HOJA COMIDA','Bordes, perforaciones o marcas','Qué parte falta y qué hay alrededor.'],
-['🫐','FRUTO / SEMILLA','Frutos abiertos o semillas dispersas','Planta, estado y ubicación.'],
-['🕳️','MADRIGUERA','Entrada y suelo removido','Tamaño y contexto, sin tocar.'],
-['●','EXCREMENTO','Una señal de presencia','Forma, tamaño y lugar; nunca tocar.'],
-['💧','SEÑAL DEL AGUA','Ondas, saltos o vegetación alterada','Superficie, orilla y entorno.']
-];
-
-function card(x,plant=false){
-const id=x[0],name=plant?x[1]:x[2],latin=plant?x[2]:x[3],tag=plant?x[3]:x[4],status=plant?x[4]:x[5],img=plant?x[5]:x[6],facts=plant?x[6]:x[7];
-return '<button class="card" data-group="'+(plant?'flora':x[1])+'" data-name="'+(name+' '+latin).toLowerCase()+'" data-id="'+id+'" data-plant="'+plant+'"><img src="'+file(img)+'" alt="'+name+'" loading="lazy"><div class="body"><span class="tag">'+tag+'</span><h3>'+name+'</h3><div class="latin">'+latin+'</div><div class="status '+(status==='local'?'local':'regional')+'">'+(status==='local'?'● vínculo local':'○ contexto regional')+'</div></div></button>';
-}
-function render(){
-document.getElementById('faunaCards').innerHTML=fauna.map(x=>card(x)).join('');
-document.getElementById('floraCards').innerHTML=flora.map(x=>card(x,true)).join('');
-document.getElementById('traceCards').innerHTML=traces.map((t,i)=>'<button class="trace" data-trace="'+i+'"><div class="trace-art">'+t[0]+'</div><div class="trace-body"><b>RASTRO</b><h3>'+t[1]+'</h3><p>'+t[2]+'</p></div></button>').join('');
-}
-function openSpecies(id,plant){
-const list=plant?flora:fauna,x=list.find(v=>v[0]===id),name=plant?x[1]:x[2],latin=plant?x[2]:x[3],status=plant?x[4]:x[5],img=plant?x[5]:x[6],facts=plant?x[6]:x[7],d=plant?null:details[id];
-document.getElementById('panel').innerHTML='<button class="close" id="close">×</button><img src="'+file(img)+'" alt="'+name+'" onerror="this.classList.add(\'bad\');this.removeAttribute(\'src\');this.alt=\'Imagen no disponible\'"><div class="panel-in"><span class="tag">'+(plant?x[3]:x[4])+'</span><h2>'+name+'</h2><div class="latin">'+latin+'</div><div class="facts">'+facts.map(f=>'<div class="fact"><b>CLAVE</b>'+f+'</div>').join('')+'</div>'+(d?'<div class="facts"><div class="fact"><b>DÓNDE</b>'+d[0]+'</div><div class="fact"><b>QUÉ BUSCAR</b>'+d[1]+'</div><div class="fact"><b>ALIMENTO / RELACIÓN</b>'+d[2]+'</div></div>':'<div class="box"><b>OBSERVÁ</b><p>Hojas, corteza, frutos, suelo, sombra y relación con el agua. No arranques ni manipules.</p></div>')+'<p><b>'+(status==='local'?'● Vínculo local':'○ Contexto regional')+'</b></p></div>';
-document.getElementById('modal').classList.add('show');
-}
-function openTrace(i){
-const t=traces[i];
-document.getElementById('panel').innerHTML='<button class="close" id="close">×</button><div class="panel-in"><span class="tag">RASTRO DE CAMPO</span><div class="trace-art" style="border-radius:16px;margin-top:12px">'+t[0]+'</div><h2>'+t[1]+'</h2><p>'+t[2]+'</p><div class="box"><b>CÓMO MIRAR</b><p>'+t[3]+'</p></div><div class="box" style="margin-top:8px"><b>IMPORTANTE</b><p>Un rastro puede orientar, pero no permite identificar una especie por sí solo.</p></div></div>';
-document.getElementById('modal').classList.add('show');
-}
-function close(){document.getElementById('modal').classList.remove('show')}
-function go(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'})}
-render();
-
-document.addEventListener('click',e=>{
-const door=e.target.closest('[data-go]');if(door){go(door.dataset.go);return}
-const c=e.target.closest('.card');if(c){openSpecies(c.dataset.id,c.dataset.plant==='true');return}
-const t=e.target.closest('[data-trace]');if(t){openTrace(Number(t.dataset.trace));return}
-if(e.target.id==='close'||e.target.id==='modal')close();
-});
-let filter='todos';
-document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{
-filter=b.dataset.filter;
-document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));
-b.classList.add('active');applyFilter();
-}));
-document.getElementById('search').addEventListener('input',applyFilter);
-function applyFilter(){
-const q=document.getElementById('search').value.toLowerCase();
-document.querySelectorAll('#faunaCards .card').forEach(c=>{
-const ok=(filter==='todos'||c.dataset.group===filter)&&c.dataset.name.includes(q);
-c.style.display=ok?'block':'none';
-});
-}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+function go(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"})}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b)go(b.dataset.go)})
 </script>
 </body>
 </html>
