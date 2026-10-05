@@ -354,6 +354,469 @@ window.WILD_DATA = {
       "imageCredit": "Dick Culbert · Wikimedia Commons · CC BY 2.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Schinus_johnstonii_(8685027624).jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
+    },
+    {
+      "id": "tero",
+      "commonName": "Tero",
+      "scientificName": "Vanellus chilensis",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rural",
+        "dique",
+        "rio",
+        "urbano"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vanellus_chilensis.jpg",
+      "imageCredit": "Wikimedia Commons · Vanellus chilensis",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Vanellus_chilensis.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Ave terrestre de ambientes abiertos, frecuente en paisajes rurales y espacios próximos al agua.",
+      "identification": "Ave de tamaño mediano, cuerpo pardo y vientre claro; se reconoce por su cresta y espolones.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Vanellus_chilensis"
+        }
+      ]
+    },
+    {
+      "id": "hornero",
+      "commonName": "Hornero",
+      "scientificName": "Furnarius rufus",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rural",
+        "urbano",
+        "arboledas"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Furnarius_rufus.jpg",
+      "imageCredit": "Wikimedia Commons · Furnarius rufus",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Furnarius_rufus.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Ave muy asociada a ambientes modificados por las personas y conocida por su nido de barro.",
+      "identification": "Pardo anaranjado, de cola relativamente larga y comportamiento terrestre.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Furnarius_rufus"
+        }
+      ]
+    },
+    {
+      "id": "zorzal-patagonico",
+      "commonName": "Zorzal patagónico",
+      "scientificName": "Turdus falcklandii",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "arboledas",
+        "rural",
+        "urbano"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Turdus_falcklandii.jpg",
+      "imageCredit": "Wikimedia Commons · Turdus falcklandii",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Turdus_falcklandii.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Zorzal de ambientes arbolados y abiertos del sur de Sudamérica.",
+      "identification": "Ave mediana, de tonos pardos, con pico y patas amarillentos.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Turdus_falcklandii"
+        }
+      ]
+    },
+    {
+      "id": "loica",
+      "commonName": "Loica",
+      "scientificName": "Sturnella loyca",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rural",
+        "monte"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Loica_-_Sturnella_loyca.jpg",
+      "imageCredit": "Wikimedia Commons · Loica",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Loica_-_Sturnella_loyca.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Ave de espacios abiertos mencionada entre las aves del paisaje rural del Alto Valle.",
+      "identification": "Se distingue especialmente por el rojo intenso de garganta y pecho.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Sturnella_loyca"
+        }
+      ]
+    },
+    {
+      "id": "churrinche",
+      "commonName": "Churrinche",
+      "scientificName": "Pyrocephalus rubinus",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rural",
+        "arboledas",
+        "urbano"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrocephalus_rubinus.jpg",
+      "imageCredit": "Wikimedia Commons · Pyrocephalus rubinus",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Pyrocephalus_rubinus.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Pequeño cazador de insectos que utiliza espacios abiertos y perchas.",
+      "identification": "El macho presenta rojo intenso en cabeza y partes inferiores.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Pyrocephalus_rubinus"
+        }
+      ]
+    },
+    {
+      "id": "mixto",
+      "commonName": "Mixto",
+      "scientificName": "Sicalis flaveola",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rural",
+        "urbano",
+        "arboledas"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sicalis_flaveola.jpg",
+      "imageCredit": "Wikimedia Commons · Sicalis flaveola",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Sicalis_flaveola.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Pequeño pájaro de ambientes abiertos y humanizados del valle.",
+      "identification": "Plumaje predominantemente amarillo en el adulto, con variación según sexo y población.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Sicalis_flaveola"
+        }
+      ]
+    },
+    {
+      "id": "pato-barcino",
+      "commonName": "Pato barcino",
+      "scientificName": "Anas flavirostris",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rio",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anas_flavirostris.jpg",
+      "imageCredit": "Wikimedia Commons · Anas flavirostris",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Anas_flavirostris.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Pato de ambientes acuáticos; la documentación turística regional lo menciona para los ambientes húmedos de los ríos del Alto Valle.",
+      "identification": "Pato pequeño y compacto, de coloración parda y pico amarillento.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Anas_flavirostris"
+        }
+      ]
+    },
+    {
+      "id": "pato-maicero",
+      "commonName": "Pato maicero",
+      "scientificName": "Anas georgica",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rio",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anas_georgica.jpg",
+      "imageCredit": "Wikimedia Commons · Anas georgica",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Anas_georgica.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Pato asociado a cuerpos de agua y cursos fluviales de Sudamérica.",
+      "identification": "Pato de cuello relativamente largo y plumaje pardo moteado.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Anas_georgica"
+        }
+      ]
+    },
+    {
+      "id": "garcita-blanca",
+      "commonName": "Garcita blanca",
+      "scientificName": "Egretta thula",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rio",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Egretta_thula.jpg",
+      "imageCredit": "Wikimedia Commons · Egretta thula",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Egretta_thula.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Garza pequeña de ambientes acuáticos, incluida entre las aves observables en ambientes húmedos regionales.",
+      "identification": "Blanca, de cuello largo y patas oscuras con dedos amarillentos.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Egretta_thula"
+        }
+      ]
+    },
+    {
+      "id": "paloma-picazuró",
+      "commonName": "Paloma picazuró",
+      "scientificName": "Patagioenas picazuro",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "arboledas",
+        "rural",
+        "urbano"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Patagioenas_picazuro.jpg",
+      "imageCredit": "Wikimedia Commons · Patagioenas picazuro",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Patagioenas_picazuro.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Paloma grande que utiliza árboles y ambientes transformados.",
+      "identification": "Paloma robusta, de tonos grises y pardos, con cuello iridiscente.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Patagioenas_picazuro"
+        }
+      ]
+    },
+    {
+      "id": "carancho",
+      "commonName": "Carancho",
+      "scientificName": "Caracara plancus",
+      "kind": "fauna",
+      "group": "aves",
+      "localStatus": "region",
+      "environments": [
+        "rural",
+        "monte",
+        "dique"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Caracara_plancus.jpg",
+      "imageCredit": "Wikimedia Commons · Caracara plancus",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Caracara_plancus.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Ave rapaz generalista de espacios abiertos, frecuente en distintos ambientes del centro y sur de Argentina.",
+      "identification": "Rapaz grande, de cabeza clara, pico robusto y alas oscuras.",
+      "habitat": "Ambientes regionales compatibles con la especie.",
+      "behavior": "Su comportamiento depende del ambiente y de la disponibilidad de alimento.",
+      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Caracara_plancus"
+        }
+      ]
+    },
+    {
+      "id": "jarilla-macho",
+      "commonName": "Jarilla macho",
+      "scientificName": "Larrea cuneifolia",
+      "kind": "flora",
+      "group": "arbustos",
+      "localStatus": "region",
+      "environments": [
+        "monte",
+        "rural"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea_cuneifolia.jpg",
+      "imageCredit": "Wikimedia Commons · Larrea cuneifolia",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Larrea_cuneifolia.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Arbusto característico de ambientes áridos del Monte y registrado en documentación ambiental regional.",
+      "identification": "Arbusto de hojas pequeñas, resinosas y aspecto adaptado a la aridez.",
+      "habitat": "Ambientes áridos y semiáridos del Monte.",
+      "behavior": "Forma parte de comunidades vegetales adaptadas a las condiciones locales.",
+      "diet": "Produce su propio alimento mediante fotosíntesis.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Larrea_cuneifolia"
+        }
+      ]
+    },
+    {
+      "id": "solupe",
+      "commonName": "Solupe",
+      "scientificName": "Ephedra ochreata",
+      "kind": "flora",
+      "group": "arbustos",
+      "localStatus": "region",
+      "environments": [
+        "monte",
+        "rural"
+      ],
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephedra_ochreata.jpg",
+      "imageCredit": "Wikimedia Commons · Ephedra ochreata",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Ephedra_ochreata.jpg",
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "description": "Arbusto adaptado a ambientes áridos, incluido en documentación ambiental de la región.",
+      "identification": "Planta de tallos verdes y aspecto ramificado, adaptada a la escasez de agua.",
+      "habitat": "Ambientes áridos y semiáridos del Monte.",
+      "behavior": "Forma parte de comunidades vegetales adaptadas a las condiciones locales.",
+      "diet": "Produce su propio alimento mediante fotosíntesis.",
+      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+      "conservation": "Ficha inicial de referencia; el estado de conservación específico debe consultarse en fuentes especializadas.",
+      "localNote": "ESTADO REGIÓN: hay documentación regional compatible, pero esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+      "sourceType": "regional",
+      "sources": [
+        {
+          "label": "Turismo Neuquén · aves del Alto Valle / ambientes regionales",
+          "url": "https://turismo.neuquen.gob.ar/el-encanto-de-la-primavera-se-despliega-en-el-alto-valle/"
+        },
+        {
+          "label": "Wikimedia Commons · especie",
+          "url": "https://commons.wikimedia.org/wiki/wiki/Ephedra_ochreata"
+        }
+      ]
     }
   ],
   "concepts": [
