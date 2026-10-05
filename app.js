@@ -14,7 +14,23 @@ const STATUS={
 const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 const badge=s=>{const x=STATUS[s.localStatus]||STATUS.unconfirmed;return '<span class="status '+x[2]+'">'+x[0]+" "+x[1]+"</span>"};
 const img=s=>s.image?'<img loading="lazy" src="'+esc(s.image)+'" alt="'+esc(s.commonName)+'">':'<span>'+esc(s.commonName)+'</span>';
-const records=()=>{try{const current=localStorage.getItem(RECORDS_KEY);if(current)return JSON.parse(current);const legacy=localStorage.getItem("ocarina_wild_records_v1");if(legacy){const data=JSON.parse(legacy);localStorage.setItem(RECORDS_KEY,JSON.stringify(data));return data}return []}catch{return[]}};
+const records=()=>{
+ try{
+  const current=localStorage.getItem(RECORDS_KEY),legacy=localStorage.getItem("ocarina_wild_records_v1");
+  const raw=current?JSON.parse(current):(legacy?JSON.parse(legacy):[]);
+  const clean=Array.isArray(raw)?raw.map(r=>{
+   const x={...r};
+   if(x.status==="verified"){
+    x.status="review";
+    x.reviewNote="Estado anterior normalizado: requiere validación editorial independiente.";
+   }
+   x.review=x.review||{};
+   return x;
+  }):[];
+  if(!current&&legacy)localStorage.setItem(RECORDS_KEY,JSON.stringify(clean));
+  return clean;
+ }catch{return[]}
+};
 const saveRecords=r=>localStorage.setItem(RECORDS_KEY,JSON.stringify(r));
 const REVIEW={pending:["⏳","Pendiente","pending"],review:["🔎","En revisión","review"],verified:["🟢","Confirmado","verified"],rejected:["⚠️","No confirmado","rejected"]};
 const reviewBadge=s=>{const x=REVIEW[s]||REVIEW.pending;return "<span class=\"review-badge "+x[2]+"\">"+x[0]+" "+x[1]+"</span>"};
@@ -71,7 +87,7 @@ function identify(){
 
 function evidence(){
  const all=D.species,r=records(),counts={confirmed:0,region:0,possible:0,unconfirmed:0};all.forEach(s=>counts[s.localStatus]=(counts[s.localStatus]||0)+1);
- return head("EVIDENCIA","EL SISTEMA DE EVIDENCIA","OCARINA WILD separa lo que está respaldado localmente de lo que todavía necesita verificación.","home")+'<section class="evidence-page wrap"><div class="evidence-principles"><article><span>01</span><h2>Foto de referencia ≠ evidencia local</h2><p>La imagen de una ficha sirve para reconocer la especie. No demuestra que el ejemplar haya sido visto en San Patricio del Chañar.</p></article><article><span>02</span><h2>Observación ≠ confirmación</h2><p>Un registro comunitario queda pendiente hasta que pueda revisarse con características, contexto y fuentes.</p></article><article><span>03</span><h2>Chañar primero</h2><p>La evidencia de Neuquén o Patagonia puede orientar, pero no se transforma automáticamente en presencia confirmada dentro de Chañar.</p></article></div><div class="evidence-levels"><h2>Los cuatro estados</h2><div class="evidence-level-grid"><div class="evidence-level confirmed"><b>🟢 CHÁÑAR CONFIRMADO</b><p>Existe respaldo local suficiente para presentar la presencia como confirmada.</p></div><div class="evidence-level region"><b>🔵 REGIÓN</b><p>Hay documentación regional compatible, pero todavía no suficiente para afirmar Chañar.</p></div><div class="evidence-level possible"><b>🟡 POSIBLE</b><p>El ambiente podría ser compatible, pero la evidencia disponible es insuficiente.</p></div><div class="evidence-level unconfirmed"><b>🔴 NO CONFIRMADO</b><p>No debe presentarse como especie local hasta conseguir respaldo.</p></div></div></div><div class="evidence-ledger"><div><span class="eyebrow dark">PULSO</span><h2>'+all.length+' especies · '+r.length+' registros personales</h2><p>Los registros guardados en este dispositivo son privados hasta que exista una futura capa de publicación y revisión.</p></div><button class="primary" data-action="records">Ver mis registros →</button></div><div class="source-note"><strong>Base local.</strong> La provincia de Neuquén impulsa educación ambiental y cuidado de agua, flora y fauna en San Patricio del Chañar; además, existen antecedentes ambientales y registros locales que deben interpretarse según su escala. </div></section>';
+ return head("EVIDENCIA","EL SISTEMA DE EVIDENCIA","OCARINA WILD separa lo que está respaldado localmente de lo que todavía necesita verificación.","home")+'<section class="evidence-page wrap"><div class="evidence-principles"><article><span>01</span><h2>Foto de referencia ≠ evidencia local</h2><p>La imagen de una ficha sirve para reconocer la especie. No demuestra que el ejemplar haya sido visto en San Patricio del Chañar.</p></article><article><span>02</span><h2>Observación ≠ confirmación</h2><p>Un registro comunitario queda pendiente hasta que pueda revisarse con características, contexto y fuentes.</p></article><article><span>03</span><h2>Chañar primero</h2><p>La evidencia de Neuquén o Patagonia puede orientar, pero no se transforma automáticamente en presencia confirmada dentro de Chañar.</p></article></div><div class="evidence-levels"><h2>Los cuatro estados</h2><div class="evidence-level-grid"><div class="evidence-level confirmed"><b>🟢 CHÁÑAR CONFIRMADO</b><p>Existe respaldo local suficiente para presentar la presencia como confirmada.</p></div><div class="evidence-level region"><b>🔵 REGIÓN</b><p>Hay documentación regional compatible, pero todavía no suficiente para afirmar Chañar.</p></div><div class="evidence-level possible"><b>🟡 POSIBLE</b><p>El ambiente podría ser compatible, pero la evidencia disponible es insuficiente.</p></div><div class="evidence-level unconfirmed"><b>🔴 NO CONFIRMADO</b><p>No debe presentarse como especie local hasta conseguir respaldo.</p></div></div></div><div class="evidence-ledger"><div><span class="eyebrow dark">PULSO</span><h2>'+all.length+' especies · '+r.length+' registros personales</h2><p>Los registros guardados en este dispositivo son privados hasta que exista una futura capa de publicación y revisión.</p></div><button class="primary" data-action="records">Ver mis registros →</button></div><div class="source-note"><strong>Base local.</strong> La evidencia se interpreta según su escala. Un registro ciudadano puede ser valioso sin convertirse automáticamente en una confirmación científica.</div></section>';
 }
 
 function recordForm(prefill){
@@ -80,8 +96,37 @@ function recordForm(prefill){
  return head("REGISTROS WILD","REGISTRÁ LO QUE ENCONTRASTE","Una observación ordenada puede convertirse mañana en evidencia local. Por ahora, el registro queda guardado solamente en este dispositivo.","home")+'<section class="record-page wrap"><form id="record-form" class="record-form"><div class="record-step"><span>01 · EVIDENCIA</span><h2>¿Qué viste?</h2><label class="upload-box"><input id="record-photo" type="file" accept="image/*"><strong>📷 Agregar fotografía</strong><small>La foto es opcional para guardar la observación, pero es la evidencia más útil para una futura revisión.</small><span id="photo-name">Todavía no elegiste una foto.</span></label><div id="photo-preview" class="photo-preview"></div></div><div class="record-step"><span>02 · IDENTIFICACIÓN</span><h2>¿Qué creés que era?</h2><select id="record-species"><option value="">No lo sé / dejar sin identificar</option>'+speciesOptions+'</select><p class="form-hint">Elegir una especie es una hipótesis del observador. No convierte el registro en confirmación.</p></div><div class="record-two"><div class="record-step"><span>03 · CUÁNDO</span><h2>Fecha</h2><input id="record-date" type="date" value="'+new Date().toISOString().slice(0,10)+'"></div><div class="record-step"><span>04 · DÓNDE</span><h2>Ambiente</h2><select id="record-env"><option value="">Elegir ambiente</option>'+D.environments.map(e=>'<option value="'+e.id+'">'+e.icon+" "+esc(e.label)+"</option>").join("")+'</select></div></div><div class="record-step"><span>05 · CONTEXTO</span><h2>Zona general, cantidad y observador</h2><div class="record-two"><input id="record-zone" placeholder="Ej.: zona de chacras, cerca del río, barrio..."><input id="record-count" type="number" min="1" max="9999" placeholder="Cantidad observada"></div><div class="record-two"><select id="record-evidence"><option value="photo">📷 Fotografía</option><option value="sighting">👁️ Observación visual</option><option value="sound">🔊 Sonido</option><option value="trace">🐾 Rastro / señal</option><option value="other">📝 Otro</option></select><input id="record-observer" placeholder="Tu nombre o iniciales"></div><textarea id="record-notes" rows="5" placeholder="¿Qué viste? Tamaño, colores, comportamiento, qué estaba haciendo..."></textarea><p class="form-hint">No cargues coordenadas exactas de especies sensibles.</p></div><div class="record-submit"><div><strong>Estado inicial: ⏳ PENDIENTE</strong><small>El sistema conserva la observación como pendiente hasta una futura revisión.</small></div><button class="primary" type="submit">Guardar registro WILD</button></div></form></section>';
 }
 
-function reviewScore(r){return Object.values(r.review||{}).filter(Boolean).length;}
-function reviewView(id){const r=records().find(x=>x.id===id);if(!r)return recordsView();const s=D.species.find(x=>x.id===r.speciesId);return head("CONTROL DE CALIDAD",r.id,"Una revisión ordenada permite separar observaciones completas de registros que todavía necesitan información.","records")+"<section class=\"review-page wrap\"><div class=\"review-header\"><div><span class=\"eyebrow dark\">ESTADO</span><h2>"+reviewBadge(r.status)+"</h2><p>"+esc(r.reviewNote||"Sin nota de revisión.")+"</p></div><div class=\"review-score\"><b>"+reviewScore(r)+" / 6</b><span>campos útiles presentes</span></div></div><div class=\"review-grid\"><article><h2>Ficha del registro</h2><p><strong>Especie propuesta:</strong> "+esc(s?s.commonName:(r.speciesName||"Sin identificar"))+"</p><p><strong>Fecha:</strong> "+esc(formatDate(r.date))+"</p><p><strong>Ambiente:</strong> "+esc(r.environmentLabel||"Sin indicar")+"</p><p><strong>Zona general:</strong> "+esc(r.zone||"Sin indicar")+" · <strong>Cantidad:</strong> "+esc(r.count||"No indicada")+"</p><p><strong>Evidencia:</strong> "+esc(r.evidenceType||"No indicada")+"</p><p><strong>Observador:</strong> "+esc(r.observer||"Anónimo")+"</p><p><strong>Notas:</strong> "+esc(r.notes||"Sin notas")+"</p></article><article><h2>Checklist</h2><ul class=\"review-checks\"><li>"+(r.review&&r.review.photo?"✓":"○")+" Fotografía disponible</li><li>"+(r.review&&r.review.date?"✓":"○")+" Fecha indicada</li><li>"+(r.review&&r.review.environment?"✓":"○")+" Ambiente indicado</li><li>"+(r.review&&r.review.locationGeneral?"✓":"○")+" Zona general indicada</li><li>"+(r.review&&r.review.observer?"✓":"○")+" Observador identificado</li><li>"+(r.review&&r.review.description?"✓":"○")+" Descripción contextual</li></ul></article></div><div class=\"review-actions\"><button class=\"primary\" data-action=\"mark-review\" data-record=\""+esc(r.id)+"\" data-status=\"review\">🔎 Pasar a revisión</button><button class=\"filter\" data-action=\"mark-review\" data-record=\""+esc(r.id)+"\" data-status=\"verified\">🟢 Proponer confirmación</button><button class=\"filter\" data-action=\"mark-review\" data-record=\""+esc(r.id)+"\" data-status=\"rejected\">⚠️ No confirmado</button><button class=\"text-button\" data-action=\"records\">← Volver al archivo</button></div></section>";}
+function reviewScore(r){
+ const checks=["photo","date","environment","locationGeneral","count","evidence","observer","description"];
+ return checks.filter(k=>k==="count"||k==="evidence"?!!r.review?.[k]:!!r.review?.[k]).length;
+}
+function reviewLabel(r){
+ const score=reviewScore(r);
+ if(score>=7)return ["ALTO","El registro está bien documentado para una futura revisión."];
+ if(score>=4)return ["MEDIO","Hay información útil, pero todavía conviene completar el contexto."];
+ return ["BAJO","Faltan datos importantes para que otra persona pueda revisar la observación."];
+}
+function reviewView(id){
+ const r=records().find(x=>x.id===id);if(!r)return recordsView();
+ const s=D.species.find(x=>x.id===r.speciesId),[quality,qualityText]=reviewLabel(r);
+ const checks=[
+  ["photo","Fotografía disponible",!!r.image],
+  ["date","Fecha indicada",!!r.date],
+  ["environment","Ambiente indicado",!!r.environment],
+  ["locationGeneral","Zona general indicada",!!r.zone],
+  ["count","Cantidad indicada",!!r.count],
+  ["evidence","Tipo de evidencia declarado",!!r.evidenceType],
+  ["observer","Observador identificado",!!r.observer],
+  ["description","Descripción contextual",!!r.notes]
+ ];
+ return head("CONTROL DE CALIDAD",r.id,"Este control mide la calidad del registro. No confirma científicamente una especie.","records")+
+ '<section class="review-page wrap">'+
+ '<div class="review-header"><div><span class="eyebrow dark">ESTADO DEL REGISTRO</span><h2>'+reviewBadge(r.status)+'</h2><p>'+esc(r.reviewNote||"Registro recibido.")+'</p></div><div class="review-score"><b>'+reviewScore(r)+' / 8</b><span>campos de calidad</span><strong>'+quality+'</strong><small>'+qualityText+'</small></div></div>'+
+ '<div class="review-grid"><article><span class="eyebrow dark">OBSERVACIÓN</span><h2>'+esc(s?s.commonName:(r.speciesName||"Sin identificar"))+'</h2><p><strong>Fecha:</strong> '+esc(formatDate(r.date))+'</p><p><strong>Ambiente:</strong> '+esc(r.environmentLabel||"Sin indicar")+'</p><p><strong>Zona general:</strong> '+esc(r.zone||"Sin indicar")+'</p><p><strong>Cantidad:</strong> '+esc(r.count||"No indicada")+'</p><p><strong>Evidencia:</strong> '+esc(r.evidenceType||"No indicada")+'</p><p><strong>Observador:</strong> '+esc(r.observer||"Anónimo")+'</p><p><strong>Notas:</strong> '+esc(r.notes||"Sin notas")+'</p>'+
+ (r.image?'<div class="review-photo"><img src="'+esc(r.image)+'" alt="Fotografía del registro '+esc(r.id)+'"></div>':'<div class="review-no-photo">📷 Este registro no tiene fotografía.</div>')+
+ '</article><article><span class="eyebrow dark">CHECKLIST</span><h2>¿Está listo?</h2><ul class="review-checks">'+checks.map(x=>'<li class="'+(x[2]?"ok":"missing")+'">'+(x[2]?"✓":"○")+" "+x[1]+'</li>').join("")+'</ul><div class="review-warning"><strong>Importante:</strong> completar 8/8 no confirma la especie. Solo significa que el registro está mejor documentado para una revisión posterior.</div></article></div>'+
+ '<div class="review-actions"><button class="primary" data-action="mark-review" data-record="'+esc(r.id)+'" data-status="review">🔎 Preparar para revisión editorial</button><button class="filter" data-action="mark-review" data-record="'+esc(r.id)+'" data-status="rejected">⚠️ Marcar como necesita evidencia</button><button class="text-button" data-action="records">← Volver al archivo</button></div></section>';
+}
 
 function recordsView(){
  const r=records().sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));
@@ -90,7 +135,7 @@ function recordsView(){
 
 function recordCard(r){
  const s=D.species.find(x=>x.id===r.speciesId),name=s?s.commonName:(r.speciesName||"Sin identificar");
- return '<article class="record-card">'+(r.image?'<img src="'+esc(r.image)+'" alt="Registro '+esc(r.id)+'">':'<div class="record-no-photo">📷</div>')+'<div class="record-card-body"><div class="record-card-top"><span>'+esc(r.id)+'</span><b>⏳ PENDIENTE</b></div><h2>'+esc(name)+'</h2><p><strong>'+esc(formatDate(r.date))+'</strong> · '+esc(r.environmentLabel||"Ambiente sin indicar")+'</p><p>'+esc(r.zone||"Zona general no indicada")+'</p>'+(r.notes?'<p class="record-notes">'+esc(r.notes)+'</p>':"")+'<div class="record-meta"><span>Observador: '+esc(r.observer||"Anónimo")+'</span><div><button class="text-button" data-action="review-record" data-record="'+esc(r.id)+'">Revisar</button> <button class="text-button" data-action="delete-record" data-record="'+esc(r.id)+'">Eliminar</button></div></div></div></article>';
+ return '<article class="record-card">'+(r.image?'<img src="'+esc(r.image)+'" alt="Registro '+esc(r.id)+'">':'<div class="record-no-photo">📷</div>')+'<div class="record-card-body"><div class="record-card-top"><span>'+esc(r.id)+'</span>'+reviewBadge(r.status)+'</div><h2>'+esc(name)+'</h2><p><strong>'+esc(formatDate(r.date))+'</strong> · '+esc(r.environmentLabel||"Ambiente sin indicar")+'</p><p>'+esc(r.zone||"Zona general no indicada")+'</p>'+(r.notes?'<p class="record-notes">'+esc(r.notes)+'</p>':"")+'<div class="record-meta"><span>Observador: '+esc(r.observer||"Anónimo")+'</span><div><button class="text-button" data-action="review-record" data-record="'+esc(r.id)+'">Revisar</button> <button class="text-button" data-action="delete-record" data-record="'+esc(r.id)+'">Eliminar</button></div></div></div></article>';
 }
 
 function learn(){return head("EDUCACIÓN","APRENDER","Conceptos cortos para entender mejor la naturaleza de nuestro lugar.","home")+'<section class="concepts wrap"><div class="concept-grid">'+D.concepts.map(c=>'<article><h2>'+esc(c[0])+'</h2><p>'+esc(c[1])+'</p></article>').join("")+'</div><div class="student-block"><span class="eyebrow dark">PARA ESTUDIANTES</span><h2>Pequeñas investigaciones</h2><ol>'+D.activities.map(a=>"<li>"+esc(a)+"</li>").join("")+"</ol></div></section>";}
@@ -103,12 +148,12 @@ function render(){
 
 function bindRecord(){
  const input=$("#record-photo"),preview=$("#photo-preview"),name=$("#photo-name");
- if(input)input.onchange=()=>{const f=input.files[0];if(!f)return;name.textContent=f.name;const reader=new FileReader();reader.onload=()=>{preview.innerHTML='<img src="'+esc(reader.result)+'" alt="Vista previa de la fotografía">';preview.dataset.image=reader.result};reader.readAsDataURL(f)};
+ if(input)input.onchange=()=>{const f=input.files[0];if(!f)return;name.textContent=f.name;const reader=new FileReader();reader.onload=()=>{const raw=reader.result,im=new Image();im.onload=()=>{const max=1400,scale=Math.min(1,max/Math.max(im.width,im.height)),canvas=document.createElement("canvas");canvas.width=Math.round(im.width*scale);canvas.height=Math.round(im.height*scale);canvas.getContext("2d").drawImage(im,0,0,canvas.width,canvas.height);const compressed=canvas.toDataURL("image/jpeg",.78);preview.innerHTML='<img src="'+esc(compressed)+'" alt="Vista previa de la fotografía">';preview.dataset.image=compressed};im.src=raw};reader.readAsDataURL(f)};
  const form=$("#record-form");
  if(form)form.onsubmit=async e=>{
   e.preventDefault();
   const speciesId=$("#record-species").value,s=D.species.find(x=>x.id===speciesId),envId=$("#record-env").value,eid=D.environments.find(x=>x.id===envId);
-  const r={id:recordId(),createdAt:new Date().toISOString(),date:$("#record-date").value,speciesId:speciesId||null,speciesName:s?s.commonName:"",environment:envId||null,environmentLabel:eid?eid.label:"Ambiente sin indicar",zone:$("#record-zone").value.trim(),count:Number($("#record-count").value)||null,evidenceType:$("#record-evidence").value,observer:$("#record-observer").value.trim(),notes:$("#record-notes").value.trim(),image:preview?.dataset.image||"",status:"pending",review:{photo:!!(preview&&preview.dataset.image),date:!!$("#record-date").value,environment:!!envId,locationGeneral:!!$("#record-zone").value.trim(),observer:!!$("#record-observer").value.trim(),description:!!$("#record-notes").value.trim()},reviewNote:"Registro recibido. Falta revisión."};
+  const r={id:recordId(),createdAt:new Date().toISOString(),date:$("#record-date").value,speciesId:speciesId||null,speciesName:s?s.commonName:"",environment:envId||null,environmentLabel:eid?eid.label:"Ambiente sin indicar",zone:$("#record-zone").value.trim(),count:Number($("#record-count").value)||null,evidenceType:$("#record-evidence").value,observer:$("#record-observer").value.trim(),notes:$("#record-notes").value.trim(),image:preview?.dataset.image||"",status:"pending",review:{photo:!!(preview&&preview.dataset.image),date:!!$("#record-date").value,environment:!!envId,locationGeneral:!!$("#record-zone").value.trim(),count:!!$("#record-count").value,evidence:!!$("#record-evidence").value,observer:!!$("#record-observer").value.trim(),description:!!$("#record-notes").value.trim()},reviewNote:"Registro recibido. Todavía no fue revisado."};
   const arr=records();arr.push(r);saveRecords(arr);state.view="records";state.prefill=null;render();
  };
 }
@@ -134,7 +179,8 @@ function bind(){
   if(a==="export-records"){exportRecords()}
   if(a==="delete-record"){if(confirm("¿Eliminar este registro local?"))deleteRecord(b.dataset.record)}
   if(a==="review-latest"){const rr=records().sort((x,y)=>String(y.createdAt).localeCompare(String(x.createdAt)));if(rr[0]){state.view="review";state.recordId=rr[0].id;render()}}
-  if(a==="mark-review"){const rr=records(),x=rr.find(r=>r.id===b.dataset.record);if(x){x.status=b.dataset.status;x.reviewNote=b.dataset.status==="verified"?"Propuesta de confirmación guardada; requiere validación editorial.":b.dataset.status==="rejected"?"Registro no confirmado; requiere nueva evidencia.":"Registro separado para revisión.";saveRecords(rr);state.view="review";state.recordId=x.id;render()}}
+  if(a==="review-record"){state.view="review";state.recordId=b.dataset.record;render()}
+  if(a==="mark-review"){const rr=records(),x=rr.find(r=>r.id===b.dataset.record);if(x){x.status=b.dataset.status;x.reviewNote=b.dataset.status==="rejected"?"El registro necesita evidencia o contexto adicional.":"Registro preparado para una futura revisión editorial. Este estado no confirma la especie.";saveRecords(rr);state.view="review";state.recordId=x.id;render()}}
   if(a==="clear"){state.query="";render()}
  });
  $$("[data-group]").forEach(b=>b.onclick=()=>{state.group=b.dataset.group;render()});
