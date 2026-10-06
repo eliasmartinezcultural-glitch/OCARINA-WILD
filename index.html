@@ -195,10 +195,34 @@
 .kids-page,.school-page{padding-bottom:90px}.kids-hero{display:grid;grid-template-columns:1fr 220px;gap:20px;align-items:stretch}.kids-hero>div:first-child{background:#fff1b8;border-radius:30px;padding:35px}.kids-hero h1{font-size:clamp(2.8rem,8vw,6rem);line-height:.88;letter-spacing:-.06em;margin:12px 0 18px}.kids-hero p{font-size:1.15rem;max-width:650px}.kids-badge{background:#dcebd2;border-radius:30px;display:grid;place-items:center;text-align:center;font-size:3.5rem;padding:25px}.kids-badge strong{font-size:1rem;letter-spacing:.1em}.kids-missions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.kids-missions button{border:1px solid var(--line);background:var(--card);border-radius:24px;text-align:left;padding:25px;min-height:210px;display:flex;flex-direction:column;box-shadow:var(--shadow)}.kids-missions span{font-size:2.8rem}.kids-missions strong{font-size:1.15rem;margin-top:auto}.kids-missions small{color:var(--muted);margin-top:6px}.kids-rule{margin-top:16px;background:var(--ink);color:white;border-radius:22px;padding:20px}.kids-rule b{color:#e6f0bd}.kids-challenge{margin-top:16px;background:var(--leaf);border-radius:26px;padding:28px}.kids-challenge h2{font-size:2.5rem;margin:8px 0 16px}.kids-challenge li{margin:9px 0}.school-intro{background:var(--ink);color:white;border-radius:30px;padding:36px;margin-bottom:16px}.school-intro h2{font-size:clamp(2.4rem,5vw,4.5rem);line-height:.92;letter-spacing:-.05em;margin:10px 0 18px}.school-intro p{color:#d2ddd6;max-width:760px;font-size:1.1rem}.school-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.school-grid article{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;min-height:210px}.school-grid span{font-size:.75rem;font-weight:900;color:var(--good);letter-spacing:.1em}.school-grid h2{font-size:1.5rem;margin:45px 0 8px}.school-grid p{color:var(--muted)}.school-activities{margin-top:16px;background:var(--water);border-radius:26px;padding:28px}.school-activities h2{font-size:2.5rem;margin:8px 0 20px}.school-list{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.school-list article{background:#fff;border:1px solid #c6dcdf;border-radius:18px;padding:18px}.school-list p{color:var(--muted);margin:7px 0 0}.school-note{margin-top:16px;padding:18px;background:var(--sand);border-radius:18px;color:var(--muted)}
 @media(max-width:850px){.school-grid{grid-template-columns:1fr 1fr}.school-list{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.education-doors,.kids-hero,.kids-missions,.school-grid,.school-list{grid-template-columns:1fr}.kids-hero>div:first-child,.school-intro{padding:25px}.kids-badge{min-height:170px}.kids-missions button{min-height:160px}.school-grid article{min-height:170px}.school-grid h2{margin-top:25px}}
-</style></style></head>
+</style></style>
+<style>
+/* OCARINA WILD · CAPA DE PRESERVACIÓN */
+.wild-laws{padding:0 0 90px}
+.wild-laws-head{background:var(--ink);color:#fff;border-radius:30px 30px 0 0;padding:34px}
+.wild-laws-head h2{font-size:clamp(2.3rem,5vw,4.8rem);line-height:.92;letter-spacing:-.05em;margin:10px 0 16px}
+.wild-laws-head p{color:#d2ddd6;max-width:760px;margin:0}
+.wild-laws-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;background:var(--ink);padding:0 16px 16px;border-radius:0 0 30px 30px}
+.wild-laws-grid article{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;min-height:170px}
+.wild-laws-grid article>span{font-size:.72rem;font-weight:900;letter-spacing:.14em;color:var(--good)}
+.wild-laws-grid h3{font-size:1.15rem;margin:9px 0 7px}
+.wild-laws-grid p{color:var(--muted);margin:0}
+.wild-zero{margin-top:14px;border:2px solid #8b4848;background:#f4e0df;border-radius:22px;padding:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;color:#6e3333}
+.wild-zero strong{font-size:.8rem;letter-spacing:.08em}
+.wild-zero span{font-weight:800}
+.safe-image-placeholder{width:100%;height:100%;min-height:210px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:8px;padding:24px;background:linear-gradient(145deg,#e5efe2,#f7f4ec);color:var(--ink)}
+.safe-image-placeholder span{font-size:3rem}
+.safe-image-placeholder strong{font-size:.82rem;letter-spacing:.1em}
+.safe-image-placeholder small{max-width:280px;color:var(--muted)}
+.wild-photo-consent{display:flex;gap:9px;align-items:flex-start;text-align:left;font-size:.82rem;font-weight:800;line-height:1.4}
+.wild-photo-consent input{width:auto!important;margin-top:3px}
+.species-image:has(.safe-image-placeholder),.species-main-image:has(.safe-image-placeholder){padding:0}
+@media(max-width:650px){.wild-laws-grid{grid-template-columns:1fr;padding:0 10px 10px}.wild-laws-head{padding:25px}.wild-laws{padding-bottom:65px}.wild-zero{display:block}.wild-zero span{display:block;margin-top:8px}}
+</style>
+</head>
 <body>
 <header class="topbar"><div class="nav wrap"><button class="brand" data-action="home"><strong>OCARINA WILD</strong><span>La vida que tenemos alrededor</span></button><div class="nav-links"><button data-action="catalog" data-kind="fauna">Animales</button><button data-action="catalog" data-kind="flora">Plantas</button><button data-action="environments">Ambientes</button><button data-action="learn">Aprender</button><button data-action="evidence">Evidencia</button></div><input id="global-search" class="global-search" placeholder="Buscar..." aria-label="Buscar en Ocarina Wild"></div></header>
 <main id="app"></main>
 <footer class="footer"><div class="footer-in wrap"><div><strong>OCARINA WILD</strong><br>La vida que tenemos alrededor.</div><div>Proyecto educativo local · San Patricio del Chañar · <span id="year"></span><br>Tecnología desarrollada por Elías Martínez / Ocarina Producciones.</div></div></footer>
-<script src="./data.js?v=20261005-3"></script><script src="./app.js?v=20261005-3"></script>
+<script src="./data.js?v=20261005-4"></script><script src="./app.js?v=20261005-4"></script>
 </body></html>
