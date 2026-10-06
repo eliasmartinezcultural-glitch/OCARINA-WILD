@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#07150e">
-<title>OCARINA WILD · Photo-First 2.0</title>
+<title>OCARINA WILD · Fauna y flora de San Patricio del Chañar</title>
 <style>
 :root{
  --bg:#050b08;--bg2:#09150f;--panel:rgba(13,27,19,.82);--panel-solid:#0d1d14;
@@ -59,7 +59,7 @@ main{max-width:1480px;margin:auto;padding:24px 20px 80px}
 .law-main strong{display:block;font-size:21px;margin-bottom:9px;letter-spacing:-.02em}
 .law-main span,.law-side span{color:var(--muted);line-height:1.55}
 .law-side b{display:block;color:var(--gold);margin-bottom:7px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-.pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}
+.pipeline{display:none;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}
 .step{
  position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(18,41,28,.8),rgba(10,23,16,.72));
  border:1px solid var(--line);border-radius:19px;padding:16px;transition:transform .25s ease,border-color .25s ease,background .25s ease
@@ -67,7 +67,7 @@ main{max-width:1480px;margin:auto;padding:24px 20px 80px}
 .step:hover{transform:translateY(-3px);border-color:var(--line-strong);background:rgba(18,41,28,.96)}
 .step i{display:block;color:var(--gold);font-size:10px;font-style:normal;font-weight:950;letter-spacing:.12em}
 .step b{display:block;margin:7px 0 4px;font-size:15px}.step span{color:var(--muted);font-size:12px;line-height:1.4}
-.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:24px 0}
+.stats{display:none;grid-template-columns:repeat(5,1fr);gap:10px;margin:24px 0}
 .stat{
  background:rgba(10,23,16,.74);border:1px solid var(--line);border-radius:18px;padding:15px;
  box-shadow:inset 0 1px 0 rgba(255,255,255,.025)
@@ -149,7 +149,7 @@ dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(7px)}
 <body>
 <header><div class="nav"><div class="brand">OCARINA WILD<small>FOTOGRAFÍAS PRIMERO · SAN PATRICIO DEL CHAÑAR</small></div><div id="counter" class="stat"></div></div></header>
 <main>
-<section class="hero"><div class="eyebrow">Motor de curaduría · etapa 02</div><h1>Primero vemos.<br>Después entendemos.</h1><p>WILD ya no trata a la fotografía como decoración. La fotografía es la puerta de entrada del conocimiento: si la evidencia visual no supera el estándar, la ficha no avanza.</p><div class="law"><div class="law-main"><strong>LEY MUNDIAL · FOTO PRIMERO</strong><span>Foto real → auditoría visual → identificación → categoría → taxonomía → territorio → ecología → observación → educación.</span></div><div class="law-side"><b>Regla de expansión</b><span>No hay meta numérica. Una colección pequeña y defendible vale más que un catálogo inflado.</span></div></div></section><section class="pipeline"><div class="step"><i>01 · EVIDENCIA</i><b>Foto viva</b><span>La imagen tiene que mostrar vida real y ser auditable.</span></div><div class="step"><i>02 · IDENTIDAD</i><b>Reconocer</b><span>La identificación nunca debe ir más lejos que la evidencia.</span></div><div class="step"><i>03 · TERRITORIO</i><b>Ubicar</b><span>Referencia regional y registro local son cosas distintas.</span></div><div class="step"><i>04 · EXPERIENCIA</i><b>Descubrir</b><span>Hábitat, observación y aprendizaje llegan después.</span></div></section><section class="stats"><div class="stat"><b id="approved">0</b><span>fotos que superan la puerta</span></div><div class="stat"><b id="speciesCount">0</b><span>fichas visuales</span></div><div class="stat"><b id="exactId">0</b><span>identificaciones nominales</span></div><div class="stat"><b id="localContext">0</b><span>con contexto local documentado</span></div><div class="stat warn"><b id="licensePending">0</b><span>licencias por verificar</span></div></section><section class="controls"><input id="search" class="search" placeholder="Buscar una especie…"><div id="filters" class="filters"></div><div id="resultCount" class="results"></div></section>
+<section class="hero"><div class="eyebrow">San Patricio del Chañar · Neuquén</div><h1>Fauna y flora<br>del Chañar.</h1><p>Un recorrido visual por la vida que habita este territorio: aves, peces, animales, árboles, arbustos, pastos y pequeños seres que forman parte del paisaje cotidiano de San Patricio del Chañar.</p><div class="law"><div class="law-main"><strong>Vida del territorio</strong><span>Conocé las especies, sus ambientes y las pequeñas historias naturales que aparecen entre el río, las chacras, el monte y los espacios cotidianos del Chañar.</span></div><div class="law-side"><b>Explorá</b><span>Elegí una categoría, mirá las fotografías y entrá en cada especie para descubrir más.</span></div></div></section><section class="pipeline" aria-hidden="true"><div class="step"><i>01 · EVIDENCIA</i><b>Foto viva</b><span>La imagen tiene que mostrar vida real y ser auditable.</span></div><div class="step"><i>02 · IDENTIDAD</i><b>Reconocer</b><span>La identificación nunca debe ir más lejos que la evidencia.</span></div><div class="step"><i>03 · TERRITORIO</i><b>Ubicar</b><span>Referencia regional y registro local son cosas distintas.</span></div><div class="step"><i>04 · EXPERIENCIA</i><b>Descubrir</b><span>Hábitat, observación y aprendizaje llegan después.</span></div></section><section class="stats" aria-hidden="true"><div class="stat"><b id="approved">0</b><span>fotos que superan la puerta</span></div><div class="stat"><b id="speciesCount">0</b><span>fichas visuales</span></div><div class="stat"><b id="exactId">0</b><span>identificaciones nominales</span></div><div class="stat"><b id="localContext">0</b><span>con contexto local documentado</span></div><div class="stat warn"><b id="licensePending">0</b><span>licencias por verificar</span></div></section><section class="controls"><input id="search" class="search" aria-label="Buscar fauna y flora del Chañar" placeholder="Buscar una especie…"><div id="filters" class="filters"></div><div id="resultCount" class="results"></div></section>
 <section id="grid" class="grid"></section><div id="empty" class="empty" hidden>No encontramos especies con ese criterio.</div>
 </main><footer>OCARINA WILD · Atlas visual de vida · La conservación empieza por mirar bien.<br><strong style="color:#a8b9ac">Desarrollo hecho por Ocarina Producciones · Elías Martínez</strong> · San Patricio del Chañar</footer>
 <dialog id="modal"><button class="close" id="close">Cerrar</button><img id="modalImg" class="modal-photo" alt=""><div class="modal-body"><div id="modalTag" class="tag"></div><h2 id="modalName"></h2><div id="modalSci" class="modal-sci"></div><div id="modalGate"></div><div id="modalEvidence" class="evidence"></div><p id="modalNote"></p><div class="experience"><div><b>👀 Primera pista</b><p id="modalClue"></p></div><div><b>🏞️ Hábitat</b><p id="modalHabitat"></p></div><div><b>🫶 Cómo observar</b><p id="modalObserve"></p></div></div><div class="source-line" id="modalSource"></div><div class="source-line"><a id="modalLink" target="_blank" rel="noopener">Ver fuente fotográfica</a></div></div></dialog>
