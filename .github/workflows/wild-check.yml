@@ -1,0 +1,17 @@
+name: OCARINA WILD · Verificador
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Ejecutar auditoría WILD
+        run: node tools/wild-check.mjs
