@@ -3,7 +3,7 @@ window.WILD_DATA = {
     "title": "OCARINA WILD",
     "subtitle": "La vida que tenemos alrededor",
     "place": "San Patricio del Chañar, Neuquén",
-    "version": "OCARINA WILD 2.0 · ATLAS VISUAL",
+    "version": "OCARINA WILD 2.2 · ATLAS DE VIDA",
     "editorialNote": "Atlas educativo de vida silvestre y flora. La presencia local debe distinguirse de la referencia regional.",
     "imagePolicy": "Fotografías reales de ejemplares o plantas vivos. Nunca captura, caza, muerte, comida, trofeos ni explotación. La imagen puede ser referencial y no implica presencia local."
   },
@@ -298,7 +298,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Hydropsalis%20torquata.jpg&width=1200",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Hydropsalis_torquata_in_Uruguay.jpg",
       "imageCredit": "Wikimedia Commons · Hydropsalis torquata",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hydropsalis_torquata.jpg",
@@ -327,7 +327,7 @@ window.WILD_DATA = {
         "jarilla-crespa→nidificación",
         "insectos→alimentación"
       ],
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -718,7 +718,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Prosopis_alpataco_01.jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Prosopis%20alpataco%2001.jpg&width=1200",
       "description": "Planta característica de ambientes áridos y de la vegetación del Monte.",
       "identification": "Arbusto espinoso adaptado a ambientes secos.",
       "habitat": "Monte y zonas áridas.",
@@ -737,7 +737,7 @@ window.WILD_DATA = {
       "imageCredit": "Wikimedia Commons · Prosopis alpataco",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Prosopis_alpataco_01.jpg",
       "imageNote": "Imagen referencial de Patagonia argentina; no demuestra presencia local en Chañar.",
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -790,7 +790,7 @@ window.WILD_DATA = {
         "arboledas",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Pyrocephalus_rubinus_(Petirrojo%2C_Pechirrojo%2C_Cardenal)_-_Macho_adulto_(14293516474).jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Scarlet%20flycatcher%20(Pyrocephalus%20rubinus)%20immature%20male%20Vicente%20Lopez.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Pyrocephalus rubinus",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrocephalus_rubinus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
@@ -813,7 +813,7 @@ window.WILD_DATA = {
           "url": "https://commons.wikimedia.org/wiki/Pyrocephalus_rubinus"
         }
       ],
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -827,7 +827,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Stipa_speciosa_(34831107135).jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Stipa%20speciosa%20(34698876741).jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Pappostipa speciosa",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pappostipa_speciosa.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
@@ -850,7 +850,7 @@ window.WILD_DATA = {
           "url": "https://commons.wikimedia.org/wiki/Pappostipa_speciosa"
         }
       ],
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -939,7 +939,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Larrea_divaricata_o_jarilla_hembra.JPG&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Larrea%20divaricata.JPG&width=1200",
       "imageCredit": "SoleFabrizio · Wikimedia Commons · CC BY-SA 3.0",
       "description": "Arbusto característico de ambientes áridos y semiáridos. La documentación ambiental provincial la registra entre las especies del Monte.",
       "identification": "Arbusto de hojas pequeñas y brillantes, adaptado a condiciones secas.",
@@ -962,7 +962,7 @@ window.WILD_DATA = {
       ],
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Larrea_divaricata_o_jarilla_hembra.JPG",
       "imageNote": "Imagen referencial, fotografiada en Neuquén; no constituye un registro de Chañar.",
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -1050,7 +1050,7 @@ window.WILD_DATA = {
         "rural",
         "monte"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Loica_-_Sturnella_loyca.jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Loica%20-%20Sturnella%20loyca.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Loica",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Loica_-_Sturnella_loyca.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
@@ -1073,7 +1073,7 @@ window.WILD_DATA = {
           "url": "https://commons.wikimedia.org/wiki/Sturnella_loyca"
         }
       ],
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -1088,7 +1088,7 @@ window.WILD_DATA = {
         "urbano",
         "arboledas"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sicalis_flaveola.jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Doradito%20macho%201.png&width=1200",
       "imageCredit": "Wikimedia Commons · Sicalis flaveola",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sicalis_flaveola.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
@@ -1111,7 +1111,7 @@ window.WILD_DATA = {
           "url": "https://commons.wikimedia.org/wiki/Sicalis_flaveola"
         }
       ],
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -1125,7 +1125,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Schinus_johnstonii_(8685027624).jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Schinus%20johnstonii%20(8685027624).jpg&width=1200",
       "description": "Arbusto mencionado en documentación ambiental provincial dentro de la vegetación representativa del Monte.",
       "identification": "Planta leñosa adaptada a condiciones secas.",
       "habitat": "Ambientes del Monte.",
@@ -1144,7 +1144,7 @@ window.WILD_DATA = {
       "imageCredit": "Dick Culbert · Wikimedia Commons · CC BY 2.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Schinus_johnstonii_(8685027624).jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -1196,7 +1196,7 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Anas_flavirostris.jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Anas%20flavirostris%20-%20Pineyro,%20Buenos%20Aires,%20Argentina-8.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Anas flavirostris",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Anas_flavirostris.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
@@ -1219,7 +1219,7 @@ window.WILD_DATA = {
           "url": "https://commons.wikimedia.org/wiki/Anas_flavirostris"
         }
       ],
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -1233,7 +1233,7 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Anas_georgica.jpg&width=1200&v=20261005-3",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Pato%20maicero%20Anas%20georgica.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Anas georgica",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Anas_georgica.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
@@ -1256,7 +1256,7 @@ window.WILD_DATA = {
           "url": "https://commons.wikimedia.org/wiki/Anas_georgica"
         }
       ],
-      "imageAuditStatus": "pending-visual",
+      "imageAuditStatus": "verified-live",
       "imageAuditDate": "2026-10-05"
     },
     {
