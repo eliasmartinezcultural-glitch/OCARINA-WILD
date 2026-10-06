@@ -3,8 +3,9 @@ window.WILD_DATA = {
     "title": "OCARINA WILD",
     "subtitle": "La vida que tenemos alrededor",
     "place": "San Patricio del Chañar, Neuquén",
-    "version": "REBUILD 1.0 · 05/10/2026",
-    "editorialNote": "Atlas educativo de vida silvestre y flora. La presencia local debe distinguirse de la referencia regional."
+    "version": "REBUILD 1.1 · AUDITORÍA FOTOGRÁFICA · 05/10/2026",
+    "editorialNote": "Atlas educativo de vida silvestre y flora. La presencia local debe distinguirse de la referencia regional.",
+    "imagePolicy": "Una fotografía solo se publica como imagen principal cuando fue revisada visualmente. Estados: verified-live, pending-visual, quarantine."
   },
   "groups": [
     {
@@ -157,7 +158,9 @@ window.WILD_DATA = {
       "relations": [
         "manzano→polinización",
         "peral→polinización"
-      ]
+      ],
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "abejorro-negro",
@@ -196,7 +199,10 @@ window.WILD_DATA = {
         "manzano→polinización",
         "peral→polinización",
         "abeja-melifera→complementariedad"
-      ]
+      ],
+      "imageAuditStatus": "quarantine",
+      "imageAuditDate": "2026-10-05",
+      "imageAuditReason": "La imagen actual es una ilustración científica, no una fotografía viva; se retira de la capa fotográfica hasta conseguir una foto compatible."
     },
     {
       "id": "aguila-pescadora",
@@ -234,7 +240,9 @@ window.WILD_DATA = {
       ],
       "relations": [
         "rio→peces→alimentación"
-      ]
+      ],
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "alamo-cortina",
@@ -274,7 +282,9 @@ window.WILD_DATA = {
       "relations": [
         "chacra→cortina-forestal",
         "dique→mosaico-vegetal"
-      ]
+      ],
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "atajacaminos-tijera",
@@ -316,7 +326,9 @@ window.WILD_DATA = {
         "manca-caballo→refugio/descanso",
         "jarilla-crespa→nidificación",
         "insectos→alimentación"
-      ]
+      ],
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "calandria-grande",
@@ -353,7 +365,9 @@ window.WILD_DATA = {
         }
       ],
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:CALANDRIA_Mimus_saturninus.jpg",
-      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "carpintero-real",
@@ -389,7 +403,9 @@ window.WILD_DATA = {
         }
       ],
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Colaptes_melanochloros_-_Carpintero_real.jpg",
-      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "golondrina-patagonica",
@@ -426,7 +442,9 @@ window.WILD_DATA = {
         }
       ],
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pygochelidon_cyanoleuca_176376357.jpg",
-      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "jarilla-crespa",
@@ -460,7 +478,9 @@ window.WILD_DATA = {
       ],
       "relations": [
         "atajacaminos-tijera→nidificación"
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "manca-caballo",
@@ -496,7 +516,9 @@ window.WILD_DATA = {
       "relations": [
         "atajacaminos-tijera→refugio/descanso",
         "atajacaminos-tijera→ambiente-reproductivo"
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "manzano-cultivado",
@@ -534,7 +556,9 @@ window.WILD_DATA = {
       ],
       "relations": [
         "manzano→floración→polinizadores"
-      ]
+      ],
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "pejerrey",
@@ -569,7 +593,10 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Odontesthes_bonariensis"
         }
-      ]
+      ],
+      "imageAuditStatus": "quarantine",
+      "imageAuditDate": "2026-10-05",
+      "imageAuditReason": "La fotografía mostraba un ejemplar sostenido por una persona en una embarcación; viola CERO CAPTURA."
     },
     {
       "id": "peral-cultivado",
@@ -602,7 +629,9 @@ window.WILD_DATA = {
       ],
       "relations": [
         "peral→floración→polinizadores"
-      ]
+      ],
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "perca",
@@ -637,7 +666,10 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Percichthys_trucha"
         }
-      ]
+      ],
+      "imageAuditStatus": "quarantine",
+      "imageAuditDate": "2026-10-05",
+      "imageAuditReason": "La fotografía mostraba un ejemplar sostenido por personas; viola CERO CAPTURA."
     },
     {
       "id": "tamarindo",
@@ -671,7 +703,9 @@ window.WILD_DATA = {
       ],
       "relations": [
         "dique→mosaico-vegetal"
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "alpataco",
@@ -702,7 +736,9 @@ window.WILD_DATA = {
       ],
       "imageCredit": "Wikimedia Commons · Prosopis alpataco",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Prosopis_alpataco_01.jpg",
-      "imageNote": "Imagen referencial de Patagonia argentina; no demuestra presencia local en Chañar."
+      "imageNote": "Imagen referencial de Patagonia argentina; no demuestra presencia local en Chañar.",
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "carancho",
@@ -738,7 +774,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Caracara_plancus"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "churrinche",
@@ -774,7 +812,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Pyrocephalus_rubinus"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "coiron",
@@ -809,7 +849,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Pappostipa_speciosa"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "garcita-blanca",
@@ -844,7 +886,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Egretta_thula"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "hornero",
@@ -880,7 +924,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Furnarius_rufus"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "jarilla-hembra",
@@ -915,7 +961,9 @@ window.WILD_DATA = {
         }
       ],
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Larrea_divaricata_o_jarilla_hembra.JPG",
-      "imageNote": "Imagen referencial, fotografiada en Neuquén; no constituye un registro de Chañar."
+      "imageNote": "Imagen referencial, fotografiada en Neuquén; no constituye un registro de Chañar.",
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "jarilla-macho",
@@ -950,7 +998,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Larrea_cuneifolia"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "liebre-europea",
@@ -985,7 +1035,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Lepus_europaeus"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "loica",
@@ -1020,7 +1072,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Sturnella_loyca"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "mixto",
@@ -1056,7 +1110,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Sicalis_flaveola"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "molle",
@@ -1087,7 +1143,9 @@ window.WILD_DATA = {
       ],
       "imageCredit": "Dick Culbert · Wikimedia Commons · CC BY 2.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Schinus_johnstonii_(8685027624).jpg",
-      "imageNote": "Imagen referencial; no constituye un registro fotográfico local."
+      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "paloma-picazuró",
@@ -1123,7 +1181,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Patagioenas_picazuro"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "pato-barcino",
@@ -1158,7 +1218,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Anas_flavirostris"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "pato-maicero",
@@ -1193,7 +1255,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Anas_georgica"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "solupe",
@@ -1228,7 +1292,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Ephedra_ochreata"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "tero",
@@ -1265,7 +1331,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Vanellus_chilensis"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "tomillo",
@@ -1300,7 +1368,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Acantholippia_seriphioides"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "zampa",
@@ -1331,7 +1401,9 @@ window.WILD_DATA = {
       ],
       "imageCredit": "Fabricaster · Wikimedia Commons · CC BY-SA 4.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Atriplex_lampa.jpg",
-      "imageNote": "Imagen referencial, fotografiada en Mendoza; no constituye un registro de Chañar."
+      "imageNote": "Imagen referencial, fotografiada en Mendoza; no constituye un registro de Chañar.",
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "zorro-colorado",
@@ -1366,7 +1438,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Lycalopex_culpaeus"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "zorzal-patagonico",
@@ -1402,7 +1476,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Turdus_falcklandii"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "coipo",
@@ -1437,7 +1513,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Myocastor_coypus"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "chañar",
@@ -1473,7 +1551,9 @@ window.WILD_DATA = {
           "label": "Municipalidad · Nuestra Ciudad",
           "url": "https://sanpatricio.gob.ar/nuestra"
         }
-      ]
+      ],
+      "imageAuditStatus": "pending-visual",
+      "imageAuditDate": "2026-10-05"
     },
     {
       "id": "trucha-arcoiris",
@@ -1508,7 +1588,9 @@ window.WILD_DATA = {
           "label": "Wikimedia Commons · especie",
           "url": "https://commons.wikimedia.org/wiki/Oncorhynchus_mykiss"
         }
-      ]
+      ],
+      "imageAuditStatus": "verified-live",
+      "imageAuditDate": "2026-10-05"
     }
   ],
   "concepts": [
