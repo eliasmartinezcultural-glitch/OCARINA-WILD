@@ -14,7 +14,12 @@ function renderFilters(){
  filters.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{group=b.dataset.g;filters.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()});
 }
 function getList(){return (DATA.species||[]).filter(s=>{const hay=[s.commonName,s.scientificName,s.description,s.habitat,s.localNote,(s.environments||[]).join(" ")].join(" ").toLowerCase();return (group==="all"||s.group===group)&&(!query||hay.includes(query))})}
-function renderFeatured(){const list=(DATA.species||[]).filter(s=>s.imageAuditStatus==="verified-live"&&imgOk(s)).slice(0,3);if(!featured)return;featured.innerHTML=list.map((s,i)=>`<article class="feature ${i===0?"big":""}" data-feature="${i}"><div class="fimg"><img src="${safeText(s.image)}" alt="${safeText(s.commonName)} vivo" onerror="this.style.display="none""></div><div class="shade"></div><div class="featureText"><small>🌱 FOTOGRAFÍA VERIFICADA</small><h3>${safeText(s.commonName)}</h3><em>${safeText(s.scientificName)}</em></div></article>`).join("");featured.querySelectorAll(".feature").forEach((el,i)=>el.onclick=()=>openDetail(list[i]))}
+function renderFeatured(){
+ const list=(DATA.species||[]).filter(s=>s.imageAuditStatus==="verified-live"&&imgOk(s)).slice(0,3);
+ if(!featured)return;
+ featured.innerHTML=list.map((s,i)=>'<article class="feature '+(i===0?'big':'')+'" data-feature="'+i+'"><div class="fimg"><img src="'+safeText(s.image)+'" alt="'+safeText(s.commonName)+' vivo" onerror="this.style.display=\'none\'"></div><div class="shade"></div><div class="featureText"><small>🌱 FOTOGRAFÍA VERIFICADA</small><h3>'+safeText(s.commonName)+'</h3><em>'+safeText(s.scientificName)+'</em></div></article>').join("");
+ featured.querySelectorAll(".feature").forEach((el,i)=>el.onclick=()=>openDetail(list[i]));
+}
 function render(){
  const list=getList(); const verified=(DATA.species||[]).filter(s=>s.imageAuditStatus==="verified-live").length; stats.textContent=list.length+" especies · "+verified+" fotos auditadas · "+(DATA.meta?.place||"San Patricio del Chañar");
  if(!list.length){grid.innerHTML='<div class="empty">No encontramos esa especie. Probá con otra palabra.</div>';return}
