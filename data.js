@@ -327,7 +327,7 @@ window.WILD_DATA = {
         "jarilla-crespa→nidificación",
         "insectos→alimentación"
       ],
-      "imageAuditStatus": "verified-live",
+      "imageAuditStatus": "pending-visual",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -366,7 +366,7 @@ window.WILD_DATA = {
       ],
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:CALANDRIA_Mimus_saturninus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
-      "imageAuditStatus": "verified-live",
+      "imageAuditStatus": "pending-visual",
       "imageAuditDate": "2026-10-05"
     },
     {
