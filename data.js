@@ -540,7 +540,7 @@ window.WILD_DATA = {
     {
       "id": "pejerrey",
       "commonName": "Pejerrey",
-      "scientificName": "Odontesthes bonariensis",
+      "scientificName": "Odontesthes sp. · identificación específica pendiente",
       "kind": "fauna",
       "group": "peces",
       "localStatus": "confirmed",
@@ -608,7 +608,7 @@ window.WILD_DATA = {
     {
       "id": "perca",
       "commonName": "Perca",
-      "scientificName": "Percichthys trucha",
+      "scientificName": "Percichthys sp. · identificación específica pendiente",
       "kind": "fauna",
       "group": "peces",
       "localStatus": "confirmed",
