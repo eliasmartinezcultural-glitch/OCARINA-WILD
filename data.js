@@ -132,10 +132,10 @@ window.WILD_DATA = {
         "arboledas",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Apis_mellifera_Western_honey_bee.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Apis_mellifera_Western_honey_bee.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La presencia y función fueron estudiadas en chacras de San Patricio del Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apis_mellifera_Western_honey_bee.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Apis_mellifera_Western_honey_bee.jpg?v=20261005",
       "description": "Polinizador fundamental de los cultivos de pera y manzana del Chañar.",
       "identification": "Abeja social de cuerpo segmentado y bandas oscuras y amarillentas.",
       "habitat": "Colmenas manejadas y ambientes agrícolas con floración.",
@@ -170,10 +170,10 @@ window.WILD_DATA = {
       "environments": [
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bombus_atratus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Bombus_atratus_BYN.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La investigación local ensayó Bombus atratus en chacras de San Patricio del Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bombus_atratus.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Bombus_atratus_BYN.jpg?v=20261005",
       "description": "Abejorro utilizado y estudiado como polinizador complementario en los montes frutales del Chañar.",
       "identification": "Abejorro robusto, de cuerpo piloso y oscuro.",
       "habitat": "Ambientes agrícolas con floración y áreas donde pueda completar su ciclo.",
@@ -210,10 +210,10 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pandion_haliaetus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Pandion_haliaetus.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "No es la fotografía del registro local; existe evidencia fotográfica y fílmica publicada para El Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pandion_haliaetus.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Pandion_haliaetus.jpg?v=20261005",
       "description": "Rapaz especializada en ambientes acuáticos. Existe un registro fotográfico y fílmico publicado sobre el Río Neuquén en el Dique Compensador El Chañar.",
       "identification": "Rapaz de alas largas y angulosas, cabeza clara y patrón oscuro característico.",
       "habitat": "Grandes cuerpos de agua y ríos donde pueda encontrar peces.",
@@ -249,10 +249,10 @@ window.WILD_DATA = {
         "dique",
         "arboledas"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Populus_nigra_italica.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Populus_nigra_Italica.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La publicación local menciona hileras de álamos en el sector estudiado; la especie exacta no siempre se determina.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Populus_nigra_italica.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Populus_nigra_Italica.jpg?v=20261005",
       "description": "Árbol implantado fundamental en las cortinas forestales y en el mosaico productivo local.",
       "identification": "Árbol alto, de tronco recto y copa característica de las cortinas forestales.",
       "habitat": "Chacras, bordes rurales y sectores próximos al Dique.",
@@ -289,10 +289,10 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydropsalis_torquata_-_2016.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Dormilon_tijereta_%28Hydropsalis_torquata%29%2C_2016%2C_Uruguay.JPG?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "No es la fotografía del estudio local; el registro local está respaldado por publicación científica.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydropsalis_torquata_-_2016.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Dormilon_tijereta_%28Hydropsalis_torquata%29%2C_2016%2C_Uruguay.JPG?v=20261005",
       "description": "Ave nocturna migradora con presencia reproductiva documentada en el Dique Compensador El Chañar.",
       "identification": "Ave críptica de vuelo silencioso; se detecta especialmente al atardecer y durante la noche.",
       "habitat": "Matorral del Monte, bordes del dique y sectores próximos a producción frutícola.",
@@ -332,7 +332,7 @@ window.WILD_DATA = {
         "rural",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CALANDRIA_Mimus_saturninus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/CALANDRIA_Mimus_saturninus.jpg?v=20261005",
       "imageCredit": "Dario Niz · Wikimedia Commons · CC BY 3.0",
       "description": "Ave reconocible por su ceja clara y su capacidad para imitar distintos sonidos. Está entre las aves destacadas por la Municipalidad en la zona.",
       "identification": "Ave de tamaño mediano, tonos pardos y grises, ceja clara y cola relativamente larga.",
@@ -368,7 +368,7 @@ window.WILD_DATA = {
         "rural",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Colaptes_melanochloros_-_Carpintero_real.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Colaptes_melanochloros_-_Carpintero_real.jpg?v=20261005",
       "imageCredit": "G.olivero · Wikimedia Commons · CC BY-SA 4.0",
       "description": "Ave carpintera asociada a ambientes con árboles. Es una de las especies de aves mencionadas por la Municipalidad para la zona.",
       "identification": "Se reconoce por su pico fuerte, postura trepadora y plumaje contrastado.",
@@ -405,7 +405,7 @@ window.WILD_DATA = {
         "dique",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pygochelidon_cyanoleuca_176376357.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Pygochelidon_cyanoleuca_176376357.jpg?v=20261005",
       "imageCredit": "Manuel Ortiz · Wikimedia Commons · CC BY-SA",
       "description": "Golondrina de vuelo ágil asociada a espacios abiertos. La Municipalidad la menciona entre las aves registradas en la zona.",
       "identification": "Pequeña golondrina de tonos azulados y blancos, con alas adaptadas al vuelo rápido.",
@@ -440,10 +440,10 @@ window.WILD_DATA = {
         "dique",
         "monte"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea_nitida.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Larrea_nitida.JPG?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La publicación científica la identifica dentro del área de estudio del Dique El Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea_nitida.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Larrea_nitida.JPG?v=20261005",
       "description": "Jarilla documentada dentro del matorral del Dique El Chañar y asociada directamente a la nidificación del Atajacaminos tijera.",
       "identification": "Arbusto de hojas pequeñas y aspecto resinoso, adaptado a condiciones áridas.",
       "habitat": "Matorral del Monte.",
@@ -510,10 +510,10 @@ window.WILD_DATA = {
         "rural",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Malus_domestica.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Malus_domestica.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La investigación sobre Atajacaminos identifica un área de producción de manzana junto al Dique.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malus_domestica.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Malus_domestica.jpg?v=20261005",
       "description": "Árbol frutal cultivado que forma parte del mosaico productivo local y de las investigaciones sobre polinización.",
       "identification": "Árbol de hojas simples y flores rosadas/blancas que luego forman frutos.",
       "habitat": "Chacras bajo riego y sectores productivos próximos al Dique.",
@@ -548,9 +548,9 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Odontesthes_bonariensis.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Odontesthes_bonariensis.JPG?v=20261005",
       "imageCredit": "Wikimedia Commons · Odontesthes bonariensis",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Odontesthes_bonariensis.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Odontesthes_bonariensis.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Pez de agua dulce mencionado por la Municipalidad entre los recursos pesqueros del Río Neuquén.",
       "identification": "Cuerpo alargado y plateado, adaptado a ambientes de agua dulce.",
@@ -582,10 +582,10 @@ window.WILD_DATA = {
       "environments": [
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrus_communis.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pyrus_communis.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La investigación local trabajó con variedades de pera en chacras de San Patricio del Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrus_communis.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pyrus_communis.jpg?v=20261005",
       "description": "Árbol frutal central del sistema productivo local y objeto de investigaciones de polinización.",
       "identification": "Árbol de copa amplia, hojas ovaladas y flores blancas en primavera.",
       "habitat": "Chacras bajo riego.",
@@ -616,9 +616,9 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Percichthys_trucha.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Percichthys_trucha.png?v=20261005",
       "imageCredit": "Wikimedia Commons · Percichthys trucha",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Percichthys_trucha.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Percichthys_trucha.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Pez nativo de Patagonia mencionado por la Municipalidad entre las especies de pesca del Río Neuquén.",
       "identification": "Pez robusto, de cuerpo alargado y coloración variable según ambiente.",
@@ -651,10 +651,10 @@ window.WILD_DATA = {
         "dique",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamarix_ramosissima.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Tamarix_ramosissima_by_Prahlad_balaji_1.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La publicación científica lo registra dentro del sector estudiado en El Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamarix_ramosissima.jpg",
+      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Tamarix_ramosissima_by_Prahlad_balaji_1.jpg?v=20261005",
       "description": "Arbusto introducido documentado en el mosaico vegetal del Dique El Chañar.",
       "identification": "Arbusto de ramas finas y follaje reducido, asociado a ambientes secos y ribereños.",
       "habitat": "Sectores del mosaico ribereño y rural.",
@@ -685,7 +685,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Prosopis_alpataco_01.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Prosopis_alpataco_01.jpg?v=20261005",
       "description": "Planta característica de ambientes áridos y de la vegetación del Monte.",
       "identification": "Arbusto espinoso adaptado a ambientes secos.",
       "habitat": "Monte y zonas áridas.",
@@ -717,9 +717,9 @@ window.WILD_DATA = {
         "monte",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Caracara_plancus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Caracara_Plancus.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Caracara plancus",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Caracara_plancus.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Caracara_plancus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Ave rapaz generalista de espacios abiertos, frecuente en distintos ambientes del centro y sur de Argentina.",
       "identification": "Rapaz grande, de cabeza clara, pico robusto y alas oscuras.",
@@ -737,7 +737,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Caracara_plancus"
+          "url": "https://commons.wikimedia.org/wiki/Caracara_plancus"
         }
       ]
     },
@@ -753,9 +753,9 @@ window.WILD_DATA = {
         "arboledas",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrocephalus_rubinus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pyrocephalus_rubinus_%28Petirrojo%2C_Pechirrojo%2C_Cardenal%29_-_Macho_adulto_%2814293516474%29.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Pyrocephalus rubinus",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Pyrocephalus_rubinus.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrocephalus_rubinus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Pequeño cazador de insectos que utiliza espacios abiertos y perchas.",
       "identification": "El macho presenta rojo intenso en cabeza y partes inferiores.",
@@ -773,7 +773,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Pyrocephalus_rubinus"
+          "url": "https://commons.wikimedia.org/wiki/Pyrocephalus_rubinus"
         }
       ]
     },
@@ -788,9 +788,9 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pappostipa_speciosa.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Stipa_speciosa_%2834831107135%29.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Pappostipa speciosa",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Pappostipa_speciosa.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pappostipa_speciosa.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Gramínea de ambientes secos y abiertos, incluida en relevamientos ambientales regionales.",
       "identification": "Pasto en matas, con hojas estrechas y aspecto resistente a la aridez.",
@@ -823,9 +823,9 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Egretta_thula.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Egretta_thula.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Egretta thula",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Egretta_thula.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Egretta_thula.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Garza pequeña de ambientes acuáticos, incluida entre las aves observables en ambientes húmedos regionales.",
       "identification": "Blanca, de cuello largo y patas oscuras con dedos amarillentos.",
@@ -843,7 +843,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Egretta_thula"
+          "url": "https://commons.wikimedia.org/wiki/Egretta_thula"
         }
       ]
     },
@@ -859,9 +859,9 @@ window.WILD_DATA = {
         "urbano",
         "arboledas"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Furnarius_rufus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/FurnariusRufus.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Furnarius rufus",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Furnarius_rufus.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Furnarius_rufus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Ave muy asociada a ambientes modificados por las personas y conocida por su nido de barro.",
       "identification": "Pardo anaranjado, de cola relativamente larga y comportamiento terrestre.",
@@ -879,7 +879,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Furnarius_rufus"
+          "url": "https://commons.wikimedia.org/wiki/Furnarius_rufus"
         }
       ]
     },
@@ -894,7 +894,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea_divaricata_o_jarilla_hembra.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Larrea_divaricata_o_jarilla_hembra.JPG?v=20261005",
       "imageCredit": "SoleFabrizio · Wikimedia Commons · CC BY-SA 3.0",
       "description": "Arbusto característico de ambientes áridos y semiáridos. La documentación ambiental provincial la registra entre las especies del Monte.",
       "identification": "Arbusto de hojas pequeñas y brillantes, adaptado a condiciones secas.",
@@ -929,9 +929,9 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea_cuneifolia.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Larrea_cuneifolia.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Larrea cuneifolia",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Larrea_cuneifolia.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Larrea_cuneifolia.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Arbusto característico de ambientes áridos del Monte y registrado en documentación ambiental regional.",
       "identification": "Arbusto de hojas pequeñas, resinosas y aspecto adaptado a la aridez.",
@@ -949,7 +949,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Larrea_cuneifolia"
+          "url": "https://commons.wikimedia.org/wiki/Larrea_cuneifolia"
         }
       ]
     },
@@ -964,9 +964,9 @@ window.WILD_DATA = {
         "rural",
         "monte"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lepus_europaeus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/European_hare_Lepus_europaeus.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Lepus europaeus",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Lepus_europaeus.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lepus_europaeus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Mamífero introducido presente en distintos ambientes abiertos de Argentina.",
       "identification": "Orejas largas, patas traseras desarrolladas y cuerpo adaptado a desplazamientos rápidos.",
@@ -999,9 +999,9 @@ window.WILD_DATA = {
         "rural",
         "monte"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Loica_-_Sturnella_loyca.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Loica_-_Sturnella_loyca.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Loica",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Loica_-_Sturnella_loyca.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Loica_-_Sturnella_loyca.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Ave de espacios abiertos mencionada entre las aves del paisaje rural del Alto Valle.",
       "identification": "Se distingue especialmente por el rojo intenso de garganta y pecho.",
@@ -1019,7 +1019,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Sturnella_loyca"
+          "url": "https://commons.wikimedia.org/wiki/Sturnella_loyca"
         }
       ]
     },
@@ -1035,9 +1035,9 @@ window.WILD_DATA = {
         "urbano",
         "arboledas"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sicalis_flaveola.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sicalis_flaveola.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Sicalis flaveola",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Sicalis_flaveola.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sicalis_flaveola.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Pequeño pájaro de ambientes abiertos y humanizados del valle.",
       "identification": "Plumaje predominantemente amarillo en el adulto, con variación según sexo y población.",
@@ -1055,7 +1055,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Sicalis_flaveola"
+          "url": "https://commons.wikimedia.org/wiki/Sicalis_flaveola"
         }
       ]
     },
@@ -1070,7 +1070,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Schinus_johnstonii_%288685027624%29.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Schinus_johnstonii_%288685027624%29.jpg?v=20261005",
       "description": "Arbusto mencionado en documentación ambiental provincial dentro de la vegetación representativa del Monte.",
       "identification": "Planta leñosa adaptada a condiciones secas.",
       "habitat": "Ambientes del Monte.",
@@ -1102,9 +1102,9 @@ window.WILD_DATA = {
         "rural",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Patagioenas_picazuro.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Patagioenas_picazuro.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Patagioenas picazuro",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Patagioenas_picazuro.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Patagioenas_picazuro.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Paloma grande que utiliza árboles y ambientes transformados.",
       "identification": "Paloma robusta, de tonos grises y pardos, con cuello iridiscente.",
@@ -1122,7 +1122,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Patagioenas_picazuro"
+          "url": "https://commons.wikimedia.org/wiki/Patagioenas_picazuro"
         }
       ]
     },
@@ -1137,9 +1137,9 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anas_flavirostris.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Anas_flavirostris.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Anas flavirostris",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Anas_flavirostris.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Anas_flavirostris.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Pato de ambientes acuáticos; la documentación turística regional lo menciona para los ambientes húmedos de los ríos del Alto Valle.",
       "identification": "Pato pequeño y compacto, de coloración parda y pico amarillento.",
@@ -1157,7 +1157,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Anas_flavirostris"
+          "url": "https://commons.wikimedia.org/wiki/Anas_flavirostris"
         }
       ]
     },
@@ -1172,9 +1172,9 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anas_georgica.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Anas_georgica.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Anas georgica",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Anas_georgica.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Anas_georgica.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Pato asociado a cuerpos de agua y cursos fluviales de Sudamérica.",
       "identification": "Pato de cuello relativamente largo y plumaje pardo moteado.",
@@ -1192,7 +1192,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Anas_georgica"
+          "url": "https://commons.wikimedia.org/wiki/Anas_georgica"
         }
       ]
     },
@@ -1207,9 +1207,9 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephedra_ochreata.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Ephedra_ochreata.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Ephedra ochreata",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Ephedra_ochreata.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Ephedra_ochreata.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Arbusto adaptado a ambientes áridos, incluido en documentación ambiental de la región.",
       "identification": "Planta de tallos verdes y aspecto ramificado, adaptada a la escasez de agua.",
@@ -1227,7 +1227,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Ephedra_ochreata"
+          "url": "https://commons.wikimedia.org/wiki/Ephedra_ochreata"
         }
       ]
     },
@@ -1244,9 +1244,9 @@ window.WILD_DATA = {
         "rio",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vanellus_chilensis.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Vanellus_chilensis.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Vanellus chilensis",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Vanellus_chilensis.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vanellus_chilensis.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Ave terrestre de ambientes abiertos, frecuente en paisajes rurales y espacios próximos al agua.",
       "identification": "Ave de tamaño mediano, cuerpo pardo y vientre claro; se reconoce por su cresta y espolones.",
@@ -1264,7 +1264,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Vanellus_chilensis"
+          "url": "https://commons.wikimedia.org/wiki/Vanellus_chilensis"
         }
       ]
     },
@@ -1279,9 +1279,9 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Acantholippia_seriphioides.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Acantholippia_seriphioides.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Acantholippia seriphioides",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Acantholippia_seriphioides.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Acantholippia_seriphioides.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Pequeño arbusto aromático incluido en documentación ambiental de la vegetación regional del Monte.",
       "identification": "Planta baja y ramificada, con hojas pequeñas y aspecto compacto.",
@@ -1314,7 +1314,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Atriplex_lampa.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Atriplex_lampa.jpg?v=20261005",
       "description": "Arbusto propio de ambientes áridos de la región. Aparece en documentación ambiental provincial sobre la vegetación del Monte.",
       "identification": "Arbusto adaptado a ambientes secos y a disponibilidad limitada de agua.",
       "habitat": "Monte y ambientes áridos.",
@@ -1345,9 +1345,9 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lycalopex_culpaeus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Lycalopex_culpaeus.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Lycalopex culpaeus",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Lycalopex_culpaeus.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lycalopex_culpaeus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Mamífero carnívoro nativo de Patagonia y de ambientes abiertos y áridos.",
       "identification": "Cánido de tamaño mediano, hocico alargado, orejas grandes y cola muy poblada.",
@@ -1381,9 +1381,9 @@ window.WILD_DATA = {
         "rural",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Turdus_falcklandii.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Turdus_falcklandii.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Turdus falcklandii",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Turdus_falcklandii.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Turdus_falcklandii.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Zorzal de ambientes arbolados y abiertos del sur de Sudamérica.",
       "identification": "Ave mediana, de tonos pardos, con pico y patas amarillentos.",
@@ -1401,7 +1401,7 @@ window.WILD_DATA = {
         },
         {
           "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/wiki/Turdus_falcklandii"
+          "url": "https://commons.wikimedia.org/wiki/Turdus_falcklandii"
         }
       ]
     },
@@ -1416,9 +1416,9 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Myocastor_coypus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Myocastor_coypus.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Myocastor coypus",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Myocastor_coypus.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Myocastor_coypus.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Mamífero semiacuático de ambientes con vegetación próxima al agua.",
       "identification": "Animal grande, de cuerpo robusto, cola larga y dientes incisivos anaranjados.",
@@ -1452,9 +1452,9 @@ window.WILD_DATA = {
         "rural",
         "arboledas"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoffroea_decorticans.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Geoffroea_decorticans.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Geoffroea decorticans",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Geoffroea_decorticans.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Geoffroea_decorticans.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Árbol característico que da nombre histórico al lugar y forma parte de la identidad natural de El Chañar.",
       "identification": "Árbol de corteza característica y ramas espinosas; puede reconocerse por su porte y su adaptación a ambientes secos.",
@@ -1487,9 +1487,9 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Oncorhynchus_mykiss.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Oncorhynchus_mykiss.jpg?v=20261005",
       "imageCredit": "Wikimedia Commons · Oncorhynchus mykiss",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/wiki/File:Oncorhynchus_mykiss.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_mykiss.jpg",
       "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
       "description": "Trucha introducida ampliamente en ambientes acuáticos patagónicos y mencionada por la Municipalidad entre los peces del Río Neuquén.",
       "identification": "Cuerpo fusiforme con banda lateral característica y pequeñas manchas oscuras.",
