@@ -475,7 +475,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Prosopidastrum_angusticarpum.jpg",
+      "image": "https://www.bahia.gob.ar/wp-content/uploads/2023/08/florayfauna-4.jpg?v=20261005",
       "imageCredit": "Imagen de referencia · Wikimedia Commons",
       "imageNote": "La especie fue identificada en el área de estudio del Dique Compensador El Chañar.",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Prosopidastrum_angusticarpum.jpg",
