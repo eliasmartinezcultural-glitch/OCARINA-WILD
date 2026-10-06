@@ -13,7 +13,7 @@ const STATUS={
 };
 const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 const badge=s=>{const x=STATUS[s.localStatus]||STATUS.unconfirmed;return '<span class="status '+x[2]+'">'+x[0]+" "+x[1]+"</span>"};
-const img=s=>s.image?'<img loading="lazy" decoding="async" src="'+esc(s.image)+'" alt="Foto de referencia de '+esc(s.commonName)+', ejemplar completo" referrerpolicy="no-referrer">':'<span>'+esc(s.commonName)+'</span>';
+const img=s=>{if(!s.image)return "<span>"+esc(s.commonName)+"</span>";const fallback=s.imageFallback||s.image;return '<img loading="eager" decoding="async" src="'+esc(s.image)+'" data-fallback="'+esc(fallback)+'" alt="Foto de referencia de '+esc(s.commonName)+', ejemplar completo" referrerpolicy="no-referrer" onerror="if(this.dataset.fallback && this.src!==this.dataset.fallback){this.src=this.dataset.fallback}else{this.parentElement.classList.add(\'image-error\')}">'};
 const records=()=>{
  try{
   const current=localStorage.getItem(RECORDS_KEY),legacy=localStorage.getItem("ocarina_wild_records_v1");
