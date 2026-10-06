@@ -144,12 +144,61 @@ dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(7px)}
  html{scroll-behavior:auto}.card,.card:hover,.step,.step:hover,.photo img,.card:hover .photo img{transition:none;transform:none}
 }
 @media(pointer:coarse){.filter{min-height:44px}.close{min-width:46px;min-height:46px}}
+
+.territory-showcase{margin:34px 0 8px;padding:34px 0 8px;border-top:1px solid rgba(176,235,147,.10)}
+.territory-heading{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:end;margin-bottom:18px}
+.section-kicker{display:block;color:var(--gold);font-size:10px;font-weight:950;letter-spacing:.2em;margin-bottom:10px}
+.territory-heading h2{margin:0;font-size:clamp(32px,5vw,62px);line-height:.92;letter-spacing:-.055em}
+.territory-heading p{margin:0;color:var(--muted);font-size:15px;line-height:1.6;max-width:620px}
+.territory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.territory-card{min-height:220px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);border-radius:22px;overflow:hidden;position:relative;background:linear-gradient(145deg,rgba(20,46,30,.88),rgba(7,18,12,.96));box-shadow:0 16px 42px rgba(0,0,0,.16);transition:transform .3s,border-color .3s,box-shadow .3s}
+.territory-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-70px;background:rgba(186,242,138,.06);filter:blur(3px)}
+.territory-card:hover{transform:translateY(-5px);border-color:var(--line-strong);box-shadow:0 25px 55px rgba(0,0,0,.28)}
+.territory-card.water{background:linear-gradient(145deg,rgba(20,55,49,.9),rgba(7,18,14,.96))}
+.territory-card.rural{background:linear-gradient(145deg,rgba(45,57,25,.88),rgba(10,20,13,.96))}
+.territory-card.wild{background:linear-gradient(145deg,rgba(52,43,24,.86),rgba(12,17,11,.96))}
+.territory-card.open{background:linear-gradient(145deg,rgba(42,47,29,.84),rgba(9,17,12,.96))}
+.territory-mark{font-size:10px;color:var(--gold);font-weight:950;letter-spacing:.12em}
+.territory-card span{font-size:9px;color:var(--accent);font-weight:950;letter-spacing:.18em}
+.territory-card h3{margin:7px 0 6px;font-size:21px;line-height:1.02;letter-spacing:-.035em}
+.territory-card p{margin:0;color:#9eb0a2;font-size:11px;line-height:1.5;max-width:250px}
+@media(max-width:1050px){.territory-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.territory-heading{grid-template-columns:1fr;gap:12px}.territory-showcase{margin-top:25px;padding-top:27px}.territory-grid{gap:8px}.territory-card{min-height:190px;padding:15px}.territory-card h3{font-size:18px}}
+@media(max-width:450px){.territory-grid{grid-template-columns:1fr}.territory-card{min-height:155px}.territory-card p{max-width:310px}}
+
 </style>
 </head>
 <body>
 <header><div class="nav"><div class="brand">OCARINA WILD<small>FOTOGRAFÍAS PRIMERO · SAN PATRICIO DEL CHAÑAR</small></div><div id="counter" class="stat"></div></div></header>
 <main>
-<section class="hero"><div class="eyebrow">San Patricio del Chañar · Neuquén</div><h1>Fauna y flora<br>del Chañar.</h1><p>Un recorrido visual por la vida que habita este territorio: aves, peces, animales, árboles, arbustos, pastos y pequeños seres que forman parte del paisaje cotidiano de San Patricio del Chañar.</p><div class="law"><div class="law-main"><strong>Vida del territorio</strong><span>Conocé las especies, sus ambientes y las pequeñas historias naturales que aparecen entre el río, las chacras, el monte y los espacios cotidianos del Chañar.</span></div><div class="law-side"><b>Explorá</b><span>Elegí una categoría, mirá las fotografías y entrá en cada especie para descubrir más.</span></div></div></section><section class="pipeline" aria-hidden="true"><div class="step"><i>01 · EVIDENCIA</i><b>Foto viva</b><span>La imagen tiene que mostrar vida real y ser auditable.</span></div><div class="step"><i>02 · IDENTIDAD</i><b>Reconocer</b><span>La identificación nunca debe ir más lejos que la evidencia.</span></div><div class="step"><i>03 · TERRITORIO</i><b>Ubicar</b><span>Referencia regional y registro local son cosas distintas.</span></div><div class="step"><i>04 · EXPERIENCIA</i><b>Descubrir</b><span>Hábitat, observación y aprendizaje llegan después.</span></div></section><section class="stats" aria-hidden="true"><div class="stat"><b id="approved">0</b><span>fotos que superan la puerta</span></div><div class="stat"><b id="speciesCount">0</b><span>fichas visuales</span></div><div class="stat"><b id="exactId">0</b><span>identificaciones nominales</span></div><div class="stat"><b id="localContext">0</b><span>con contexto local documentado</span></div><div class="stat warn"><b id="licensePending">0</b><span>licencias por verificar</span></div></section><section class="controls"><input id="search" class="search" aria-label="Buscar fauna y flora del Chañar" placeholder="Buscar una especie…"><div id="filters" class="filters"></div><div id="resultCount" class="results"></div></section>
+<section class="hero"><div class="eyebrow">San Patricio del Chañar · Neuquén</div><h1>Fauna y flora<br>del Chañar.</h1><p>Un recorrido visual por la vida que habita este territorio: aves, peces, animales, árboles, arbustos, pastos y pequeños seres que forman parte del paisaje cotidiano de San Patricio del Chañar.</p><div class="law"><div class="law-main"><strong>Vida del territorio</strong><span>Conocé las especies, sus ambientes y las pequeñas historias naturales que aparecen entre el río, las chacras, el monte y los espacios cotidianos del Chañar.</span></div><div class="law-side"><b>Explorá</b><span>Elegí una categoría, mirá las fotografías y entrá en cada especie para descubrir más.</span></div></div></section><section class="territory-showcase" aria-label="Paisajes y ambientes del Chañar">
+  <div class="territory-heading">
+    <div>
+      <span class="section-kicker">EL TERRITORIO PRIMERO</span>
+      <h2>La vida cambia<br>según dónde miramos.</h2>
+    </div>
+    <p>Río, chacras, arboledas, monte y espacios abiertos forman un mosaico donde la fauna y la flora encuentran distintas formas de vivir.</p>
+  </div>
+  <div class="territory-grid">
+    <article class="territory-card water">
+      <div class="territory-mark">01</div>
+      <div><span>AGUA</span><h3>Río y bordes de agua</h3><p>Movimiento, vegetación y vida que aparece cerca del agua.</p></div>
+    </article>
+    <article class="territory-card rural">
+      <div class="territory-mark">02</div>
+      <div><span>CHACRAS</span><h3>Árboles y arboledas</h3><p>Un paisaje transformado donde también se refugian y alimentan distintas especies.</p></div>
+    </article>
+    <article class="territory-card wild">
+      <div class="territory-mark">03</div>
+      <div><span>MONTE</span><h3>Matorral y suelo árido</h3><p>Plantas resistentes, pequeños habitantes y rastros que invitan a mirar más cerca.</p></div>
+    </article>
+    <article class="territory-card open">
+      <div class="territory-mark">04</div>
+      <div><span>ESPACIOS ABIERTOS</span><h3>Donde el paisaje respira</h3><p>Aves, mamíferos, insectos y plantas aparecen en los bordes de la vida cotidiana.</p></div>
+    </article>
+  </div>
+</section>
+<section class="pipeline" aria-hidden="true"><div class="step"><i>01 · EVIDENCIA</i><b>Foto viva</b><span>La imagen tiene que mostrar vida real y ser auditable.</span></div><div class="step"><i>02 · IDENTIDAD</i><b>Reconocer</b><span>La identificación nunca debe ir más lejos que la evidencia.</span></div><div class="step"><i>03 · TERRITORIO</i><b>Ubicar</b><span>Referencia regional y registro local son cosas distintas.</span></div><div class="step"><i>04 · EXPERIENCIA</i><b>Descubrir</b><span>Hábitat, observación y aprendizaje llegan después.</span></div></section><section class="stats" aria-hidden="true"><div class="stat"><b id="approved">0</b><span>fotos que superan la puerta</span></div><div class="stat"><b id="speciesCount">0</b><span>fichas visuales</span></div><div class="stat"><b id="exactId">0</b><span>identificaciones nominales</span></div><div class="stat"><b id="localContext">0</b><span>con contexto local documentado</span></div><div class="stat warn"><b id="licensePending">0</b><span>licencias por verificar</span></div></section><section class="controls"><input id="search" class="search" aria-label="Buscar fauna y flora del Chañar" placeholder="Buscar una especie…"><div id="filters" class="filters"></div><div id="resultCount" class="results"></div></section>
 <section id="grid" class="grid"></section><div id="empty" class="empty" hidden>No encontramos especies con ese criterio.</div>
 </main><footer>OCARINA WILD · Atlas visual de vida · La conservación empieza por mirar bien.<br><strong style="color:#a8b9ac">Desarrollo hecho por Ocarina Producciones · Elías Martínez</strong> · San Patricio del Chañar</footer>
 <dialog id="modal"><button class="close" id="close">Cerrar</button><img id="modalImg" class="modal-photo" alt=""><div class="modal-body"><div id="modalTag" class="tag"></div><h2 id="modalName"></h2><div id="modalSci" class="modal-sci"></div><div id="modalGate"></div><div id="modalEvidence" class="evidence"></div><p id="modalNote"></p><div class="experience"><div><b>👀 Primera pista</b><p id="modalClue"></p></div><div><b>🏞️ Hábitat</b><p id="modalHabitat"></p></div><div><b>🫶 Cómo observar</b><p id="modalObserve"></p></div></div><div class="source-line" id="modalSource"></div><div class="source-line"><a id="modalLink" target="_blank" rel="noopener">Ver fuente fotográfica</a></div></div></dialog>
