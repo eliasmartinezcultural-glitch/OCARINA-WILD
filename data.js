@@ -3,10 +3,10 @@ window.WILD_DATA = {
     "title": "OCARINA WILD · FOTOGRAFÍAS PRIMERO",
     "subtitle": "Atlas visual de vida",
     "place": "San Patricio del Chañar · Neuquén",
-    "version": "WILD PHOTO-FIRST 1.0",
+    "version": "WILD PHOTO-FIRST 2.0 · CURATION ENGINE",
     "rule": "Ninguna especie entra al atlas si antes no existe una fotografía real de un ejemplar o planta viva.",
     "visualPolicy": "Cero caza · cero muerte · cero animales como comida · cero captura · cero explotación.",
-    "worldLaw": "PHOTO FIRST — FOTO REAL ANTES QUE DATO, CATEGORÍA, TAXONOMÍA O CUALQUIER OTRO CONTENIDO.",
+    "worldLaw": "PHOTO FIRST — FOTO REAL ANTES QUE DATO, CATEGORÍA, TAXONOMÍA, TERRITORIO O EXPERIENCIA.",
     "entryGate": [
       "foto_real",
       "vida_visible",
@@ -15,11 +15,13 @@ window.WILD_DATA = {
     ],
     "dataPriority": [
       "fotografia",
+      "auditoria_visual",
       "identificacion",
       "categoria",
       "taxonomia",
       "territorio",
       "ecologia",
+      "observacion",
       "educacion"
     ],
     "statusModel": [
@@ -28,7 +30,25 @@ window.WILD_DATA = {
       "referencia_regional",
       "registro_local"
     ],
-    "expansionRule": "No se agregan especies por completar números. Se agregan únicamente cuando superan la puerta fotográfica."
+    "expansionRule": "No se agregan especies por completar números. Se agregan únicamente cuando superan la puerta fotográfica.",
+    "curatorialGate": {
+      "required": [
+        "photo",
+        "lifeVisible",
+        "photoSource",
+        "visualAudit"
+      ],
+      "blockedVisuals": [
+        "caza",
+        "muerte",
+        "animal como comida",
+        "captura",
+        "explotacion",
+        "sufrimiento"
+      ],
+      "licensePolicy": "La presencia de una fuente no equivale a una licencia de reutilización. La licencia de cada fotografía debe verificarse antes de empaquetarla localmente o redistribuirla."
+    },
+    "referenceModel": "La fotografía puede ser una referencia visual regional. Nunca se presenta como registro local salvo que exista evidencia fotográfica local."
   },
   "species": [
     {
@@ -44,7 +64,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "invertebrados",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "contexto local documentado",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "vegetación",
+        "suelo y flores",
+        "ambientes rurales"
+      ],
+      "observe": "Mirar con calma sobre flores, hojas y suelo. Evitar tocar, capturar o alterar refugios.",
+      "experience": {
+        "firstClue": "Forma, patas y relación con plantas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "abejorro-negro",
@@ -59,7 +106,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "invertebrados",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "vegetación",
+        "suelo y flores",
+        "ambientes rurales"
+      ],
+      "observe": "Mirar con calma sobre flores, hojas y suelo. Evitar tocar, capturar o alterar refugios.",
+      "experience": {
+        "firstClue": "Forma, patas y relación con plantas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "aguila-pescadora",
@@ -74,7 +148,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "contexto local documentado",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "alamo-cortina",
@@ -89,7 +190,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arboles",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "género",
+        "status": "identificación específica pendiente",
+        "evidence": "la ficha conserva deliberadamente la incertidumbre específica"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "chacras",
+        "bordes de agua",
+        "ambientes urbanos y rurales"
+      ],
+      "observe": "Comparar corteza, hojas, porte y entorno. Observar sin arrancar hojas, flores ni frutos.",
+      "experience": {
+        "firstClue": "Porte, corteza y hojas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "atajacaminos-tijera",
@@ -104,7 +232,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "calandria-grande",
@@ -119,7 +274,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "carpintero-real",
@@ -134,7 +316,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "golondrina-patagonica",
@@ -149,7 +358,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "jarilla-crespa",
@@ -164,7 +400,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "manca-caballo",
@@ -179,7 +442,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "manzano-cultivado",
@@ -194,7 +484,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arboles",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "contexto local documentado",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "chacras",
+        "bordes de agua",
+        "ambientes urbanos y rurales"
+      ],
+      "observe": "Comparar corteza, hojas, porte y entorno. Observar sin arrancar hojas, flores ni frutos.",
+      "experience": {
+        "firstClue": "Porte, corteza y hojas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "pejerrey",
@@ -209,7 +526,33 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "peces",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "género",
+        "status": "identificación específica pendiente",
+        "evidence": "la ficha conserva deliberadamente la incertidumbre específica"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "ambientes acuáticos",
+        "costas y fondos de agua"
+      ],
+      "observe": "Observar el agua y el comportamiento sin capturar ni manipular. Registrar ambiente, profundidad aparente y movimiento.",
+      "experience": {
+        "firstClue": "Movimiento en el agua",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "peral-cultivado",
@@ -224,7 +567,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arboles",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "contexto local documentado",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "chacras",
+        "bordes de agua",
+        "ambientes urbanos y rurales"
+      ],
+      "observe": "Comparar corteza, hojas, porte y entorno. Observar sin arrancar hojas, flores ni frutos.",
+      "experience": {
+        "firstClue": "Porte, corteza y hojas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "perca",
@@ -239,7 +609,33 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "peces",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "género",
+        "status": "identificación específica pendiente",
+        "evidence": "la ficha conserva deliberadamente la incertidumbre específica"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "ambientes acuáticos",
+        "costas y fondos de agua"
+      ],
+      "observe": "Observar el agua y el comportamiento sin capturar ni manipular. Registrar ambiente, profundidad aparente y movimiento.",
+      "experience": {
+        "firstClue": "Movimiento en el agua",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "tamarindo",
@@ -254,7 +650,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "alpataco",
@@ -269,7 +692,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "carancho",
@@ -284,7 +734,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "churrinche",
@@ -299,7 +776,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "coiron",
@@ -314,7 +818,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "gramineas",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "pastizal",
+        "suelo abierto"
+      ],
+      "observe": "Observar forma de mata, hojas, espigas y relación con el suelo. No arrancar.",
+      "experience": {
+        "firstClue": "Forma de la mata y espigas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "garcita-blanca",
@@ -329,7 +860,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "hornero",
@@ -344,7 +902,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "jarilla-hembra",
@@ -359,7 +944,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "jarilla-macho",
@@ -374,7 +986,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "liebre-europea",
@@ -389,7 +1028,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "mamiferos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "ambientes abiertos",
+        "bordes de agua",
+        "matorral y áreas rurales"
+      ],
+      "observe": "Observar a distancia; buscar huellas, movimiento, refugio y comportamiento natural. No perseguir ni alimentar.",
+      "experience": {
+        "firstClue": "Movimiento y relación con el ambiente",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "loica",
@@ -404,7 +1070,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "mixto",
@@ -419,7 +1112,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "molle",
@@ -434,7 +1154,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "paloma-picazuró",
@@ -449,7 +1196,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "pato-barcino",
@@ -464,7 +1238,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "pato-maicero",
@@ -479,7 +1280,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "solupe",
@@ -494,7 +1322,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "tero",
@@ -509,7 +1364,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "tomillo",
@@ -524,7 +1406,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "zampa",
@@ -539,7 +1448,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arbustos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "estepa",
+        "matorral",
+        "suelo árido y bordes rurales"
+      ],
+      "observe": "Comparar porte, ramas, hojas y flores desde el ambiente natural. No extraer ejemplares.",
+      "experience": {
+        "firstClue": "Porte y estructura de ramas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "zorro-colorado",
@@ -554,7 +1490,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "mamiferos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "ambientes abiertos",
+        "bordes de agua",
+        "matorral y áreas rurales"
+      ],
+      "observe": "Observar a distancia; buscar huellas, movimiento, refugio y comportamiento natural. No perseguir ni alimentar.",
+      "experience": {
+        "firstClue": "Movimiento y relación con el ambiente",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "zorzal-patagonico",
@@ -569,7 +1532,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "aves",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "bordes de agua",
+        "chacras y arboledas",
+        "matorral y ambientes abiertos"
+      ],
+      "observe": "Observar a distancia; mirar silueta, pico, postura, vuelo y relación con el ambiente. No perseguir ni atraer.",
+      "experience": {
+        "firstClue": "Silueta y comportamiento",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "coipo",
@@ -584,7 +1574,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "mamiferos",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "ambientes abiertos",
+        "bordes de agua",
+        "matorral y áreas rurales"
+      ],
+      "observe": "Observar a distancia; buscar huellas, movimiento, refugio y comportamiento natural. No perseguir ni alimentar.",
+      "experience": {
+        "firstClue": "Movimiento y relación con el ambiente",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "chañar",
@@ -599,7 +1616,34 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "arboles",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "chacras",
+        "bordes de agua",
+        "ambientes urbanos y rurales"
+      ],
+      "observe": "Comparar corteza, hojas, porte y entorno. Observar sin arrancar hojas, flores ni frutos.",
+      "experience": {
+        "firstClue": "Porte, corteza y hojas",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     },
     {
       "id": "trucha-arcoiris",
@@ -614,7 +1658,33 @@ window.WILD_DATA = {
       "audit": "verified-live",
       "auditDate": "2026-10-05",
       "category": "peces",
-      "photoRule": "required-real-live"
+      "photoRule": "required-real-live",
+      "identification": {
+        "rank": "especie",
+        "status": "nombre científico consignado",
+        "evidence": "nombre científico explícito en la ficha"
+      },
+      "territory": {
+        "photoStatus": "referencia visual regional",
+        "localContext": "sin registro local en esta fotografía",
+        "localPhoto": false
+      },
+      "evidence": {
+        "photo": true,
+        "lifeVisible": true,
+        "source": true,
+        "visualAudit": true,
+        "licenseStatus": "verificación pendiente"
+      },
+      "habitat": [
+        "ambientes acuáticos",
+        "costas y fondos de agua"
+      ],
+      "observe": "Observar el agua y el comportamiento sin capturar ni manipular. Registrar ambiente, profundidad aparente y movimiento.",
+      "experience": {
+        "firstClue": "Movimiento en el agua",
+        "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      }
     }
   ]
 };
