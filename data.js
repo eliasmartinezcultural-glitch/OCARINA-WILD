@@ -48,7 +48,26 @@ window.WILD_DATA = {
       ],
       "licensePolicy": "La presencia de una fuente no equivale a una licencia de reutilización. La licencia de cada fotografía debe verificarse antes de empaquetarla localmente o redistribuirla."
     },
-    "referenceModel": "La fotografía puede ser una referencia visual regional. Nunca se presenta como registro local salvo que exista evidencia fotográfica local."
+    "referenceModel": "La fotografía puede ser una referencia visual regional. Nunca se presenta como registro local salvo que exista evidencia fotográfica local.",
+    "stage": "WILD 2.1 · CURATORIAL AUDIT",
+    "auditProtocol": {
+      "order": [
+        "photo",
+        "life",
+        "natural_context",
+        "source",
+        "license",
+        "identification",
+        "territory",
+        "education"
+      ],
+      "verdicts": [
+        "approved",
+        "review",
+        "reject"
+      ],
+      "principle": "Nunca subir de nivel de certeza sin evidencia equivalente."
+    }
   },
   "species": [
     {
@@ -91,6 +110,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Forma, patas y relación con plantas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -133,6 +159,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Forma, patas y relación con plantas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -175,6 +208,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -217,6 +257,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte, corteza y hojas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "media",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -259,6 +306,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -301,6 +355,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -343,6 +404,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -385,6 +453,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -427,6 +502,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -469,6 +551,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -511,6 +600,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte, corteza y hojas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -552,6 +648,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Movimiento en el agua",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "media",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -594,6 +697,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte, corteza y hojas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -635,6 +745,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Movimiento en el agua",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "media",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -677,6 +794,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -719,6 +843,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -761,6 +892,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -803,6 +941,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -845,6 +990,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Forma de la mata y espigas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -887,6 +1039,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -929,6 +1088,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -971,6 +1137,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1013,6 +1186,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1055,6 +1235,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Movimiento y relación con el ambiente",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1097,6 +1284,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1139,6 +1333,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1181,6 +1382,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1223,6 +1431,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1265,6 +1480,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1307,6 +1529,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1349,6 +1578,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1391,6 +1627,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1433,6 +1676,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1475,6 +1725,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte y estructura de ramas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1517,6 +1774,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Movimiento y relación con el ambiente",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1559,6 +1823,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Silueta y comportamiento",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1601,6 +1872,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Movimiento y relación con el ambiente",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1643,6 +1921,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Porte, corteza y hojas",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     },
     {
@@ -1684,6 +1969,13 @@ window.WILD_DATA = {
       "experience": {
         "firstClue": "Movimiento en el agua",
         "learningGoal": "Reconocer antes de interpretar: mirar, comparar y registrar."
+      },
+      "curatorial": {
+        "photoGate": "approved-live",
+        "identificationConfidence": "high",
+        "localPresence": "unproven",
+        "license": "pending",
+        "nextAction": "audit-individual-photo"
       }
     }
   ]
