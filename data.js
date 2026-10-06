@@ -5,7 +5,30 @@ window.WILD_DATA = {
     "place": "San Patricio del Chañar · Neuquén",
     "version": "WILD PHOTO-FIRST 1.0",
     "rule": "Ninguna especie entra al atlas si antes no existe una fotografía real de un ejemplar o planta viva.",
-    "visualPolicy": "Cero caza · cero muerte · cero animales como comida · cero captura · cero explotación."
+    "visualPolicy": "Cero caza · cero muerte · cero animales como comida · cero captura · cero explotación.",
+    "worldLaw": "PHOTO FIRST — FOTO REAL ANTES QUE DATO, CATEGORÍA, TAXONOMÍA O CUALQUIER OTRO CONTENIDO.",
+    "entryGate": [
+      "foto_real",
+      "vida_visible",
+      "fuente_fotografica",
+      "auditoria_visual"
+    ],
+    "dataPriority": [
+      "fotografia",
+      "identificacion",
+      "categoria",
+      "taxonomia",
+      "territorio",
+      "ecologia",
+      "educacion"
+    ],
+    "statusModel": [
+      "foto_aprobada",
+      "identificacion_confirmada",
+      "referencia_regional",
+      "registro_local"
+    ],
+    "expansionRule": "No se agregan especies por completar números. Se agregan únicamente cuando superan la puerta fotográfica."
   },
   "species": [
     {
@@ -19,7 +42,9 @@ window.WILD_DATA = {
       "credit": "Imagen de referencia · Wikimedia Commons",
       "note": "La presencia y función fueron estudiadas en chacras de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "invertebrados",
+      "photoRule": "required-real-live"
     },
     {
       "id": "abejorro-negro",
@@ -32,7 +57,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Bombus atratus",
       "note": "Fotografía real de un ejemplar vivo; referencia regional. No constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "invertebrados",
+      "photoRule": "required-real-live"
     },
     {
       "id": "aguila-pescadora",
@@ -45,7 +72,9 @@ window.WILD_DATA = {
       "credit": "Imagen de referencia · Wikimedia Commons",
       "note": "No es la fotografía del registro local; existe evidencia fotográfica y fílmica publicada para El Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "alamo-cortina",
@@ -58,7 +87,9 @@ window.WILD_DATA = {
       "credit": "Imagen de referencia · Wikimedia Commons",
       "note": "La publicación local menciona hileras de álamos en el sector estudiado; la especie exacta no siempre se determina.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arboles",
+      "photoRule": "required-real-live"
     },
     {
       "id": "atajacaminos-tijera",
@@ -71,7 +102,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Hydropsalis torquata",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "calandria-grande",
@@ -84,7 +117,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Mimus saturninus",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "carpintero-real",
@@ -97,7 +132,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Colaptes melanochloros",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "golondrina-patagonica",
@@ -110,7 +147,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Pygochelidon cyanoleuca",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "jarilla-crespa",
@@ -123,7 +162,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Larrea nitida",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "manca-caballo",
@@ -136,7 +177,9 @@ window.WILD_DATA = {
       "credit": "EcoRegistros · Hernán Tolosa",
       "note": "Fotografía real de un ejemplar vivo en Parque Nacional Lihué Calel, La Pampa. Referencia regional.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "manzano-cultivado",
@@ -149,7 +192,9 @@ window.WILD_DATA = {
       "credit": "Imagen de referencia · Wikimedia Commons",
       "note": "La investigación sobre Atajacaminos identifica un área de producción de manzana junto al Dique.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arboles",
+      "photoRule": "required-real-live"
     },
     {
       "id": "pejerrey",
@@ -162,7 +207,9 @@ window.WILD_DATA = {
       "credit": "Pesca Argentina · registro visual en Mar Chiquita",
       "note": "Fotografía real de un pejerrey vivo nadando libremente en el agua. Referencia regional; no implica presencia local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "peces",
+      "photoRule": "required-real-live"
     },
     {
       "id": "peral-cultivado",
@@ -175,7 +222,9 @@ window.WILD_DATA = {
       "credit": "Imagen de referencia · Wikimedia Commons",
       "note": "La investigación local trabajó con variedades de pera en chacras de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arboles",
+      "photoRule": "required-real-live"
     },
     {
       "id": "perca",
@@ -188,7 +237,9 @@ window.WILD_DATA = {
       "credit": "Proyecto Arrecife · Perca",
       "note": "Fotografía real de Percichthys trucha vivo y nadando en su ambiente acuático. Referencia regional; no implica presencia local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "peces",
+      "photoRule": "required-real-live"
     },
     {
       "id": "tamarindo",
@@ -201,7 +252,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Tamarix ramosissima",
       "note": "Fotografía real de Tamarix ramosissima vivo; referencia botánica regional/internacional.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "alpataco",
@@ -214,7 +267,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Prosopis alpataco",
       "note": "Imagen referencial de Patagonia argentina; no demuestra presencia local en Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "carancho",
@@ -227,7 +282,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Caracara plancus",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "churrinche",
@@ -240,7 +297,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Pyrocephalus rubinus",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "coiron",
@@ -253,7 +312,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Pappostipa speciosa",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "gramineas",
+      "photoRule": "required-real-live"
     },
     {
       "id": "garcita-blanca",
@@ -266,7 +327,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Egretta thula",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "hornero",
@@ -279,7 +342,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Furnarius rufus",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "jarilla-hembra",
@@ -292,7 +357,9 @@ window.WILD_DATA = {
       "credit": "SoleFabrizio · Wikimedia Commons · CC BY-SA 3.0",
       "note": "Imagen referencial, fotografiada en Neuquén; no constituye un registro de Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "jarilla-macho",
@@ -305,7 +372,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Larrea cuneifolia",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "liebre-europea",
@@ -318,7 +387,9 @@ window.WILD_DATA = {
       "credit": "EcoRegistros · Javier Villamil",
       "note": "Fotografía real de una liebre viva en Junín, Buenos Aires, Argentina. Referencia nacional.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "mamiferos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "loica",
@@ -331,7 +402,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Loica",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "mixto",
@@ -344,7 +417,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Sicalis flaveola",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "molle",
@@ -357,7 +432,9 @@ window.WILD_DATA = {
       "credit": "Dick Culbert · Wikimedia Commons · CC BY 2.0",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "paloma-picazuró",
@@ -370,7 +447,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Patagioenas picazuro",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "pato-barcino",
@@ -383,7 +462,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Anas flavirostris",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "pato-maicero",
@@ -396,7 +477,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Anas georgica",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "solupe",
@@ -409,7 +492,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Ephedra ochreata",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "tero",
@@ -422,7 +507,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Vanellus chilensis",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "tomillo",
@@ -435,7 +522,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Acantholippia seriphioides",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "zampa",
@@ -448,7 +537,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Atriplex lampa",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arbustos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "zorro-colorado",
@@ -461,7 +552,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Lycalopex culpaeus",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "mamiferos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "zorzal-patagonico",
@@ -474,7 +567,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Turdus falcklandii",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "aves",
+      "photoRule": "required-real-live"
     },
     {
       "id": "coipo",
@@ -487,7 +582,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Myocastor coypus",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "mamiferos",
+      "photoRule": "required-real-live"
     },
     {
       "id": "chañar",
@@ -500,7 +597,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Geoffroea decorticans",
       "note": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "arboles",
+      "photoRule": "required-real-live"
     },
     {
       "id": "trucha-arcoiris",
@@ -513,7 +612,9 @@ window.WILD_DATA = {
       "credit": "Wikimedia Commons · Oncorhynchus mykiss",
       "note": "Imagen referencial; no constituye un registro fotográfico local.",
       "audit": "verified-live",
-      "auditDate": "2026-10-05"
+      "auditDate": "2026-10-05",
+      "category": "peces",
+      "photoRule": "required-real-live"
     }
   ]
 };
