@@ -298,7 +298,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydropsalis%20torquata.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Hydropsalis%20torquata.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Hydropsalis torquata",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hydropsalis_torquata.jpg",
@@ -327,7 +327,7 @@ window.WILD_DATA = {
         "jarilla-crespa→nidificación",
         "insectos→alimentación"
       ],
-      "imageAuditStatus": "verified-live",
+      "imageAuditStatus": "pending-visual",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -343,7 +343,7 @@ window.WILD_DATA = {
         "rural",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mimus%20saturninus%20(AU)-face%2001.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Mimus%20saturninus%20(AU)-face%2001.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Mimus saturninus",
       "description": "Ave reconocible por su ceja clara y su capacidad para imitar distintos sonidos. Está entre las aves destacadas por la Municipalidad en la zona.",
       "identification": "Ave de tamaño mediano, tonos pardos y grises, ceja clara y cola relativamente larga.",
@@ -381,7 +381,7 @@ window.WILD_DATA = {
         "rural",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Colaptes%20melanochloros-Carpintero%20Real%2C%20otra%20imagen.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Colaptes%20melanochloros-Carpintero%20Real%2C%20otra%20imagen.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Colaptes melanochloros",
       "description": "Ave carpintera asociada a ambientes con árboles. Es una de las especies de aves mencionadas por la Municipalidad para la zona.",
       "identification": "Se reconoce por su pico fuerte, postura trepadora y plumaje contrastado.",
@@ -420,7 +420,7 @@ window.WILD_DATA = {
         "dique",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pygochelidon%20cyanoleuca%20176376357.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Pygochelidon%20cyanoleuca%20176376357.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Pygochelidon cyanoleuca",
       "description": "Golondrina de vuelo ágil asociada a espacios abiertos. La Municipalidad la menciona entre las aves registradas en la zona.",
       "identification": "Pequeña golondrina de tonos azulados y blancos, con alas adaptadas al vuelo rápido.",
@@ -457,7 +457,7 @@ window.WILD_DATA = {
         "dique",
         "monte"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea%20nitida.JPG",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Larrea%20nitida.JPG&width=1200",
       "imageCredit": "Wikimedia Commons · Larrea nitida",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Larrea_nitida.JPG",
@@ -682,7 +682,7 @@ window.WILD_DATA = {
         "dique",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamarix%20ramosissima.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tamarix%20ramosissima.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Tamarix ramosissima",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Tamarix_ramosissima.jpg",
@@ -704,7 +704,7 @@ window.WILD_DATA = {
       "relations": [
         "dique→mosaico-vegetal"
       ],
-      "imageAuditStatus": "verified-live",
+      "imageAuditStatus": "pending-visual",
       "imageAuditDate": "2026-10-05"
     },
     {
@@ -752,7 +752,7 @@ window.WILD_DATA = {
         "monte",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CaracaraPlancus.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/CaracaraPlancus.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Caracara plancus",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:CaracaraPlancus.jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -864,7 +864,7 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Egretta%20thula.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Egretta%20thula.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Egretta thula",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Egretta_thula.jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -902,7 +902,7 @@ window.WILD_DATA = {
         "urbano",
         "arboledas"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Furnarius%20rufus%20(6221851328).jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Furnarius%20rufus%20(6221851328).jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Furnarius rufus",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Furnarius_rufus_(6221851328).jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -976,7 +976,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Larrea%20cuneifolia.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Larrea%20cuneifolia.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Larrea cuneifolia",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Larrea_cuneifolia.jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1159,7 +1159,7 @@ window.WILD_DATA = {
         "rural",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Patagioenas%20picazuro.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Patagioenas%20picazuro.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Patagioenas picazuro",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Patagioenas_picazuro.jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1270,7 +1270,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Solupe%20(Ephedra%20ochreata).jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Solupe%20(Ephedra%20ochreata).jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Ephedra ochreata",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Solupe_(Ephedra_ochreata).jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1309,7 +1309,7 @@ window.WILD_DATA = {
         "rio",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vanellus-chilensis-1.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Vanellus-chilensis-1.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Vanellus chilensis",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vanellus-chilensis-1.jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1346,7 +1346,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Acantholippia%20seriphioides.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Acantholippia%20seriphioides.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Acantholippia seriphioides",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Acantholippia_seriphioides.jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1383,7 +1383,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Atriplex%20lampa%20(8670678624).jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Atriplex%20lampa%20(8670678624).jpg&width=1200",
       "description": "Arbusto propio de ambientes áridos de la región. Aparece en documentación ambiental provincial sobre la vegetación del Monte.",
       "identification": "Arbusto adaptado a ambientes secos y a disponibilidad limitada de agua.",
       "habitat": "Monte y ambientes áridos.",
@@ -1416,7 +1416,7 @@ window.WILD_DATA = {
         "monte",
         "rural"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lycalopex%20culpaeus%20(8393345426).jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Lycalopex%20culpaeus%20(8393345426).jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Lycalopex culpaeus",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lycalopex_culpaeus_(8393345426).jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1454,7 +1454,7 @@ window.WILD_DATA = {
         "rural",
         "urbano"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Austral%20Thrush%20(Turdus%20falcklandii)%20(5536622502).jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Austral%20Thrush%20(Turdus%20falcklandii)%20(5536622502).jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Turdus falcklandii",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Austral_Thrush_(Turdus_falcklandii)_(5536622502).jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1491,7 +1491,7 @@ window.WILD_DATA = {
         "rio",
         "dique"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Myocastor%20coypus%20(41945394962).jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Myocastor%20coypus%20(41945394962).jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Myocastor coypus",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Myocastor_coypus_(41945394962).jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
@@ -1529,7 +1529,7 @@ window.WILD_DATA = {
         "rural",
         "arboledas"
       ],
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoffroea%20decorticans%201a.jpg",
+      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Geoffroea%20decorticans%201a.jpg&width=1200",
       "imageCredit": "Wikimedia Commons · Geoffroea decorticans",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Geoffroea_decorticans_1a.jpg",
       "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
