@@ -166,6 +166,63 @@ dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(7px)}
 @media(max-width:700px){.territory-heading{grid-template-columns:1fr;gap:12px}.territory-showcase{margin-top:25px;padding-top:27px}.territory-grid{gap:8px}.territory-card{min-height:190px;padding:15px}.territory-card h3{font-size:18px}}
 @media(max-width:450px){.territory-grid{grid-template-columns:1fr}.territory-card{min-height:155px}.territory-card p{max-width:310px}}
 
+
+/* WILD EXPERIENCE LAYER · visual only */
+body{background:
+ radial-gradient(1000px 500px at 50% -10%,rgba(83,140,76,.30),transparent 68%),
+ radial-gradient(600px 500px at 100% 35%,rgba(44,102,60,.12),transparent 70%),
+ linear-gradient(180deg,#06110a 0%,#050b08 42%,#08120c 100%);}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.035;background:linear-gradient(115deg,transparent 0 48%,rgba(255,255,255,.8) 49%,transparent 50%);background-size:320px 320px;mix-blend-mode:screen}
+.hero{min-height:560px;align-content:center;padding:105px 0 54px}
+.hero:after{content:"";position:absolute;inset:5% -10% 0;border-radius:50%;background:radial-gradient(ellipse at center,rgba(143,190,105,.12),transparent 62%);z-index:-2;filter:blur(12px)}
+.hero h1{max-width:1120px;text-shadow:0 10px 50px rgba(0,0,0,.35)}
+.hero p{max-width:760px}
+.law{margin-top:10px;transform:translateY(8px);opacity:.88;transition:opacity .4s,transform .4s}
+.law:hover{opacity:1;transform:translateY(4px)}
+.territory-showcase{position:relative;margin:20px 0 15px;padding:58px 0 28px;border-top:1px solid rgba(176,235,147,.10)}
+.territory-showcase:before{content:"";position:absolute;left:-12%;right:-12%;top:0;height:360px;background:radial-gradient(ellipse at 50% 0,rgba(108,153,83,.11),transparent 68%);pointer-events:none}
+.territory-heading{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:end;margin-bottom:25px}
+.territory-heading h2{font-size:clamp(38px,6vw,76px);line-height:.87}
+.territory-heading p{font-size:16px;max-width:560px}
+.territory-grid{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.territory-card{min-height:280px;padding:21px;border-radius:28px;background:linear-gradient(155deg,rgba(24,53,34,.93),rgba(6,17,11,.98));transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .5s}
+.territory-card:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 35%,rgba(255,255,255,.025));pointer-events:none}
+.territory-card:hover{transform:translateY(-9px) scale(1.012);box-shadow:0 30px 70px rgba(0,0,0,.34)}
+.territory-card h3{font-size:24px}
+.territory-card p{font-size:12px}
+.controls{margin-top:40px}
+.results{letter-spacing:.04em}
+.grid{gap:18px}
+.card{border-radius:26px}
+.card:after{content:"";position:absolute;inset:0;border-radius:26px;pointer-events:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.035)}
+.photo{aspect-ratio:4/3}
+.photo img{filter:saturate(.94) contrast(1.01)}
+.card:hover .photo img{transform:scale(1.07);filter:saturate(1.12) contrast(1.03)}
+.body{padding:17px}
+.name{font-size:22px}
+.card .tag{opacity:.82}
+.chips span{transition:background .25s,border-color .25s}
+.card:hover .chips span{background:rgba(186,242,138,.08);border-color:rgba(186,242,138,.22)}
+dialog{animation:wildDialog .28s ease-out}
+@keyframes wildDialog{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.modal-photo{max-height:64vh}
+.modal-body{padding:28px}
+.modal-body h2{font-size:clamp(36px,5vw,58px)}
+.experience div{transition:transform .25s}
+.experience div:hover{transform:translateY(-2px)}
+@media(max-width:1050px){.territory-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){
+ .hero{min-height:0;padding:65px 0 40px}
+ .territory-heading{grid-template-columns:1fr;gap:16px}
+ .territory-grid{grid-template-columns:repeat(2,1fr)}
+ .territory-card{min-height:220px}
+}
+@media(max-width:450px){
+ .territory-grid{grid-template-columns:1fr}
+ .territory-card{min-height:185px}
+ .hero{padding-top:52px}
+}
+
 </style>
 </head>
 <body>
