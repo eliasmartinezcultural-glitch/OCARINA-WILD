@@ -163,47 +163,46 @@ window.WILD_DATA = {
       "imageAuditDate": "2026-10-05"
     },
     {
-      "id": "abejorro-negro",
-      "commonName": "Abejorro negro",
-      "scientificName": "Bombus atratus",
-      "kind": "fauna",
-      "group": "invertebrados",
-      "localStatus": "confirmed",
-      "environments": [
-        "rural"
-      ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bombus_atratus_BYN.jpg&width=1200&v=20261005-3",
-      "imageCredit": "Imagen de referencia · Wikimedia Commons",
-      "imageNote": "La investigación local ensayó Bombus atratus en chacras de San Patricio del Chañar.",
-      "imageSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Bombus_atratus_BYN.jpg?v=20261005",
-      "description": "Abejorro utilizado y estudiado como polinizador complementario en los montes frutales del Chañar.",
-      "identification": "Abejorro robusto, de cuerpo piloso y oscuro.",
-      "habitat": "Ambientes agrícolas con floración y áreas donde pueda completar su ciclo.",
-      "behavior": "Visita flores y puede complementar el trabajo de la abeja melífera.",
-      "diet": "Néctar y polen.",
-      "reproduction": "Forma colonias estacionales.",
-      "conservation": "Su importancia local está vinculada al servicio de polinización.",
-      "localNote": "CONFIRMACIÓN LOCAL: el proyecto de investigación realizado en chacras de San Patricio del Chañar trabajó con Bombus atratus y encontró complementariedad con Apis mellifera.",
-      "sourceType": "scientific",
-      "sources": [
-        {
-          "label": "Secretaría de Producción · polinización",
-          "url": "https://produccioneindustria.neuquen.gov.ar/2019/08/14/la-polinizacion-es-un-aporte-clave-en-la-fruticultura/"
-        },
-        {
-          "label": "Facultad de Ciencias Agrarias · estudio local",
-          "url": "https://facaweb.uncoma.edu.ar/index.php/novedades/exitoso-ciclo-de-seminarios-apicultura-en-el-alto-valle/"
-        }
-      ],
-      "relations": [
-        "manzano→polinización",
-        "peral→polinización",
-        "abeja-melifera→complementariedad"
-      ],
-      "imageAuditStatus": "quarantine",
-      "imageAuditDate": "2026-10-05",
-      "imageAuditReason": "La imagen actual es una ilustración científica, no una fotografía viva; se retira de la capa fotográfica hasta conseguir una foto compatible."
+  "id": "abejorro-negro",
+  "commonName": "Abejorro negro",
+  "scientificName": "Bombus atratus",
+  "kind": "fauna",
+  "group": "invertebrados",
+  "localStatus": "confirmed",
+  "environments": [
+    "rural"
+  ],
+  "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bombus_atratus_BYN.jpg&width=1200&v=20261005-4",
+  "imageCredit": "Wikimedia Commons · Bombus atratus",
+  "imageNote": "Fotografía real de un ejemplar vivo; referencia regional. No constituye un registro fotográfico local.",
+  "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Bombus_atratus_BYN.jpg",
+  "description": "Abejorro utilizado y estudiado como polinizador complementario en los montes frutales del Chañar.",
+  "identification": "Abejorro robusto, de cuerpo piloso y oscuro.",
+  "habitat": "Ambientes agrícolas con floración y áreas donde pueda completar su ciclo.",
+  "behavior": "Visita flores y puede complementar el trabajo de la abeja melífera.",
+  "diet": "Néctar y polen.",
+  "reproduction": "Forma colonias estacionales.",
+  "conservation": "Su importancia local está vinculada al servicio de polinización.",
+  "localNote": "CONFIRMACIÓN LOCAL: el proyecto de investigación realizado en chacras de San Patricio del Chañar trabajó con Bombus atratus y encontró complementariedad con Apis mellifera.",
+  "sourceType": "scientific",
+  "sources": [
+    {
+      "label": "Secretaría de Producción · polinización",
+      "url": "https://produccioneindustria.neuquen.gov.ar/2019/08/14/la-polinizacion-es-un-aporte-clave-en-la-fruticultura/"
     },
+    {
+      "label": "Facultad de Ciencias Agrarias · estudio local",
+      "url": "https://facaweb.uncoma.edu.ar/index.php/novedades/exitoso-ciclo-de-seminarios-apicultura-en-el-alto-valle/"
+    }
+  ],
+  "relations": [
+    "manzano→polinización",
+    "peral→polinización",
+    "abeja-melifera→complementariedad"
+  ],
+  "imageAuditStatus": "verified-live",
+  "imageAuditDate": "2026-10-05"
+},
     {
       "id": "aguila-pescadora",
       "commonName": "Águila pescadora",
@@ -483,43 +482,43 @@ window.WILD_DATA = {
       "imageAuditDate": "2026-10-05"
     },
     {
-      "id": "manca-caballo",
-      "commonName": "Manca caballo",
-      "scientificName": "Prosopidastrum angusticarpum",
-      "kind": "flora",
-      "group": "arbustos",
-      "localStatus": "confirmed",
-      "environments": [
-        "dique",
-        "monte",
-        "rural"
-      ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/florayfauna-4.jpg&width=1200&v=20261005-3",
-      "imageCredit": "Imagen de referencia · Wikimedia Commons",
-      "imageNote": "La especie fue identificada en el área de estudio del Dique Compensador El Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Prosopidastrum_angusticarpum.jpg",
-      "description": "Arbusto del matorral mixto documentado en el sector del Dique donde se estudió al Atajacaminos tijera.",
-      "identification": "Arbusto leñoso de porte bajo a medio, propio de ambientes secos.",
-      "habitat": "Matorral del Monte y bordes rurales del Dique.",
-      "behavior": "Forma parte de la estructura del matorral que ofrece sitios de descanso y cobertura.",
-      "diet": "Produce su alimento mediante fotosíntesis.",
-      "reproduction": "Se reproduce por flores y semillas.",
-      "conservation": "Su importancia para WILD es ecológica: forma parte de un ambiente local documentado.",
-      "localNote": "CONFIRMACIÓN CIENTÍFICA LOCAL: el estudio del Atajacaminos describe un matorral mixto dominado por Prosopidastrum angusticarpum en el Dique El Chañar.",
-      "sourceType": "scientific",
-      "sources": [
-        {
-          "label": "Estudio de Hydropsalis en El Chañar",
-          "url": "https://www.lillo.org.ar/revis/zoo/2016/v60n2/v60n2a05.pdf"
-        }
-      ],
-      "relations": [
-        "atajacaminos-tijera→refugio/descanso",
-        "atajacaminos-tijera→ambiente-reproductivo"
-      ],
-      "imageAuditStatus": "pending-visual",
-      "imageAuditDate": "2026-10-05"
-    },
+  "id": "manca-caballo",
+  "commonName": "Manca caballo",
+  "scientificName": "Prosopidastrum angusticarpum",
+  "kind": "flora",
+  "group": "arbustos",
+  "localStatus": "confirmed",
+  "environments": [
+    "dique",
+    "monte",
+    "rural"
+  ],
+  "image": "https://www.ecoregistros.org/site/images/dataimages/2021/12/19/475721/IMG_1745.JPG",
+  "imageCredit": "EcoRegistros · Hernán Tolosa",
+  "imageNote": "Fotografía real de un ejemplar vivo en Parque Nacional Lihué Calel, La Pampa. Referencia regional.",
+  "imageSourceUrl": "https://www.ecoregistros.org/site/imagen.php?id=475721",
+  "description": "Arbusto del matorral mixto documentado en el sector del Dique donde se estudió al Atajacaminos tijera.",
+  "identification": "Arbusto leñoso de porte bajo a medio, propio de ambientes secos.",
+  "habitat": "Matorral del Monte y bordes rurales del Dique.",
+  "behavior": "Forma parte de la estructura del matorral que ofrece sitios de descanso y cobertura.",
+  "diet": "Produce su alimento mediante fotosíntesis.",
+  "reproduction": "Se reproduce por flores y semillas.",
+  "conservation": "Su importancia para WILD es ecológica: forma parte de un ambiente local documentado.",
+  "localNote": "CONFIRMACIÓN CIENTÍFICA LOCAL: el estudio del Atajacaminos describe un matorral mixto dominado por Prosopidastrum angusticarpum en el Dique El Chañar.",
+  "sourceType": "scientific",
+  "sources": [
+    {
+      "label": "Estudio de Hydropsalis en El Chañar",
+      "url": "https://www.lillo.org.ar/revis/zoo/2016/v60n2/v60n2a05.pdf"
+    }
+  ],
+  "relations": [
+    "atajacaminos-tijera→refugio/descanso",
+    "atajacaminos-tijera→ambiente-reproductivo"
+  ],
+  "imageAuditStatus": "verified-live",
+  "imageAuditDate": "2026-10-05"
+},
     {
       "id": "manzano-cultivado",
       "commonName": "Manzano",
@@ -561,43 +560,42 @@ window.WILD_DATA = {
       "imageAuditDate": "2026-10-05"
     },
     {
-      "id": "pejerrey",
-      "commonName": "Pejerrey",
-      "scientificName": "Odontesthes sp. · identificación específica pendiente",
-      "kind": "fauna",
-      "group": "peces",
-      "localStatus": "confirmed",
-      "environments": [
-        "rio",
-        "dique"
-      ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Odontesthes_bonariensis.JPG&width=1200&v=20261005-3",
-      "imageCredit": "Wikimedia Commons · Odontesthes bonariensis",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Odontesthes_bonariensis.jpg",
-      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
-      "description": "Pez de agua dulce mencionado por la Municipalidad entre los recursos pesqueros del Río Neuquén.",
-      "identification": "Cuerpo alargado y plateado, adaptado a ambientes de agua dulce.",
-      "habitat": "Ambientes regionales compatibles con la especie.",
-      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
-      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
-      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
-      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
-      "localNote": "PRESENCIA LOCAL RESPALDADA A NIVEL DE NOMBRE COMÚN: la Municipalidad menciona pejerreyes y percas como recursos pesqueros del Río Neuquén en la zona. La especie taxonómica exacta requiere una fuente específica.",
-      "sourceType": "regional",
-      "sources": [
-        {
-          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
-          "url": "https://sanpatricio.gob.ar/quehacer"
-        },
-        {
-          "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/Odontesthes_bonariensis"
-        }
-      ],
-      "imageAuditStatus": "quarantine",
-      "imageAuditDate": "2026-10-05",
-      "imageAuditReason": "La fotografía mostraba un ejemplar sostenido por una persona en una embarcación; viola CERO CAPTURA."
+  "id": "pejerrey",
+  "commonName": "Pejerrey",
+  "scientificName": "Odontesthes sp. · identificación específica pendiente",
+  "kind": "fauna",
+  "group": "peces",
+  "localStatus": "confirmed",
+  "environments": [
+    "rio",
+    "dique"
+  ],
+  "image": "https://www.pescaargentina.com.ar/imagenes/noticias_web/sgf_1561-998038.jpg",
+  "imageCredit": "Pesca Argentina · registro visual en Mar Chiquita",
+  "imageSourceUrl": "https://www.pescaargentina.com.ar/noticia/una-senal-que-ilusiona-registran-un-pejerrey-en-mar-chiquita-1561",
+  "imageNote": "Fotografía real de un pejerrey vivo nadando libremente en el agua. Referencia regional; no implica presencia local.",
+  "description": "Pez de agua dulce mencionado por la Municipalidad entre los recursos pesqueros del Río Neuquén.",
+  "identification": "Cuerpo alargado y plateado, adaptado a ambientes de agua dulce.",
+  "habitat": "Ambientes regionales compatibles con la especie.",
+  "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+  "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+  "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+  "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+  "localNote": "PRESENCIA LOCAL RESPALDADA A NIVEL DE NOMBRE COMÚN: la Municipalidad menciona pejerreyes y percas como recursos pesqueros del Río Neuquén en la zona. La especie taxonómica exacta requiere una fuente específica.",
+  "sourceType": "regional",
+  "sources": [
+    {
+      "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+      "url": "https://sanpatricio.gob.ar/quehacer"
     },
+    {
+      "label": "Wikimedia Commons · especie",
+      "url": "https://commons.wikimedia.org/wiki/Odontesthes_bonariensis"
+    }
+  ],
+  "imageAuditStatus": "verified-live",
+  "imageAuditDate": "2026-10-05"
+},
     {
       "id": "peral-cultivado",
       "commonName": "Peral",
@@ -634,79 +632,78 @@ window.WILD_DATA = {
       "imageAuditDate": "2026-10-05"
     },
     {
-      "id": "perca",
-      "commonName": "Perca",
-      "scientificName": "Percichthys sp. · identificación específica pendiente",
-      "kind": "fauna",
-      "group": "peces",
-      "localStatus": "confirmed",
-      "environments": [
-        "rio",
-        "dique"
-      ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Percichthys_trucha.png&width=1200&v=20261005-3",
-      "imageCredit": "Wikimedia Commons · Percichthys trucha",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Percichthys_trucha.jpg",
-      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
-      "description": "Pez nativo de Patagonia mencionado por la Municipalidad entre las especies de pesca del Río Neuquén.",
-      "identification": "Pez robusto, de cuerpo alargado y coloración variable según ambiente.",
-      "habitat": "Ambientes regionales compatibles con la especie.",
-      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
-      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
-      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
-      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
-      "localNote": "PRESENCIA LOCAL RESPALDADA A NIVEL DE NOMBRE COMÚN: la Municipalidad menciona pejerreyes y percas como recursos pesqueros del Río Neuquén en la zona. La especie taxonómica exacta requiere una fuente específica.",
-      "sourceType": "regional",
-      "sources": [
-        {
-          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
-          "url": "https://sanpatricio.gob.ar/quehacer"
-        },
-        {
-          "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/Percichthys_trucha"
-        }
-      ],
-      "imageAuditStatus": "quarantine",
-      "imageAuditDate": "2026-10-05",
-      "imageAuditReason": "La fotografía mostraba un ejemplar sostenido por personas; viola CERO CAPTURA."
+  "id": "perca",
+  "commonName": "Perca",
+  "scientificName": "Percichthys sp. · identificación específica pendiente",
+  "kind": "fauna",
+  "group": "peces",
+  "localStatus": "confirmed",
+  "environments": [
+    "rio",
+    "dique"
+  ],
+  "image": "https://www.proyectoarrecife.com.ar/sites/default/files/2021-01/perca%20astutti%20recort.png",
+  "imageCredit": "Proyecto Arrecife · Perca",
+  "imageSourceUrl": "https://www.proyectoarrecife.com.ar/es/pez/perca",
+  "imageNote": "Fotografía real de Percichthys trucha vivo y nadando en su ambiente acuático. Referencia regional; no implica presencia local.",
+  "description": "Pez nativo de Patagonia mencionado por la Municipalidad entre las especies de pesca del Río Neuquén.",
+  "identification": "Pez robusto, de cuerpo alargado y coloración variable según ambiente.",
+  "habitat": "Ambientes regionales compatibles con la especie.",
+  "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+  "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+  "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+  "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+  "localNote": "PRESENCIA LOCAL RESPALDADA A NIVEL DE NOMBRE COMÚN: la Municipalidad menciona pejerreyes y percas como recursos pesqueros del Río Neuquén en la zona. La especie taxonómica exacta requiere una fuente específica.",
+  "sourceType": "regional",
+  "sources": [
+    {
+      "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+      "url": "https://sanpatricio.gob.ar/quehacer"
     },
     {
-      "id": "tamarindo",
-      "commonName": "Tamarindo",
-      "scientificName": "Tamarix ramosissima",
-      "kind": "flora",
-      "group": "arbustos",
-      "localStatus": "confirmed",
-      "environments": [
-        "dique",
-        "rural"
-      ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tamarix%20ramosissima.jpg&width=1200",
-      "imageCredit": "Wikimedia Commons · Tamarix ramosissima",
-      "imageNote": "Fotografía referencial de la especie; no constituye un registro fotográfico local de San Patricio del Chañar.",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Tamarix_ramosissima.jpg",
-      "description": "Arbusto introducido documentado en el mosaico vegetal del Dique El Chañar.",
-      "identification": "Arbusto de ramas finas y follaje reducido, asociado a ambientes secos y ribereños.",
-      "habitat": "Sectores del mosaico ribereño y rural.",
-      "behavior": "Forma parte de la vegetación transformada del sitio.",
-      "diet": "Produce su alimento mediante fotosíntesis.",
-      "reproduction": "Se reproduce por semillas y propagación vegetativa.",
-      "conservation": "Es importante distinguirlo de la flora nativa: su presencia local es documentada, pero es una especie introducida.",
-      "localNote": "CONFIRMACIÓN DE PRESENCIA LOCAL: el estudio del Atajacaminos registra manchones aislados de Tamarix ramosissima en el área del Dique.",
-      "sourceType": "scientific",
-      "sources": [
-        {
-          "label": "Acta Zoológica Lilloana · área de estudio",
-          "url": "https://www.lillo.org.ar/revis/zoo/2016/v60n2/v60n2a05.pdf"
-        }
-      ],
-      "relations": [
-        "dique→mosaico-vegetal"
-      ],
-      "imageAuditStatus": "pending-visual",
-      "imageAuditDate": "2026-10-05"
-    },
+      "label": "Wikimedia Commons · especie",
+      "url": "https://commons.wikimedia.org/wiki/Percichthys_trucha"
+    }
+  ],
+  "imageAuditStatus": "verified-live",
+  "imageAuditDate": "2026-10-05"
+},
+    {
+  "id": "tamarindo",
+  "commonName": "Tamarindo",
+  "scientificName": "Tamarix ramosissima",
+  "kind": "flora",
+  "group": "arbustos",
+  "localStatus": "confirmed",
+  "environments": [
+    "dique",
+    "rural"
+  ],
+  "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tamarix_ramosissima_by_Prahlad_balaji_2.jpg&width=1200&v=20261005-4",
+  "imageCredit": "Wikimedia Commons · Tamarix ramosissima",
+  "imageNote": "Fotografía real de Tamarix ramosissima vivo; referencia botánica regional/internacional.",
+  "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Tamarix_ramosissima_by_Prahlad_balaji_2.jpg",
+  "description": "Arbusto introducido documentado en el mosaico vegetal del Dique El Chañar.",
+  "identification": "Arbusto de ramas finas y follaje reducido, asociado a ambientes secos y ribereños.",
+  "habitat": "Sectores del mosaico ribereño y rural.",
+  "behavior": "Forma parte de la vegetación transformada del sitio.",
+  "diet": "Produce su alimento mediante fotosíntesis.",
+  "reproduction": "Se reproduce por semillas y propagación vegetativa.",
+  "conservation": "Es importante distinguirlo de la flora nativa: su presencia local es documentada, pero es una especie introducida.",
+  "localNote": "CONFIRMACIÓN DE PRESENCIA LOCAL: el estudio del Atajacaminos registra manchones aislados de Tamarix ramosissima en el área del Dique.",
+  "sourceType": "scientific",
+  "sources": [
+    {
+      "label": "Acta Zoológica Lilloana · área de estudio",
+      "url": "https://www.lillo.org.ar/revis/zoo/2016/v60n2/v60n2a05.pdf"
+    }
+  ],
+  "relations": [
+    "dique→mosaico-vegetal"
+  ],
+  "imageAuditStatus": "verified-live",
+  "imageAuditDate": "2026-10-05"
+},
     {
       "id": "alpataco",
       "commonName": "Alpataco",
@@ -1003,42 +1000,42 @@ window.WILD_DATA = {
       "imageAuditDate": "2026-10-05"
     },
     {
-      "id": "liebre-europea",
-      "commonName": "Liebre europea",
-      "scientificName": "Lepus europaeus",
-      "kind": "fauna",
-      "group": "mamiferos",
-      "localStatus": "region",
-      "environments": [
-        "rural",
-        "monte"
-      ],
-      "image": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/European_hare_Lepus_europaeus.jpg&width=1200&v=20261005-3",
-      "imageCredit": "Wikimedia Commons · Lepus europaeus",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lepus_europaeus.jpg",
-      "imageNote": "Imagen referencial; no constituye un registro fotográfico local.",
-      "description": "Mamífero introducido presente en distintos ambientes abiertos de Argentina.",
-      "identification": "Orejas largas, patas traseras desarrolladas y cuerpo adaptado a desplazamientos rápidos.",
-      "habitat": "Ambientes regionales compatibles con la especie.",
-      "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
-      "diet": "La alimentación depende de la especie y de los recursos disponibles.",
-      "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
-      "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
-      "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
-      "sourceType": "regional",
-      "sources": [
-        {
-          "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
-          "url": "https://sanpatricio.gob.ar/quehacer"
-        },
-        {
-          "label": "Wikimedia Commons · especie",
-          "url": "https://commons.wikimedia.org/wiki/Lepus_europaeus"
-        }
-      ],
-      "imageAuditStatus": "pending-visual",
-      "imageAuditDate": "2026-10-05"
+  "id": "liebre-europea",
+  "commonName": "Liebre europea",
+  "scientificName": "Lepus europaeus",
+  "kind": "fauna",
+  "group": "mamiferos",
+  "localStatus": "region",
+  "environments": [
+    "rural",
+    "monte"
+  ],
+  "image": "https://www.ecoregistros.org/site/images/dataimages/2023/09/21/548777/ecorr-liebre.jpg",
+  "imageCredit": "EcoRegistros · Javier Villamil",
+  "imageSourceUrl": "https://www.ecoregistros.org/site/imagen.php?id=548777",
+  "imageNote": "Fotografía real de una liebre viva en Junín, Buenos Aires, Argentina. Referencia nacional.",
+  "description": "Mamífero introducido presente en distintos ambientes abiertos de Argentina.",
+  "identification": "Orejas largas, patas traseras desarrolladas y cuerpo adaptado a desplazamientos rápidos.",
+  "habitat": "Ambientes regionales compatibles con la especie.",
+  "behavior": "Utiliza el ambiente según sus necesidades de alimentación, refugio y reproducción.",
+  "diet": "La alimentación depende de la especie y de los recursos disponibles.",
+  "reproduction": "La reproducción ocurre mediante el ciclo reproductivo propio de la especie.",
+  "conservation": "Ficha inicial de referencia; consultar fuentes especializadas para el estado de conservación.",
+  "localNote": "ESTADO REGIÓN: esta ficha no debe interpretarse como confirmación específica dentro de Chañar.",
+  "sourceType": "regional",
+  "sources": [
+    {
+      "label": "Municipalidad de San Patricio del Chañar · ¿Qué hacer?",
+      "url": "https://sanpatricio.gob.ar/quehacer"
     },
+    {
+      "label": "Wikimedia Commons · especie",
+      "url": "https://commons.wikimedia.org/wiki/Lepus_europaeus"
+    }
+  ],
+  "imageAuditStatus": "verified-live",
+  "imageAuditDate": "2026-10-05"
+},
     {
       "id": "loica",
       "commonName": "Loica",
