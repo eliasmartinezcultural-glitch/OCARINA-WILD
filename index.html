@@ -2014,6 +2014,355 @@ footer strong{letter-spacing:.02em}
  .card:hover,.filter:hover,.search:focus{transform:none!important}
 }
 
+
+/* =========================================================
+   OCARINA WILD · TERRITORY CINEMA v4
+   Visual-only. Existing DOM / JS / data remain untouched.
+   ========================================================= */
+
+/* Global visual language: natural history editorial + local landscape */
+::selection{background:rgba(215,179,106,.28);color:#fff}
+:focus-visible{outline:2px solid rgba(215,179,106,.7);outline-offset:4px}
+
+.hero{
+  min-height:820px;
+  justify-content:center;
+  padding-top:150px;
+  padding-bottom:85px;
+}
+.hero:after{
+  opacity:.95;
+  background:
+    radial-gradient(ellipse at 66% 63%,rgba(67,137,148,.24),transparent 31%),
+    radial-gradient(ellipse at 88% 42%,rgba(215,179,106,.12),transparent 25%),
+    linear-gradient(165deg,transparent 0 55%,rgba(86,58,42,.18) 56% 70%,transparent 71%);
+}
+.hero h1{
+  font-size:clamp(58px,9.3vw,132px);
+  max-width:1040px;
+  line-height:.79;
+  text-wrap:balance;
+}
+.hero h1:before{
+  width:clamp(75px,12vw,170px);
+  height:3px;
+  margin-bottom:28px;
+}
+.hero h1:after{
+  content:"SAN PATRICIO DEL CHAÑAR  /  NEUQUÉN";
+  color:rgba(215,179,106,.72);
+  font-size:10px;
+  letter-spacing:.34em;
+  font-weight:800;
+}
+.hero p{
+  max-width:720px;
+  font-size:clamp(17px,1.7vw,21px);
+}
+.hero .law{
+  margin-top:20px;
+}
+
+/* A quiet horizon line creates a sense of place */
+.hero .law:after{
+  content:"";
+  position:absolute;
+  right:0;
+  bottom:-28px;
+  width:min(42vw,520px);
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(62,125,137,.35),rgba(215,179,106,.3));
+}
+
+/* Territory section becomes a transition from landscape to atlas */
+.territory-showcase{
+  padding-top:115px;
+  padding-bottom:80px;
+}
+.territory-heading{
+  margin-bottom:38px;
+}
+.territory-heading h2{
+  font-size:clamp(42px,6.8vw,88px);
+  letter-spacing:-.07em;
+}
+.territory-heading p{
+  max-width:500px;
+  font-size:16px;
+}
+.territory-grid{
+  gap:14px;
+}
+.territory-card{
+  min-height:350px;
+  padding:25px;
+  border-radius:32px;
+  overflow:hidden;
+}
+.territory-card .territory-mark{
+  font-size:11px;
+}
+.territory-card span{
+  font-size:8px;
+}
+.territory-card h3{
+  font-size:clamp(23px,2.2vw,31px);
+  max-width:260px;
+}
+.territory-card p{
+  max-width:270px;
+  font-size:12px;
+}
+.territory-card:after{
+  opacity:.8;
+}
+
+/* Each environment gets a distinct visual "weather" */
+.territory-card.water{
+  box-shadow:inset 0 0 90px rgba(72,170,185,.08),0 25px 70px rgba(0,0,0,.28);
+}
+.territory-card.rural{
+  box-shadow:inset 0 0 90px rgba(131,170,81,.08),0 25px 70px rgba(0,0,0,.28);
+}
+.territory-card.wild{
+  box-shadow:inset 0 0 90px rgba(195,142,88,.07),0 25px 70px rgba(0,0,0,.28);
+}
+.territory-card.open{
+  box-shadow:inset 0 0 90px rgba(220,199,132,.07),0 25px 70px rgba(0,0,0,.28);
+}
+
+/* Atlas entrance: visual pause before data */
+.controls{
+  margin-top:58px;
+  padding-top:24px;
+}
+.controls:after{
+  content:"";
+  display:block;
+  width:100%;
+  height:1px;
+  margin-top:5px;
+  background:linear-gradient(90deg,rgba(215,179,106,.22),transparent 65%);
+}
+.search{
+  min-height:62px;
+  font-size:15px;
+  letter-spacing:.01em;
+}
+.filters{
+  gap:8px;
+}
+.filter{
+  padding-inline:16px;
+  border-radius:999px;
+}
+
+/* Cards become little photographic portals */
+.grid{
+  gap:22px;
+}
+.card{
+  border-radius:28px;
+  box-shadow:0 20px 55px rgba(0,0,0,.25);
+}
+.card:hover{
+  box-shadow:0 35px 90px rgba(0,0,0,.43);
+}
+.photo{
+  aspect-ratio:1.32/1;
+}
+.photo:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  border:1px solid rgba(255,255,255,.05);
+}
+.photo img{
+  transition:transform .8s cubic-bezier(.16,.84,.24,1),filter .5s ease;
+}
+.card:hover .photo img{
+  transform:scale(1.09);
+}
+.body{
+  padding:19px;
+}
+.body:before{
+  left:19px;right:19px;
+}
+.tag{
+  letter-spacing:.22em;
+}
+.name{
+  font-size:clamp(20px,2vw,24px);
+}
+.chips{
+  margin-top:15px;
+}
+.chips span{
+  border-radius:999px;
+  padding:6px 9px;
+}
+.source{
+  font-size:9px;
+}
+
+/* stagger becomes more organic */
+@media(min-width:1100px){
+  .grid .card:nth-child(5n+1){transform:translateY(0)}
+  .grid .card:nth-child(5n+2){transform:translateY(8px)}
+  .grid .card:nth-child(5n+3){transform:translateY(2px)}
+  .grid .card:nth-child(5n+4){transform:translateY(13px)}
+  .grid .card:nth-child(5n){transform:translateY(5px)}
+  .grid .card:nth-child(5n+1):hover,
+  .grid .card:nth-child(5n+2):hover,
+  .grid .card:nth-child(5n+3):hover,
+  .grid .card:nth-child(5n+4):hover,
+  .grid .card:nth-child(5n):hover{transform:translateY(-6px) scale(1.012)}
+}
+
+/* Modal becomes a full editorial specimen */
+dialog{
+  width:min(1120px,calc(100% - 24px));
+  border-radius:36px;
+}
+.modal-photo{
+  max-height:67vh;
+  min-height:300px;
+}
+.modal-body{
+  padding:34px;
+}
+.modal-body h2{
+  font-size:clamp(40px,6vw,70px);
+}
+.modal-body:before{
+  content:"OCARINA WILD  ·  ESPECIMEN DEL TERRITORIO";
+  display:block;
+  font-size:8px;
+  letter-spacing:.24em;
+  color:rgba(215,179,106,.56);
+  margin-bottom:13px;
+}
+.evidence{
+  gap:10px;
+}
+.evidence div{
+  min-height:76px;
+}
+.experience{
+  margin-top:25px;
+}
+.experience div{
+  padding-top:15px;
+}
+.source-line{
+  border-top:1px solid rgba(207,226,188,.07);
+  padding-top:10px;
+}
+
+/* Footer closes the journey like a field notebook */
+footer{
+  margin-top:80px;
+  padding-top:38px;
+  padding-bottom:70px;
+}
+footer:after{
+  opacity:.8;
+}
+
+/* Mobile cinematic composition */
+@media(max-width:700px){
+  .hero{
+    min-height:700px;
+    padding-top:90px;
+    padding-bottom:60px;
+  }
+  .hero h1{
+    font-size:clamp(54px,15vw,78px);
+  }
+  .hero h1:after{
+    font-size:8px;
+    letter-spacing:.22em;
+  }
+  .territory-showcase{
+    padding-top:80px;
+    padding-bottom:55px;
+  }
+  .territory-heading{
+    margin-bottom:25px;
+  }
+  .territory-grid{
+    gap:10px;
+  }
+  .territory-card{
+    min-height:245px;
+    padding:20px;
+    border-radius:26px;
+  }
+  .controls{
+    margin-top:35px;
+  }
+  .search{
+    min-height:57px;
+  }
+  .grid{
+    gap:12px;
+  }
+  .card{
+    border-radius:24px;
+  }
+  .photo{
+    aspect-ratio:1.35/1;
+  }
+  .body{
+    padding:15px;
+  }
+  dialog{
+    width:calc(100% - 12px);
+    border-radius:27px;
+  }
+  .modal-body{
+    padding:22px;
+  }
+}
+@media(max-width:450px){
+  .hero{
+    min-height:650px;
+    padding-top:72px;
+  }
+  .hero h1{
+    font-size:54px;
+  }
+  .territory-showcase{
+    padding-top:62px;
+  }
+  .territory-card{
+    min-height:195px;
+  }
+  .territory-card h3{
+    font-size:22px;
+  }
+  .territory-card p{
+    font-size:11px;
+  }
+  .search{
+    min-height:54px;
+  }
+  .modal-photo{
+    min-height:220px;
+    max-height:50vh;
+  }
+  .modal-body h2{
+    font-size:36px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .territory-card:before,.brand:before{animation:none!important}
+  .photo img{transition:none!important}
+}
+
 </style>
 </head>
 <body>
