@@ -1002,6 +1002,22 @@ dialog{
   }
 }
 
+
+/* OCARINA WILD · ALIGNMENT / OVERFLOW REPAIR */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+body{margin:0}
+header,main,footer{width:100%;max-width:100%;box-sizing:border-box}
+.nav,main>section,footer{box-sizing:border-box}
+.hero,.territory-showcase,.controls,.grid,.pipeline,.stats{min-width:0;max-width:100%;box-sizing:border-box}
+.territory-grid,.grid{width:100%;min-width:0}
+.card,.territory-card,.step,.law-main,.law-side{min-width:0;max-width:100%;box-sizing:border-box}
+.card *, .territory-card *, .step *, .law-main *, .law-side *{max-width:100%;box-sizing:border-box}
+.photo,.photo img{max-width:100%}
+.filters{min-width:0;max-width:100%;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin}
+.results{max-width:100%;min-width:0;overflow-wrap:anywhere}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.card:nth-child(5n){min-width:0}}
+@media(max-width:700px){main{overflow-x:hidden}.hero,.territory-showcase,.controls{overflow:hidden}.filters{padding-left:2px;padding-right:2px}.search{width:100%;max-width:100%}}
+@media(max-width:450px){.hero h1{max-width:100%;overflow-wrap:break-word}.territory-heading,.territory-card,.card{max-width:100%}}
 </style>
 </head>
 <body>
